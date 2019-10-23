@@ -1,0 +1,580 @@
+@charset "utf-8"; 
+/**********************************************************************
+* Descript : 서브페이지 스타일 정의
+-----------------------------------------------------------------------
+* 최초작성일 : 2018.04.04
+* 최초작성자 : 더웹 유대경
+***********************************************************************/
+
+.sub-contents{position:relative; padding:60px 0 100px 240px; min-height:700px;}
+.sub-contents h4.tit{font-size:26px; font-weight:700; color:#222; margin-bottom:30px;}
+.sub-contents h5{background:url(../img/common/icon_h5.png) no-repeat left top; font-size:22px; font-weight:700; color:#2c3d96; margin:50px 0 10px 0; padding-left: 20px;}
+.sub-contents h6{background:url(../img/common/icon_h6.png) no-repeat 15px center; font-size:18px; font-weight:700; color:#2c3d96; margin:20px 0 10px 0; padding-left: 30px;}
+p{line-height : 1.6em;}
+.small_font {font-size: 13px;}
+
+
+/* list */
+ul[class^="list_ul"], ol[class^="list_num"]{margin:25px 0 0;}
+.list_ul_h4, .list_num_h4 {margin-left:24px !important;}
+.list_ul_h5, .list_num_h5 {margin-left:24px !important;}
+.list_ul_h6, .list_num_h6 {margin-left:24px !important;}
+ul[class^="list_ul"] li, ol[class^="list_num"] li {line-height:35px; position: relative;}
+ul[class^="list_ul"] >li, ol[class^="list_num"] li ul li {padding-left:14px; margin-top:11px; line-height: 1.3em;}
+ul[class^="list_ul"] >li:before, ol[class^="list_num"] li ul li:before {content: ''; position: absolute; width: 8px; height: 8px; left: 0; top: 7px; line-height: 1.7em; background:url('../img/common/icon_ul_h5.png') no-repeat 5px center; }
+ul[class^="list_ul"] >li:first-child{margin-top:0;}
+ul[class^="list_ul"] >li >ul {margin-top:14px;}
+ul[class^="list_ul"] li >ul >li{padding-left:12px; margin-top:11px;}
+ul[class^="list_ul"] >li >ul >li:before{content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 8px; background:url('../img/common/icon_ul_h5.png') no-repeat center -109px;}
+.tbl td >ul >li:before {content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 6px; background:url('../img/common/icon_ul_h5.png') no-repeat center -205px;}
+ul[class^="list_ul"] >li >ul >li:first-child{margin-top:0;}
+ul[class^="list_ul"] ul ul {margin-top:10px; background:#f3f4fa; padding:15px; box-sizing: border-box;}
+ul[class^="list_ul"] >li >ul >li >ul >li {padding-left:8px; margin-top:9px;}
+ul[class^="list_ul"] >li >ul >li >ul >li:before, td >ul >li >ul >li:before {content: ''; position: absolute; width: 3px; height: 3px; left: 0; top: 8px; background:#afc4db;}
+ul[class^="list_ul"] >li >ul >li >ul >li:first-child {margin-top:0;}
+ul[class^="list_ul"] li p, ol[class^="list_num"] li p {margin-top:10px;}
+.list_ul_h6 >li {padding-left:10px; margin-top:5px;}
+.list_ul_h6 >li:first-child {margin-top:0;}
+.list_ul_h6 > li > ul {margin-top:10px; background:#f3f4fa; padding:15px; box-sizing: border-box;}
+.list_ul_h6 > li > ul >li {padding-left:15px; margin-top:5px; line-height: 1.7em;}
+.list_ul_h6 > li > ul >li:first-child {margin-top:0;}
+
+
+ol[class^="list_num"] li{padding-left:25px; font-weight: 700; }
+ol[class^="list_num"] >li:before {	content: counter(customlistcounter);
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	width: 28px;
+	height: 28px;
+	line-height: 1.7em;
+	color: #fff;
+	text-align: center;
+	border-radius: 100%;
+	background: #7c9bc9;
+	margin-right: 5px;
+    font-size: 15px; 
+	letter-spacing: -1.5pt;
+	font-weight: 700;}
+
+ol[class^="list_num"] >li:nth-child(1):before {content: '1';} 
+ol[class^="list_num"] >li:nth-child(2):before {content: '2';} 
+ol[class^="list_num"] >li:nth-child(3):before {content: '3';} 
+ol[class^="list_num"] >li:nth-child(4):before {content: '4';} 
+ol[class^="list_num"] >li:nth-child(5):before {content: '5';} 
+ol[class^="list_num"] >li:nth-child(6):before {content: '6';} 
+ol[class^="list_num"] >li:nth-child(7):before {content: '7';} 
+ol[class^="list_num"] >li:nth-child(8):before {content: '8';} 
+ol[class^="list_num"] >li:nth-child(9):before {content: '9';} 
+ol[class^="list_num"] >li:nth-child(10):before {content: '10';} 
+ol[class^="list_num"] >li:nth-child(11):before {content: '11';} 
+ol[class^="list_num"] >li:nth-child(12):before {content: '12';} 
+ol[class^="list_num"] >li:nth-child(13):before {content: '13';} 
+ol[class^="list_num"] >li:nth-child(14):before {content: '14';} 
+ol[class^="list_num"] >li:nth-child(15):before {content: '15';} 
+ol[class^="list_num"] li:first-child{margin-top:0;} ol[class^="list_num"] >li 
+>ul {margin: 10px 0 14px 0;background: #f3f4fa; padding: 15px;box-sizing: 
+border-box;} ol[class^="list_num"] >li >ul li {padding-left: 12px; font-weight: 
+normal;} ol[class^="list_num"] >li >ul li:before {top: 7px;}
+
+/* ol[class^="list_num"] >li >li:first-child{margin-top: 0;} */
+
+/* p태그, box_text */
+p[class^="box_h"], div[class^="box_h"]{border:2px solid #d9e1eb; margin-top:15px; padding:15px; font-size: 15px;}
+.box_img.box_line {margin-top:15px;}
+h4 + .box_img{margin-left: 25px;}
+p[class^="p_h"], div[class^="box_h"] {margin-top:15px;}
+p[class^="p_h"]{padding: 5px 10px; }
+.box_h4,.p_h4, .tbl_h4 {margin-left:22px;  line-height: 1.6em;}
+.box_h5,.p_h5, .tbl_h5 {margin-left:15px;  line-height: 1.6em;}
+.box_h6,.p_h6, .tbl_h6 {margin-left:35px;  line-height: 1.6em;}
+
+
+.pl20{padding-left:20px;}
+
+.pt20{padding-top:20px;}
+
+
+/* table */
+table{border-collapse:collapse; font-size:1em;}
+.tbl							{ margin-top:10px; table-layout: fixed; width:100%;}
+.tbl th							{ text-align:center; }
+.tbl td, .tbl th				{ padding:10px 8px; border:1px solid #c3c3c3; line-height:1.5em; vertical-align: middle; box-sizing: border-box; }
+.tbl thead tr:first-child th	{ border-top:2px solid #9ea8dd; background:#f9f9f9; color: #5c6cc3;    font-weight: bold; }
+.tbl thead th	{ background:#f9f9f9; color:#5c6cc3; border-bottom: none; font-size: 1.15em; padding-top: 10px; padding-bottom: 10px; line-height: 1.3em; }
+.tbl tbody tr:first-child th,
+.tbl tbody tr:first-child td		{ border-top: 1px solid #9c9c9c; }
+ 
+.tbl tbody th	{ background:#fcfcfc; font-weight: normal; }
+.tbl tfoot th	{ background:#f9f9f9; color:#333;}
+.tbl td 		{  }
+
+.Thead tbody tr:first-child td,
+.Thead tbody tr:first-child th		{ border-top:2px solid #39b8a5; }
+td li								{ position: relative; }
+td >ul >li							{ padding-left: 0.7em; margin-top:0.7em; line-height:1.5em; text-align:left !important; }
+td >ul >li:first-child				{ margin-top:0; }
+td >ul >li >ul						{ margin-top:0.7em; }
+td >ul >li >ul >li					{ padding-left:10px; margin-top:6px; line-height:1.5em; text-align:left !important; }
+td >ul >li >ul >li:first-child 		{ margin-top:0; }
+
+.tbl.fit td,
+.tbl.fit th				{ padding: 8px 10px; }
+.tbl.fit thead th		{ font-size: 1.0em; padding: 10px 5px; }
+.tbl.fit tbody td		{ font-size: 0.9em; }
+
+.tbl.reserv					{ max-width: 480px; margin: 50px auto; }
+.tbl.reserv.board-form th	{ width: 140px; }
+
+/* table > align */
+table.taC td {text-align:center;}
+td.taC {text-align:center !important;}
+table.taL td {text-align:left;}
+td.taL {text-align:left !important;}
+table.taR td {text-align:right;}
+td.taR {text-align:right  !important;}
+.Thead tbody tr:first-child td,.Thead tbody tr:first-child th {border-top:2px solid #5a5a5a;}
+td li {position: relative;}
+td >ul >li {padding-left:15px; margin-top:10px; line-height:1.5em; text-align:left !important;}
+td >ul >li:first-child {margin-top:0;}
+td >ul >li >ul {margin-top:10px;}
+td >ul >li >ul >li {padding-left:10px; margin-top:6px; line-height:1.5em; text-align:left !important;}
+td >ul >li >ul >li:first-child {margin-top:0;}
+
+td >ul >li.no-bu:before	{ display: none !important; }
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 장비소개
+***********************************************************************/
+.equipment-item{position:relative; min-height:238px; margin:40px 0; text-align:left; box-sizing:border-box; padding:30px 0 0 290px; border-bottom: 1px dashed #ccc;}
+.equipment-item h6.tit{display:inline-block; font-size:18px; font-weight:700; color:#fff; background-color: #5c6cc3; padding :10px; }
+.equipment-item p.con{font-size:15px; line-height:25px; color:#222; margin:25px 0;}
+
+
+.pcode50801{display:none;}
+
+
+
+.bg51601{background:url(../img/contents/euipment01.png) no-repeat left top;}
+.bg51602{background:url(../img/contents/euipment02.png) no-repeat left top;}
+.bg51603{background:url(../img/contents/euipment03.png) no-repeat left top;}
+.bg51604{background:url(../img/contents/euipment04.png) no-repeat left top;}
+.bg51605{background:url(../img/contents/euipment05.png) no-repeat left top;}
+.bg51606{background:url(../img/contents/euipment06.png) no-repeat left top;}
+.bg51607{background:url(../img/contents/euipment07.png) no-repeat left top;}
+.bg51608{background:url(../img/contents/euipment08.png) no-repeat left top;}
+.bg51609{background:url(../img/contents/euipment09.png) no-repeat left top;}
+.bg51610{background:url(../img/contents/euipment10.png) no-repeat left top;}
+.bg51611{background:url(../img/contents/euipment11.png) no-repeat left top;}
+.bg51612{background:url(../img/contents/euipment12.png) no-repeat left top;}
+.bg51613{background:url(../img/contents/euipment13.png) no-repeat left top;}
+.bg51614{background:url(../img/contents/euipment14.png) no-repeat left top;}
+.bg51615{background:url(../img/contents/euipment15.png) no-repeat left top;}
+.bg51616{background:url(../img/contents/euipment16.png) no-repeat left top;}
+.bg51617{background:url(../img/contents/euipment17.png) no-repeat left top;}
+.bg51618{background:url(../img/contents/euipment18.png) no-repeat left top;}
+.bg51619{background:url(../img/contents/euipment19.png) no-repeat left top;}
+.bg51620{background:url(../img/contents/euipment20.png) no-repeat left top;}
+
+/**********************************************************************
+* Descript : 진료안내 -> 의료진소개
+***********************************************************************/
+
+.equipment-item_doc{position:relative; min-height:290px; margin:40px 0; text-align:left; box-sizing:border-box; padding:30px 0 0 271px; b}
+.equipment-item_doc h6.tit{font-size:26px; font-weight:700; color:#000; padding :22px 0 0 0; }
+.equipment-item_doc p.con{font-size:15px; line-height:25px; color:#222; margin:25px 0;}
+.equipment-item_doc b.tit-small{display:block; font-size:17px; font-weight:700; color:#5863a6; margin:20px 0 20px 0; padding :0 0 22px 0; box-sizing:border-box; border-bottom: 1px solid #ccc;}
+.equipment-item_doc span.hashtag{color:#747474;}
+.equipment-item_doc i.stamp{color:#2c3d96; font-size:17px;font-weight:600;}
+
+
+.doctor-view{height:290px; margin-bottom:20px;}
+.doctor-view .pic, .doctor-view .con{float:left; box-sizing:border-box;}
+.doctor-view .pic{width:30%;}
+.doctor-view .con{width:70%;}
+.doctor-view .pic img				{ max-width: 100%; width:240px; height:290px;}
+.doctor-view .con .title			{
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom:20px;
+}
+.doctor-view .con .title p			{ font-size: 1.7em; line-height:1em;     font-weight: bold;}
+.doctor-view .con .title p strong	{ font-size: 0.8em; }
+.doctor-view .con .title sup		{
+	display: block;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin:15px 0 13px 0;
+}
+.doctor-view .con .title sup em		{ color: #44519e; }
+
+.doctor-view .con .title .btn-group			{
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 12px;
+}
+
+.doctor-view .con .tbl{width:100%;}
+
+.doctor-list .btn-group .btn,
+.doctor-view .con .title .btn-group .btn		{ padding: 10px 20px; border-width: 2px; }
+.doctor-list .btn-group .btn					{ margin: 0; }
+.doctor-list .btn-group .btn:before,
+.doctor-view .con .title .btn-group .btn:before	{ content: ""; display: inline-block; vertical-align: middle; width: 15px; height: 15px; background-repeat: no-repeat; background-position: 50% 50%; margin-right: 5px; }
+.doctor-list .btn-group .btn:before,
+.doctor-view .con .title .btn-group .btn:before	{ background-image: url('/homepage/img/sub/ico_btn_list.png'); }
+.doctor-list .btn-group .btn.detail:before		{ display: none; }
+.doctor-list .btn-group .btn.point,
+.doctor-view .con .title .btn-group	.btn.point	{
+	font-size: 1.0em;
+	background: #465266;
+	border-color: #465266;
+	color: #fff;
+	font-weight: 400;
+}
+.doctor-list .btn-group .btn.point:before,
+.doctor-view .con .title .btn-group	.btn.point:before	{ background-image: url('/homepage/img/sub/ico_btn_reserv.png'); }
+
+.doctor-list .btn-group .btn.detail			{ color: #39b8a5; border-color: #39b8a5; }
+.doctor-list .btn-group .btn.detail:hover	{ background: #39b8a5; color: #fff; }
+
+.doctor-list .btn-group .btn.point:hover,
+.doctor-view .con .title .btn-group	.btn.point:hover	{ background: #2b3546; }
+.doctor-view .con .sub-title	{
+	display: block;
+	position: relative;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	color: #44519e;
+	font-weight:700;
+
+}
+.doctor-view .work-con td		{ text-align: center; vertical-align: middle; }
+.doctor-view .work-con .check	{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border-radius: 9.0em;
+	background: #5c6cc3;
+	vertical-align: middle;
+}
+.doctor-view .work-con .check.off	{ background: #bababa; }
+
+.pcode50702 {background: #f8f8f8; box-sizing: border-box; padding: 1px 0 20px 30px; margin-bottom: 70px;}
+.pcode50702 ul {padding: 10px 10px;}
+.pcode50702 ul li {padding-left:20px; line-height: 1.9em;}
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 대장.항문내시경
+***********************************************************************/
+.pcode51301{padding:0 0 50px 0;}
+.pcode51302{padding:0 0 50px 0;}
+.pcode51303{padding:50px 0;}
+.pcode51304{padding:30px 0;}
+.pcode51305{padding:30px 0;}
+.pcode51306{padding:30px 0;}
+.pcode51307{padding:30px 0;}
+.pcode51308{padding:30px 0;}
+.pcode51309{padding:30px 0;}
+.pcode51310{padding:30px 0;}
+.pcode51311{padding:30px 0;}
+.pcode51312{padding:30px 0;}
+.pcode51313{padding:30px 0;}
+.pcode51314{padding:30px 0;}
+.pcode51315{padding:30px 0;}
+.pcode51316{padding:30px 0;}
+.pcode51317{padding:30px 0;}
+.pcode51318{padding:30px 0;}
+
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 복강경수술
+***********************************************************************/
+.pcode51401{padding:0 0 50px 0;}
+.pcode51402{padding:0 0 50px 0;}
+.pcode51403{padding:30px 0;}
+.pcode51404{padding:30px 0;}
+.pcode51405{padding:30px 0;}
+.pcode51406{padding:30px 0;}
+.pcode51407{padding:30px 0;}
+.pcode51408{padding:10px 0 30px 0;}
+.pcode51409{padding:30px 0 10px 0;}
+
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 골반저 질환치료센터
+***********************************************************************/
+.pcode51501{padding:0 0 50px 0;}
+.pcode51502{padding:0 0 10px 0;}
+.pcode51503{padding:30px 0;}
+.pcode51504{padding:30px 0;}
+.pcode51505{padding:50px 0 20px 0;}
+.pcode51506{padding:30px 0;}
+.pcode51507{padding:30px 0;}
+.pcode51508{padding:10px 0 30px 0;}
+.pcode51509{padding:30px 0 10px 0;}
+
+
+/**********************************************************************
+* Descript : 외과질환센터 -> 위내시경
+***********************************************************************/
+.pcode55303{padding:30px 0;}
+.pcode55304{padding:30px 0;}
+.pcode55305{padding:50px 0 30px 0;}
+.pcode55306{padding:30px 0;}
+.pcode55307{padding:30px 0;}
+.pcode55308{padding:30px 0 0px 0;}
+.pcode55309{padding:30px 0 30px 0;}
+.pcode55310{padding:30px 0 30px 0;}
+.pcode55311{padding:30px 0 40px 0;}
+
+
+
+/**********************************************************************
+* Descript : 외과질환센터 -> 간·담도·췌장
+***********************************************************************/
+.pcode52001{padding:0 0 50px 0;}
+.pcode52002{padding:30px 0 30px 0;}
+.pcode52003{padding:30px 0 20px 0;}
+.pcode52004{padding:0px 0 20px 0;}
+.pcode52005{padding:0px 0 20px 0;}
+
+/**********************************************************************
+* Descript : 외과질환센터 -> 유방·갑상선
+***********************************************************************/
+.pcode52101{padding:0 0 50px 0;}
+.pcode52102{padding:30px 0 30px 0;}
+.pcode52103{padding:30px 0 30px 0;}
+.pcode52104{padding:10px 0 20px 0;}
+.pcode52105{padding:30px 0 30px 0;}
+.pcode52106{padding:30px 0 30px 0;}
+.pcode52107{padding:30px 0 0px 0;}
+
+/**********************************************************************
+* Descript : 외과질환센터 -> 하지정맥류
+***********************************************************************/
+.pcode52201{padding:0 0 10px 0;}
+.pcode52202{padding:30px 0 50px 0;}
+.pcode52203{padding:30px 0 30px 0;}
+.pcode52204{padding:30px 0 20px 0;}
+.pcode52205{padding:30px 0 10px 0;}
+.pcode52206{padding:30px 0 30px 0;}
+.pcode52207{padding:30px 0 0px 0;}
+.pcode52208{padding:0px 0 30px 0;}
+.pcode52209{padding:30px 0 0px 0;}
+
+
+/**********************************************************************
+* Descript : 내과 질환 센터 -> 소화기 질환
+***********************************************************************/
+.pcode52401{padding:0 0 10px 0;}
+.pcode52402{padding:30px 0 50px 0;}
+.pcode52403{padding:30px 0 30px 0;}
+.pcode52404{padding:30px 0 30px 0;}
+
+/**********************************************************************
+* Descript : 내과 질환 센터 -> 순환기 질환
+***********************************************************************/
+.pcode52501{padding:0 0 10px 0;}
+.pcode52502{padding:30px 0 50px 0;}
+.pcode52503{padding:30px 0 30px 0;}
+.pcode52504{padding:30px 0 20px 0;}
+
+
+/**********************************************************************
+* Descript : 내과 질환 센터 -> 호흡기 질환
+***********************************************************************/
+.pcode52601{padding:0 0 10px 0;}
+.pcode52602{padding:30px 0 50px 0;}
+.pcode52603{padding:30px 0 30px 0;}
+.pcode52604{padding:30px 0 0px 0;}
+
+
+/**********************************************************************
+* Descript : 내과 질환 센터 -> 내분비 질환
+***********************************************************************/
+.pcode52701{padding:0 0 10px 0;}
+.pcode52702{padding:30px 0 50px 0;}
+.pcode52703{padding:30px 0 30px 0;}
+.pcode52704{padding:30px 0 50px 0;}
+
+
+/**********************************************************************
+* Descript : 건강검진 -> 검진센터소개
+***********************************************************************/
+.pcode52901{padding:0 0 10px 0;}
+.pcode52902{padding:30px 0 50px 0;}
+.pcode52903{padding:30px 0 30px 0;}
+.pcode52904{padding:30px 0 50px 0;}
+
+
+/**********************************************************************
+* Descript : 건강검진 -> 종합건강검진센터
+***********************************************************************/
+.pcode52901{padding:0 0 10px 0;}
+.pcode52902{padding:30px 0 50px 0;}
+.pcode52903{padding:30px 0 30px 0;}
+.pcode52904{padding:30px 0 50px 0;}
+
+
+
+
+/**********************************************************************
+* Descript : 병원소개 -> 층별안내
+***********************************************************************/
+.floor-slider{position:relative; width:100%; height:599px;}
+.floor-slider .slick-slide{border:0;} /* border:0, 기본적으로 1px의 보더값이 들어가서 강제로 초기화 */
+.floor-slider .floor-info,
+.floor-slider .floor-pic{float:left;}
+
+.floor-slider .floor-info{width:15%; height:600px;}
+.floor-slider .floor-info li{position:relative; background:#555555; cursor:pointer;}
+.floor-slider .floor-info li.active{background:#7f8cd0;}
+
+.floor-slider .floor-info li a{display:block; text-align:center; height:100px; box-sizing:border-box; padding:19px 0; color:#fff; font-size:0.8em; line-height:1.4em; border-bottom:1px solid #fff; cursor:pointer;}
+.floor-slider .floor-info li a:hover{text-decoration:none;}
+.floor-slider .floor-info li b{display:block; font-size:1.4em; font-weight:700; line-height:1em; margin-bottom:10px;}
+.floor-slider .floor-info li::after{position:absolute; width:100%; text-align:center; left:0; top:50px; font-size:0.8em; color:#fff; font-weight:700;}
+.floor-slider .floor-info li:nth-child(1)::after{display:inline-block; content:'세미나실, 직원식당 \A 하늘정원'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(2)::after{display:inline-block; content:'병동, VIP실, 1인실, \A 2인실, 4인실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(3)::after{display:inline-block; content:'병동, VIP실, 1인실, \A 2인실, 4인실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(4)::after{display:inline-block; content:'수술실, \A 내시경검사실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(5)::after{display:inline-block; content:'검진센터 \A 영상센터'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(6)::after{display:inline-block; content:'접수/수납 \A 외래진료실'; white-space:pre;}
+
+
+.floor-slider .floor-pic{position:relative; display:block; width:85%; height:599px; overflow:hidden;}
+.floor-slider .floor-pic img{height:599px;}
+.floor-slider .floor-pic span{position:absolute; right:100px; bottom:0; display:inline-block; padding:0 25px; height:50px; line-height:50px; text-align:center; background:rgba(127,140,208,0.7); font-weight:700; color:#fff;}
+
+.floor-slider-controll{position:absolute; right:0; bottom:0;}
+.floor-slider-controll button{display:inline-block; float:left; width:50px; height:50px; line-height:50px; text-align:center; background:rgba(0,0,0,0.5); color:#Fff; margin-left:1px; font-size:2em;}
+
+.floor-slider .floor-pic li.no-data{width:100%; height:599px; text-align:center; background:#ddd url(../img/common/logo.png) no-repeat center center;}
+/**********************************************************************
+* Descript : 병원소개 -> 오시는길
+***********************************************************************/
+.wrap_controllers{display:none !important;}
+
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 대장.항문내시경
+***********************************************************************/
+.pcode55501{padding:0 0 50px 0;}
+.pcode55502{padding:0 0 50px 0;}
+.pcode55503{padding:50px 0;}
+.pcode55504{padding:30px 0;}
+.pcode55505{padding:30px 0;}
+.pcode55506{padding:30px 0;}
+.pcode55507{padding:30px 0;}
+.pcode55508{padding:30px 0;}
+.pcode55509{padding:30px 0;}
+.pcode55510{padding:30px 0;}
+.pcode55511{padding:30px 0;}
+.pcode55512{padding:30px 0;}
+.pcode55513{padding:30px 0;}
+.pcode55556{padding:30px 0;}
+.pcode55557{padding:30px 0;}
+.pcode55516{padding:30px 0;}
+.pcode55517{padding:30px 0;}
+.pcode55518{padding:30px 0;}
+
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 복강경수술
+***********************************************************************/
+.pcode55601{padding:0 0 50px 0;}
+.pcode55602{padding:0 0 50px 0;}
+.pcode55603{padding:30px 0;}
+.pcode55604{padding:30px 0;}
+.pcode55605{padding:30px 0;}
+.pcode55606{padding:30px 0;}
+.pcode55607{padding:30px 0;}
+.pcode55608{padding:10px 0 30px 0;}
+.pcode55609{padding:30px 0 10px 0;}
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 대장항문외과 -> 직장류
+***********************************************************************/
+.pcode56501{}
+.pcode56501 img{float:left; margin:0 20px 20px 0;}
+
+
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 골반저 질환치료센터
+***********************************************************************/
+.pcode55701{padding:0 0 50px 0;}
+.pcode55702{padding:0 0 10px 0;}
+.pcode55703{padding:30px 0;}
+.pcode55704{padding:30px 0;}
+.pcode55705{padding:50px 0 20px 0;}
+.pcode55706{padding:30px 0;}
+.pcode55707{padding:30px 0;}
+.pcode55708{padding:10px 0 30px 0;}
+.pcode55709{padding:30px 0 10px 0;}
+
+
+
+.siwonhanh-tab{width:100%;}
+.siwonhanh-tab ul{display:inline-block; width:100%; border:1px solid #eee; border-bottom:0; overflow:hidden;}
+.siwonhanh-tab ul li{float:left; width:20%; box-sizing:border-box; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.siwonhanh-tab ul li a{display:block; width:100%; height:50px; line-height:50px; text-align:center; color:#222; }
+.siwonhanh-tab ul li.active a{background:#2c3d96; color:#fff; font-weight:700;}
+.siwonhanh-tab ul li:hover a{color:#2c3d96; background:#fafafa; font-weight:700; text-decoration:none;}
+.siwonhanh-tab ul li.active:hover a{background:#2c3d96; color:#fff;}
+.siwonhanh-tab ul li a span{}
+
+.siwonhanh-tab02{width:100%;}
+.siwonhanh-tab02 ul{display:inline-block; width:100%; border:1px solid #eee; border-bottom:0; border-right:0; overflow:hidden;}
+.siwonhanh-tab02 ul li{float:left; width:33.3333333333333333333333%; box-sizing:border-box; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.siwonhanh-tab02 ul li a{display:block; width:100%; height:50px; line-height:50px; text-align:center; color:#222; }
+.siwonhanh-tab02 ul li.active a{background:#2c3d96; color:#fff; font-weight:700;}
+.siwonhanh-tab02 ul li:hover a{color:#2c3d96; background:#fafafa; font-weight:700; text-decoration:none;}
+.siwonhanh-tab02 ul li.active:hover a{background:#2c3d96; color:#fff;}
+.siwonhanh-tab02 ul li a span{}
+
+
+
+.pCode56701{display:inline-block; width:100%;}
+.pCode56701 img{float:left; margin:0 5px 5px 0;}
+
+.pCode56801{display:inline-block; width:100%;}
+.pCode56801 img{float:left; margin:0 5px 5px 0;}
+
+
+
+
+
+
+
+.siwonhang-doc{display:inline-block; width:100%; margin:50px 0; padding-left:20px;}
+.siwonhang-doc .item{width:calc(50% - 10px); float:left; margin-right:20px; text-align:center; padding:50px 0; background:#f5f6f9; border:1px solid #c3c3c3; box-sizing:border-box;}
+.siwonhang-doc .item:last-child{margin-right:0;}
+
+.siwonhang-doc .item em{display:block; margin-bottom:25px; font-size:18px; font-weight:700;}
+.siwonhang-doc .item a{display:block; margin:0 auto 10px auto; width:230px; height:50px; padding-left:30px; line-height:50px; background:#687095 url(../img/contents/btn_download.png) no-repeat 90% center; color:#fff; font-size:15px; text-align:left; box-sizing:border-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+

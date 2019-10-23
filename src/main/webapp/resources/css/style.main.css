@@ -1,0 +1,157 @@
+@charset "utf-8"; 
+/**********************************************************************
+* Descript : 랜딩 사이트의 스타일 정의
+-----------------------------------------------------------------------
+* 최초작성일 : 2018.04.23
+* 최초작성자 : 더웹 유대경
+***********************************************************************/
+
+
+/**********************************************************************
+* Descript : 메인 슬라이드 스타일(slick.js / slick.theme.css)
+***********************************************************************/
+.main-slide{}
+/**********************************************************************/
+
+
+
+/**********************************************************************
+* Descript : 메인페이지 -> 시원항병원 특성화진료
+***********************************************************************/
+.special-hospital{width:100%; padding:100px 0; background:url(../img/main/special-diagnosis_bg.png) no-repeat center top; background-size:cover;}
+.special-hospital h4{text-align:center; font-size:2em; line-height:1em; font-weight:700; color:#222; margin-bottom:50px;}
+.special-hospital ul.special-diagnosis{min-height:270px; margin-bottom:20px;}
+.special-hospital ul.special-diagnosis li{float:left; min-height:270px; box-sizing:border-box; padding:45px 20px 0 20px;}
+.special-hospital ul.special-diagnosis li h5.tit{display:block; font-size:1.7em; line-height:1.4em; color:#fff; margin-bottom:5px;}
+.special-hospital ul.special-diagnosis li a{display:inline-block; padding:10px 20px; background:#172b4c; color:#fff; font-size:0.9em;}
+.special-hospital ul.special-diagnosis li.bg01{width:24%; margin-right:1.3333%; background:url(../img/main/diagnosis_bg01.png) no-repeat left top; background-size:cover;}
+.special-hospital ul.special-diagnosis li.bg02{width:24%; margin-right:1.3333%; background:url(../img/main/diagnosis_bg02.png) no-repeat right top; background-size:cover;}
+.special-hospital ul.special-diagnosis li.bg02 a{background:#8e95a2;}
+.special-hospital ul.special-diagnosis li.bg03{width:24%; margin-right:1.3333%; background:url(../img/main/diagnosis_bg03.png) no-repeat -50px top; background-size:cover; text-align:right;}
+.special-hospital ul.special-diagnosis li.bg03 b{color:#172b4c;}
+.special-hospital ul.special-diagnosis li.bg04{width:24%; background:url(../img/main/diagnosis_bg04.png) no-repeat left top; background-size:cover; text-align:right;}
+
+.special-hospital .special-kinds{display:inline-block; width:100%;}
+.special-hospital .special-kinds{}
+.special-hospital .special-kinds .surgery,
+.special-hospital .special-kinds .medicine{float:left; box-sizing:border-box;}
+
+.special-hospital .special-kinds .surgery{width:40%;}
+.special-hospital .special-kinds .medicine{width:60%; padding-left:1.3333%;}
+
+.special-hospital .special-kinds h6.tit{display:block; text-align:center; padding:20px 0; color:#fff;}
+.special-hospital .special-kinds li{float:left; height:200px;}
+.special-hospital .special-kinds li a{position:relative; display:block; width:100%; height:100%; text-align:center; background-position:center 30px; background-repeat:no-repeat; background-color:#f4f4f4; color:#222; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.special-hospital .special-kinds li a span{position:absolute; display:block; width:100%; height:45px; line-height:45px; left:0; bottom:25px;}
+
+.special-hospital .special-kinds .surgery h6.tit{background:#6aa2d1;}
+.special-hospital .special-kinds .surgery li{width:32.5%;}
+.special-hospital .special-kinds .surgery li:nth-child(2){width:35%;}
+.special-hospital .special-kinds .surgery li.bg01 a{background-image:url(../img/main/kinds_icon01.png);}
+.special-hospital .special-kinds .surgery li.bg02 a{background-image:url(../img/main/kinds_icon02.png);}
+.special-hospital .special-kinds .surgery li.bg03 a{background-image:url(../img/main/kinds_icon03.png);}
+.special-hospital .special-kinds .surgery li.bg04 a{background-image:url(../img/main/kinds_icon04.png);}
+
+.special-hospital .special-kinds .surgery li.bg01:hover a{background-color:#2c75b3; background-image:url(../img/main/kinds_icon01_on.png); color:#fff;}
+.special-hospital .special-kinds .surgery li.bg02:hover a{background-color:#2c75b3; background-image:url(../img/main/kinds_icon02_on.png); color:#fff;}
+.special-hospital .special-kinds .surgery li.bg03:hover a{background-color:#2c75b3; background-image:url(../img/main/kinds_icon03_on.png); color:#fff;}
+.special-hospital .special-kinds .surgery li.bg04:hover a{background-color:#2c75b3; background-image:url(../img/main/kinds_icon04_on.png); color:#fff;}
+
+.special-hospital .special-kinds .medicine h6.tit{background:#687095;}
+.special-hospital .special-kinds .medicine li{width:20%;}
+.special-hospital .special-kinds .medicine li.bg05 a{background-image:url(../img/main/kinds_icon05.png);}
+.special-hospital .special-kinds .medicine li.bg06 a{background-image:url(../img/main/kinds_icon06.png);}
+.special-hospital .special-kinds .medicine li.bg07 a{background-image:url(../img/main/kinds_icon07.png);}
+.special-hospital .special-kinds .medicine li.bg08 a{background-image:url(../img/main/kinds_icon08.png);}
+.special-hospital .special-kinds .medicine li.bg09 a{background-image:url(../img/main/kinds_icon09.png);}
+
+.special-hospital .special-kinds .medicine li.bg05:hover a{background-color:#3b4786; background-image:url(../img/main/kinds_icon05_on.png); color:#fff;}
+.special-hospital .special-kinds .medicine li.bg06:hover a{background-color:#3b4786; background-image:url(../img/main/kinds_icon06_on.png); color:#fff;}
+.special-hospital .special-kinds .medicine li.bg07:hover a{background-color:#3b4786; background-image:url(../img/main/kinds_icon07_on.png); color:#fff;}
+.special-hospital .special-kinds .medicine li.bg08:hover a{background-color:#3b4786; background-image:url(../img/main/kinds_icon08_on.png); color:#fff;}
+.special-hospital .special-kinds .medicine li.bg09:hover a{background-color:#3b4786; background-image:url(../img/main/kinds_icon09_on.png); color:#fff;}
+/**********************************************************************/
+
+
+
+.health-center{width:100%; display:inline-block; padding:50px 0; background:url(../img/main/health_center_bg.png) no-repeat center top; background-size:cover; text-align:center;}
+.health-center ul.inner{}
+.health-center li{position:relative; float:left; width:50%; display:inline-block; height:295px; box-sizing:border-box;}
+.health-center li a{display:inline-block; float:left; width:50%; box-sizing:border-box; padding-left:20px;}
+.health-center li a:nth-child(1),
+.health-center li a:nth-child(2){padding-bottom:20px;}
+
+.health-center-info{position:absolute; display:inline-block; left:0; top:50%; transform:translate(0, -50%); color:#fff; text-align:left;}
+.health-center-info span{font-size:1.4em; line-height:1em; display:block; margin-bottom:20px;}
+.health-center-info span b{font-weight:700;}
+.health-center-info p{font-size:2.8em; line-height:1em; font-weight:700;}
+.health-center-info p b{border-bottom:1px solid #fff;}
+
+
+
+
+
+.information{padding:100px 0;}
+.information .medical-subject{width:100%; display:inline-block; margin-bottom:50px;}
+.information .medical-subject li{position:relative; float:left; height:110px;}
+.information .medical-subject li.medical-subject-text{width:30%;}
+.information .medical-subject li.medical-subject-text > div{position:absolute; left:0; top:50%; transform:translate(0, -50%);}
+.information .medical-subject li.medical-subject-text > div span{font-size:1em; color:#222; display:block; margin-bottom:10px;}
+.information .medical-subject li.medical-subject-text > div p{font-size:2em; line-height:1em; font-weight:700; color:#222;}
+.information .medical-subject li.medical-subject-text > div p b{color:#2c3d96;}
+
+.information .medical-subject li.medical-subject-list{width:70%;}
+.information .medical-subject li.medical-subject-list a{display:inline-block; float:left; width:20%; text-align:center; color:#222;}
+.information .medical-subject li.medical-subject-list a img{display:block; margin:0 auto 10px auto;}
+
+
+.information .medical-info{width:100%; display:inline-block;}
+.information .medical-info > li{position:relative; float:left; width:33.333333333333333%; height:330px; box-sizing:border-box; padding:25px; background:#eee;}
+.information .medical-info > li h6.tit{font-size:1.7em; color:#222; line-height:1em;}
+.information .medical-info > li p.cap{font-size:1em; color:#222; margin:10px 0;}
+.information .medical-info > li a.more{display:inline-block; padding:5px 20px; text-align:center; color:#fff; background:#172b4c; font-size:0.9em;}
+.information .medical-info > li.timetable{background:#48507b url(../img/main/timetable.png) no-repeat center 90px;}
+.information .medical-info > li.timetable h6.tit{color:#fff;}
+.information .medical-info > li.counsel{background:#f3f3f3 url(../img/main/counsel.png) no-repeat center center;}
+.information .medical-info > li.location{background:#fff url(../img/main/location.png) no-repeat center center;}
+.information .medical-info > li.floor-guide{background:#fff url(../img/main/floor.png) no-repeat center center;}
+.information .medical-info > li.notice{background:#fff; border-bottom:1px solid #ddd;}
+.information .medical-info > li.notice a.more{position:absolute; top:25px; right:15px; border:1px solid #172b4c; background:none; color:#172b4c;}
+.information .medical-info > li.notice ul.latest-list{margin-top:30px;}
+.information .medical-info > li.notice ul.latest-list li{}
+.information .medical-info > li.notice ul.latest-list li a{display:block; color:#222; height:45px; line-height:45px; font-size:1em; border-bottom:1px dashed #ddd; width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.information .medical-info > li.newsletter{padding:0;}
+.information .medical-info > li.newsletter a{position:relative; display:block; width:100%; height:100%;}
+.information .medical-info > li.newsletter a i.thumb{position:relative; display:block; width:100%; height:270px; overflow:hidden; background:#ddd url(../img/common/no_image.png) no-repeat center center;}
+.information .medical-info > li.newsletter a i.thumb img{position:absolute; height:100%; width:100%; object-fit:cover; transform:scale(1); -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 2s ease-in-out; -ms-transition: all 2s ease-in-out; -o-transition: all 2s ease-in-out; transition: all 2s ease-in-out;}
+.information .medical-info > li.newsletter a:hover i.thumb img{transform:scale(1.2);}
+.information .medical-info > li.newsletter a i.thumb i.more{position:absolute; left:0; bottom:0; z-index:1; display:inline-block; padding:5px 15px; background:#2c3d96; color:#fff; font-size:0.9em;}
+.information .medical-info > li.newsletter a span.cap{display:block; width:100%; box-sizing:border-box; padding:0 25px; height:60px; line-height:60px; color:#222; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

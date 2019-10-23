@@ -1,0 +1,252 @@
+@charset "utf-8"; 
+/**********************************************************************
+* Descript : 서브페이지 스타일 정의
+-----------------------------------------------------------------------
+* 최초작성일 : 2018.06.01
+* 최초작성자 : 더웹 유대경
+***********************************************************************/
+body {-webkit-text-size-adjust: 100%;}
+h5{font-size:1.3em; line-height:1.3em; font-weight:700; color:#2c3d96; margin-bottom:10px; background:url(/assets/img/m/contents/h6_bg.jpg) no-repeat left top; padding-left:13px;}
+h6{position:relative; font-size:1em; line-height:1.3em; color:#2c3d96; margin-bottom:10px; padding-left:25px;}
+h6::before{position:absolute; display:inline-block; content:''; width:8px; height:3px; background:#2c3d96; left:10px; top:8px;}
+.p-h5{background:#f8f8f8; padding:15px; font-size:1em; line-height:1.8em; margin-bottom:30px;}
+.p-h5 span{position:relative; display:block; padding-left:10px;}
+.p-h5 span::before{position:absolute; display:inline-block; content:''; width:3px; height:3px; border-radius:3px; background:#555; left:0; top:11px;}
+.p-h6{font-size:0.9em; line-height:1.8em; margin-bottom:30px;}
+.p-info{font-size:0.9em; line-height:1.8em; margin:10px 0 30px 0; text-align:right;}
+.scroll{overflow-x:auto; margin-bottom:50px;}
+.scroll02{overflow-x:auto;}
+
+
+
+
+/* list */
+ul[class^="list_ul"], ol[class^="list_num"]{margin:10px 0 50px 0;}
+.list_ul_h4, .list_num_h4 {margin-left:14px !important;}
+.list_ul_h5, .list_num_h5 {margin-left:14px !important;}
+.list_ul_h6, .list_num_h6 {margin-left:14px !important;}
+ul[class^="list_ul"] li, ol[class^="list_num"] li {line-height:1.5em; position: relative; margin-top:20px;}
+ul[class^="list_ul"] >li, ol[class^="list_num"] li ul li {padding-left:14px; margin-top:11px; line-height: 1.3em;}
+ul[class^="list_ul"] >li:before, ol[class^="list_num"] li ul li:before {content: ''; position: absolute; width: 8px; height: 8px; left: 0; top:3px; line-height: 1.7em; background:url('/assets/img/common/icon_ul_h5.png') no-repeat 4px center; }
+ul[class^="list_ul"] >li:first-child{margin-top:0;}
+ul[class^="list_ul"] >li >ul {margin-top:14px;}
+ul[class^="list_ul"] li >ul >li{padding-left:12px; margin-top:11px;}
+ul[class^="list_ul"] >li >ul >li:before{content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 8px; background:url('/assets/img/common/icon_ul_h5.png') no-repeat center -109px;}
+.tbl td >ul >li:before {content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 6px; background:url('/assets/img/common/icon_ul_h5.png') no-repeat center -205px;}
+ul[class^="list_ul"] >li >ul >li:first-child{margin-top:0;}
+ul[class^="list_ul"] ul ul {margin-top:10px; background:#f3f4fa; padding:15px; box-sizing: border-box;}
+ul[class^="list_ul"] >li >ul >li >ul >li {padding-left:8px; margin-top:9px;}
+ul[class^="list_ul"] >li >ul >li >ul >li:before, td >ul >li >ul >li:before {content: ''; position: absolute; width: 3px; height: 3px; left: 0; top: 3px; background:#afc4db;}
+ul[class^="list_ul"] >li >ul >li >ul >li:first-child {margin-top:0;}
+ul[class^="list_ul"] li p, ol[class^="list_num"] li p {margin-top:10px;}
+.list_ul_h6 >li {padding-left:10px; margin-top:5px;}
+.list_ul_h6 >li:first-child {margin-top:0;}
+.list_ul_h6 > li > ul {margin-top:10px; background:#f3f4fa; padding:15px; box-sizing: border-box;}
+.list_ul_h6 > li > ul >li {padding-left:15px; margin-top:5px; line-height: 1.7em;}
+.list_ul_h6 > li > ul >li:first-child {margin-top:0;}
+
+
+ol[class^="list_num"] li{padding-left:25px; font-weight: 700; }
+ol[class^="list_num"] >li:before {	content: counter(customlistcounter);
+	display: block;
+	position: absolute;
+	top: -1px;
+	left: -5px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	text-align: center;
+	border-radius: 100%;
+	background: #7c9bc9;
+	margin-right: 5px;
+    font-size: 13px; 
+	letter-spacing: -1.5pt;
+	font-weight: 700;}
+
+ol[class^="list_num"] >li:nth-child(1):before {content: '1';} 
+ol[class^="list_num"] >li:nth-child(2):before {content: '2';} 
+ol[class^="list_num"] >li:nth-child(3):before {content: '3';} 
+ol[class^="list_num"] >li:nth-child(4):before {content: '4';} 
+ol[class^="list_num"] >li:nth-child(5):before {content: '5';} 
+ol[class^="list_num"] >li:nth-child(6):before {content: '6';} 
+ol[class^="list_num"] >li:nth-child(7):before {content: '7';} 
+ol[class^="list_num"] >li:nth-child(8):before {content: '8';} 
+ol[class^="list_num"] >li:nth-child(9):before {content: '9';} 
+ol[class^="list_num"] >li:nth-child(10):before {content: '10';} 
+ol[class^="list_num"] >li:nth-child(11):before {content: '11';} 
+ol[class^="list_num"] >li:nth-child(12):before {content: '12';} 
+ol[class^="list_num"] >li:nth-child(13):before {content: '13';} 
+ol[class^="list_num"] >li:nth-child(14):before {content: '14';} 
+ol[class^="list_num"] >li:nth-child(15):before {content: '15';} 
+ol[class^="list_num"] li:first-child{margin-top:0;} ol[class^="list_num"] >li 
+>ul {margin: 10px 0 14px 0;background: #f3f4fa; padding: 15px;box-sizing: 
+border-box;} ol[class^="list_num"] >li >ul li {padding-left: 12px; font-weight: 
+normal;} ol[class^="list_num"] >li >ul li:before {top: 7px;}
+
+/* ol[class^="list_num"] >li >li:first-child{margin-top: 0;} */
+
+
+/**********************************************************************
+* Descript : 병원소개 -> 층별안내
+***********************************************************************/
+.floor-slider{position:relative; width:100%;}
+.floor-slider .slick-slide{border:0;} /* border:0, 기본적으로 1px의 보더값이 들어가서 강제로 초기화 */
+.floor-slider .floor-info,
+.floor-slider .floor-pic{}
+
+.floor-slider .floor-info{width:100%; height:200px; margin-top:-2px;}
+.floor-slider .floor-info li{position:relative; float:left; text-align:center; background:#555555; height:100px; box-sizing:border-box; padding:19px 0; color:#fff; font-size:0.8em; line-height:1.4em; cursor:pointer; margin-bottom:1px; width:33% !important;}
+.floor-slider .floor-info li:nth-child(2),
+.floor-slider .floor-info li:nth-child(5){margin:0 1px; width:calc(34% - 2px) !important;}
+.floor-slider .floor-info li.active{background:#7f8cd0;}
+
+.floor-slider .floor-info li a{display:block; text-align:center; height:100px; box-sizing:border-box; color:#fff; font-size:1.1em; line-height:1.4em; border-bottom:1px solid #fff; cursor:pointer;}
+.floor-slider .floor-info li a:hover{text-decoration:none;}
+.floor-slider .floor-info li b{display:block; font-size:1.4em; font-weight:700; line-height:1em; margin-bottom:10px;}
+.floor-slider .floor-info li::after{position:absolute; width:100%; text-align:center; left:0; top:50px; font-size:1em; color:#fff; font-weight:700;}
+.floor-slider .floor-info li:nth-child(1)::after{display:inline-block; content:'세미나실, 직원식당 \A 하늘정원'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(2)::after{display:inline-block; content:'병동, VIP실, 1인실, \A 2인실, 4인실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(3)::after{display:inline-block; content:'병동, VIP실, 1인실, \A 2인실, 4인실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(4)::after{display:inline-block; content:'수술실, \A 내시경검사실'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(5)::after{display:inline-block; content:'검진센터 \A 영상센터'; white-space:pre;}
+.floor-slider .floor-info li:nth-child(6)::after{display:inline-block; content:'접수/수납 \A 외래진료실'; white-space:pre;}
+
+
+.floor-slider .floor-pic{display:block; width:100%; height:100%; overflow:hidden;}
+.floor-slider .floor-pic li{position:relative;}
+.floor-slider .floor-pic img{}
+.floor-slider .floor-pic span{position:absolute; right:100px; bottom:0; display:inline-block; padding:0 25px; height:50px; line-height:50px; text-align:center; background:rgba(127,140,208,0.7); font-weight:700; color:#fff;}
+
+.floor-slider-controll{position:absolute; right:0; bottom:200px;}
+.floor-slider-controll span.tit{display:none; float:left; padding:0 25px; height:50px; line-height:50px; text-align:center; background:rgba(127,140,208,0.7); font-weight:700; color:#fff;}
+.floor-slider-controll span.tit:first-child{display:block;}
+.floor-slider-controll button{display:inline-block; float:left; width:50px; height:50px; line-height:50px; text-align:center; background:rgba(0,0,0,0.5); color:#Fff; margin-left:1px; font-size:2em;}
+
+@media (max-width:640px){
+	.floor-slider-controll{right:10px;}
+}
+/**********************************************************************
+* Descript : 병원소개 -> 오시는길
+***********************************************************************/
+
+.wrap_controllers{display:none !important;}
+
+
+.doctor-list{}
+
+.doctor-list .doctor{}
+.doctor-list .doctor b.tit{display:block; font-size:1.6em; line-height:1em; color:#2c3d96; margin-bottom:10px;}
+.doctor-list .doctor .doctor-info{width:100%; display:inline-block; margin-bottom:35px;}
+.doctor-list .doctor .doctor-info .doctor-pic{position:relative; float:left; width:50%; height:300px; overflow:hidden;}
+.doctor-list .doctor .doctor-info .doctor-pic img{position:absolute; width:100%; height:100%; object-fit:cover; border:2px solid red;}
+.doctor-list .doctor .doctor-info .doctor-name{position:relative; float:left; width:50%; height:300px; background:url(/assets/img/m/contents/simbol.png) no-repeat center 30px;}
+.doctor-list .doctor .doctor-info .doctor-name p{position:absolute; right:0; bottom:0; width:calc(100% - 20px); margin:0 10px; border-top:2px solid #2c3d96; border-bottom:1px solid #eee; padding:20px 0;}
+.doctor-list .doctor .doctor-info .doctor-name b{display:block; font-size:1.7em; margin-bottom:10px; line-height:1em; font-weight:700; color:#222;}
+.doctor-list .doctor .doctor-info .doctor-name span{font-size:1.2em; line-height:1em;}
+.doctor-list .doctor .doctor-info .doctor-name span i{color:#2c3d96;}
+
+.doctor-list .doctor .doctor-timetable{width:100%; display:inline-block; margin-bottom:35px;}
+.doctor-list .doctor .doctor-timetable table{width:100%; border-top:2px solid #5c6cc3;}
+.doctor-list .doctor .doctor-timetable table thead th{background:#f6f6f6; border-right:1px solid #ddd; border-bottom:1px solid #ddd; color:#222; font-size:1.1em; font-weight:700; padding:20px 0;}
+.doctor-list .doctor .doctor-timetable table thead th:last-child{border-right:0;}
+.doctor-list .doctor .doctor-timetable table tbody th{font-weight:700; border-right:1px solid #ddd; border-bottom:1px solid #ddd;}
+.doctor-list .doctor .doctor-timetable table tbody td{text-align:center; padding:20px 0; border-right:1px solid #ddd; border-bottom:1px solid #ddd; color:#5c6cc3;}
+.doctor-list .doctor .doctor-timetable table tbody td:last-child{border-right:0;}
+
+.doctor-list .doctor .doctor-history{background:#f8f8f8; padding:25px 15px; margin-bottom:50px;}
+.doctor-list .doctor .doctor-history p{padding-left:13px; font-size:1.1em; line-height:1.8em;}
+
+
+/* table */
+table{border-collapse:collapse; font-size:1em;}
+.tbl							{ margin-top:10px; table-layout: fixed; width:100%;  width:640px;}
+.tbl th							{ text-align:center; }
+.tbl td, .tbl th				{ padding:10px 8px; border:1px solid #c3c3c3; line-height:1.5em; vertical-align: middle; box-sizing: border-box; }
+.tbl thead tr:first-child th	{ border-top:2px solid #9ea8dd; background:#f9f9f9; color: #5c6cc3;    font-weight: bold; }
+.tbl thead th	{ background:#f9f9f9; color:#5c6cc3; border-bottom: none; font-size: 1.15em; padding-top: 10px; padding-bottom: 10px; line-height: 1.3em; }
+.tbl tbody tr:first-child th,
+.tbl tbody tr:first-child td		{ border-top: 1px solid #9c9c9c; }
+ 
+.tbl tbody th	{ background:#fcfcfc; font-weight: normal; }
+.tbl tfoot th	{ background:#f9f9f9; color:#333;}
+.tbl td 		{  }
+
+.Thead tbody tr:first-child td,
+.Thead tbody tr:first-child th		{ border-top:2px solid #39b8a5; }
+td li								{ position: relative; }
+td >ul >li							{ padding-left: 0.7em; margin-top:0.7em; line-height:1.5em; text-align:left !important; }
+td >ul >li:first-child				{ margin-top:0; }
+td >ul >li >ul						{ margin-top:0.7em; }
+td >ul >li >ul >li					{ padding-left:10px; margin-top:6px; line-height:1.5em; text-align:left !important; }
+td >ul >li >ul >li:first-child 		{ margin-top:0; }
+
+.tbl.fit td,
+.tbl.fit th				{ padding: 8px 10px; }
+.tbl.fit thead th		{ font-size: 1.0em; padding: 10px 5px; }
+.tbl.fit tbody td		{ font-size: 0.9em; }
+
+.tbl.reserv					{ max-width: 480px; margin: 50px auto; }
+.tbl.reserv.board-form th	{ width: 140px; }
+
+/* table > align */
+table.taC td {text-align:center;}
+td.taC {text-align:center !important;}
+table.taL td {text-align:left;}
+td.taL {text-align:left !important;}
+table.taR td {text-align:right;}
+td.taR {text-align:right  !important;}
+.Thead tbody tr:first-child td,.Thead tbody tr:first-child th {border-top:2px solid #5a5a5a;}
+td li {position: relative;}
+td >ul >li {padding-left:15px; margin-top:10px; line-height:1.5em; text-align:left !important;}
+td >ul >li:first-child {margin-top:0;}
+td >ul >li >ul {margin-top:10px;}
+td >ul >li >ul >li {padding-left:10px; margin-top:6px; line-height:1.5em; text-align:left !important;}
+td >ul >li >ul >li:first-child {margin-top:0;}
+
+td >ul >li.no-bu:before	{ display: none !important; }
+
+.siwonhanh-tab{width:100%; text-align:center;}
+.siwonhanh-tab ul{display:inline-block; width:100%; max-width:640px; margin:10px auto 50px auto; border:1px solid #eee; border-bottom:0; border-right:0; overflow:hidden;}
+.siwonhanh-tab ul li{float:left; width:33.3333333333333333%; box-sizing:border-box; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.siwonhanh-tab ul li a{display:block; width:100%; height:50px; line-height:50px; text-align:center; color:#222; }
+.siwonhanh-tab ul li.active a{background:#2c3d96; color:#fff; font-weight:700;}
+.siwonhanh-tab ul li:hover a{color:#2c3d96; background:#fafafa; font-weight:700; text-decoration:none;}
+.siwonhanh-tab ul li.active:hover a{background:#2c3d96; color:#fff;}
+.siwonhanh-tab ul li a span{}
+
+@media(max-width:480px){
+	.siwonhanh-tab ul li{width:50%;}
+}
+
+
+
+.pcode51301 img{width:100%;}
+
+.pCode56701{display:inline-block; width:100%;}
+.pCode56701 img{float:left; margin:0 5px 5px 0;}
+
+.pCode56801{display:inline-block; width:100%;}
+.pCode56801 img{float:left; margin:0 5px 5px 0;}
+
+
+/**********************************************************************
+* Descript : 특성화진료 -> 대장항문외과 -> 직장류
+***********************************************************************/
+.pcode56501{}
+.pcode56501 img{float:left; margin:0 20px 20px 0; max-width:100%;}
+@media(max-width:480px){
+	.pcode56501 img{float:none; display:block; margin:0 0 10px 0;}
+}
+
+
+
+
+
+
+.siwonhang-doc{display:inline-block; width:100%; margin-bottom:25px;}
+.siwonhang-doc .item{width:100%; text-align:center; padding:25px 0; background:#f5f6f9; border:1px solid #c3c3c3; box-sizing:border-box;}
+.siwonhang-doc .item:last-child{margin-top:10px;}
+
+.siwonhang-doc .item em{display:block; margin-bottom:25px; font-size:18px; font-weight:700;}
+.siwonhang-doc .item a{display:block; margin:0 auto 10px auto; width:230px; height:50px; padding-left:30px; line-height:50px; background:#687095 url(/assets/img/contents/btn_download.png) no-repeat 90% center; color:#fff; font-size:15px; text-align:left; box-sizing:border-box;}
