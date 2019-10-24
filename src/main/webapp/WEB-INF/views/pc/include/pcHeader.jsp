@@ -37,8 +37,8 @@
 						<li class="lnb "><a href="${pageContext.request.contextPath}/menu02_02" data-text="외래 진료안내"><span>외래 진료안내</span></a></li>
 						<li class="lnb "><a href="${pageContext.request.contextPath}/menu02_03" data-text="입/퇴원안내"><span>입/퇴원안내</span></a></li>
 						<li class="lnb "><a href="${pageContext.request.contextPath}/menu02_04" data-text="제증명안내"><span>제증명안내</span></a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05" data-text="장비소개"><span>장비소개</span></a></li>
-						<li class="lnb "><a href="${pageContext.request.contextPath}/menu02_06" data-text="비급여 수가 공지"><span>비급여 수가 공지</span></a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_05" data-text="비급여 수가 공지"><span>비급여 수가 공지</span></a></li>
+						<li class="lnb "><a href="${pageContext.request.contextPath}/menu02_06" data-text="장비소개"><span>장비소개</span></a></li>
 					</ul>
 				</li>
 				<li class="gnb active"><a href="${pageContext.request.contextPath}/menu03_01" data-text="특성화 진료"><span>특성화 진료</span></a>

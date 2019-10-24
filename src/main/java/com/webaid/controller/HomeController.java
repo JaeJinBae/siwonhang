@@ -97,13 +97,6 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu01_04";
 	}
 	
-	@RequestMapping(value="/menu01_05", method=RequestMethod.GET)
-	public String menu01_05Get(){
-		logger.info("menu01_05 get");
-		
-		return "pc/menu01_05";
-	}
-	
 	@RequestMapping(value="/menu02_01", method=RequestMethod.GET)
 	public String menu02_01Get(){
 		logger.info("menu02_01 get");
@@ -137,6 +130,13 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		logger.info("menu02_05 get");
 		
 		return "pc/menu02_05";
+	}
+	
+	@RequestMapping(value="/menu02_06", method=RequestMethod.GET)
+	public String menu02_06Get(){
+		logger.info("menu02_06 get");
+		
+		return "pc/menu02_06";
 	}
 	
 	@RequestMapping(value="/menu03_01", method=RequestMethod.GET)

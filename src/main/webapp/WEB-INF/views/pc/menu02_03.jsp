@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>의료진소개</button>
+						<button>입/퇴원안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
@@ -151,9 +151,9 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="진료안내">진료안내</h3>
 						<ul>
-							<li class="active"><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu02_03">입/퇴원안내</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu02_03">입/퇴원안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_04">제증명안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_05">비급여 수가 공지</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_06">장비소개</a></li>
@@ -164,7 +164,94 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">입/퇴원안내</h4><!-- 서브 콘텐츠 타이틀 -->
+		
+					<!--
+					.full	: padding :0;
+					.inner	: padding : 0 10px;
+					
+					서브페이지 url이 http://siwonhang.com/html/?pCode=499면,
+					1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
+					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
+					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
+					4. map 사용시 usemap 또한 class명과 일치합니다.
+					
+					-->
+					
+					<div class="inner">
+						<h5>입원 절차 안내</h5>
+						<ol class="list_num_h5">
+							<li>진료과 주치의 의학적 진단
+								<ul>
+									<li>각 외래 진료과 주치의의 의학적 판단</li>
+								</ul>
+							</li>
+							<li>입원결정
+								<ul>
+									<li>번호표 불이 들어오면 확인 후 건강보험증과 신분증을 들고 접수</li>
+									<li>선택진료를 원하시는 경우 선택진료 신청서를 작성하셔야 합니다.</li>
+								</ul>
+							</li>
+							<li>입원 수속
+								<ul>
+									<li>입·퇴원 담당자의 설명으로 입원서약서 작성(본인 또는 보호자)</li>
+									<li>선택진료 신청서 안내 및 작성(연대 보증인 설정)</li>
+								</ul>
+							</li>
+							<li>입원결정
+								<ul>
+									<li>의료보장(건강보험, 의료급여) 내용 확인</li>
+									<li>상급병실 신청 안내 및 접수</li>
+									<li>병동 간호사와 협의하여 병실 확정</li>
+								</ul>
+							</li>
+							<li>검사 · 처방전
+								<ul>
+									<li>병동, 병실에 대한 설명 후 지정된 병동 간호사의 안내를 받으신 후 입원</li>
+								</ul>
+							</li>
+						</ol>
+						
+						<h5>퇴원 절차 안내</h5>
+						<ol class="list_num_h5">
+							<li>진료과 주치의 의학적 진단
+								<ul>
+									<li>각 외래 진료과 주치의의 의학적 판단</li>
+								</ul>
+							</li>
+							<li>퇴원결정
+								<ul>
+									<li>주치의의 서명으로 퇴원 결정</li>
+									<li>병동 간호사의 퇴원 절차 안내</li>
+									<li>병동에서 최종진단명, 퇴원약 등 주치의의 지시사항 확인 후 퇴원 절차 수행</li>
+									<li>퇴원 시 제 증명 서류 신청 안내</li>
+								</ul>
+							</li>
+							<li>퇴원 진료비 심사 후 퇴원 결정
+								<ul>
+									<li>원무팀 심사계에서 중간진료비 납입 상황 확인 후 퇴원계산서와 대사</li>
+									<li>계산서 발행하고 병동 간호사에게 퇴원계산 완료 통보</li>
+									<li>진료비 정산이 끝나면 환자분 병실로 직접 전화 연락</li>
+								</ul>
+							</li>
+							<li>퇴원 수속 및 퇴원비 수납
+								<ul>
+									<li>원무팀 입·퇴원 수납 창구에서 퇴원 수속</li>
+									<li>퇴원 진료비 수납</li>
+								</ul>
+							</li>
+							<li>퇴원 안내
+								<ul>
+									<li>병동에서 퇴원약 수령, 퇴원 후 요양에 필요한 주의사항에 대한 교육</li>
+									<li>퇴원 시 필요한 제 증명 신청 서류 확인</li>
+									<li>외래 진료 예약 사항 확인 후 귀가</li>
+								</ul>
+							</li>
+						</ol>
+					
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

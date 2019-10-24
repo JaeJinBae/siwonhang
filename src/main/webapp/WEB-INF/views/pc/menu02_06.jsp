@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>의료진소개</button>
+						<button>장비소개</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
@@ -151,12 +151,12 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="진료안내">진료안내</h3>
 						<ul>
-							<li class="active"><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_03">입/퇴원안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_04">제증명안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_05">비급여 수가 공지</a></li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu02_06">장비소개</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu02_06">장비소개</a></li>
 						</ul>
 					</div>
 					<div class="customer">
@@ -164,7 +164,162 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">장비소개</h4><!-- 서브 콘텐츠 타이틀 -->
+		
+					<!--
+					.full	: padding :0;
+					.inner	: padding : 0 10px;
+					
+					서브페이지 url이 http://siwonhang.com/html/?pCode=499면,
+					1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
+					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
+					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
+					4. map 사용시 usemap 또한 class명과 일치합니다.
+					
+					-->
+					
+					
+					<div class="inner">
+						<div class="equipment-item bg51601">
+							<h6 class="tit">3D 항문직장초음파</h6>
+							<p class="con">
+								세계적으로 직장항문 초음파로 유명한 스웨덴의 B-K medical사의 3D 직장항문 초음파 도입.<br>
+								특히 변실금 환자에서의 괄약근 손상유무를 정확하게 진단 가능
+							</p>
+						</div>
+						<div class="equipment-item bg51602">
+							<h6 class="tit">Accuray D-5</h6>
+							<p class="con">
+								첨단 X-Ray 장비로 고주파 인버터 시스템이 구축되어 있으며<br>
+								높은 수준의 안전성 및 효율성으로 검사자 중심의 X-ray 검사장비 
+							</p>
+						</div>
+						<div class="equipment-item bg51603">
+							<h6 class="tit">Philips Access CT 16</h6>
+							<p class="con">
+								기존 CT보다 효율이 높고 내구성이 강한 3.5MHU 튜브를 장착하여 진단 효율을 61% 향상<br>
+								내구성이 강하여 하루에 진단할 수 있는 검사량이 증대되어 기존 CT보다 빠르게 검사가 진행이 가능 
+							</p>
+						</div>
+						<div class="equipment-item bg51604">
+							<h6 class="tit">골밀도검사기</h6>
+							<p class="con">
+								기존의 골밀도 측정에 국한 되었던 골밀도 진단기의 한계를 넘어<br>
+								인체의 지방량, 근육량, 골량을 분석하고 복부 및 하체 비만형 진단도 가능
+							</p>
+						</div>
+						<div class="equipment-item bg51605">
+							<h6 class="tit">소독장비</h6>
+							<p class="con">
+								강력한 체임버 밀폐성을 가지고 있으며 Double Door를 채택하여 소독 및 멸균이 완료된 의료장비는 <br>
+								청정구역으로 배출되어 재 오염을 구조적으로 방지되는 시스템을 적용
+							</p>
+						</div>
+						<div class="equipment-item bg51606">
+							<h6 class="tit">환자감시장치</h6>
+							<p class="con">
+								20초마다 환자의 상태를 기록하여 환자의 컨디션을 그래픽을 통해 표출시켜 <br>
+								의료진이 환자정보를 쉽게 얻을 수 있음
+							</p>
+						</div>
+						<div class="equipment-item bg51607">
+							<h6 class="tit">Electrical Surgical Table</h6>
+							<p class="con">
+								전자동 수술테이블로 리모트 컨트롤을 통해 환자가 직접 위치를 변경하지 않아도 되며 <br>
+								각 관절이 움직이게 설계되어 가장 적합한 수술자세를 유지할 수 있으며 <br>
+								환자는 테이블에서 편안함을 느낄 수 있음 
+							</p>
+						</div>
+						<div class="equipment-item bg51608">
+							<h6 class="tit">전동식 검진대</h6>
+							<p class="con">
+								의료진이 리모트컨트롤을 사용하여 검사의 최적화된 자세를 유지할 수 있으며 <br>
+								시트 보온 장치가 내장되어 있어 검진자의 편의성이 증대 
+							</p>
+						</div>
+						<div class="equipment-item bg51610">
+							<h6 class="tit">전동침대</h6>
+							<p class="con">
+								전동침대로 입원시 환자가 리모트 컨트롤을 통해 허리, 고관절, 무릎, 발목 등을 자유롭게 각도 조절이 가능.<br>
+								특히 거동이 불편한 환자도 보호자의 도움 없이 직접 조절 가능. 
+							</p>
+						</div>
+						<div class="equipment-item bg51611">
+							<h6 class="tit">수술 마취기</h6>
+							<p class="con">
+								수술 마취기로 혈액 내 산소 감소를 자동으로 측정하며 산소공급이 감소할 경우 7초 이내 경고음이 울려<br>
+								환자의 마취 상태를 안전하게 유지할 수 있게 함
+							</p>
+						</div>
+						<div class="equipment-item bg51612">
+							<h6 class="tit">수술실 무영등</h6>
+							<p class="con">
+								수술시 사용하는 무영등으로 수술에 가장 적합한 밝기를 제공하며<br> LED 전구를 사용하여 열이 발생하지 않아 수술 환경에 가장 적합.<br>
+								또한 자유로운 각도조절과 면적 및 빛의 거리 면에서 최적의 환경을 제공하여 <br>
+								수술시 그림자가 발생하지 않는 시스템을 구축
+							</p>
+						</div>
+						<div class="equipment-item bg51613">
+							<h6 class="tit">Suction Pump</h6>
+							<p class="con">
+								외과적인 수술과 검사에 사용되는 장비로 수술시 발생되는 오염물 등을 빨아 내는 장비이며 <br>
+								환자의 상태에 따라 흡입력을 조절할 수 있고, 저소음으로 수술시 최적의 환경을 제공 
+							</p>
+						</div>
+						<div class="equipment-item bg51614">
+							<h6 class="tit">LOGIQUE 초음파</h6>
+							<p class="con">
+								복부 및 갑상선 초음파 검사시 사용하며<br>
+								고품질의 영상 화질로 비정상적이거나 작은 병변도 발견할 수 있으며 <br>
+								해부학적 구조와 우수한 관통력으로 정확한 이미지를 구현 가능. 
+							</p>
+						</div>
+						<div class="equipment-item bg51615">
+							<h6 class="tit">내시경 감염관리 추적 시스템(Endoscope Tracking System)</h6>
+							<p class="con">
+								내시경과 대상자간의 정보를 연동하고 내시경 사용 후에 따르는 누수검사 → 세척 → 소독 → 보관 등<br>
+								제반 처리 과정을 체계적으로 모니터링 하며, 꼼꼼한 세척 절차 이행으로 감염의 위험을 원천적으로 감소
+							</p>
+						</div>
+						<div class="equipment-item bg51616">
+							<h6 class="tit">바이오피드백</h6>
+							<p class="con">
+								바이오피드백이란 컴퓨터 화면과 소리를 통해서 자신의 항문이 오그라드는 정도를 눈과 귀로<br>
+								느낄 수 있는 데, 항문 내 근육 근육 압력을 측정할 수 있는 엄지손가락 정도 크기의 감지용 센서를 <br>
+								넣어 잘못된 근육수축을 눈으로 직접 확인하고 스스로 운동을 통해 올바른 이완법을 익히는 치료
+							</p> 
+						</div>
+						<div class="equipment-item bg51617">
+							<h6 class="tit">유방촬영장비</h6>
+							<p class="con">
+								유방에 멍울이 잡히거나 통증이 있을 때는 물론, <br>
+								임신과 수유 시 유방의 변화에 대해서도 진단, 검사가 가능
+							</p>
+						</div>
+						<div class="equipment-item bg51618">
+							<h6 class="tit">배변조영술장비</h6>
+							<p class="con">
+								배변 시 항문-직장의 움직임과 직장의 변형 유무를 관찰할 수 있는 특수&nbsp;X-선 촬영으로 <br>
+								변비, 변실금 및 배변장애를 진단
+							</p>
+						</div>
+						<div class="equipment-item bg51619">
+							<h6 class="tit">올림푸스 내시경 EVIS EXERA Ⅲ</h6>
+							<p class="con">
+								올림푸스社 내시경 장비는 편리하고 정확한 진단 및 치료 가능은 물론 <br>
+								발견되기 어려운 병변 및 육안으로 확인하기 어려운 미세한 조직까지 진단
+							</p>
+						</div>
+						<div class="equipment-item bg51620">
+							<h6 class="tit">Arthrex 4D</h6>
+							<p class="con">
+								복강경 수술에 사용되는 Arthrex 4D는 Full HD 고화질로 정확하고 안전한 수술 가능
+							</p>
+						</div>
+						
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

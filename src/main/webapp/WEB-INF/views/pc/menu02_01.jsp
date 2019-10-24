@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -181,7 +181,7 @@
 
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment01_doc.png" alt="조현언대표원장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment01_doc.png" alt="조현언대표원장">
 						</div>
 						<div class="con">
 							<div class="title">
@@ -261,7 +261,7 @@
 					
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment02_doc.png" alt="정일권 대표원장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment02_doc.png" alt="정일권 대표원장">
 						</div>
 						<div class="con">
 							<div class="title">
@@ -344,7 +344,7 @@
 					
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment06_doc.png" alt="오종영원장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment06_doc.png" alt="오종영원장">
 						</div>
 						<div class="con">
 							<div class="title">
@@ -426,7 +426,7 @@
 					
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment03_doc.png" alt="박시영과장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment03_doc.png" alt="박시영과장">
 						</div>
 						<div class="con">
 							<div class="title">
@@ -508,7 +508,7 @@
 					
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment04_doc.png" alt="이호영과장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment04_doc.png" alt="이호영과장">
 						</div>
 						<div class="con">
 							<div class="title">
@@ -591,7 +591,7 @@
 					
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="/assets/img/contents/euipment05_doc.png" alt="양재남과장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment05_doc.png" alt="양재남과장">
 						</div>
 						<div class="con">
 							<div class="title">

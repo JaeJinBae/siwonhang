@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>의료진소개</button>
+						<button>외래 진료안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
@@ -151,8 +151,8 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="진료안내">진료안내</h3>
 						<ul>
-							<li class="active"><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu02_01">의료진소개</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu02_02">외래 진료안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_03">입/퇴원안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_04">제증명안내</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu02_05">비급여 수가 공지</a></li>
@@ -164,7 +164,44 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">외래 진료안내</h4><!-- 서브 콘텐츠 타이틀 -->
+		
+					<!--
+					.full	: padding :0;
+					.inner	: padding : 0 10px;
+					
+					서브페이지 url이 http://siwonhang.com/html/?pCode=499면,
+					1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
+					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
+					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
+					4. map 사용시 usemap 또한 class명과 일치합니다.
+					
+					-->
+					<div class="pcode50801">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/508_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-508-01">
+						</div>
+					</div>
+					
+					<div class="inner">
+					<h5>외래 진료시간 안내</h5>
+					<ul class="list_ul_h5">
+						<li>평일 - 오전 09:00 ~ 오후 06 : 00</li>
+						<li>토요일 - 오전 09:00 ~ 오후 01:00 </li>
+						<li>일요일, 공휴일은 휴진입니다.</li>
+					</ul>
+					
+					<h5>외래 진료절차 안내</h5>
+					<p class="pl20 pt20"><img src="${pageContext.request.contextPath}/resources/img/contents/508_img_01.png"></p>
+					
+					<h5>수납방법</h5>
+					<ul class="list_ul_h5">
+						<li>진료비를 납부하시면 다음에 가실 곳(예 : 주사실, 영상의학과, 물리치료실 등)을 친절히 안내해드립니다.</li>
+						<li>진료비 수납 후 영수증과 약 처방이 있는 경우 처방전을 발급해드립니다.</li>
+					</ul>
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>
