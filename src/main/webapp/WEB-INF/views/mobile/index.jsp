@@ -116,7 +116,7 @@
 				<ul class="special-diagnosis">
 					<li class="bg01">
 						<h5 class="tit">대장·항문외과</h5>
-						<a href="${pageContext.request.contextPath}/resources" class="more">자세히 보기</a>
+						<a href="${pageContext.request.contextPath}/m/" class="more">자세히 보기</a>
 					</li>
 					<li class="bg02">
 						<h5 class="tit">복강경수술</h5>
@@ -263,17 +263,13 @@
 						<a href="${pageContext.request.contextPath}/m/" class="more">MORE +</a>
 					</li>
 					<li class="newsletter">
-						
-		
-			<a href="${pageContext.request.contextPath}/m/">
-				<i class="thumb">
-					<img src="/html/board/board_image.php?M2tXi89Jq2fXkCAFKrjJCQvRLlfeZTLLoIOcx4DSPtSs7zid3vUmY5Ik5%2Bge1oNjzO%2FrqBWP51%2F%2Bo8gOkJ9G4%2BpMKF%2Fr2Bqy4oYJAZMM0l8%3D" alt="">
-					<i class="more">언론보도 +</i>
-				</i>
-				<span class="cap">국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</span>
-			</a>
-		
-		
+						<a href="${pageContext.request.contextPath}/m/">
+							<i class="thumb">
+								<img src="/html/board/board_image.php?M2tXi89Jq2fXkCAFKrjJCQvRLlfeZTLLoIOcx4DSPtSs7zid3vUmY5Ik5%2Bge1oNjzO%2FrqBWP51%2F%2Bo8gOkJ9G4%2BpMKF%2Fr2Bqy4oYJAZMM0l8%3D" alt="">
+								<i class="more">언론보도 +</i>
+							</i>
+							<span class="cap">국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</span>
+						</a>
 					</li>
 				</ul>
 			</div>
