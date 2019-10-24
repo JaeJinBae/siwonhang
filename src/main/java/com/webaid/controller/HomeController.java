@@ -140,10 +140,73 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	}
 	
 	@RequestMapping(value="/menu03_01", method=RequestMethod.GET)
-	public String menu03_01Get(){
-		logger.info("menu03_01 get");
+	public String menu03_01_00Get(){
+		logger.info("menu03_01_00 get");
 		
-		return "pc/menu03_01";
+		return "pc/menu03_01_00";
+	}
+	
+	@RequestMapping(value="/menu03_01_01", method=RequestMethod.GET)
+	public String menu03_01_01Get(){
+		logger.info("menu03_01_01 get");
+		
+		return "pc/menu03_01_01";
+	}
+	
+	@RequestMapping(value="/menu03_01_02", method=RequestMethod.GET)
+	public String menu03_01_02Get(){
+		logger.info("menu03_01_02 get");
+		
+		return "pc/menu03_01_02";
+	}
+	
+	@RequestMapping(value="/menu03_01_03", method=RequestMethod.GET)
+	public String menu03_01_03Get(){
+		logger.info("menu03_01_03 get");
+		
+		return "pc/menu03_01_03";
+	}
+	
+	@RequestMapping(value="/menu03_01_04", method=RequestMethod.GET)
+	public String menu03_01_04Get(){
+		logger.info("menu03_01_04 get");
+		
+		return "pc/menu03_01_04";
+	}
+	
+	@RequestMapping(value="/menu03_01_05", method=RequestMethod.GET)
+	public String menu03_01_05Get(){
+		logger.info("menu03_01_05 get");
+		
+		return "pc/menu03_01_05";
+	}
+	
+	@RequestMapping(value="/menu03_01_06", method=RequestMethod.GET)
+	public String menu03_01_06Get(){
+		logger.info("menu03_01_06 get");
+		
+		return "pc/menu03_01_06";
+	}
+	
+	@RequestMapping(value="/menu03_01_07", method=RequestMethod.GET)
+	public String menu03_01_07Get(){
+		logger.info("menu03_01_07 get");
+		
+		return "pc/menu03_01_07";
+	}
+	
+	@RequestMapping(value="/menu03_01_08", method=RequestMethod.GET)
+	public String menu03_01_08Get(){
+		logger.info("menu03_01_08 get");
+		
+		return "pc/menu03_01_08";
+	}
+	
+	@RequestMapping(value="/menu03_01_09", method=RequestMethod.GET)
+	public String menu03_01_09Get(){
+		logger.info("menu03_01_09 get");
+		
+		return "pc/menu03_01_09";
 	}
 	
 	@RequestMapping(value="/menu03_02", method=RequestMethod.GET)
