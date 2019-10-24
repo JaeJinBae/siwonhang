@@ -6,7 +6,7 @@
 * 최초작성자 : 더웹 유대경
 ***********************************************************************/
 body {-webkit-text-size-adjust: 100%;}
-h5{font-size:1.3em; line-height:1.3em; font-weight:700; color:#2c3d96; margin-bottom:10px; background:url(/assets/img/m/contents/h6_bg.jpg) no-repeat left top; padding-left:13px;}
+h5{font-size:1.3em; line-height:1.3em; font-weight:700; color:#2c3d96; margin-bottom:10px; background:url(../../img/m/contents/h6_bg.jpg) no-repeat left top; padding-left:13px;}
 h6{position:relative; font-size:1em; line-height:1.3em; color:#2c3d96; margin-bottom:10px; padding-left:25px;}
 h6::before{position:absolute; display:inline-block; content:''; width:8px; height:3px; background:#2c3d96; left:10px; top:8px;}
 .p-h5{background:#f8f8f8; padding:15px; font-size:1em; line-height:1.8em; margin-bottom:30px;}
@@ -27,12 +27,12 @@ ul[class^="list_ul"], ol[class^="list_num"]{margin:10px 0 50px 0;}
 .list_ul_h6, .list_num_h6 {margin-left:14px !important;}
 ul[class^="list_ul"] li, ol[class^="list_num"] li {line-height:1.5em; position: relative; margin-top:20px;}
 ul[class^="list_ul"] >li, ol[class^="list_num"] li ul li {padding-left:14px; margin-top:11px; line-height: 1.3em;}
-ul[class^="list_ul"] >li:before, ol[class^="list_num"] li ul li:before {content: ''; position: absolute; width: 8px; height: 8px; left: 0; top:3px; line-height: 1.7em; background:url('/assets/img/common/icon_ul_h5.png') no-repeat 4px center; }
+ul[class^="list_ul"] >li:before, ol[class^="list_num"] li ul li:before {content: ''; position: absolute; width: 8px; height: 8px; left: 0; top:3px; line-height: 1.7em; background:url('../../img/common/icon_ul_h5.png') no-repeat 4px center; }
 ul[class^="list_ul"] >li:first-child{margin-top:0;}
 ul[class^="list_ul"] >li >ul {margin-top:14px;}
 ul[class^="list_ul"] li >ul >li{padding-left:12px; margin-top:11px;}
-ul[class^="list_ul"] >li >ul >li:before{content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 8px; background:url('/assets/img/common/icon_ul_h5.png') no-repeat center -109px;}
-.tbl td >ul >li:before {content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 6px; background:url('/assets/img/common/icon_ul_h5.png') no-repeat center -205px;}
+ul[class^="list_ul"] >li >ul >li:before{content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 8px; background:url('../../img/common/icon_ul_h5.png') no-repeat center -109px;}
+.tbl td >ul >li:before {content: ''; position: absolute; width: 11px; height: 11px; left: 0; top: 6px; background:url('../../img/common/icon_ul_h5.png') no-repeat center -205px;}
 ul[class^="list_ul"] >li >ul >li:first-child{margin-top:0;}
 ul[class^="list_ul"] ul ul {margin-top:10px; background:#f3f4fa; padding:15px; box-sizing: border-box;}
 ul[class^="list_ul"] >li >ul >li >ul >li {padding-left:8px; margin-top:9px;}
@@ -140,7 +140,7 @@ normal;} ol[class^="list_num"] >li >ul li:before {top: 7px;}
 .doctor-list .doctor .doctor-info{width:100%; display:inline-block; margin-bottom:35px;}
 .doctor-list .doctor .doctor-info .doctor-pic{position:relative; float:left; width:50%; height:300px; overflow:hidden;}
 .doctor-list .doctor .doctor-info .doctor-pic img{position:absolute; width:100%; height:100%; object-fit:cover; border:2px solid red;}
-.doctor-list .doctor .doctor-info .doctor-name{position:relative; float:left; width:50%; height:300px; background:url(/assets/img/m/contents/simbol.png) no-repeat center 30px;}
+.doctor-list .doctor .doctor-info .doctor-name{position:relative; float:left; width:50%; height:300px; background:url(../../img/m/contents/simbol.png) no-repeat center 30px;}
 .doctor-list .doctor .doctor-info .doctor-name p{position:absolute; right:0; bottom:0; width:calc(100% - 20px); margin:0 10px; border-top:2px solid #2c3d96; border-bottom:1px solid #eee; padding:20px 0;}
 .doctor-list .doctor .doctor-info .doctor-name b{display:block; font-size:1.7em; margin-bottom:10px; line-height:1em; font-weight:700; color:#222;}
 .doctor-list .doctor .doctor-info .doctor-name span{font-size:1.2em; line-height:1em;}
@@ -249,4 +249,4 @@ td >ul >li.no-bu:before	{ display: none !important; }
 .siwonhang-doc .item:last-child{margin-top:10px;}
 
 .siwonhang-doc .item em{display:block; margin-bottom:25px; font-size:18px; font-weight:700;}
-.siwonhang-doc .item a{display:block; margin:0 auto 10px auto; width:230px; height:50px; padding-left:30px; line-height:50px; background:#687095 url(/assets/img/contents/btn_download.png) no-repeat 90% center; color:#fff; font-size:15px; text-align:left; box-sizing:border-box;}
+.siwonhang-doc .item a{display:block; margin:0 auto 10px auto; width:230px; height:50px; padding-left:30px; line-height:50px; background:#687095 url(../../img/contents/btn_download.png) no-repeat 90% center; color:#fff; font-size:15px; text-align:left; box-sizing:border-box;}

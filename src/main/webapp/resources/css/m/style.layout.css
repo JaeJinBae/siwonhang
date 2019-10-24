@@ -83,7 +83,7 @@ body{background:#000;} /* header position이 fixed되어 header height값만큼 
 /* 2차 카테고리 */
 #header #gnb ul li.gnb button + ul.lnb-wrap{position:relative; width:100%; background:#4d547a; display:none; z-index:10;}
 #header #gnb ul li.gnb button + ul.lnb-wrap li.lnb{width:100%; padding:0 10px; box-sizing:border-box;}
-#header #gnb ul li.gnb button + ul.lnb-wrap li.lnb a{display:inline-block; width:100%; font-size:1em; line-height:3.5em; font-weight:400; padding:0 25px; color:#fff; box-sizing:border-box; border-bottom:1px solid rgba(255,255,255,0.1); background:url(/assets/img/m/common/lnb_bg.png) no-repeat 10px center;}
+#header #gnb ul li.gnb button + ul.lnb-wrap li.lnb a{display:inline-block; width:100%; font-size:1em; line-height:3.5em; font-weight:400; padding:0 25px; color:#fff; box-sizing:border-box; border-bottom:1px solid rgba(255,255,255,0.1); background:url(../../img/m/common/lnb_bg.png) no-repeat 10px center;}
 #header #gnb ul li.gnb button + ul.lnb-wrap li.lnb.active{}
 #header #gnb ul li.gnb button + ul.lnb-wrap li.lnb.active a{}
 
@@ -106,15 +106,15 @@ body{background:#000;} /* header position이 fixed되어 header height값만큼 
 #sub-visual{width:100%; background:#ddd; }
 #sub-visual .inner{height:200px; background-size:cover; background-position:left top; background-repeat:no-repeat;}
 
-#sub-visual[data-menu="병원소개"] .inner{background-image:url(/assets/img/m/contents/visual_bg0101.jpg);}
-#sub-visual[data-menu="진료안내"] .inner{background-image:url(/assets/img/m/contents/visual_bg0201.jpg); }
-#sub-visual[data-menu="특성화 진료"] .inner{background-image:url(/assets/img/m/contents/visual_bg0301.jpg); background-position:right top;}
-#sub-visual[data-menu="외과 질환 센터"] .inner{background-image:url(/assets/img/m/contents/visual_bg0401.jpg); }
-#sub-visual[data-menu="내과 질환 센터"] .inner{background-image:url(/assets/img/m/contents/visual_bg0501.jpg); }
-#sub-visual[data-menu="건강검진"] .inner{background-image:url(/assets/img/m/contents/visual_bg0601.jpg); background-position:right top;}
-#sub-visual[data-menu="커뮤니티"] .inner{background-image:url(/assets/img/m/contents/visual_bg0701.jpg); background-position:right top;}
-#sub-visual[data-menu="멤버쉽"] .inner{background-image:url(/assets/img/m/contents/visual_bg0701.jpg); background-position:right top;}
-#sub-visual[data-menu="멤버십"] .inner{background-image:url(/assets/img/m/contents/visual_bg0701.jpg); background-position:right top;}
+#sub-visual[data-menu="병원소개"] .inner{background-image:url(../../img/m/contents/visual_bg0101.jpg);}
+#sub-visual[data-menu="진료안내"] .inner{background-image:url(../../img/m/contents/visual_bg0201.jpg); }
+#sub-visual[data-menu="특성화 진료"] .inner{background-image:url(../../img/m/contents/visual_bg0301.jpg); background-position:right top;}
+#sub-visual[data-menu="외과 질환 센터"] .inner{background-image:url(../../img/m/contents/visual_bg0401.jpg); }
+#sub-visual[data-menu="내과 질환 센터"] .inner{background-image:url(../../img/m/contents/visual_bg0501.jpg); }
+#sub-visual[data-menu="건강검진"] .inner{background-image:url(../../img/m/contents/visual_bg0601.jpg); background-position:right top;}
+#sub-visual[data-menu="커뮤니티"] .inner{background-image:url(../../img/m/contents/visual_bg0701.jpg); background-position:right top;}
+#sub-visual[data-menu="멤버쉽"] .inner{background-image:url(../../img/m/contents/visual_bg0701.jpg); background-position:right top;}
+#sub-visual[data-menu="멤버십"] .inner{background-image:url(../../img/m/contents/visual_bg0701.jpg); background-position:right top;}
 
 /**********************************************************************/
 
@@ -127,8 +127,8 @@ body{background:#000;} /* header position이 fixed되어 header height값만큼 
 #breadcrumb a, #breadcrumb button{display:inline-block; height:inherit; vertical-align:middle;}
 #breadcrumb .full > ul > li{float:left; width:50%; box-sizing:border-box;}
 #breadcrumb li.gnb{position:relative;}
-#breadcrumb li.gnb button{width:100%; height:60px; line-height:60px; padding:0 15px; box-sizing:border-box; text-align:left; color:#757575; font-size:14px; letter-spacing:-0.4px; background:url(/assets/img/m/common/arrow.png) no-repeat 95% center;}
-#breadcrumb li.gnb button.active{background:url(/assets/img/m/common/arrow_up.png) no-repeat 95% center;}
+#breadcrumb li.gnb button{width:100%; height:60px; line-height:60px; padding:0 15px; box-sizing:border-box; text-align:left; color:#757575; font-size:14px; letter-spacing:-0.4px; background:url(../../img/m/common/arrow.png) no-repeat 95% center;}
+#breadcrumb li.gnb button.active{background:url(../../img/m/common/arrow_up.png) no-repeat 95% center;}
 #breadcrumb li.gnb:nth-child(2){background:#fff;}
 #breadcrumb li.gnb ul{display:none; position:absolute; width:100%; top:60px; background:#f9f9f9; box-sizing:border-box;}
 #breadcrumb li.gnb ul li{}
@@ -154,7 +154,7 @@ body{background:#000;} /* header position이 fixed되어 header height값만큼 
 /**********************************************************************
 * Descript : 풋터 스타일
 ***********************************************************************/
-#footer{position:relative; width:100%; background:#c5c7cc url(/assets/img/common/logo.png) no-repeat center 25px; color:#222; text-align:center; font-size:1em; letter-spacing:-0.5px; padding:100px 0 25px 0;}
+#footer{position:relative; width:100%; background:#c5c7cc url(../../img/common/logo.png) no-repeat center 25px; color:#222; text-align:center; font-size:1em; letter-spacing:-0.5px; padding:100px 0 25px 0;}
 #footer span{display:inline-block; line-height:2em; font-size:0.85em;}
 #footer i.line{display:inline-block; margin:0 10px; line-height:2em; font-size:12px;}
 #footer p.copyright{font-size:0.8em; margin-top:25px;}

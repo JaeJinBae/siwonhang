@@ -35,11 +35,11 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		if(device.isMobile()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "mobile/mIndex";
+			return "mobile/index";
 		}else if(device.isTablet()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "mobile/mIndex";
+			return "mobile/index";
 		}else{
 			deviceType="normal";
 			logger.info("디바이스타입= "+deviceType);
