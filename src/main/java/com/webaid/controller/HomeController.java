@@ -369,25 +369,11 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu06_01";
 	}
 	
-	@RequestMapping(value="/menu06_01read", method=RequestMethod.GET)
-	public String menu06_01readGet(){
-		logger.info("menu06_01read get");
-		
-		return "pc/menu06_01Read";
-	}
-	
 	@RequestMapping(value="/menu06_02", method=RequestMethod.GET)
 	public String menu06_02Get(){
 		logger.info("menu06_02 get");
 		
 		return "pc/menu06_02";
-	}
-	
-	@RequestMapping(value="/menu06_02read", method=RequestMethod.GET)
-	public String menu06_02readGet(){
-		logger.info("menu06_02read get");
-		
-		return "pc/menu06_02Read";
 	}
 	
 	@RequestMapping(value="/menu06_03", method=RequestMethod.GET)
@@ -404,39 +390,46 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu06_04";
 	}
 	
-	@RequestMapping(value="/menu06_04read", method=RequestMethod.GET)
-	public String menu06_04readGet(){
-		logger.info("menu06_04read get");
+	@RequestMapping(value="/menu07_01", method=RequestMethod.GET)
+	public String menu07_01Get(){
+		logger.info("menu07_01 get");
 		
-		return "pc/menu06_04Read";
+		return "pc/menu07_01";
+	}
+
+	@RequestMapping(value="/menu07_02", method=RequestMethod.GET)
+	public String menu07_02Get(){
+		logger.info("menu07_02 get");
+		
+		return "pc/menu07_02";
 	}
 	
-	@RequestMapping(value="/menu06_05", method=RequestMethod.GET)
-	public String menu06_05Get(){
-		logger.info("menu06_05 get");
+	@RequestMapping(value="/menu07_03", method=RequestMethod.GET)
+	public String menu07_03Get(){
+		logger.info("menu07_03 get");
 		
-		return "pc/menu06_05";
+		return "pc/menu07_03";
 	}
 	
-	@RequestMapping(value="/menu06_05read", method=RequestMethod.GET)
-	public String menu06_05read(){
-		logger.info("menu06_05read get");
+	@RequestMapping(value="/menu07_04", method=RequestMethod.GET)
+	public String menu07_04Get(){
+		logger.info("menu07_04 get");
 		
-		return "pc/menu06_05Read";
+		return "pc/menu07_04";
 	}
 	
-	@RequestMapping(value="/menu06_05write", method=RequestMethod.GET)
-	public String menu06_05writeGet(){
-		logger.info("menu06_05write get");
+	@RequestMapping(value="/menu07_05", method=RequestMethod.GET)
+	public String menu07_05Get(){
+		logger.info("menu07_05 get");
 		
-		return "pc/menu06_05Write";
+		return "pc/menu07_05";
 	}
 	
-	@RequestMapping(value="/menu06_05update", method=RequestMethod.GET)
-	public String menu06_05updateGet(){
-		logger.info("menu06_05update get");
+	@RequestMapping(value="/menu07_06", method=RequestMethod.GET)
+	public String menu07_06Get(){
+		logger.info("menu07_06 get");
 		
-		return "pc/menu06_05Update";
+		return "pc/menu07_06";
 	}
 	
 }
