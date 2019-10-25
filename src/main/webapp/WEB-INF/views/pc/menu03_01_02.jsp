@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -150,37 +150,37 @@
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
 								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
 								</ul>
 							</li>
 							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,91 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">대장·항문외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/513_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_01" title=""><span>치핵</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_01_02" title=""><span>치루</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_03" title=""><span>치열</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_04" title=""><span>항문주위농양</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_05" title=""><span>직장류</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_06" title=""><span>직장탈출증</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_07" title=""><span>화농성 한선염</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_08" title=""><span>모소동</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_09" title=""><span>기타</span></a>
+							</li>
+							<li>
+								<a href="#" title=""><span></span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					<h5>치루란?</h5>
+					<p class="pl20 pt20">
+						항문과 직장 주위 조직에 염증이 생겨 곪은 것을 항문주위농양이라 하며, 이 상태가 만성화되어 항문 안쪽과 바깥쪽에 길이 생겨 고름이 나오는 경우를 치루라고 합니다.<br>
+						치루는 항문관의 내구와 연결되어 있는 후천적으로 형성된 누관을 말하며, 보통 항문 주위의 고름이 빠진 후 누공을 형성해 치루가 됩니다.<br><br>
+					
+						쉽게 말하면 항문 내부터 항문외측까지 터널이 형성되어 항문 내의 분비물이 항문 주위 구멍으로 새어나오는 증상을 치루라고 합니다.
+					</p>
+					
+					
+					<h5>치루의 원인</h5>
+					<p class="pl20 pt20">
+						항문 내 염증 , 외상, 치열, 결핵, 방선균증, 크론병, 암
+					</p>
+					
+					<h5>치루의 증상 </h5>
+					<p class="pl20 pt20">
+						외구가 존재 / 고름이 배출 / 외구 주위가 딱딱함/ 통증 
+					</p>
+					
+					<h5>치루의 치료</h5>
+					<p class="pl20 pt20">
+						개방술식의 변형법<br>
+						치루의 전루관을 개방 후 긁어 낸 다음, 안쪽 부분의 점막과 괄약근 조직을 봉합하는 수술법으로 변실금의 후유증이 적은 방법입니다.<br><br>
+					
+						누관심도려뽑기(괄약근 보존술식)<br>
+						누관심도려뽑기는 개방술식으로 괄약근의 손상이 심할 경우 시행하며, 외구에서부터 누관을 도려 뽑아내고 내구쪽은 봉합하거나 근육을 이용해 막아주는 근육 충진술을 해줍니다.<br><br>
+					
+						SETON 법 (배액선 법)<br>
+						내구가 항문과 위쪽에 있어서 개방술식을 하면 괄약근이 손상되어 변실금이 생길 것 같은 경우에, 외구에서 내구로 끈을 통과시켜 묶어 놓는 방법으로
+						꽉 조여 놓으면 괄약근이 서서히 잘라지고 미리 잘라졌던 부분은 다시 붙이면서 괄약근 손상이 예방되는 방법입니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

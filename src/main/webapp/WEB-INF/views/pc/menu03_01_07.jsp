@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -150,37 +150,37 @@
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
 								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
 								</ul>
 							</li>
 							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,94 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">대장·항문외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/513_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_01" title=""><span>치핵</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_02" title=""><span>치루</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_03" title=""><span>치열</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_04" title=""><span>항문주위농양</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_05" title=""><span>직장류</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_06" title=""><span>직장탈출증</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_01_07" title=""><span>화농성 한선염</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_08" title=""><span>모소동</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_09" title=""><span>기타</span></a>
+							</li>
+							<li>
+								<a href="#" title=""><span></span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					<h5>화농성 한선염</h5>
+					<p class="pl20 pt20 pCode56701">
+						<img src="${pageContext.request.contextPath}/resources/img/m/contents/567_img_01.png" alt="">
+						화농성 한선염(한선 농양)이란 땀샘에서 시작되는 만성염증으로 겨드랑이 회음부 서혜부 외음부 및 항문 주위에 생길 수 있습니다.<br>
+						정확한 생성빈도는 알 수가 없으나 치루에 비하여 1:300으로 생성된다고 생각되며 여자에게서 남자보다 많으며 
+						20-40세 사이에 가장 많은 생성빈도를 보이며 인종별 차이가 있다고 생각된다. 비만, 여드름, 불결한 위생, 다한, 탈모제 등이 유발요인이 될 수 있습니다.  
+					</p>
+					
+					<h5>원인</h5>
+					<p class="pl20 pt20">
+						화농성 한선염의 원인은 아포크린땀샘의 이상에 의하여 생기는 질환으로 아포크린땀샘은 겨드랑이 둔부 항문 외음부 배꼽주위, 
+						외이 두피 등에 주로 존재하며 대개 모공과 같이 있으며 피하지방까지 내려가 있습니다. <br>
+						우리의 몸은 사춘기가 지난 후에 활성화되며 진하고 끈끈한 분비물을 냅니다. 대개의 경우에 진피에 국한되어 존재하는 코일형상의 땀샘이며 피부표면에서 약 5mm정도가 떨어져 있다. 이러한 땀샘이 진한 분비물에 의하여 막히는 경우에 염증이 생기며 한선농양이 생긴다고 생각됩니다.한선 농양이 사춘기 이후에 생기므로 남성호르몬(Androgen)이 생성원인에 작용한다고 생각된다. 또한.한선 농양은 피하지방이 많은 사람에게서 더욱 많은 빈도를 보인다. 아포크린땀샘이 감염이 되기 위하여서는 땀샘의 내관이 막히게 되며 내관이 늘어나고 염증반응이 생기며 이에 따라 이차적 세균감염이 있어야 합니다. 
+					</p>
+					
+					<h5>증상</h5>
+					<p class="pl20 pt20">
+						피부 염증 및 종기가 생깁니다 <br>
+						물처럼 연하고 냄새가 많이 나는 분비물을 보입니다.<br>
+						누공을 형성해 섬유화 변화를 일으켜 관절의 운동을 방해할 수 있습니다.<br>
+						분비물의 냄새가 심해 사회 생활에 지장이 생길 수 있습니다. 
+					
+					</p>
+					
+					<h5>치료</h5>
+					<p class="pl20 pt20">
+						수술적 치료에는 총 4가지의 방법이 있습니다.<br><br>
+						① 절제와 일차봉합<br>
+						② 절제와 피부이식 <br>
+						③ 절제와 조대술 <br>
+						④ 절제와 충전 <br><br>
+					
+						1차 봉합은 비교적 작은 병변에 사용이 되며, 병변이 더 큰 경우에는 
+						광범위한 절제 후 개방창상을 남겨 놓고 육아 조직에 의한 상처 치유가 생기도록 하는 것이 가장 흔한 외과적 치료입니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

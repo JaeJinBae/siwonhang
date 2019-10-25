@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -150,37 +150,37 @@
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
 								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
 								</ul>
 							</li>
 							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,81 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">대장·항문외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/513_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_01" title=""><span>치핵</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_02" title=""><span>치루</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_03" title=""><span>치열</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_04" title=""><span>항문주위농양</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_05" title=""><span>직장류</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_06" title=""><span>직장탈출증</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_07" title=""><span>화농성 한선염</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_01_08" title=""><span>모소동</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_09" title=""><span>기타</span></a>
+							</li>
+							<li>
+								<a href="#" title=""><span></span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					<h5>모소동</h5>
+					<p class="pl20 pt20 pCode56801">
+						<img src="${pageContext.request.contextPath}/resources/img/m/contents/568_img_01.png" alt="">
+						모소동이란 [그림1] 과 같이 엉덩이선 피부에 생기는 만성적인 감염증이라 할 수 있습니다.<br>
+						이 질환은 여자보다 남자에서 흔히 발생하며 주로 사춘기에서 40살에 흔한 질환이며 비만이 있거나 체모가 딱딱하고 두꺼운 사람에게서 잘 생깁니다.
+					</p>
+					
+					<h5>증상</h5>
+					<p class="pl20 pt20">
+						모소동의 증상은 나타나는 증상의 크기가 작은 보조개 모양부터 큰 엉덩이에 이르기 까지 다양해서 어느 한 가지 라고 말씀드리기가 어렵습니다.<br>
+						주로 병변이 있는 구멍으로부터 액체성분이 흘러나오게 됩니다. 이것 역시 맑은 액체에서부터 피가 섞여 있거나 고름처럼 혼탁한 액체가 흘러 나올 수도 있습니다. <br>
+						세균감염이 동반되면 주위의 피부가 붉게 변하고 거길 누르면 통증이 있고 흘러나오는 액체에서 심한 냄새가 나기도 합니다. <br>
+						또한 감염의 상태가 심하면 열과 감기 증상과 같은 근육통이 생기기도 합니다. 
+					</p>
+					
+					<h5>치료</h5>
+					<p class="pl20 pt20">
+						갑자기 생긴 모소동의 경우는 국소마취하에 절개해 고름 제거를 합니다.<br>
+						만성적인 모소동의 경우는 수술을 해서 염증이 있는 공간을 외부에 노출시키거나 공간자체를 완전히 들어 내버리는 방법으로 치료를 합니다. <br>
+						피부에 생긴 구멍이 여러 개 이거나 자주 재발하는 경우는 반드시 수술적 치료만이 그 질환을 치료 할 수 있는 유일한 방법입니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -150,37 +150,37 @@
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
 								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
 								</ul>
 							</li>
 							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,162 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">대장·항문외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/513_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab active">
+						<ul class="active">
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_01_01" title=""><span>치핵</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_02" title=""><span>치루</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_03" title=""><span>치열</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_04" title=""><span>항문주위농양</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_05" title=""><span>직장류</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_06" title=""><span>직장탈출증</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_07" title=""><span>화농성 한선염</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_08" title=""><span>모소동</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_01_09" title=""><span>기타</span></a>
+							</li>
+							<li>
+								<a href="#" title=""><span></span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>치질(치핵)</h5>
+					<p class="pl20 pt20">
+						치질이란?치질은 항문에 생기는 질환을 통칭하는 말로 그 중 가장 많은 질환이 치핵입니다.<br>
+						항문은 평상시에는 닫는 기능의 일부를 담당하고 배변 시에는 충격을 완화시켜주는 기능을 하며, 배변 시에 항문 밖으로 밀려 나왔다가 끝나면
+						다시 들어가는데, 들어가지 않고 밀려나온 상태로 있는 것이 내치핵, 즉 일반 사람들이 말하는 암치질입니다.
+					</p>
+					
+					<h5>치핵의 원인</h5>
+					<p class="pl20 pt20">
+						변비 및 설사 / 임신/ 음주 / 과도한 운동/ 오래 앉아있는 자세
+					</p>
+					
+					
+					<h5>치핵의 종류 및 증상</h5>
+					<p class="pl20 pt20">
+						내치핵 : 항문 안쪽에 발생하는 치핵으로 일반적인 치핵 항문 안쪽의 조직이 반복적인 손상으로 탄력을 잃어버리고 점차 바깥쪽으로 탈출됩니다.
+					</p>
+					
+					<table class="tbl">
+						<caption>시원항병원 기본종합검진</caption>
+						<colgroup>
+							<col width="25%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>내치핵 분류</th>
+								<th>증상</th>
+							</tr>
+						</thead>
+						<tr>
+							<th>1도 치핵 </th>
+							<td>항문 안쪽에만 머물러 있는 초기 상태이며 무통의 출혈이 있습니다.</td>
+						</tr>
+						<tr>
+							<th>2도 치핵 </th>
+							<td>배변 시에 항문 밖으로 치핵이 빠져 나오나 자연스럽게 안쪽으로 들어갑니다.</td>
+						</tr>
+						<tr>
+							<th>3도 치핵 </th>
+							<td>배변 시 힘을 주면 치핵이 항문 밖으로 빠져 나오지만 손으로 밀어 넣으면 들어갑니다.</td>
+						</tr>
+						<tr>
+							<th>4도 치핵 </th>
+							<td>빠져 나온 치핵을 밀어 넣을 수 없거나 밀어 넣어도 다시 나옵니다.</td>
+						</tr>
+					</table>
+					
+					<p class="pl20 pt20">
+						외치핵 : 항문 바깥쪽에 생기며 항상 겉에 나와있습니다. 혈전성으로 생기는 경우가 많고 대부분 통증을 유발합니다.
+					</p>
+					
+					<h5>치핵의 치료</h5>
+					<p class="pl20 pt20">
+						치핵의 치료 방법은 전문의의 진찰을 자세히 받은 후 항문의 타 질환 동반여무, 나이, 생활여건, 직업 등을 고려하여 적절한 치료 방법을 선택하는 것이 제일 좋습니다.<br>
+						시원항병원은 환자 개개인의 항문 상태에 따라 대장·항문외과 세부전문의가 적합한 방법으로 치료합니다.<br><br>
+					
+						1도 혹은 2도의 치핵 : 보존적요법과 비수술적 치료를 하고 있습니다.<br>
+						종류 : 경화요법, 고무결찰요법, 양극전기 온열요법, 마이크로 웨이브치료, 적외선 응고요법, 냉동수술요법, 직류전기요법, 레이저수술요법<br><br>
+					
+						3도 혹은 4도의 치핵 : 수술 배변 시 밀고 나왔다가 손으로 밀어 넣어야만 들어가거나 들어가지 않고 항문 밖에 계속 남아 있는 상태인 3도 혹은 4도 치핵은 수술하는 것이 원칙입니다.<br><br>
+						★ 저희 병원은 원형자동문합기를 이용한 TST 수술을 하고 있습니다.
+					</p>
+					
+					
+					<h5>TST수술법이란</h5>
+					<p class="pl20 pt20">
+						기존의 PPH 수술은 신경이 발달하지 않은 신경말단상부의 항문관을 360˚ 절제 및 봉합하는 수술입니다. 이 수술의 장점은 기존 치핵수술보다 통증이 현저히 적고 수술시간이 빠르다는 이점을 지니고 있습니다.<br>
+						하지만 치핵을 제외한 조직도 함께 절제 및 봉합하기 때문에 부작용이 일어날 수 있습니다. 가장 큰 부작용은 항문관이 좁아져 배변활동에 지장을 주는 협착증과 요폐 또는 배뇨불편이 일어날 수 있습니다.<br><br>
+					
+						TST(Tissue Selective Theraphy) 수술법은 세계 최초로 치핵조직만 선택하여 제거할 수 있도록 고안되었으며, PPH 수술의 장점은 보존하고 단점을 보완하였습니다.<br>
+					</p>
+					
+					<h5>TST수술 과정</h5><br>
+					<img src="${pageContext.request.contextPath}/resources/img/contents/561_img_01.jpg" alt="">
+					<p class="pl20 pt20">
+						1. 환자의 치핵 상태를 확인한 후 정상조직이 아닌 치핵 조직만 제거하기 위해 고안된 Dilator라고 불리우는 기구를 항문에 삽입합니다.<br>
+						(사람의 생김새가 모두 다르듯 치핵이 나타난 모양과 위치 및 크기도 다릅니다.)<br><br>
+					
+						2. 제거해야 할 치핵을 기구 안으로 들어가기 쉽게 만드는 작업을 합니다.<br><br>
+					
+						3. 기구를 이용하여 치핵 조직을 견인하여 늘어진 조직을 제거할 준비를 합니다. 기구가 작동한 후 빼내면 자동으로 늘어진 치핵조직이 잘라짐과 동시에 봉합됩니다. <br>
+						늘어져있던 치핵 조직이 당겨지며 원래의 위치로 복귀하게 됩니다.<br><br>
+					
+						4. 수술 4~6주 후에는 내·외치핵으로 가는 혈류가 차단되어 부풀어 있던 내·외치핵이 줄어들어 원래의 자연스러운 모습으로 돌아옵니다.<br><br>
+					</p>
+					
+					<h5>TST수술의 장점</h5>
+					<p class="pl20 pt20">
+						기존 PPH수술과 같이 수술시간이 짧고, 일상생활로 복귀가 빠릅니다.<br>
+						PPH 수술보다 통증이 적으며, 항문 상피에서 수술이 이루어지기 때문에 상처가 거의 없습니다.<br>
+						기존의 치핵 절제술(극심한 고통이 따르며, 회복기간이 긴 단점이 있음)과 같이 치핵조직만 골라서 제거하기 때문에 재발률이 낮으며, <br>
+						PPH 수술과 다르게 정상조직을 제거하지 않아 수술 후에 발생하는 협착증, 요폐, 배뇨불편 증상이 없습니다.
+					</p>
+					
+					<h5>TST - Mega™ </h5>
+					<img src="${pageContext.request.contextPath}/resources/img/contents/561_img_02.jpg" alt="">
+					<p class="pl20 pt20">
+						TST(Tissue Selective Theraphy)는 환자의 치핵 상태에 맞제 DAO(Dilator Anoscope Obturator) unit을 선택하여 수술을 진행합니다. <br>
+						환자마다 치핵의 크기와 모양이 일정하지 않기 때문에 완벽하게 치핵을 자르고 stapling 하는 것이 중요합니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>
