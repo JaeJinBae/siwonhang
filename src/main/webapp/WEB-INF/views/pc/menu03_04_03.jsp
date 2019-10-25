@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
-								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,88 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">비만외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/574_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_01" title=""><span>비만도 측정</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_02" title=""><span>비만의 약물치료</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_04_03" title=""><span>비만의 주사치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_04" title=""><span>부분비만 지방흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_05" title=""><span>미니 지방 흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_06" title=""><span>비만의 식이요법</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(4)').addClass('active');
+						$('.pnb > ul > li:nth-child(4) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>비만의 주사치료</h5>
+					<p class="pl20 pt20">
+						먹는 것과 운동으로 열심히 살을 빼도 예쁜 S라인을 만들기는 쉽지 않습니다.&nbsp;<br>
+						사춘기, 임신기, 폐경기 전후에 허벅지 안쪽과 바깥쪽, 복부, 팔뚝 부위에 주로 생기는 셀룰라이트(cellulite)는 지방덩어리로, 피부가 마치 오렌지껍질처럼 울퉁불퉁하도록 만드는데 살이 빠져도 그대로 남아있기도 합니다.
+					</p>
+					
+					<h5>비만 치료에 주사를 이용?</h5>
+					<p class="pl20 pt20">
+						미국 UCLA의 그렌웨이 박사 팀이 [세계 비만학회지]에 이소프로테레놀과 아미노필린을 이용한 비만 치료 결과를 발표한 이후 비만 치료의 주사 요법이 각광을 받기 시작하였습니다.<br>
+						원래 천식 치료에 처방되고 있는 약물인&nbsp;<span style="font-weight:bold;">이소프로테레놀과 아미노필린</span>을 피하에 주사하였을 때 에너지 발산 효과를 발휘하여 지방을 줄여준다는 사실을 관찰하고, 실제로 여성 비만 환자의 복부와 허벅지에 주사를 한 결과 이들의 피하 지방이 줄어듦을 보고하였습니다.<br>
+						이 연구 결과는 그 동안 셀룰라이트로 부분 비만에 시달리던 많은 비만 환자 치료의 새로운 해결책으로 제시되고 있습니다. 특히 식이요법이나 운동요법으로 잘 조절되지 않았던&nbsp;<span style="font-weight:bold;">허벅지, 아랫배 등의 피하지방층 분해를 가능하게 해 줄 수 있는 치료법</span>입니다.
+					</p>
+					
+					<h5>비만 치료 주사 시술법</h5>
+					<p class="pl20 pt20">
+						사용하는 약물은 일반적으로는&nbsp;<span style="font-weight:bold;">3~4가지 약제를 동시에</span>&nbsp;투여합니다. 약물 자체로는 요요 현상이 없으나 식사습관과 운동요법을 병행하면 효과가 좋습니다.
+					</p>
+					<ol class="list_num_h5">
+						<li>약제 선택과 용량환자의 성별/나이, 지방축적 정도와 호르몬 상태(폐경, 피임약 복용 등), 치료 부위(복부, 허벅지) 등에 따라 달라짐.</li>
+						<li>지방이 축적되는 부위의 피하지방층 : 배, 허벅지, 어깨</li>
+						<li>투여기간일주일 2-3회, 4주간 주사</li>
+					</ol>
+					
+					
+					
+					
+					<h5>비만 치료를 위한 주사요법의 장점</h5>
+					<p class="pl20 pt20">
+						자주 시행하지 않고 적은 양의 약물을 사용하므로 경제적입니다.<br>
+						소량의 약물을 사용하므로 전신 부작용이 적습니다.<br>
+						병원에 자주 갈 필요가 없어 다른 치료에 비해 시간적, 공간적 제약이 적습니다.
+					</p>
+					
+					<h5>비만 치료를 위한 주사요법의 주의점</h5>
+					<p class="pl20 pt20">
+						<span style="font-weight:bold;">피부색 변화(피부 착색), 주사 시 통증, 피부 감염</span>&nbsp;등이 나타날 수 있습니다.&nbsp;<br>
+						간혹 약물이 너무 강하거나 용량이 과다하게 들어가면 전신 부작용이 나타날 수도 있으나 이는 드문 경우입니다. 피부 알레르기 반응이 간간히 나타나기도 합니다.
+					</p>
+
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
-								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,117 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">비만외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/574_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_01" title=""><span>비만도 측정</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_04_02" title=""><span>비만의 약물치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_03" title=""><span>비만의 주사치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_04" title=""><span>부분비만 지방흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_05" title=""><span>미니 지방 흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_06" title=""><span>비만의 식이요법</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(4)').addClass('active');
+						$('.pnb > ul > li:nth-child(4) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>비만의 약물치료</h5>
+					<p class="pl20 pt20">
+						비만 치료의 기본은 식이조절과 운동입니다. 비만치료에 있어 일종의 ‘촉매제’ 라고 볼 수 있는 약물치료는 반드시 의료진의 처방에 따라 신중하게 시행해야 합니다.
+					</p>
+					
+					<h5>비만의 경우 약물치료는 언제 할까요?</h5>
+					<p class="pl20 pt20">
+						식이요법과 운동요법으로 3~6개월 내에 체중감량의 효과(체중의 10% 감소효과)나 질병의 개선이 3~6개월내 나타나지 않고 진전이 없을 때 약물치료를 시작하는 것이 원칙입니다. 반드시 전문의 처방에 따라 약물효과, 용량, 부작용 등에 대해서 이해하고 시작해야 합니다.&nbsp;
+					</p>
+					<ul class="list_ul_h5">
+						<li>체질량 지수(BMI)가 30Kg/(M)2을 넘는 경우</li>
+						<li>고혈압, 당뇨, 고지혈증 증상이 있는 환자의 경우는 체질량 지수(BMI)가 27Kg/(M)2을 넘을 때</li>
+					</ul>
+					
+					
+					<h5>비만 치료약은 어떤 것인가요?</h5>
+					<p class="pl20 pt20">
+						살 빼는 약이라고 말하는 비만치료제는&nbsp;식욕억제제와 지방분해효소억제제&nbsp;두 종류가 있습니다.
+					</p>
+					
+					<ol class="list_num_h5">
+						<li>식욕억제제 :&nbsp;배가 고프지 않거나 또는 배가 부르다고 느껴 음식을 덜 먹게 하는 약을 말합니다.
+							<ul>
+								<li>펜터민, 펜디메트라진, 디에칠프로피온, 마진돌 등이 있습니다.</li>
+							</ul>
+						</li>
+						<li>지방분해효소억제제 :&nbsp;음식으로 몸에 들어온 지방이 분해되어 몸에 흡수되는 것을 방해하는 약을 말합니다. 
+							<ul>
+								<li>오르리스타트 성분의 약이 있습니다.</li>
+							</ul>	
+						</li>
+					</ol>
+					<table class="tbl">
+						<caption>비만치료약물</caption>
+						<colgroup>
+							<col width="25%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>비만치료약물</th>		
+								<th>설명</th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>마진돌(mazindol)</th>
+								<td>⋅ 주요기전 :&nbsp;식욕억제효과<br>⋅ 부작용 :&nbsp;다량 복용 시 과호흡, 혼돈현상, 환각, 패닉증상 등<br>⋅ 기대효과 :&nbsp;처음 1~2주간 식욕억제 효과</td>
+							</tr>
+							<tr>
+								<th>펜터민(아디펙스)</th>
+								<td>⋅ 주요기전 :&nbsp;식욕억제효과가 강하여 하루 1알로 충분하며 통상 12주까지 사용<br>⋅ 부작용 :&nbsp;불면증, 두통, 현기증 등, 향정신성 의약품으로 중독성이 있어 4주 이내 단기간 동안 투여함<br>⋅ 기대효과 :&nbsp;4주내 식욕억제 효과</td>
+							</tr>
+							<tr>
+								<th>펜디메트라진</th>
+								<td>⋅ 주요기전 :&nbsp;식욕억제효과<br>⋅ 부작용 :&nbsp;약물 효과에 내성이 있음<br>⋅ 기대효과 :&nbsp;식욕감소, 위산분비 감소로 에너지 사용량을 증가시킴</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					<h5>비만 치료 약 복용 시 꼭 지켜야 하는 사항</h5>
+					<ol class="list_num_h5">
+						<li>비만 약을 처방 받기 위해서 진료를 받을 때 현재 질병, 과거병력, 복용 중인 약 및 건강식품 등을 모두 이야기 하도록 합니다.</li>
+						<li>최근 1년 이내 살 빼는 약을 복용한 경험이 있는 경우에는 복용했던 시점과 약물 이름을 알려주셔야 됩니다. 일반적으로 약물 알러지나 과민증이 있는 경우에도 말씀하셔야 합니다.</li>
+						<li>식욕억제제를 먹는 도중에 다른 식욕억제제나 의약품, 술 등을 먹으면 예상치 못한 부작용이 발생할 수 있으므로 같이 먹지 말아야 합니다.</li>
+					</ol>
+
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

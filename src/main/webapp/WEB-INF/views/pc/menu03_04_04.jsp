@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
-								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,136 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">비만외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/574_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_01" title=""><span>비만도 측정</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_02" title=""><span>비만의 약물치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_03" title=""><span>비만의 주사치료</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_04_04" title=""><span>부분비만 지방흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_05" title=""><span>미니 지방 흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_06" title=""><span>비만의 식이요법</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(4)').addClass('active');
+						$('.pnb > ul > li:nth-child(4) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>부분비만 지방흡입술</h5>
+					<p class="pl20 pt20">
+						저주받은 허벅지, 팔뚝이라고 한숨만 쉬었다면 이젠 특단의 조치가 필요한 때입니다. <br>살이 상체 또는 하체에만 몰려있어 아무리 다이어트를 해도 빠지지 않는 부분비만!!&nbsp;<br>
+						전신마취 등 수술 자체에 대한 부담이 있었던 과거 지방흡입술 대신 더욱 안전해 지고 다양해진 지방흡입술을 통해 부분비만에서 탈출하자고요.
+					</p>
+					
+					<h5>지방흡입술이란?</h5>
+					<p class="pl20 pt20">
+						지방이 많이 축적된 부위에 여분의 지방을 주위 혈관, 신경, 림프관에 손상을 최소화하면서 흡입기로 배출해 내는 것이 지방 흡입술입니다.&nbsp;<br>
+						일반적인 식이 요법과 운동으로 효과를 볼 수 없었던 분들과 부분 지방의 축적으로 몸매가 울퉁불퉁해지신 분들에게 효과를 나타냅니다.
+					</p>
+					
+					<h5>부분비만 부위 지방은 가장 먼저 살이 붙고 가장 늦게 빠지는 특성이 있어</h5>
+					<p class="pl20 pt20">
+						체지방은 우리 몸의 주요 에너지원이자 구성성분으로 신체 어느 곳에나 분포되어 있습니다. 하지만, 개인에 따라 분포비중의 차이(복부, 하체-허벅지, 종아리, 상체-어깨, 등...)가 있으며 이를 부분비만이라고 일컬어 집니다.&nbsp;<br><br>
+						<span style="font-weight:bold;">부분 비만 부위의 지방덩어리는 지방세포가 크고 섬유막과 뒤엉켜 복잡한 구조를 이루고 있어 다른 부위의 지방과는 다르며, 가장 먼저 살이 붙지만 가장 늦게 빠지는 특성</span>이 있습니다.
+					</p>
+					
+					<h5>지방흡입술은 어떻게?</h5>
+					<ol class="list_num_h5">
+						<li>수술방법
+							<ul>
+								<li>지방흡입술은 피부에 5mm내외의 작은 절개를 3-4군데 한 후, 긴 캐뉼라 (쇠로 만든 길고 가느다란 관)를 피부밑에 삽입하여 음압으로지방조직을 빨아냅니다.</li>
+							</ul>
+						</li>
+						<li>수술 후 관리
+							<ul>
+								<li>수술 후 며칠 동안은 탄력붕대 등으로 수술부위를 압박해 주어야 하며 그 뒤에는 수술부위를 조여주는 옷을 1~2달간 입어야 합니다.</li>
+								<li>수술 후 감각이상이나 과색소침착증이 나타날 수 있으나 자연 회복될 수 있으며 혈종이 생기면 배출해 주면 됩니다.</li>
+								<li>수술부위 표면이 불규칙 해지는 경우가 종종 있으나 마사지와 외부 초음파 자극기등으로 호전 될 수 있습니다.</li>
+							</ul>
+						</li>
+					</ol>
+					
+					
+					<h5>부분 지방흡입술은 어디에 할까?</h5>
+					<table class="tbl">
+						<caption>부분 지방흡입술 시술 부위별 특징</caption>
+						<colgroup>
+							<col width="20%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>부위</th>		
+								<th>특징</th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>얼굴과 턱</th>
+								<td>얼굴은 지방층이 복부나 허벅지와 같이 두껍지 않기 때문에 효과를 보기 힘들지만 턱에 있는 지방을 제거하게 되면 턱선이 살아나는 효과를 나타냅니다.</td>
+							</tr>
+							<tr>
+								<th>팔</th>
+								<td>팔 밑에 쳐져 있는 지방은 다이어트로는 별로 효과가 없기 때문에 지방흡입술을 권장합니다.</td>
+							</tr>
+							<tr>
+								<th>가슴</th>
+								<td>지방으로 가슴이 큰 경우에는 효과가 있지만 이미 처진 가슴을 단지 지방만 제거한다고 해서 교정되지는 않는다는 사실을 염두해 두시길 바랍니다.</td>
+							</tr>
+							<tr>
+								<th>복부, 옆구리</th>
+								<td>지방이 가장 많이 쌓이는 곳으로 효과가 가장 크게 나타납니다. <br>복부 탄력성을 증가시키기 위해 복부성형술을 병행할 수 있습니다.</td>
+							</tr>
+							<tr>
+								<th>엉덩이</th>
+								<td>엉덩이가 지방으로 처지거나 옆으로 불뚝 튀어나온 경우 수술로써 교정하게 됩니다.</td>
+							</tr>
+							<tr>
+								<th>허벅지</th>
+								<td>우리나라 여성분들은 허버직에 지방에 많이 쌓이는 체질이 많습니다. 특히 허벅지 안쪽으로 살이 찌게 되면 땀이 차서 생활하기 불편합니다. 이런 경우 지방흡입술로 전체적인 허벅지 둘레도 줄일 수 있어 바지가 헐렁해지는 것을 느끼실 것입니다.</td>
+							</tr>
+							<tr>
+								<th>종아리</th>
+								<td>다른 부위에 비해서 지방층이 얇아서 많은 양을 줄이기는 어려우나 종아리가 두꺼운 사람에게는 어느 정도 효과를 볼 수 있습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					
+					<h5>부분 지방흡입술 부작용 및 주의사항은?</h5>
+					<p class="pl20 pt20">
+						지방흡입 자체가 부작용이 많지 않은 시술입니다. 하지만 무리하게 욕심을 부려 지방을 많이 뺀다면 피부에 정맥이 비치면서 오히려 보기 좋지 않은 결과가 나올 수 있고, 울퉁불퉁한 근육이 더욱 돋보이게 되어 매끄러운 실루엣을 만들지 못하는 경우도 있습니다.&nbsp;<br>
+						아주 가끔은 부분 지방흡입 부위에 혈관염이나 피부가 괴사되는 현상이 생기기도 합니다. 어떤 수술이든 개인에 따라 결과는 달라질 수 있습니다. <br>그렇기 때문에 경험이 많은 전문의에게 수술을 받는 것이 무엇보다 중요합니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

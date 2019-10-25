@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
-								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,121 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">비만외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/574_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_04_01" title=""><span>비만도 측정</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_02" title=""><span>비만의 약물치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_03" title=""><span>비만의 주사치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_04" title=""><span>부분비만 지방흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_05" title=""><span>미니 지방 흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_06" title=""><span>비만의 식이요법</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(4)').addClass('active');
+						$('.pnb > ul > li:nth-child(4) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>비만도측정</h5>
+					<h6>체질량 지수 (body Mass Index, BMI)</h6>
+					<p class="pl20 pt10">
+						체질량지수는 체중과 신장의 관계를 말하며, 표준 체중보다 체지방량을 더 정확하게 반영합니다.&nbsp;체중을 신장의 제곱으로 나눈 값으로 가장 이상적인 체질량지수는 22정도이며 25이상이면 비만으로 판정합니다.
+					</p>
+					
+					<table class="tbl">
+						<caption>체질량지수 분류 표</caption>
+						<colgroup>
+							<col width="25%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>분류</th>		
+								<th>BMI(kg/m²)</th>		
+								<th>합병증 유발 위험도</th>		
+							</tr>
+						</thead>
+						<tr>
+							<th>저체중</th>
+							<td>&lt;18.5</td>
+							<td>낮음</td>
+						</tr>
+						<tr>
+							<th>정상범위</th>
+							<td>18.5-22.9</td>
+							<td>보통</td>
+						</tr>
+						<tr>
+							<th>과체중</th>
+							<td>23&lt;</td>
+							<td>약간 증가</td>
+						</tr>
+						<tr>
+							<th>위험체중</th>
+							<td>23-24.9</td>
+							<td>증가됨</td>
+						</tr>
+						<tr>
+							<th>1단계 비만</th>
+							<td>25-29.9</td>
+							<td>중증도</td>
+						</tr>
+						<tr>
+							<th>2단계 비만</th>
+							<td>30&lt;</td>
+							<td>매우 심함</td>
+						</tr>
+					</table>
+					
+					<p class="pl20 pt10">
+						체중은 하루에도 시간에 따라 변동이 있기 때문에 항상 동일한 시간에 동일한 조건으로 측정해야 비교 가능합니다.&nbsp;금식 후(8시간 정도) 아침에 소변을 본 후 가벼운 옷차림으로 측정하는 것이 좋으며 가임 여성의 경우 월경 주기로 인하여 1-2kg 정도 변화될 수 있다는 점을 감안하고 측정해야 합니다.
+					</p>
+					
+					<h5>복부비만 측정법</h5>
+					<p class="pl20 pt10">
+						지방이 주로 상체에 축적된 비만을 복부 비만 또는 남성형 비만이라고 하는데, 당뇨병, 고혈압, 고지혈증 같은 비만의 합병증 복부 비만과 밀접한 관계가 있습니다.
+					</p>
+					
+					<ol class="list_num_h5">
+						<li>복부지방률
+							<ul>
+								<li><span style="font-weight:bold">복부비만 = 허리둘레÷엉덩이둘레</span>로 계산하며 남성은 0.90이상, 여성은 0.85이상이면 복부 비만으로 진단합니다.</li>
+							</ul>		
+						</li>
+						<li>허리둘레
+							<ul>
+								<li>허리는 배꼽선의 둘레를 측정하고, 엉덩이는 가장 둘레가 큰 부위를 측정하면 됩니다.&nbsp;남자는 90cm이상, 여자는 85cm이상(2006 대한비만학회)일 때 복부 비만으로 정의합니다.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

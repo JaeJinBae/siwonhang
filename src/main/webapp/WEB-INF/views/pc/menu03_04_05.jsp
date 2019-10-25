@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
-								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
-								</ul>
-							</li>
-							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,88 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">비만외과</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/574_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 대장 항문외과 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_01" title=""><span>비만도 측정</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_02" title=""><span>비만의 약물치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_03" title=""><span>비만의 주사치료</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_04" title=""><span>부분비만 지방흡입술</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_04_05" title=""><span>미니 지방 흡입술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_04_06" title=""><span>비만의 식이요법</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(4)').addClass('active');
+						$('.pnb > ul > li:nth-child(4) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>미니지방흡입술</h5>
+					<p class="pl20 pt20">
+						미니지방흡입술은 국소마취를 한 뒤 지방을 제거하는 방법으로 비교적 살이 많이 붙어 있는 부분을 간편하게 시술할 수 있는 지방흡입술입니다.
+					</p>
+					
+					<h6>작은 면적의 지방을 제거하는 미니 지방흡입술</h6>
+					<p class="pl20">
+						작은 면적(팔뚝, 엉덩이라인, 무릎주변 등)의 지방을 제거해 바디라인을 다듬어 주는 지방흡입술입니다. <br>
+						과도하게 많은 부위를 시술하는 것이 아니고 엉덩이 라인, 허벅지 옆 라인, 무릎주변, 허리라인, 팔뚝 등 작은 면적에 시술하기 때문에 붓기와 통증이 적고, 수술 후 압착 옷이나 마사지 등의 특별한 관리가 필요 없지만 경우에 따라 병행한다면 더욱 효과가 커집니다.
+					
+					</p>
+					
+					<h5>미니 지방흡입술 적용 부위</h5>
+					<ol class="list_num_h5">
+						<li>팔뚝 안쪽과 바깥쪽의 처지고 출렁이는 부위의 지방을 제거해 매끈하고 여성스러운 팔뚝을 만들 수 있습니다.</li>
+						<li>옆구리옆구리의 살은 긴장감을 잃으면 순식간에 찌기 쉬운 부위이며, 나이가 들수록 빼기 힘든 부위이기도 합니다 간단한 미니지방흡입술을 통해 매끈하고 가는 허리를 만들 수 있습니다.</li>
+						<li>아랫배배꼽 아랫부분의 배가 불룩한 경우에 지방흡입을 통해 허리의 두께를 줄일 수 있습니다.</li>
+						<li>허벅지동양 여성의 허벅지 부분이 발달하는 경우가 많이 있습니다. 운동으로는 빼기 힘든 허벅지라인을 정리해 매끈한 각선미로 가꿀 수 있습니다.</li>
+						<li>등브래지어 라인을 따라 울퉁불퉁한 살들을 정리할 수 있는 수술이라 등의 살들을 정리할 수 있는 효과를 볼 수 있습니다.</li>
+					</ol>
+					
+					
+					<h5>미니 지방흡입술의 장점과 주의점</h5>
+					<ol class="list_num_h5">
+						<li>장점
+							<ul>
+								<li>국소마취 후 30분~1시간 정도로 시술 시간이 짧습니다.</li>
+								<li>수술 후 부기와 통증을 최소화</li>
+								<li>압착 옷 불필요(하지만 경우에 따라 실행)</li>
+								<li>작은 면적에 시술이 가능합니다.</li>
+								<li>흉터가 거의 보이지 않아 보이는 부분에도 시술 가능합니다.</li>
+							</ul>
+						</li>
+						<li>주의점
+							<ul>
+								<li>미니지방흡입술은 국소적이고 작은 면적의 지방을 제거함으로써 체형을 보정해 주는 방법입니다. 그렇기 때문에 체중이 눈에 띄게 줄지 않습니다. 자신의 목적이 무엇인지 의사와 잘 상의하여 자신에게 맞는 시술법을 선택하는 것이 무엇보다 중요합니다.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

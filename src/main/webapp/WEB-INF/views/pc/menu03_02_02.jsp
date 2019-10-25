@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -149,38 +149,38 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="특성화 진료">특성화 진료</h3>
 						<ul>
+							<li class="">
+								<a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a>
+								<ul>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_01">치핵</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_02">치루</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_03">치열</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_04">항문주위농양</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_05">직장류</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_06">직장탈출증</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_07">화농성 한선염</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_08">모소동</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_01_09">기타</a></li>
+								</ul>
+							</li>
 							<li class="active">
-								<a href="/513/?pCode=513">대장·항문외과</a>
+								<a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a>
 								<ul style="display: block;">
-									<li><a href="/561/?pCode=561">치핵</a></li>
-									<li><a href="/562/?pCode=562">치루</a></li>
-									<li><a href="/563/?pCode=563">치열</a></li>
-									<li><a href="/564/?pCode=564">항문주위농양</a></li>
-									<li><a href="/565/?pCode=565">직장류</a></li>
-									<li><a href="/566/?pCode=566">직장탈출증</a></li>
-									<li><a href="/567/?pCode=567">화농성 한선염</a></li>
-									<li><a href="/568/?pCode=568">모소동</a></li>
-									<li><a href="/569/?pCode=569">기타</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_01">맹장염수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_02">탈장수술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_02_03">담낭절제술</a></li>
 								</ul>
 							</li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
 							<li class="">
-								<a href="/514/?pCode=514">복강경수술</a>
+								<a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a>
 								<ul>
-									<li><a href="/570/?pCode=570">맹장염수술</a></li>
-									<li><a href="/571/?pCode=571">탈장수술</a></li>
-									<li><a href="/572/?pCode=572">담낭절제술</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="/515/?pCode=515">골반저 질환(변비·변실금)</a></li>
-							<li class="">
-								<a href="/574/?pCode=574">비만외과</a>
-								<ul>
-									<li><a href="/574/?pCode=574">비만도 측정</a></li>
-									<li><a href="/575/?pCode=575">비만의 약물치료</a></li>
-									<li><a href="/576/?pCode=576">비만의 주사치료</a></li>
-									<li><a href="/577/?pCode=577">부분비만 지방흡입술</a></li>
-									<li><a href="/578/?pCode=578">미니 지방 흡입술</a></li>
-									<li><a href="/579/?pCode=579">비만의 식이요법</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만도 측정</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_02">비만의 약물치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_03">비만의 주사치료</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_04">부분비만 지방흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_05">미니 지방 흡입술</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_04_06">비만의 식이요법</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -190,7 +190,95 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">복강경수술</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/514_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 복강경수술 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul class="active">
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_02_01" title=""><span>맹장염수술</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu03_02_02" title=""><span>탈장수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu03_02_03" title=""><span>담낭절제술</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(2)').addClass('active');
+						$('.pnb > ul > li:nth-child(2) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>탈장이란?</h5>
+					<p class="pl20 pt20 pb10">
+						선천적 또는 후천적 원인에 의해  인체 복벽이나 기타 부위에 구멍이 생겨 장기나 조직이 빠져나오는 것입니다.<br>
+					 대부분의 탈장은 복벽의 약한 부위를 통해 소장이나 대장이 빠져나오며 어느 곳이든 발생할 수 있으나 가장 많은 것은 서혜부 탈장입니다.
+					</p>
+					
+					<table class="tbl">
+						<caption>탈장의 종류</caption>
+						<colgroup>
+							<col width="25%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>종류</th>		
+								<th>특징</th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>서혜부탈장</th>
+								<td>넓적다리와 아랫배가 만나는 부위에서 2~3cm 위쪽에 생기는 탈장</td>
+							</tr>
+							<tr>
+								<th>대퇴부탈장</th>
+								<td>서혜부 탈장 약간 아래쪽에 생기는 탈장으로 감돈의 위험이 높고 여성에게 잘 생김</td>
+							</tr>
+							<tr>
+								<th>제대탈장</th>
+								<td>배꼽 부위의 약해진 곳을 통해 발생하여 대개 신생아에게 선천적으로 생김</td>
+							</tr>
+							<tr>
+								<th>반흔탈장</th>
+								<td>수술한 상처부위가 약해짐으로 벌어져 생김 수술 후에도 재발이 잦아 수술 시 주의 해야함</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					<h5>탈장 증상</h5>
+					<p class="pl20 pt20">
+						초기에는 튀어나온 부분을 누르면 정상 위치로 돌아가나 만약에 들어가지 않으면 
+						혈액 순환에 지장이 생긴 것으로 장기가 괴사되어 <br>
+						돌출된 부위에 압통이 생기고, 복통, 구역, 구토 증상이 발생됩니다.
+					</p>
+					
+					<h5>탈장의 복강경 수술</h5>
+					<p class="pl20 pt20">
+						시원항병원에서는 기존 5cm 이상 피부를 절개하는 수술이 아닌 3개 정도의 작은 구멍만 내고 카메라가 달린 복강경수술 기구를 <br>
+						이 절개창으로 넣어 환부를 모니터로 보면서 정교하게 수술합니다.<br><br>
+						
+						특히 복강 내로 접근하는 초기 복강경 수술 방식에 의해 장기 손상이나 장유착에 의한 합병증이 발생했던 것을 예방하기 위해, <br>
+						복벽과 가장 내측의 복막 사이로 공간을 확보하고 접근하는 복막외 접근 탈장 교정술을 시행합니다.
+					</p>
+
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>
