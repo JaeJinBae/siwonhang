@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -165,7 +165,44 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">복강경수술</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 복강경수술 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/514_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 복강경수술 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02">
+						<ul>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_01" title=""><span>맹장염수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_02" title=""><span>탈장수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_03" title=""><span>담낭절제술</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 복강경수술 탭메뉴 끝 -->
+					
+					<div>
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/514_img_02.png" alt="" usemap="pCode-521-06">
+						</div>
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

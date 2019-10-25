@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>소화기 질환</button>
+						<button>내분비 질환</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu05_01">소화기 질환</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu05_02">순환기 질환</a></li>
@@ -150,10 +150,10 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="내과 질환 센터">내과 질환 센터</h3>
 						<ul>
-							<li class="active"><a href="${pageContext.request.contextPath}/menu05_01">소화기 질환</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu05_01">소화기 질환</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu05_02">순환기 질환</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu05_03">호흡기 질환</a></li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu05_04">내분비 질환</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu05_04">내분비 질환</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu05_05">위·대장 내시경</a></li>
 						</ul>
 					</div>
@@ -162,7 +162,46 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">내분비 질환</h4><!-- 서브 콘텐츠 타이틀 -->
+		
+					<!--
+					.full	: padding :0;
+					.inner	: padding : 0 10px;
+					
+					서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
+					1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
+					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
+					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
+					4. map 사용시 usemap 또한 class명과 일치합니다.
+					
+					-->
+					<div class="pcode52701">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/527_img_01.png" alt="성형외과 &amp; 피부과 협진으로 최소 시술 최대 효과" usemap="pCode-527-01">
+						</div>
+					</div>
+					<div class="pcode52702">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/527_img_02.png" alt="" usemap="pCode-527-02">
+						</div>
+					</div>
+					<div class="pcode52703">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/527_img_03.png" alt="" usemap="pCode-527-03">
+						</div>
+					</div>
+					<div class="pcode52704">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/527_img_04.png" alt="" usemap="pCode-527-04">
+						</div>
+					</div>
+					<div class="pcode52705">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/527_img_05.png" alt="" usemap="pCode-527-05">
+						</div>
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

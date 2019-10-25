@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -165,7 +165,76 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">복강경수술</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/514_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 복강경수술 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_01" title=""><span>맹장염수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_02" title=""><span>탈장수술</span></a>
+							</li>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu04_01_03" title=""><span>담낭절제술</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>담낭이란?</h5>
+					<p class="pl20 pt20">
+						간에서 생성되는 담즙은 담도와 담낭(쓸개)을 거쳐 십이지장으로 분비되어 지방의 소화와 독성물질 배출 같은 생리 기능을 합니다.<br>
+						그런데 담즙에 과도한 콜레스테롤이나 담즙 산염이 포함되면 담석이 될 수 있습니다. <br>
+						이렇게 담낭이나 담도에 결석이 생기는 질환이 담석증입니다. 
+					</p>
+					
+					<h5>담낭 증상</h5>
+					<ul class="list_ul_h5">
+						<li>소화불량 및 설사 </li>
+						<li>오른쪽 윗배 통증</li>
+						<li>발열 및 오한</li>
+						<li>황달 및 등 통증</li>
+					</ul>
+					<p class="pl20 pt10">
+						하지만 위와 같은 증상이 계속되면 수술이 필요할 수도 있습니다.
+					</p>
+					
+					
+					<h5>담낭의 복강경 수술</h5>
+					<h6>복강경 담낭 절제술</h6>
+					<p class="pl20">
+						복강경 담낭 절제술은 3개의 절개창 (1cm, 0.5cm, 3cm)을 내어서 담낭을 절제하는 수술로<br>
+						시원항병원에서는 주로 급성기 염증이 심하게 있어서 담도 손상 등의 합병증 발생 확률이 높은 경우 시행합니다. <br>
+						급성기 염증이 없거나 심하지 않은 경우에는 대부분 단일공 복강경 수술로 진행합니다. <br>
+						· 적응증 : 급성 담낭염, 담낭 축농 등
+					</p>
+					
+					
+					<h6>단일공 복강경 담낭 절제술</h6>
+					<p class="pl20">
+						기본 복강경 수술이 3~4개의 절개창을 내어 수술하는 것과 달리, 
+						배꼽에 약 1cm 정도의 작은 구멍을 내어서 수술을 진행하는 것을 말합니다. <br>
+						단일공 복강경 수술을 시행하면 통증이 적고, 흉터가 배꼽 안쪽으로 들어가 겉으로 드러나는 흉터가 거의 없습니다.<br>
+						· 적응증 : 담석증, 담낭 용종, 담낭 선근종증, 만성 담낭염 등
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

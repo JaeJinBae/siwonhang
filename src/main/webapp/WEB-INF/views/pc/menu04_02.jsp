@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -148,15 +148,15 @@
 					<div class="pnb">
 						<h3 class="tit" data-menu="외과 질환 센터">외과 질환 센터</h3>
 						<ul>
-							<li class="active">
+							<li class="">
 								<a href="${pageContext.request.contextPath}/menu04_01">복강경수술</a>
-								<ul style="display: block;">
+								<ul>
 									<li><a href="${pageContext.request.contextPath}/menu04_01_01">맹장염수술</a></li>
 									<li><a href="${pageContext.request.contextPath}/menu04_01_02">탈장수술</a></li>
 									<li><a href="${pageContext.request.contextPath}/menu04_01_03">담낭절제술</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu04_02">유방·갑상선</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu04_02">유방·갑상선</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu04_03">하지정맥류</a></li>
 						</ul>
 					</div>
@@ -165,7 +165,56 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents">
+					<h4 class="tit">유방·갑상선</h4><!-- 서브 콘텐츠 타이틀 -->
+		
+					<!--
+					.full	: padding :0;
+					.inner	: padding : 0 10px;
+					
+					서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
+					1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
+					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
+					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
+					4. map 사용시 usemap 또한 class명과 일치합니다.
+					
+					-->
+					<div class="pcode52101">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_01.png" alt="성형외과 &amp; 피부과 협진으로 최소 시술 최대 효과" usemap="pCode-521-01">
+						</div>
+					</div>
+					<div class="pcode52102">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_02.png" alt="" usemap="pCode-521-02">
+						</div>
+					</div>
+					<div class="pcode52103">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_03.png" alt="" usemap="pCode-521-03">
+						</div>
+					</div>
+					<div class="pcode52104">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_04.png" alt="" usemap="pCode-521-04">
+						</div>
+					</div>
+					<div class="pcode52105">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_05.png" alt="" usemap="pCode-521-05">
+						</div>
+					</div>
+					<div class="pcode52106">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_06.png" alt="" usemap="pCode-521-06">
+						</div>
+					</div>
+					<div class="pcode52107">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/521_img_07.png" alt="" usemap="pCode-521-07">
+						</div>
+					</div>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>

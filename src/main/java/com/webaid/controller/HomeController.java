@@ -289,7 +289,28 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	public String menu04_01Get(){
 		logger.info("menu04_01 get");
 		
-		return "pc/menu04_01";
+		return "pc/menu04_01_00";
+	}
+	
+	@RequestMapping(value="/menu04_01_01", method=RequestMethod.GET)
+	public String menu04_01_01Get(){
+		logger.info("menu04_01_01 get");
+		
+		return "pc/menu04_01_01";
+	}
+	
+	@RequestMapping(value="/menu04_01_02", method=RequestMethod.GET)
+	public String menu04_01_02Get(){
+		logger.info("menu04_01_02 get");
+		
+		return "pc/menu04_01_02";
+	}
+	
+	@RequestMapping(value="/menu04_01_03", method=RequestMethod.GET)
+	public String menu04_01_03Get(){
+		logger.info("menu04_01_03 get");
+		
+		return "pc/menu04_01_03";
 	}
 	
 	@RequestMapping(value="/menu04_02", method=RequestMethod.GET)
@@ -297,6 +318,13 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		logger.info("menu04_02 get");
 		
 		return "pc/menu04_02";
+	}
+	
+	@RequestMapping(value="/menu04_03", method=RequestMethod.GET)
+	public String menu04_03Get(){
+		logger.info("menu04_03 get");
+		
+		return "pc/menu04_03";
 	}
 	
 	@RequestMapping(value="/menu05_01", method=RequestMethod.GET)

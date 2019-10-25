@@ -105,7 +105,7 @@
 		<!-- 서브 비주얼영역 시작  -->
 		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
-				<img src="/assets/img/common/visual_500.png">
+				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
@@ -165,7 +165,62 @@
 						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
-				
+				<div class="sub-contents active">
+					<h4 class="tit">복강경수술</h4><!-- 서브 콘텐츠 타이틀 -->
+					<!-- 다장 항문외과 탭메뉴 시작 -->
+					<!-- 페이지 비주얼 영역 시작 -->
+					<div class="pcode51301">
+						<div class="full">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/514_img_01.png" alt="">
+						</div>
+					</div>
+					<!-- 페이지 비주얼 영역 끝 -->
+					
+					<!-- 복강경수술 탭메뉴 시작 -->
+					<div class="siwonhanh-tab02 active">
+						<ul>
+							<li class="active">
+								<a href="${pageContext.request.contextPath}/menu04_01_01" title=""><span>맹장염수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_02" title=""><span>탈장수술</span></a>
+							</li>
+							<li>
+								<a href="${pageContext.request.contextPath}/menu04_01_03" title=""><span>담낭절제술</span></a>
+							</li>
+						</ul>
+					</div>
+					<!-- 대장 항문외과 탭메뉴 끝 -->
+					
+					<script>
+						$('.pnb > ul > li:nth-child(1)').addClass('active');
+						$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+					</script><!-- 다장 항문외과 탭메뉴 끝 -->
+					
+					
+					<h5>맹장염이란?</h5>
+					<p class="pl20 pt20">
+						맹장염이라 부르는 급성 충수돌기염은 말대로 충수돌기에 생긴 급성 염증을 말합니다.<br>
+						수술을 요하는 복통의 가장 흔한 원인으로 대장이 시작되는 첫 부위인 맹장에 충수돌기가 붙어 있어서<br>
+						흔히 맹장염이라고 합니다.합병증으로 천공, 복막염, 충수농양, 복강내 농양, 문맥염 등이 있습니다.
+					</p>
+					
+					<h5>맹장염 초기 증상</h5>
+					<ul class="list_ul_h5">
+						<li>오른쪽 아랫배 통증</li>
+						<li>명치, 등 통증</li>
+						<li>소화불량</li>
+						<li>헛구역질 및 구토</li>
+						<li>몸살 기운 및 미열</li>
+					</ul>
+					
+					<h5>맹장염 복강경수술</h5>
+					<p class="pl20 pt20">
+						맹장염을 제때 치료하지 못하는 경우 충수가 부풀어 오르는 등의 후유증 증상이 나타날 수 있어 
+						빠른 맹장염 수술 치료가 필요합니다.<br>
+						시원항병원은 절개 부위가 적은 출혈이 적고 안전한 복강경 수술법을 진행하고 있습니다.
+					</p>
+				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
 	</section>
