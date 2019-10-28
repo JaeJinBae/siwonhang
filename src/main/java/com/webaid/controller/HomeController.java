@@ -397,11 +397,25 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu07_01";
 	}
 
+	@RequestMapping(value="/menu07_01read", method=RequestMethod.GET)
+	public String menu07_01readGet(){
+		logger.info("menu07_01read get");
+		
+		return "pc/menu07_01Read";
+	}
+	
 	@RequestMapping(value="/menu07_02", method=RequestMethod.GET)
 	public String menu07_02Get(){
 		logger.info("menu07_02 get");
 		
 		return "pc/menu07_02";
+	}
+	
+	@RequestMapping(value="/menu07_02read", method=RequestMethod.GET)
+	public String menu07_02readGet(){
+		logger.info("menu07_02read get");
+		
+		return "pc/menu07_02Read";
 	}
 	
 	@RequestMapping(value="/menu07_03", method=RequestMethod.GET)
@@ -411,11 +425,25 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu07_03";
 	}
 	
+	@RequestMapping(value="/menu07_03read", method=RequestMethod.GET)
+	public String menu07_03readGet(){
+		logger.info("menu07_03read get");
+		
+		return "pc/menu07_03Read";
+	}
+	
 	@RequestMapping(value="/menu07_04", method=RequestMethod.GET)
 	public String menu07_04Get(){
 		logger.info("menu07_04 get");
 		
 		return "pc/menu07_04";
+	}
+	
+	@RequestMapping(value="/menu07_04read", method=RequestMethod.GET)
+	public String menu07_04readGet(){
+		logger.info("menu07_04read get");
+		
+		return "pc/menu07_04Read";
 	}
 	
 	@RequestMapping(value="/menu07_05", method=RequestMethod.GET)
@@ -425,11 +453,25 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu07_05";
 	}
 	
+	@RequestMapping(value="/menu07_05read", method=RequestMethod.GET)
+	public String menu07_05readGet(){
+		logger.info("menu07_05read get");
+		
+		return "pc/menu07_05Read";
+	}
+	
 	@RequestMapping(value="/menu07_06", method=RequestMethod.GET)
 	public String menu07_06Get(){
 		logger.info("menu07_06 get");
 		
 		return "pc/menu07_06";
+	}
+	
+	@RequestMapping(value="/menu07_06read", method=RequestMethod.GET)
+	public String menu07_06readGet(){
+		logger.info("menu07_06read get");
+		
+		return "pc/menu07_06Read";
 	}
 	
 }
