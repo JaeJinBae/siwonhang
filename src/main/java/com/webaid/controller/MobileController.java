@@ -428,6 +428,20 @@ public class MobileController {
 		return "mobile/menu07_05Read";
 	}
 	
+	@RequestMapping(value="/menu07_05write", method=RequestMethod.GET)
+	public String menu07_05writeGet(){
+		logger.info("menu07_05write get");
+		
+		return "mobile/menu07_05Write";
+	}
+	
+	@RequestMapping(value="/menu07_05update", method=RequestMethod.GET)
+	public String menu07_05updateGet(){
+		logger.info("menu07_05update get");
+		
+		return "mobile/menu07_05Update";
+	}
+	
 	@RequestMapping(value="/menu07_06", method=RequestMethod.GET)
 	public String menu07_06Get(){
 		logger.info("menu07_06 get");
@@ -440,5 +454,19 @@ public class MobileController {
 		logger.info("menu07_06read get");
 		
 		return "mobile/menu07_06Read";
+	}
+	
+	@RequestMapping(value="/menu07_06write", method=RequestMethod.GET)
+	public String menu07_06writeGet(){
+		logger.info("menu07_06write get");
+		
+		return "mobile/menu07_06Write";
+	}
+	
+	@RequestMapping(value="/menu07_06update", method=RequestMethod.GET)
+	public String menu07_06updateGet(){
+		logger.info("menu07_06update get");
+		
+		return "mobile/menu07_06Update";
 	}
 }
