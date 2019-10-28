@@ -166,11 +166,10 @@
 				</div>
 				<div class="sub-contents">
 					<h4 class="tit">논문발표</h4><!-- 서브 콘텐츠 타이틀 -->
-		
 					<div class="inner">
-						<!-- 공지사항 게시판 시작 -->
-						<table class="board-notice-list">
-							<caption>공지사항 게시판</caption>
+						<!-- 공지사항 게시판 뷰 시작 -->
+						<table class="board-notice-view">
+							<caption>공지사항 게시판 뷰</caption>
 							<colgroup>
 								<col style="width: 100px;">
 								<col>
@@ -186,57 +185,55 @@
 								</tr>
 							</thead>
 							<tr>
-								<td class="">154</td>
-								<td class="subject">
-									<a href=""> Does the Removal of Retained Staples Really Improve Postoperative Chronic Sequelae After Transanal Stapled Operations...</a>
-								</td>
-								<td class="date">2014-05-09</td>
-								<td class="hit">3426</td>
+								<td>589</td>
+								<td class="subject"> Does the Removal of Retained Staples Really Improve Postoperative Chronic Sequelae After Transanal Stapled Operations? [2014.05.DCR]</td>
+								<td>2014-05-09</td>
+								<td>3426</td>
 							</tr>
 							<tr>
-								<td class="">153</td>
-								<td class="subject">
-									<a href=""> Fecal Continence Revisited: The Anal External Sphincter Continence Reflex [2013.11.DCR]</a>
+								<td colspan="4" class="con">
+									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
+									<h4 id="P26">MATERIALS AND METHODS</h4>
+									<p id="P27">We conducted a prospective study evaluating the data of all of the patients who underwent a stapled transanal procedure at our institution from January 2003 to December 2011. Patients who underwent the stapling procedure associated with another proctologic procedure for a concomitant anorectal disease were excluded from the study. According to our protocol, all of the patients were preoperatively evaluated with anorectal manometry and, if they were &gt;40 years of age, with colonoscopy to assess the absence of anal sphincter deficiency and endoluminal colonic disease.</p>
+									<div id="ej-clear-float"></div>
+									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
+									<h5 id="P28">Surgical Techniques</h5>
+									<p id="P29">The SH was performed according to the original technique using a PPH 01 or PPH 03 stapler (Ethicon Endosurgery, Inc., Cincinnati, OH).<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P63" target="_blank"><font size="2">10</font></a></sup> The STARR was performed with the use of 2 circular staplers implementing 3 separate one-half pursestrings (180°) per side.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P64" target="_blank"><font size="2">11</font></a></sup> The STARR was performed using the STARR-One technique, which involves the use of a high-volume circular stapler (Chex CPH34 HV, Frankenmann, Shuzhou, China) and the placement of 6 parachute stitches on the apex of the prolapse, so as to introduce a greater amount of prolapsed tissue within the housing of the stapler.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P65" target="_blank"><font size="2">12</font></a></sup> The TP was performed using a Transtar CCS-30 (Ethicon Endosurgery, Inc) stapler according to a modified technique, wherein the longitudinal opening of the prolapsed tissue was created using an electric scalpel between 2 Kocher clamps and not by application of a Transtar stapler.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P66" target="_blank"><font size="2">13</font></a></sup></p>
+									<div id="ej-clear-float"><font size="2"></font></div>
+									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
+									<h5 id="P30">Staple Removal</h5>
+									<p id="P31">The exposed staples were removed by plucking them out bluntly using a transanal approach with a disposable circular anal dilator or endoscopically with foreign body forceps (<a href="javascript:void(0);" target="_blank">Fig. 1</a>). In the presence of bleeding, some hemostatic stitches were placed. If not needed, we preferred not to resect the scar tissue around the staple line to avoid the risk of rectal perforation and sepsis.</p>
+									<div id="ej-article-body-img-column">
+									<div id="ej-article-body-img-cell"><a href="javascript:void(0);" target="_blank"></a></div><img border="0" alt="" align="top" src="http://www.chijil75.co.kr/data/cheditor4/1405/5ZVJDdCi4lZdhcXbPmzHKy.jpg" width="1200" height="377"><br><em><span id="ctl00_SPWebPartManager1_g_599004e9_5786_404b_8320_bb91746a6003_ctl00_slideShowUserControl_imageDescriptionForSlide">FIGURE 1. Staple ring with retained staples (arrow).</span><br></em></div>
+									<div id="ej-clear-float"></div>
+									<div id="ej-clear-float"></div>
+									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>				
 								</td>
-								<td class="date">2013-12-17</td>
-								<td class="hit">3837</td>
-							</tr>
-							<tr>
-								<td class="">152</td>
-								<td class="subject">
-									<a href=""> Assessment of Female Patients With Rectal Intussusception and Prolapse: Is This a Progressive Spectrum of Disease? [D...</a>
-								</td>
-								<td class="date">2013-12-05</td>
-								<td class="hit">6167</td>
-							</tr>
-							<tr>
-								<td class="">151</td>
-								<td class="subject">
-									<a href=""> Preliminary Results of Sacral Transcutaneous Electrical Nerve Stimulation for Fecal Incontinence [2013.03 DCR]</a>
-								</td>
-								<td class="date">2013-10-19</td>
-								<td class="hit">4238</td>
 							</tr>
 						</table>
-						<!-- 공지사항 게시판 끝 -->
+						<!-- 공지사항 게시판 뷰 끝 -->
+					</div>
 					
-						<!-- 페이징 시작 -->
-						<div id="board-pagenation">	<div class="inner"><a href="javascript:;"><svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path></svg><!-- <i class="fas fa-angle-double-left"></i> --></a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-left fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg><!-- <i class="fas fa-angle-left"></i> --></a><a href="javascript:;" class="on">1</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=2 ">2</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=3 ">3</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=4 ">4</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=5 ">5</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=6 ">6</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=7 ">7</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=8 ">8</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=9 ">9</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=10 ">10</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=11 "><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> --></a><a href="?select_key=&amp;input_key=&amp;Scod=BRD03&amp;pCode=536&amp;btap=&amp;page=16 "><svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path></svg><!-- <i class="fas fa-angle-double-right"></i> --></a>	</div></div>	<!-- 페이징 끝 -->
+					<div class="prev-next-list">
+						<ul class="inner">
+							<li>
+								<span>이전글</span><a href=""> Fecal Continence Revisited: The Anal External S...</a>		</li>
+							<li>
+								<span>다음글</span><a href="javascript:alert('다음글이 없습니다');">다음글이 없습니다</a>		</li>
+						</ul>
+					</div>
 					
-						<div class="search-box">
-							<form name="board_search" method="post" action="" onsubmit="return board_search_it(this)">
-								<select name="select_key" id="select_key">
-									<option value="b_title|b_content|m_id|m_name">전체</option>
-									<option value="b_title">제목</option>
-									<option value="b_content">내용</option>
-									<option value="m_id">아이디</option>
-									<option value="m_name">작성자</option>
-								</select>
-								<input type="text" title="검색어" name="input_key" value="">
-								<button type="submit">검색</button>
-							</form>
+					<!-- 게시판 버튼 시작 -->
+					<div class="btn-group">
+						<div class="inner">
+							<a href="" class="btn btn-list">목록으로</a>
 						</div>
 					</div>
+					<!-- 게시판 버튼 끝 -->
+					
+					<form name="board" method="post" action="/html/board/board_proc.php">
+						<input type="hidden" name="fparam">
+					</form>
 				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->

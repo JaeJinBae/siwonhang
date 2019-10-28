@@ -103,7 +103,7 @@
 		<!--  닫기 [위치 : include_web_footer.html ]  -->
 		
 		<!-- 서브 비주얼영역 시작  -->
-		<div id="sub-visual" data-menu="커뮤니티" data-sec="수술후기">
+		<div id="sub-visual" data-menu="커뮤니티" data-sec="전문의상담">
 			<div class="inner">
 				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>수술후기</button>
+						<button>전문의상담</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu07_01">공지사항</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu07_02">언론보도</a></li>
@@ -154,8 +154,8 @@
 							<li class=""><a href="${pageContext.request.contextPath}/menu07_01">공지사항</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu07_02">언론보도</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu07_03">논문발표</a></li>
-							<li class="active"><a href="${pageContext.request.contextPath}/menu07_04">수술후기</a></li>
-							<li class=""><a href="${pageContext.request.contextPath}/menu07_05">전문의상담</a></li>
+							<li class=""><a href="${pageContext.request.contextPath}/menu07_04">수술후기</a></li>
+							<li class="active"><a href="${pageContext.request.contextPath}/menu07_05">전문의상담</a></li>
 							<li class=""><a href="${pageContext.request.contextPath}/menu07_06">진료예약</a></li>
 						</ul>
 					</div>
@@ -165,64 +165,94 @@
 					</div>
 				</div>
 				<div class="sub-contents">
-					<h4 class="tit">수술후기</h4><!-- 서브 콘텐츠 타이틀 -->
+					<h4 class="tit">전문의상담</h4><!-- 서브 콘텐츠 타이틀 -->
+
 					<div class="inner">
-						<!-- 공지사항 게시판 뷰 시작 -->
-						<table class="board-notice-view">
-							<caption>공지사항 게시판 뷰</caption>
-							<colgroup>
-								<col style="width: 100px;">
-								<col>
-								<col style="width: 120px;">
-								<col style="width: 120px;">
-							</colgroup>
-							<thead>
+						<!-- privacy -->
+						<form name="inquire" id="inquire" method="post" action="" enctype="multipart/form-data" onsubmit="return false">
+							<input type="hidden" name="fparam" value="">
+							<input type="hidden" name="distinction" value="proc">
+							<input type="hidden" name="backpage" value="/html/index.html">
+							<input type="hidden" name="file_cnt" value="1">
+							
+							<table class="board-counsel-view">
+								<caption>상담게시판 상세</caption>
+								<colgroup>
+									<col style="width: 120px;">
+									<col>
+									<col style="width: 140px;">
+									<col style="width: 140px;">
+									<col style="width: 140px;">
+									<col style="width: 140px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>번호</th>
+										<th>제목</th>
+										<th>답변여부</th>
+										<th>작성자</th>
+										<th>작성일</th>
+										<th>첨부파일</th>
+									</tr>
+								</thead>
 								<tr>
-									<th>번호</th>
-									<th>제목</th>
-									<th>등록일</th>
-									<th>조회수</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>632</td>
-									<td class="subject"> 입원환자 후기입니다.</td>
-									<td>2019-04-10</td>
-									<td>17</td>
-								</tr>
-								<tr>
-									<td colspan="4" class="con">
-										<div><img alt="" src="/filedata/ckeditor/20190410_5FBB9C35A48D2404.jpg"></div>
+									<td>49</td>
+									<td class="subject" data-state="비공개">
+										<p>항문곤지름</p>
 									</td>
+									<td>
+										<i class="state com">답변완료</i>
+									</td>
+									<td>원항</td>
+									<td>2019-10-07</td>
+									<td></td>
 								</tr>
-							</tbody>
-						</table>
-						<!-- 공지사항 게시판 뷰 끝 -->
-					</div>
-					
-					<div class="prev-next-list">
-						<ul class="inner">
-							<li>
-								<span>이전글</span><a href=""> 박정민님 치료후기입니다.</a>
-							</li>
-							<li>
-								<span>다음글</span><a href="javascript:alert('다음글이 없습니다');">다음글이 없습니다</a>
-							</li>
-						</ul>
+							</table>
+							
+							
+							
+							
+							<!-- 게시글 상세 내용 -->
+							<div class="board-counsel-content">
+								남자항문주위랑항문곤지름 문의입니다 당일수술가능한지 알고싶습니다 수면마취후 수술가능핫지<br>
+								알고싶습니다
+							</div>
+							<!-- // 게시글 상세 내용 -->
+							<!-- reply -->
+							
+							
+							<div class="board-counsel-reply">
+								<div class="reply-title">
+									<i>답변</i> 온라인상담에 대한 답변입니다.
+								</div>
+								<div class="reply-txt">
+									안녕하세요?<br>
+									시원항 병원 정일권입니다.<br>
+									병원 홈페이지를 방문해 주셔서 감사 드립니다.<br>
+									피부에만 제한된 콘딜롬은 국소 마취하 당일 수술 퇴원 가능합니다.<br>
+									다만 항문관 내부에도 번져 있는 경우 척추 마취를 하시면 입원이 필요하오니 참고하시길 바랍니다.<br>
+									수면 마취는 가능합니다. <br>
+									<br>
+									감사합니다.
+								</div>
+								
+							</div><!-- reply end -->
+						</form>
 					</div>
 					
 					<!-- 게시판 버튼 시작 -->
 					<div class="btn-group">
 						<div class="inner">
-							<a href="" class="btn btn-list">목록으로</a>
+							<ul>
+								<li class="fl">
+									<a href="" class="btn btn-view-list">목록으로</a>
+								</li>
+								<li class="fr">
+									<a href="javascript:inquire_it('delete', '')" class="btn btn-del">삭제</a>&nbsp;<a href="" class="btn btn-update">수정</a>&nbsp;			</li>
+							</ul>
 						</div>
-					</div>
-					<!-- 게시판 버튼 끝 -->
-					
-					<form name="board" method="post" action="/html/board/board_proc.php">
-						<input type="hidden" name="fparam">
-					</form>
+					</div><!-- 게시판 버튼 끝 -->
+
 				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->

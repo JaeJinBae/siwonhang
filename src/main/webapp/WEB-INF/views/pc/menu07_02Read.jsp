@@ -166,11 +166,10 @@
 				</div>
 				<div class="sub-contents">
 					<h4 class="tit">언론보도</h4><!-- 서브 콘텐츠 타이틀 -->
-		
 					<div class="inner">
-						<!-- 공지사항 게시판 시작 -->
-						<table class="board-notice-list">
-							<caption>공지사항 게시판</caption>
+						<!-- 공지사항 게시판 뷰 시작 -->
+						<table class="board-notice-view">
+							<caption>공지사항 게시판 뷰</caption>
 							<colgroup>
 								<col style="width: 100px;">
 								<col>
@@ -184,83 +183,90 @@
 									<th>등록일</th>
 									<th>조회수</th>
 								</tr>
-							</thead>							
-							<tr>
-								<td class="">31</td>
-								<td class="subject">
-									<a href=""> 국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</a>
-								</td>
-								<td class="date">2019-04-24</td>
-								<td class="hit">388</td>
-							</tr>
-							<tr>
-								<td class="">30</td>
-								<td class="subject">
-									<a href=""> KNN 닥터스 조현언, 정일권 원장님 방송출연</a>
-								</td>
-								<td class="date">2019-03-05</td>
-								<td class="hit">233</td>
-							</tr>
-							<tr>
-								<td class="">29</td>
-								<td class="subject">
-									<a href=""> 겨울철 치질, 생활습관으로 예방해보아요!</a>
-								</td>
-								<td class="date">2018-12-13</td>
-								<td class="hit">353</td>
-							</tr>
-							<tr>
-								<td class="">28</td>
-								<td class="subject">
-									<a href=""> 양산건강검진 병원, 체계적인 시원항병원에서!</a>
-								</td>
-								<td class="date">2018-12-11</td>
-								<td class="hit">316</td>
-							</tr>
-							<tr>
-								<td class="">27</td>
-								<td class="subject">
-									<a href=""> 부산치질수술 시원항병원에서 일상 되찾아요</a>
-								</td>
-								<td class="date">2018-12-07</td>
-								<td class="hit">418</td>
-							</tr>
-							<tr>
-								<td class="">26</td>
-								<td class="subject">
-									<a href=""> 부산 대장내시경 검사 통해 건강 지켜보세요!</a>
-								</td>
-								<td class="date">2018-12-05</td>
-								<td class="hit">229</td>
-							</tr>
-							<tr>
-								<td class="">25</td>
-								<td class="subject">
-									<a href=""> 양산 대장내시경 검사도 시원항병원에서!</a>
-								</td>
-								<td class="date">2018-11-30</td>
-								<td class="hit">258</td>
-							</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>633</td>
+									<td class="subject"> 국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</td>
+									<td>2019-04-24</td>
+									<td>388</td>
+								</tr>
+								<tr>
+									<td colspan="4" class="con">
+										<div>
+											<div><strong><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">[진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</span></span></strong></div>
+											
+											<div><strong><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">국제신문 디지털콘텐츠팀 inews@kookje.co.kr 2019년4월23일 본지 24면</span></span></strong></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">&nbsp;<img alt="" src="/filedata/ckeditor/20190424_86B25DB2A994E2B7.png" style="margin: 10px;"></span></span></div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">식생활 서구화로 최근 변비나 변실금(본인 의지와 상관없이 변이 항문 주위에 묻는 증상) 환자가 갈수록 증가한다. 많은 환자가 내과를 찾으나 약물치료가 대부분이다. 약물치료 역시 체계적이지 않고, 환자의 증상에 따른 대증요법이 이룬다.</span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">최근 한 학회 발표를 보면 심지어 대학병원급에서도 변비나 변실금에 대한 체계적인 검사와 치료보다 변비약이나 지사제를 동시에 쓰면서 장의 움직임을 떨어뜨리거나 장운동을 촉진하는 약, 가스를 덜 차게하는 약, 신경 안정제 등 10가지 안팎의 약을 동시에 사용하고 있다. 환자는 제대로 된 항문 기능 검사를 받기 전에 이미 많은 약제에 노출된 실정이다. 약물을 장기간 복용하면서 장과 항문 기능이 크게 손상되고, 치료 적기를 놓쳐 심한 악성 변비나 변실금으로 진행되는 안타까운 사례를 많이 본다.</span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">대장내시경이나 대장 통과 시간 검사, 배변조영술(환자의 배변 습관을 확인하는 검사)과 마노메트리(직장 항문 압력검사)등 변비나 변실금에 대한 체계적 검사를 거쳐 질환 원인을 파악한 다음 적절한 치료를 하면 이러한 부작용을 예방하고, 변비나 변실금에 대한 근원적 치료를 할 수 있다. 바이오피드백(배변 습관을 교정하는 운동치료 요법) 등 약물치료를 능가하는 훌륭한 1차 치료 수단도 있으나 무턱대고 약물치료에만 의존하는 현실인 것이다.</span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">시원항병원이 그간 진료한 변비 및 변실금 환자를 분석해 학회(지난 5~7일 개최 제52차 대한대장항문학회 학술대회)에 보고한 자료를 보면 환자의 80~90%는 체계적 치료로 호전이 가능한 것으로 분석됐다. 대장내시경 등 대장·항문 관련 검사를 바탕으로 간단한 수술이나 바이오피드백, 보전적 약물치료로 나아질 수 있는 환자였던 것으로 판단된다. </span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">나머지 10~20% 정도가 ‘치골 신경 전기자극술’ 같은 변실금 수술이 필요한 악성 환자였다. 10명 중 8, 9명은 좀 더 쉽게 호전될 수 있음에도 항문 검사 등 체계적인 치료를 받지 못해 증상을 악화시켰다는 뜻이다.</span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">변실금 증상으로 내원한 환자를 항문경 해보면 항문 안에 분변이 완전히 배출되지 않아 가득 차 있는 것을 확인할 수 있다. 우리 병원에 변실금 증상으로 내원하는 환자의 70% 정도가 이렇게 잘못된 배변 습관이나 변비로 인한 불완전한 배변으로 ‘범람성 변실금’을 보여줬다. </span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">이같은 환자는 무조건 괄약근 기능을 올리는 데 치중한다고 문제가 해결되지 않는다. 식습관 관리와 잘못된 배변습관 치료, 직장류(직장 부위가 변비로 인해 늘어나는 질환) 치료 등을 통해 먼저 완벽한 배변이 될 수 있도록 유도하는 것이 증상을 호전시키는 데 도움을 줄 수 있다.</span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">요컨대 변비나 변실금을 겪는다고 약물치료(자극성 변비약 등)에만 의존하는 것은 변비를 더욱 악화시키거나 변실금으로 진행하도록 방치하는 결과를 초래한다. 당장 통증이 심하지 않다고 가볍게 생각하고 손쉬운 약물에만 의지를 할 게 아니라 대장항문 전문의를 찾아 진료받는 것이 현명한 결정이다. </span></span></div>
+											
+											<div>&nbsp;</div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">조현언 시원항병원 대표원장</span></span></div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;"><img height="0pt" src="file:///C:\Users\THEWEB~1\AppData\Local\Temp\DRW00004a5823ff.gif" width="0pt"></span></span></div>
+											
+											<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">Copyright ⓒ kookje.co.kr, All rights reserved.</span></span></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
 						</table>
-						<!-- 공지사항 게시판 끝 -->
+						<!-- 공지사항 게시판 뷰 끝 -->
+					</div>
 					
-						<!-- 페이징 시작 -->
-						<div id="board-pagenation">	<div class="inner"><a href="javascript:;"><svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path></svg><!-- <i class="fas fa-angle-double-left"></i> --></a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-left fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg><!-- <i class="fas fa-angle-left"></i> --></a><a href="javascript:;" class="on">1</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD02&amp;pCode=535&amp;btap=&amp;page=2 ">2</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD02&amp;pCode=535&amp;btap=&amp;page=3 ">3</a><a href="?select_key=&amp;input_key=&amp;Scod=BRD02&amp;pCode=535&amp;btap=&amp;page=4 ">4</a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> --></a><a href="?select_key=&amp;input_key=&amp;Scod=BRD02&amp;pCode=535&amp;btap=&amp;page=4 "><svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path></svg><!-- <i class="fas fa-angle-double-right"></i> --></a>	</div></div>	<!-- 페이징 끝 -->
+					<div class="prev-next-list">
+						<ul class="inner">
+							<li>
+								<span>이전글</span><a href=""> 겨울철 치질, 생활습관으로 예방해보아요!</a>		</li>
+							<li>
+								<span>다음글</span><a href=""> KNN 닥터스 조현언, 정일권 원장님 방송출연</a>		</li>
+						</ul>
+					</div>
 					
-						<div class="search-box">
-							<form name="board_search" method="post" action="" onsubmit="return board_search_it(this)">
-								<select name="select_key" id="select_key">
-									<option value="b_title|b_content|m_id|m_name">전체</option>
-									<option value="b_title">제목</option>
-									<option value="b_content">내용</option>
-									<option value="m_id">아이디</option>
-									<option value="m_name">작성자</option>
-								</select>
-								<input type="text" title="검색어" name="input_key" value="">
-								<button type="submit">검색</button>
-							</form>
+					<!-- 게시판 버튼 시작 -->
+					<div class="btn-group">
+						<div class="inner">
+							<a href="" class="btn btn-list">목록으로</a>
 						</div>
 					</div>
+					<!-- 게시판 버튼 끝 -->
+					
+					<form name="board" method="post" action="/html/board/board_proc.php">
+						<input type="hidden" name="fparam">
+					</form>
 				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->

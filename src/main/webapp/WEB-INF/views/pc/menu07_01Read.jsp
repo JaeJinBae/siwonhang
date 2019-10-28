@@ -166,11 +166,10 @@
 				</div>
 				<div class="sub-contents">
 					<h4 class="tit">공지사항</h4><!-- 서브 콘텐츠 타이틀 -->
-		
 					<div class="inner">
-						<!-- 공지사항 게시판 시작 -->
-						<table class="board-notice-list">
-							<caption>공지사항 게시판</caption>
+						<!-- 공지사항 게시판 뷰 시작 -->
+						<table class="board-notice-view">
+							<caption>공지사항 게시판 뷰</caption>
 							<colgroup>
 								<col style="width: 100px;">
 								<col>
@@ -186,50 +185,47 @@
 								</tr>
 							</thead>
 							<tr>
-								<td class="">3</td>
-								<td class="subject">
-									<a href=""> 시원항병원 5월 휴진 안내</a>
-								</td>
-								<td class="date">2019-05-03</td>
-								<td class="hit">275</td>
+								<td>634</td>
+								<td class="subject"> 시원항병원 5월 휴진 안내</td>
+								<td>2019-05-03</td>
+								<td>279</td>
 							</tr>
-						
 							<tr>
-								<td class="">2</td>
-								<td class="subject">
-									<a href=""> 시원항병원에 1월부터 새로운 의료진이 함께합니다.</a>
+								<td colspan="4" class="con">
+									<div style="text-align: center;"><img alt="" src="/filedata/ckeditor/20190503_DDC52C03E48651DE.png"></div>
+									<div style="text-align: center;">시원항병원 5월6일(월) 대체 공휴일 휴진입니다.</div>
+									<div style="text-align: center;">일정 참고하시어 내원 및 예약에 불편함 없으시길 바랍니다.</div>
 								</td>
-								<td class="date">2019-01-15</td>
-								<td class="hit">491</td>
-							</tr>
-						
-							<tr>
-								<td class="">1</td>
-								<td class="subject">
-									<a href=""> 시원항병원 홈페이지를 오픈하였습니다.</a>
-								</td>
-								<td class="date">2018-08-17</td>
-								<td class="hit">482</td>
 							</tr>
 						</table>
-						<!-- 공지사항 게시판 끝 -->
+						<!-- 공지사항 게시판 뷰 끝 -->
+					</div>
 					
-						<!-- 페이징 시작 -->
-						<div id="board-pagenation">	<div class="inner"><a href="javascript:;"><svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"></path></svg><!-- <i class="fas fa-angle-double-left"></i> --></a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-left fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg><!-- <i class="fas fa-angle-left"></i> --></a><a href="javascript:;" class="on">1</a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-right fa-w-8" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg><!-- <i class="fas fa-angle-right"></i> --></a><a href="javascript:;"><svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"></path></svg><!-- <i class="fas fa-angle-double-right"></i> --></a>	</div></div>	<!-- 페이징 끝 -->
+					<div class="prev-next-list">
+						<ul class="inner">
+							<li>
+								<span>이전글</span><a href=""><b>[공지]</b> 시원항병원에 1월부터 새로운 의료진이 함께합니다.</a>
+							</li>
+							<li>
+								<span>다음글</span><a href="javascript:alert('다음글이 없습니다');">다음글이 없습니다</a>
+							</li>
+						</ul>
+					</div>
 					
-						<div class="search-box">
-						<form name="board_search" method="post" action="" onsubmit="return board_search_it(this)">
-							<select name="select_key" id="select_key">
-								<option value="b_title|b_content|m_id|m_name">전체</option>
-								<option value="b_title">제목</option>
-								<option value="b_content">내용</option>
-								<option value="m_id">아이디</option>
-								<option value="m_name">작성자</option>
-							</select>
-							<input type="text" title="검색어" name="input_key" value="">
-							<button type="submit">검색</button>
-						</form>
-					</div></div>
+					
+					<!-- 게시판 버튼 시작 -->
+					<div class="btn-group">
+						<div class="inner">
+							<a href="/534/?pCode=534&amp;select_key=&amp;input_key=&amp;Scod=BRD01&amp;pCode=534&amp;btap=&amp;page=1" class="btn btn-list">목록으로</a>
+						</div>
+					</div>
+					<!-- 게시판 버튼 끝 -->
+					
+					
+					
+					<form name="board" method="post" action="/html/board/board_proc.php">
+						<input type="hidden" name="fparam">
+					</form>
 				</div>
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
