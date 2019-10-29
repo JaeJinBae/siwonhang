@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="병원장인사말">
+		<div id="sub-visual" data-menu="병원소개" data-sec="오시는 길">
 			<div class="inner">
 		
 			</div>
@@ -115,7 +115,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>병원장인사말</button>
+						<button>오시는 길</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
@@ -129,26 +129,32 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>병원장인사말</h5>
+			<h5>오시는 길</h5>
 		</div>
 		
+		<div id="daumRoughmapContainer1529972672030" class="root_daum_roughmap root_daum_roughmap_landing" style="width:95%; margin-bottom:25px;"></div>
+
 		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
-		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
-		
+			2. 설치 스크립트
+			* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
 		-->
-		<div class="pcode50001">
+		<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+		
+		<!-- 3. 실행 스크립트 -->
+		<script charset="UTF-8">
+			new daum.roughmap.Lander({
+				"timestamp" : "1529972672030",
+				"key" : "ora9",
+				"mapHeight" : "420"
+			}).render();
+		</script>
+
+		<div class="pcode50401">
 			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/500_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-500-01">
+				<img src="${pageContext.request.contextPath}/resources/img/m/contents/504_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-504-01">
 			</div>
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

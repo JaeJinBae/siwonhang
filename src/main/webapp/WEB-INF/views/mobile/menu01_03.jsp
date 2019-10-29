@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="병원장인사말">
+		<div id="sub-visual" data-menu="병원소개" data-sec="층별안내">
 			<div class="inner">
 		
 			</div>
@@ -115,7 +115,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>병원장인사말</button>
+						<button>층별안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
@@ -129,23 +129,55 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>병원장인사말</h5>
+			<h5>층별안내</h5>
 		</div>
 		
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
-		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
-		
-		-->
-		<div class="pcode50001">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/500_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-500-01">
+		<div class="floor-slider">
+			<div class="inner">
+				<div class="floor-pic">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+				</div>
+				<div class="floor-slider-controll">
+					<span class="tit" data-id="1">세미나실, 직원식당, 하늘정원</span>
+					<span class="tit" data-id="2">병동, VIP실, 1인실, 2인실, 4인실</span>
+					<span class="tit" data-id="3">병동, VIP실, 1인실, 2인실, 4인실</span>
+					<span class="tit" data-id="4">수술실, 내시경검사실</span>
+					<span class="tit" data-id="5">검진센터, 영상센터</span>
+					<span class="tit" data-id="6">접수/수납, 외래진료실</span>
+					<button class="btn-prev"><i class="fas fa-angle-left"></i></button>
+					<button class="btn-next"><i class="fas fa-angle-right"></i></button>
+				</div>
+				<ul class="floor-info">
+					<li class="active" data-slide="1">
+						<b>10F</b>
+						<span>세미나실, 직원식당<br>하늘정원</span>
+					</li>
+					<li data-slide="2">
+						<b>9F</b>
+						<span>병동, VIP실, 1인실,<br>2인실, 4인실</span>
+					</li>
+					<li data-slide="3">
+						<b>8F</b>
+						<span>병동, VIP실, 1인실,<br>2인실, 4인실</span>
+					</li>
+					<li data-slide="4">
+						<b>7F</b>
+						<span>수술실,<br>내시경검사실</span>
+					</li>
+					<li data-slide="5">
+						<b>6F</b>
+						<span>검진센터<br>영상센터</span>
+					</li>
+					<li data-slide="6">
+						<b>5F</b>
+						<span>접수/수납<br>외래진료실</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 

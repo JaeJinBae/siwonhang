@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="병원장인사말">
+		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
 			<div class="inner">
 		
 			</div>
@@ -115,7 +115,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>병원장인사말</button>
+						<button>차별성</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
@@ -129,9 +129,9 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>병원장인사말</h5>
+			<h5>차별성</h5>
 		</div>
-		
+			
 		<!--
 		.full	: padding :0;
 		.inner	: padding : 0 10px;
@@ -143,9 +143,9 @@
 		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
 		-->
-		<div class="pcode50001">
+		<div class="pcode50201">
 			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/500_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-500-01">
+				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
 			</div>
 		</div>
 
