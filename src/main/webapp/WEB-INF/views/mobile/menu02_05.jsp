@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="진료안내" data-sec="비급여 수가 공지">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>진료안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,14 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>비급여 수가 공지</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_01">의료진소개</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_02">외래 진료안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_03">입/퇴원안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_04">제증명안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_05">비급여 수가 공지</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_06">장비소개</a></li>	
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +131,17 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>비급여 수가 공지</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		
+		<div class="inner">
+		
+			<div class="pic">
+				<img src="${pageContext.request.contextPath}/resources/img/contents/non.jpg" alt="비급여진료비용">
 			</div>
 		</div>
-
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

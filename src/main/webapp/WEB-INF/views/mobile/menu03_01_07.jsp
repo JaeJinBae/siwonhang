@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,99 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>화농성 한선염</h5>
+			<p class="p-h6 pCode56701">
+				<img src="/assets/img/m/contents/567_img_01.png" alt="">
+				화농성 한선염(한선 농양)이란 땀샘에서 시작되는 만성염증으로 겨드랑이 회음부 서혜부 외음부 및 항문 주위에 생길 수 있습니다.<br>
+				정확한 생성빈도는 알 수가 없으나 치루에 비하여 1:300으로 생성된다고 생각되며 여자에게서 남자보다 많으며 
+				20-40세 사이에 가장 많은 생성빈도를 보이며 인종별 차이가 있다고 생각된다. 비만, 여드름, 불결한 위생, 다한, 탈모제 등이 유발요인이 될 수 있습니다.  
+			</p>
+			
+			<h5>원인</h5>
+			<p class="p-h6">
+				화농성 한선염의 원인은 아포크린땀샘의 이상에 의하여 생기는 질환으로 아포크린땀샘은 겨드랑이 둔부 항문 외음부 배꼽주위, 
+				외이 두피 등에 주로 존재하며 대개 모공과 같이 있으며 피하지방까지 내려가 있습니다. <br>
+				우리의 몸은 사춘기가 지난 후에 활성화되며 진하고 끈끈한 분비물을 냅니다. 대개의 경우에 진피에 국한되어 존재하는 코일형상의 땀샘이며 피부표면에서 약 5mm정도가 떨어져 있다. 이러한 땀샘이 진한 분비물에 의하여 막히는 경우에 염증이 생기며 한선농양이 생긴다고 생각됩니다.한선 농양이 사춘기 이후에 생기므로 남성호르몬(Androgen)이 생성원인에 작용한다고 생각된다. 또한.한선 농양은 피하지방이 많은 사람에게서 더욱 많은 빈도를 보인다. 아포크린땀샘이 감염이 되기 위하여서는 땀샘의 내관이 막히게 되며 내관이 늘어나고 염증반응이 생기며 이에 따라 이차적 세균감염이 있어야 합니다. 
+			</p>
+			
+			<h5>증상</h5>
+			<p class="p-h6">
+				피부 염증 및 종기가 생깁니다 <br>
+				물처럼 연하고 냄새가 많이 나는 분비물을 보입니다.<br>
+				누공을 형성해 섬유화 변화를 일으켜 관절의 운동을 방해할 수 있습니다.<br>
+				분비물의 냄새가 심해 사회 생활에 지장이 생길 수 있습니다. 
+			
+			</p>
+			
+			<h5>치료</h5>
+			<p class="p-h6">
+				수술적 치료에는 총 4가지의 방법이 있습니다.<br><br>
+				① 절제와 일차봉합<br>
+				② 절제와 피부이식 <br>
+				③ 절제와 조대술 <br>
+				④ 절제와 충전 <br><br>
+			
+				1차 봉합은 비교적 작은 병변에 사용이 되며, 병변이 더 큰 경우에는 
+				광범위한 절제 후 개방창상을 남겨 놓고 육아 조직에 의한 상처 치유가 생기도록 하는 것이 가장 흔한 외과적 치료입니다.
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

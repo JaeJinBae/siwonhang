@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,85 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>직장탈출증이란?</h5>
+			<p class="p-h6">
+				대변을 볼 때 직장이 빠져 나오는 것을 직장탈이라 합니다. 흔히 항문이 빠져 나오는 것을 치질이라고 하지만 직장탈과 치질은 다릅니다. 구체적인 것은 
+				대장 항문외과 세부전문의사의 전문적인 진단을 받을 필요가 있습니다. 직장탈은 배변 시에 항문을 통해서 직장이 탈출되어 나오는 것을 말합니다.
+			</p>
+			
+			<h5>원인</h5>
+			<p class="p-h6">
+				배변 시 반복적으로 과도한 힘주기나 분만 시 스트레스가 원인이 될 수도 있습니다. 나이가 들어감에 따라서 직장을 지지하는 조직이 약해지고 항문 근육이 약해집니다.<br>
+				어떤 경우에는 척수 손상이나 척수 질환 같은 신경학적 문제가 직장탈출을 일으킬 수 있습니다.
+			</p>
+			
+			<h5>증상</h5>
+			<p class="p-h6">
+				배변장애 및 불완전한 배변감, 점액 분비, 출혈, 변실금
+			</p>
+			
+			<h5>치료</h5>
+			<p class="p-h6">
+				단순 변비치료와 화장실에서 배변 시 무리하게 힘을 주는 것을 교정하는 것만으로는 치료가 불충분함으로 수술적 방법이 최선입니다.
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

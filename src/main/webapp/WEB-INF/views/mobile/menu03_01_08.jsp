@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,86 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>모소동</h5>
+			<p class="p-h6 pCode56801">
+				<img src="/assets/img/m/contents/568_img_01.png" alt=""></p><p>
+				</p><p class="p-h6">
+				모소동이란 [그림1] 과 같이 엉덩이선 피부에 생기는 만성적인 감염증이라 할 수 있습니다.<br>
+				이 질환은 여자보다 남자에서 흔히 발생하며 주로 사춘기에서 40살에 흔한 질환이며 비만이 있거나 체모가 딱딱하고 두꺼운 사람에게서 잘 생깁니다.
+			</p>
+			
+			<h5>증상</h5>
+			<p class="p-h6">
+				모소동의 증상은 나타나는 증상의 크기가 작은 보조개 모양부터 큰 엉덩이에 이르기 까지 다양해서 어느 한 가지 라고 말씀드리기가 어렵습니다.<br>
+				주로 병변이 있는 구멍으로부터 액체성분이 흘러나오게 됩니다. 이것 역시 맑은 액체에서부터 피가 섞여 있거나 고름처럼 혼탁한 액체가 흘러 나올 수도 있습니다. <br>
+				세균감염이 동반되면 주위의 피부가 붉게 변하고 거길 누르면 통증이 있고 흘러나오는 액체에서 심한 냄새가 나기도 합니다. <br>
+				또한 감염의 상태가 심하면 열과 감기 증상과 같은 근육통이 생기기도 합니다. 
+			</p>
+			
+			<h5>치료</h5>
+			<p class="p-h6">
+				갑자기 생긴 모소동의 경우는 국소마취하에 절개해 고름 제거를 합니다.<br>
+				만성적인 모소동의 경우는 수술을 해서 염증이 있는 공간을 외부에 노출시키거나 공간자체를 완전히 들어 내버리는 방법으로 치료를 합니다. <br>
+				피부에 생긴 구멍이 여러 개 이거나 자주 재발하는 경우는 반드시 수술적 치료만이 그 질환을 치료 할 수 있는 유일한 방법입니다.
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

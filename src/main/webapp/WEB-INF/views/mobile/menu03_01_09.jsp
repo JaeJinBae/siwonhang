@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,131 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>항문성병</h5>
+			<p class="p-h6">
+				성행위로 전파될 수 있는 모든 감염성 질환을 성병이라 하며 항문에도 성병이 급격히 증가하고 있습니다.<br>
+				일반적으로 성기에 항문성병을 동반하며 여성의 경우 성기에 동반하는 성병이 대개 항문주위로 옮아가는 것이 대부분이고 남성의 경우
+				남성 동성 연애자들이 항문을 통한 성접촉을 함으로써 성병을 유발시킵니다. 
+			</p>
+			
+			<h5>항문콘딜로마</h5>
+			<p class="p-h6">
+				성행위 없이 감염되는 경우도 있으나, 일종의 성병으로 대개는 성행위 후에 발생하며, 항문 성행위를 하는 남성 동성연애자에게 잘 발생합니다. 바이러스에 의해 발생하며
+				감염된 후 1~6개월 후에 발생합니다.<br>
+				통계상으로는 젊은 연령에 많고 여자에게 약간 더 많이 발생하고 있습니다.<br><br>
+				원인 : 인체유두종 바이러스<br>
+				항문에서 발생하는 성병질환으로 가장 흔히 볼 수 있는 것으로 흔히 곤지름이라 불리우기도 하는데, 인체 유두종 바이러스가 발병 원인이며, 성 접촉 후 약 1개월 내지 6개월간의 잠복기를 지난 후 발병하고 있습니다.<br>
+				증상 : 조그만 사마귀같은 것이 여러 개 항문 주위에 발생하며, 접촉하면 쉽게 출혈됩니다. 눈으로 한번 보면 알 수 있으며, 2기 매독인 편평콘딜로마와 감별하기 위해 매독검사가 필요합니다. <br>
+				진단 : 육안 검사 및 조직 검사 <br>
+				치료 : 포도필린 도포 및 외과적 절제술
+			</p>
+			
+			<h5>임질</h5>
+			<p class="p-h6">
+				원인 : 성 접촉 후 약 5-7일간의 잠복기를 지나 발병하며, 특히 여성인 경우 임질성 질염에 의한 질 분비물이 항문 주위를 오염시키면서 항문에 임균성 질환이 발생되기도 합니다.<br>
+				증상 : 배변시 잔변감, 혈액성 점액<br>
+				진단 : 도말검사<br>
+				치료 : 항생제처방 및 3개월 이내 재감염여부 검사 필수 <br>
+			</p>
+			
+			<h5>헤르페스</h5>
+			<p class="p-h6">
+				원인 : 항문 성교 후 4~7일간의 잠복기가 지난 후에 두통, 발열, 전신 권태감으로 시작되며 대부분은 회음부 동통, 작열감, 분비물 및 항문 소양증을 느끼나 무증상인 경우도 있습니다.<br>
+				증상 : 포진 발생 <br>
+				조그만 물집이 여러 개가 모여 생기면서 점점 발적이 되고 나중에 터져 궤양을 형성하여 헐게 됩니다. 헐게 되면 나중에 가피를 형성하여 이것이 떨어지면서 치유되는 것으로 단순 포진 바이러스의 감염에 의한 것이며, 단순포진은 1형, 2형으로 분류되나 항문에 감염을 일으키는 것은 2형으로 항문주위 또는 회음부에 자주 발생합니다.<br>
+				진단 : 현미경 관찰 및 바이러스 배양<br>
+				진단은 수포나 궤양부의 조직은 현미경으로 관찰하거나, 바이러스를 배양하여 확인할 수 있습니다.<br>
+				치료 : 항바이러스 약제 복용 및 연고 도포 
+			</p>
+			
+			<h5>항문소양증이란</h5>
+			<p class="p-h6">
+				항문 주위가 가려워서 자꾸 긁게 되는 증상을 말합니다. 특히 야간과 배변 후에 나타나며, 심해지면 매우 성가시고 견디기 힘들게 됩니다.
+			</p>
+			
+			<h5>원인</h5>
+			<p class="p-h6">
+				항문 주위의 과도한 청결, 땀 등으로 인한 습한 조건, 무른 변, 짜고 매운 음식을 섭취한 뒤의 자극적인 변, 과도한 수분 섭취, 카페인이나 초콜릿, 견과류, 팝콘 등의 음식을 들 수 있고 그 밖에 요충, 건선, 습진, 피부염, 치열, 항문 주위의 염증, 알레르기 등이 항문소양증의 원인이 됩니다.<br><br>
+			
+				특히, 항문 소양증이 있는 사람들은 항문을 비누로 자주 씻거나 목욕수건 등으로 세차게 씻음으로써 청결을 유지하려 하지만, 이것은 오히려 피부를 보호하는 기름층을 씻어버려 
+				증상을 악화시키게 됩니다.
+			</p>
+			
+			<h5>진단</h5>
+			<p class="p-h6">
+				소양증과 관련된 과거 병력을 확인하여야 하며 알러지나 약물, 전신 질환, 특히 당뇨, 변비, 설사 등 동반 질환의 유무로 같이 진단합니다.<br>
+				또한 항문이나 직장의 이상 유무를 확인하고 이의 연관 유무를 확인하여 정확한 치료를 할 수 있도록 합니다.
+			</p>
+			
+			<h5>치료</h5>
+			<p class="p-h6">
+				우선 항문 소양증의 원인이 무엇인지 규명하여야 합니다.<br>
+				원인이 밝혀지면 원인 치료와 증상 치료를 병행합니다.<br>
+				소양증이 나타난 부위의 더 이상의 손상을 주지 않도록 합니다.<br>
+				항문 세척 시 비누를 사용하지 않도록 합니다.<br>
+				배변 후에는 물로 가볍게 씻거나 축축한 수건으로 닦은 후 잘 말려줍니다.<br>
+				항문 주위를 습하게 하지 않도록 합니다.<br>
+				처방된 약만 사용해야 합니다.<br>
+				과도한 수분 섭취를 피합니다.
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

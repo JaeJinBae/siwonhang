@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,122 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>치열이란?</h5>
+			<p class="p-h6">
+				항문 입구의 피부 부분이 찢어져서 항문의 통증과 피가 나는 것을 치열이라고 합니다.<br><br>
+			
+				점차 반복되어 찢어질수록 내괄약근까지 노출되어 경련이 일어나 배변 후에도 한동안 통증이 지속되기도 합니다.<br>
+				상처부위 자극으로 인해 상처 위쪽 아래쪽으로 피부과 부위 밖으로 돌출되는 피부꼬리가 생겨 나게 됩니다.
+			</p>
+			
+			<h5>치열의 원인</h5>
+			<p class="p-h6">
+				치열의 원인은 딱딱한 대변으로 항문관이 손상을 받아서 생기게 되는데 항문 뒤쪽은 근육이 약해서 잘 찢어지므로 이곳에서 많이 생기는 것으로 보고 있습니다.
+			</p>
+			
+			<h5>치열의 증상</h5>
+			
+			<div class="mb25" style="overflow-x: auto;">
+				<table class="tbl">
+					<caption>시원항병원 기본종합검진</caption>
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>통증</th>
+							<th>출혈</th>
+							<th>변비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tac">배변 시나 배변 후까지  아주 심한 통증이 있고 1~2시간,  심지어 하루 종일 지속되기도 하여 사회생활에 지장을 주기도 합니다</td>
+							<td class="tac">궤양부위에서 출혈이 되며  선홍색으로 휴지에 묻는 정도의 소량의 출혈이 있습니다.</td>
+							<td class="tac">배변 시 심한 통증에 대한 두려움으로 배변 장애가 생기게 됩니다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<h5>치열의 치료</h5>
+			<h6>보존적치료 (급성 치열)</h6>
+			<p class="p-h6">
+				온수좌욕 : 40~45도씨의 따뜻한 물에 약 3분간 좌욕을 합니다.<br>
+				약물 요법 : 소염제, 혈행개선제, 변완하제를 투여합니다.<br>
+				연고나 좌약 : 취침 시나 배변 후에 사용하면 통증 완화에 도움이 됩니다.<br>
+				고 섬유식이 : 섬유소를 많이 섭취함으로써 변을 부드럽게 만들어줍니다.
+			</p>
+			
+			
+			<h6>치열의 수술치료 (만성 치열)</h6>
+			<p class="p-h6">
+				1.내괄약근 측방절개술<br>
+				치열이 있는 환자는 보통 항문압이 증가되어 항문을 꽉 조이게 되는데, 피부를 조금 절개하여 내괄약근을 부분적으로 반정도 절개하면 배변 시 항문압이 감소되고 내괄약근의 경련이 사라져 배변 후에도 항문에 통증이 없고, 항문이 부드러워지며, 찢어진 부위가 치료 됩니다.<br><br>
+			
+				2.집보양형 피부판 이동술(HOUSE FLAP)<br>
+				이 수술법은 항문의 찢어진 피부가 없는 궤양 부위에 건강한 피부를 이식하여 덮어주는 수술법입니다. 보통은 내괄약근 측방절개술만 시행하지만, 양병원에서는 집모양형 피부판 이동술을 같이 시행해 줍니다.
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

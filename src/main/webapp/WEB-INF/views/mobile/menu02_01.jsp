@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="진료안내" data-sec="의료진소개">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>진료안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,14 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>의료진소개</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_01">의료진소개</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_02">외래 진료안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_03">입/퇴원안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_04">제증명안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_05">비급여 수가 공지</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_06">장비소개</a></li>	
 						</ul>
 					</li>
 				</ul>
@@ -129,23 +131,421 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>의료진소개</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="doctor-list">
+			<div class="inner">
+				<div class="doctor">
+					<!-- 조현언 대표원장 시작 -->
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic01.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic01.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>조현언 대표원장</b>
+								<span><i>주 진료분야</i> : 대장, 항문</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>  </td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							대장·항문외과 세부전문의<br>
+							대장·항문외과 대장내시경 세부전문의<br>
+							국립 부산대학교 의과대학 외래 교수<br>
+							국립 경상대학교 의과대학 외래 교수<br>
+							경상대학교 대학원 의학과 박사 학위<br>
+							대한외과학회 평생회원<br>
+							대한대장항문학회 평생회원<br>
+							대한내시경학회 회원<br>
+							미국대장항문병학회(ASCRS) 정회원<br>
+							영국 로얄 인퍼머리 그람피안 유니버시티 연수<br>
+							영국 런던 세이트마크 병원 대장항문외과 연구
+						</p>
+					</div>
+					<!-- 조현언 대표원장 끝 -->
+		
+					<!-- 정일권 대표원장 시작 -->
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic02.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic02.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>정일권 대표원장</b>
+								<span><i>주 진료분야</i> : 대장, 항문</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술/진료</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td> </td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동아대학교 의학과 졸업, 동 대학원 의학과 박사학위<br>
+							동아대학교 부속병원 외과전공의 수료<br>
+							외과 전문의<br>
+							전 한솔병원 외과장<br>
+							전 강남치항외과, 클린항외과 원장<br>
+							대한외과학회 외과전문의  및 평생회원<br>
+							대한대장항문학회 세부전문의 및 평생회원<br>
+							대한비민학회및대한비만체형학회평생회원<br>
+							미용외과학회평생회원<br>
+							영남비만성형학회이사<br>
+							Balyor 의과대학 및 M.D  Anderson Cancer Center 연수<br>
+							일본 Takano 대장항문센터 인수<br>
+							현 동아대학교 부속병원 외래 교수
+						</p>
+					</div>
+					<!-- 정일권 대표원장 끝 -->
+		
+					<!--  오종영 원장 시작 -->
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic06.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic06.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>오종영 원장</b>
+								<span><i>주 진료분야</i> : 영상의학과</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>  </td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동아대학교 의과대학 졸업, 동 대학원 의학과 박사학위<br>
+							동아대학교병원 영상의학과 전공의 수료<br>
+							영상의학과 전문의<br>
+							전 동아대학교병원 영상의학과 과장<br>
+							전 동아대학교병원 중앙 진료부장<br>
+							전 동아대학교 의과대학 영상의학과 주임교수<br>
+							전 동아대학교 의과대학 부학장<br>
+							전 대한영상의학회 복부영상의학 이사<br>
+							전 부산경남 복부영상의학회 회장<br>
+							대한영상의학회 정회원<br>
+							대한초음파의학회 평생회원 및 초음파 교육 인증의<br>
+							미국 M.D Anderson cancer center 장기연수<br>
+							미국 베일러 의과대학 단기연수<br>
+							
+						</p>
+					</div>
+					<!-- 오종영 원장 끝 -->
+		
+		
+					<!-- 박시영 원장 시작 -->
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic03.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic03.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>박시영 원장</b>
+								<span><i>주 진료분야</i> : 대장, 항문, 복강경</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술/진료</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td> </td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동아대학교 의학과 졸업<br>
+							외과 전문의<br>
+							동아대학교 부속병원 외과전공의 수료<br>
+							전 함안중앙병원 외과 과장<br>
+							전 칠원현대병원 외과 과장<br>
+							전 동아대학교 부속병원 임상 교수<br>
+							전 조은현대병원 외과 과장<br>
+							전 부산성모병원 외과 과장<br>
+							전 영도병원 외과 과장<br>
+							대한외과학회 평생회원<br>
+							대한대장항문학회 정회원<br>
+							대한내시경복강경학회 정회원<br>
+							대한정맥학회 회원<br>
+						</p>
+					</div>
+					<!-- 박시영 원장 끝 -->
+		
+		
+					<!-- 이호영 원장 시작 -->
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic04.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic04.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>이호영 원장</b>
+								<span><i>주 진료분야</i> : 대장, 항문, 복강경</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>수술/진료</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>수술</td>
+								<td>진료</td>
+								<td>  </td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동아대학교 의학과 졸업<br>
+							동아대학교 부속병원 외과 전공의 수료 <br>
+							외과 전문의<br>
+							전 동아대학교 부속병원 임상 교수<br>
+							부산대학교병원 외과 겸임교원<br>
+							전 부산의료원 외과 과장<br>
+							전 패밀리외과의원 외과 과장<br>
+							전 웅상중앙병원 외과 과장<br>
+							전 새항운병원 외과 과장<br>
+							대한 외과학회 평생회원<br>
+							대한 대장항문학회 평생회원<br>
+							2차병원 외과 복강경 수술연구회 회원<br>
+							대한 외과 초음파학회 회원<br>
+							대한 탈장학회 평생회원<br>
+						</p>
+					</div>
+					<!-- 이호영 원장 끝 -->
+		
+					<!--양재남과장 시작 -->
+		
+						
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic05.jpg" alt="" style="display: none;">
+							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic05.jpg');">
+							</div>
+						</div>
+						<div class="doctor-name">
+							<p>
+								<b>양재남 원장</b>
+								<span><i>주 진료분야</i> : 내과</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>진료</td>
+								<td>내시경</td>
+								<td>진료</td>
+								<td>내시경</td>
+								<td>진료</td>
+								<td>내시경</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>내시경</td>
+								<td>진료</td>
+								<td>격주휴무</td>
+								<td>진료</td>
+								<td>내시경</td>
+								<td></td>
+							
+							</tr>		
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동국대학교 의과대학 졸업<br>
+							동국대학교 일산병원 내과 전공의<br>
+							동국대학교 일산병원 소화기내과 전임의<br>
+							국군포천·대구병원 소화기내과 군 중견의<br>
+							전 동국대학교 경주병원 소화기내과 임상조교수<br>
+							내과전문의<br>
+							대한내과학회 소화기내과 분과 전문의 취득<br>
+							대한소화기내시경학회 내시경 세부 전문의 취득<br>
+							한국심초음파학회 심초음파 인증의 취득<br>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 

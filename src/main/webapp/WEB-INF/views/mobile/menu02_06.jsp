@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="진료안내" data-sec="장비소개">
 			<div class="inner">
 		
 			</div>
@@ -103,11 +103,11 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>진료안내</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu03_01">특성화 진료</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01_01">특성화 진료</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu04_01">외과 질환 센터</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu05_01">내과 질환 센터</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu06_01">건강검진</a></li>
@@ -115,12 +115,14 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>장비소개</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_01">의료진소개</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_02">외래 진료안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_03">입/퇴원안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_04">제증명안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_05">비급여 수가 공지</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu02_06">장비소개</a></li>	
 						</ul>
 					</li>
 				</ul>
@@ -129,9 +131,11 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>장비소개</h5>
 		</div>
-			
+		
+		
+		
 		<!--
 		.full	: padding :0;
 		.inner	: padding : 0 10px;
@@ -143,9 +147,9 @@
 		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
 		-->
-		<div class="pcode50201">
+		<div class="pcode51601">
 			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+				<img src="${pageContext.request.contextPath}/resources/img/m/contents/516_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-516-01">
 			</div>
 		</div>
 

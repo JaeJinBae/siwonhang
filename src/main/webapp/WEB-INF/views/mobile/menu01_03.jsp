@@ -107,7 +107,7 @@
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu03_01_01">특성화 진료</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">특성화 진료</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu04_01">외과 질환 센터</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu05_01">내과 질환 센터</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu06_01">건강검진</a></li>

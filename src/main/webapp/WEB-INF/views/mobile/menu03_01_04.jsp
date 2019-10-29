@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="병원소개" data-sec="차별성">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
 			<div class="inner">
 		
 			</div>
@@ -103,7 +103,7 @@
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>병원소개</button>
+						<button>특성화 진료</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
@@ -115,12 +115,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>차별성</button>
+						<button>대장·항문외과</button>
 						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원장인사말</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_02">차별성</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_03">층별안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu01_04">오시는 길</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_01">대장·항문외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_02">복강경수술</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_03">골반저 질환(변비·변실금)</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -129,26 +129,96 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>차별성</h5>
+			<h5>대장·항문외과</h5>
 		</div>
-			
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
 		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
 		
-		-->
-		<div class="pcode50201">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/502_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-502-01">
+		<div class="inner active">
+		
+			<!-- 다장 항문외과 탭메뉴 시작 -->
+			<!-- 페이지 비주얼 영역 시작 -->
+			<div class="pcode51301">
+				<div class="full">
+					<img src="${pageContext.request.contextPath}/resources/img/m/contents/561_img_01.png" alt="">
+				</div>
 			</div>
+			<!-- 페이지 비주얼 영역 끝 -->
+			
+			<!-- 대장 항문외과 탭메뉴 시작 -->
+			<div class="siwonhanh-tab active">
+				<ul class="active">
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_01" title=""><span>치핵</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_02" title=""><span>치루</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_03" title=""><span>치열</span></a>
+					</li>
+					<li class="active">
+						<a href="${pageContext.request.contextPath}/m/menu03_01_04" title=""><span>항문주위농양</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_05" title=""><span>직장류</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_06" title=""><span>직장탈출증</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_07" title=""><span>화농성 한선염</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_08" title=""><span>모소동</span></a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/m/menu03_01_09" title=""><span>기타</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 대장 항문외과 탭메뉴 끝 -->
+			
+			<script>
+				$('.pnb > ul > li:nth-child(1)').addClass('active');
+				$('.pnb > ul > li:nth-child(1) a + ul').css('display', 'block');
+			</script><!-- 다장 항문외과 탭메뉴 끝 -->
+			
+			<h5>항문주위농양</h5>
+			<p class="p-h6">
+				항문벽을 보호하는 점액을 만들어내는 샘이 염증을 일으키면 항문주위에 고름이 고이게 되는데 이것을 항문 주위 농양이라 합니다.
+			</p>
+			
+			<h5>원인</h5>
+			<p class="p-h6">
+				항문 속 1-2cm 정도에는 항문샘이라는 구조가 4-10개 있습니다.  이 곳에서는 샘에서 샘물이 나오듯 배변 시에 항문 내의 윤활 작용을 하는 분비물이 나옵니다. 항문샘은 위의 그림 &lt;항문샘의 구조&gt;에서 보시는 것처럼 움푹 파인 구조이므로 대장 내에 있던 세균이 들어가기 쉽습니다. <br>
+				세균이 들어간다고 해서 항상 감염이 생기는 것은 아니지만, 환자의 상태가 감염이 되기 쉬운 상태가 되면 세균 감염이 일어나고 고름이 고이게 됩니다.
+			</p>
+			
+			<h5>증상</h5>
+			<p class="p-h6">
+				처음에 항문 주위나 안에 애매한 통증이 있습니다.<br>
+				더 진행하면 항문주위가 부으면서 통증이 더 심해지며 열이 나기도 합니다.<br>
+				염증이 생겨서 아프다가 고름이 터져 나오다가 절개 배농하면 통증이 즉시 완화됩니다.<br>
+				부은 농양이 터져 고름이나 진물 등의 분비물이 항문 주위나 안에서 나와 항시 항문이 지저분하고 속옷을 더럽히는 경험을 반복하는 경우가 흔합니다.<br>
+				항문 주위를 만져보면 마치 심이 박힌 듯한 딱딱한 몽우리가 만져집니다.<br>
+				항문 주위에 구멍이 뚫린 것을 볼 수도 있습니다.
+			</p>
+			
+			<h5>진단</h5>
+			<p class="p-h6">
+				대개 전문의가 눈으로 보거나 만져만 봐도 진단할 수 있습니다.<br>
+				내개구(치루의 시작부위)가 불분명한 경우에는 직장항문초음파 검사를 시행하면 농양의 크기와 위치, 치루의 주행 경로 등 좀 더 정확한 진단이 가능합니다.
+			</p>
+			
+			<h5>치료</h5>
+			<p class="p-h6">
+				항문 깊이 있는 경우에는 외부에서는 구별이 안되고 항문 깊이 아프면서 감기기운이 있는 듯할 수도 있습니다. 항문 주위 농양은 절개하여
+				배농하는 것이 가장 좋은 치료입니다. 절개 후 치루가 발생하는 경우가 많은데 치루가 발생하면 근본적인 수술을 해야합니다. 
+			</p>
+			
+		
 		</div>
-
+		
 	</section> <!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->
