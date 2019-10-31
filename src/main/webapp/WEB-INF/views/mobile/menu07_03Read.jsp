@@ -88,22 +88,23 @@
 	<!-- 콘텐츠 영역 시작 (메인일 경우 #main-container / 서브일 경우 #sub-container) -->
 	<section id="sub-container">
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
-	
+		
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="건강검진" data-sec="검진센터소개">
+		<div id="sub-visual" data-menu="커뮤니티" data-sec="공지사항">
 			<div class="inner">
 		
 			</div>
 		</div>
 		<!-- 서브 비주얼영역 끝 -->
 		
+		
 		<!-- BreadCrumb 시작 -->
 		<div id="breadcrumb">
 			<div class="full">
 				<ul>
 					<li class="gnb">
-						<button>건강검진</button>
-						<ul>
+						<button>커뮤니티</button>
+						<ul style="">
 							<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
 							<li><a href="${pageContext.request.contextPath}/m/menu03_01">특성화 진료</a></li>
@@ -114,317 +115,59 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>국민건강보험공단 건강검진</button>
-						<ul>
-							<li><a href="${pageContext.request.contextPath}/m/menu06_01">검진센터소개</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu06_02">종합건강검진센터</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu06_03">국민건강보험공단 건강검진</a></li>
-							<li><a href="${pageContext.request.contextPath}/m/menu06_04">채용검진</a></li>
+						<button class="">논문발표</button>
+						<ul style="display: none;">
+							<li><a href="${pageContext.request.contextPath}/m/menu07_01">공지사항</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu07_02">언론보도</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu07_03">논문발표</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu07_04">수술후기</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu07_05">전문의상담</a></li>
+							<li><a href="${pageContext.request.contextPath}/m/menu07_06">진료예약</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<!-- BreadCrumb 끝 -->
+		
 		<div class="sub-title">
-			<h5>국민건강보험공단 건강검진</h5>
+			<h5>논문발표</h5>
+		</div>
+		
+		<div class="board-notice-view">
+			<ul class="full">
+				<li class="subject">	
+					<div class="title"> Does the Removal of Retained Staples Really Improve Postoperative Chronic Sequelae After Transanal Stapled Operations? [2014.05.DCR]</div>
+					<p class="info">
+						<!--i class='name'>최</i><span class='line'>|</span--><i class="date">2014-05-09</i><span class="line">|</span><i class="hit">조회수		3430</i>
+					</p>
+				</li>
+				<li class="con">
+					
+				</li>
+			</ul>
 		</div>
 		
 		
-		<div class="inner">
-			<h5>국민건강보험공단 건강검진</h5>
-			<p class="p-h6">국민건강보험법에 따라 지역가입자 및 직장가입자, 직장피부양자 건강관리를 위한 검진을 실시하고 있습니다.</p>
-			
-			<h5>검진대상 (2015년 기준)</h5>
-			<h6>일반건강검진</h6>
-			<div class="scroll" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>일반건강검진</caption>
-					<colgroup>
-						<col width="15%">
-						<col width="50%">
-						<col width="35%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>구분</th>
-							<th>대상</th>
-							<th>실시주기</th>
-						</tr>
-					</thead>
-					<tr>
-						<td class="tac">지역가입자</td>
-						<td>세대주 및 만 40세 이상인 자</td>
-						<td>2년에 1회</td>
-					</tr>
-					<tr>
-						<td class="tac">직장가입자</td>
-						<td>비사무직 근로자 전체<br>
-						사무직 근로자 중 격년제 실시에 따른 2015년도  대상자</td>
-						<td>비사무직 1년 1회<br>
-						사무직 2년 1회</td>
-					</tr>
-					<tr>
-						<td class="tac">직장피부양자</td>
-						<td>만 40세 이상 피부양자 중 홀수년도 출생자</td>
-						<td>2년에 1회</td>
-					</tr>
-				</table>
-			</div>
-			<br>
-			
-			<h6>생애전환기 건강진단</h6>
-			<div class="scroll" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>생애전환기 건강진단</caption>
-					<colgroup>
-						<col width="30%">
-						<col width="70%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>구분</th>
-							<th>대상</th>
-						</tr>
-					</thead>
-					<tr>
-						<td class="tac">지역가입자</td>
-						<td>만 40세, 만 66세 해당하는 세대주 및 세대원</td>
-					</tr>
-					<tr>
-						<td class="tac">직장가입자</td>
-						<td>만 40세, 만 66세에 해당하는 근로자 (사무직, 비사무직 구분없음)</td>
-					</tr>
-					<tr>
-						<td class="tac">직장피부양자</td>
-						<td>만 40세 이상 피부양자 중 홀수년도 출생자</td>
-					</tr>
-				</table>
-			</div>
-			<br>
-			
-			<h6>암검진</h6>
-			<div class="scroll" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>암검진</caption>
-					<colgroup>
-						<col width="20%">
-						<col width="80%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>구분</th>
-							<th>대상</th>
-						</tr>
-					</thead>
-					<tr>
-						<td class="tac">위암</td>
-						<td>만 40세 이상인 자</td>
-					</tr>
-					<tr>
-						<td class="tac">유방암</td>
-						<td>만 40세 이상인 여성</td>
-					</tr>
-				    <tr>
-						<td class="tac">대장암</td>
-						<td>만 50세 이상인 자</td>
-					</tr>
-					<tr>
-						<td class="tac">자궁경부암</td>
-						<td>만 20세 이상인 여성</td>
-					</tr>
-					<tr>
-						<td class="tac">간암</td>
-						<td>전 2년간 간암발생 고위험군(간경변증, 만성간질환자 등) 중 만 40세 이상인 자 <br>
-						  과년도 일반건강검진 B형간염바이러스 표면항원검사 또는 C형간염바이러스 HCV Antibody 검사결과 양성자 중 <br>
-						  40세 이상인 자 
-						</td>
-					</tr>
-			
-				</table>
-			</div> <br>
-			
-			<h6>비용부담</h6>
-			<div class="scroll" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>비용부담</caption>
-					<colgroup>
-						<col width="20%">
-						<col width="40%">
-						<col width="40%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>항목</th>
-							<th>비용</th>
-							<th>비고</th>
-						</tr>
-					</thead>
-					<tr>
-						<td class="tac">건강검진<br>(일반,생애전환기)</td>
-						<td>공단 전액 부담</td>
-						<td rowspan="2">※ 생애전환기건강검진 대상자의 암검진 비용은 전액 공단부담<br>
-						※ 국가암조기검진사업 대상자에 대한 본인부담금(10%)는 국가에서 부담</td>
-					</tr>
-					<tr>
-						<td class="tac">암검진</td>
-						<td>공단 90%, 수검자 10% 자궁경부암은 전액 공단 부담 </td>
-					</tr>
-				</table>
-			</div>
-
-			<h6>검진항목</h6>
-			<div class="scroll" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>검진항목</caption>
-					<colgroup>
-						<col width="20%">
-						<col width="10%">
-						<col width="15%">
-						<col width="55%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th width="117">구분</th>
-							<th colspan="2">대상</th>
-							<th width="98">검사항목</th>
-						</tr>
-					</thead>
-					<tr>
-						<td rowspan="2" class="tac">일반건강검진</td>
-						<td colspan="2" class="tac">1차</td>
-						<td>문진 및 체위검사, 흉부방사선검사, 혈액검사,<br>
-						   요검사, 구강검진  등 22개 항목 </td>
-					</tr>
-					<tr>
-						<td colspan="2" class="tac">2차</td>
-						<td>고혈압, 당뇨병 의심자 및 인지기능장애 고위험군에 대한  검진결과 상담 및 보건교육 등 3개 질환 6개 항목</td>
-					</tr>
-					<tr>
-						<td rowspan="4" class="tac">생애전환기건강검진</td>
-						<td rowspan="2" class="tac">1차</td>
-						<td class="tac">만40세</td>
-						<td>진찰 및 상담, B형간염항원 항체검사  등 24항목</td>
-					</tr>
-					<tr>
-						<td class="tac">만66세</td>
-						<td>진찰 및 상담, 골밀도검사(여성), 노인기능검사  등 24항목</td>
-					</tr>
-				    <tr>
-						<td rowspan="2" class="tac">2차</td>
-						<td class="tac">만40세</td>
-						<td>고혈압, 당뇨병 의심자 및 건강진단결과 및 건강위험평가 상담 </td>
-					</tr>
-					<tr>
-						<td class="tac">만66세</td>
-						<td>고혈압, 당뇨병 의심자 및 건강진단결과 및 건강위험평가 상담 </td>
-					</tr>
-			        <tr>
-						<td rowspan="5" class="tac">암검진</td>
-						<td colspan="2" class="tac">위암</td>
-						<td>위내시경검사 (유소견자 →  조직검사)<br>
-						   *위암  검진은 일주일 전 예약필수 </td>
-					</tr>
-					<tr>
-						<td colspan="2" class="tac">유방암</td>
-						<td>유방촬영(양측)</td>
-					</tr>
-		            <tr>
-						<td colspan="2" class="tac">대장암</td>
-						<td>분변잠혈반응검사(유소견자  대장내시경검사)</td>
-		            </tr>
-		            <tr>
-						<td colspan="2" class="tac">간암</td>
-						<td>간초음파 + 혈청알파태아단백검사</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="tac">자궁경부암</td>
-						<td>자궁경부세포검사 </td>
-					</tr>
-				</table>
-			</div>
-			
-			<h6>결과통보</h6>
-			<p class="p-h6">검진결과는 검진 기관에서 15일 이내에 검진 받으신 분의 주소지로 발송해드립니다.<br>
-			- 출처 : 국민건강보험공단 1577-1000</p>
-			<h6>검진항목 검사 추가 패키지</h6>
-			
-			<div class="scroll02" style="overflow-x: auto;">
-				<table class="tbl">
-					<caption>검진항목 검사 추가 패키지</caption>
-					<colgroup>
-						<col width="20%">
-						<col width="15%">
-						<col width="65%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>상품</th>
-							<th>기본검진항목</th>
-							<th>추가항목</th>
-						</tr>
-					</thead>
-					<tr>
-					    <td class="tac">주요혈액  검사</td>
-					    <td rowspan="5" class="tac">공단</td>
-					    <td>이상지질혈증(고지혈증), 혈당, 간염(B형,C형), 
-						갑상선기능, 췌장기능, 관절염, 매독 검사 </td>
-					</tr>
-					<tr>
-					    <td class="tac">혈액  암표지자 검사 </td>
-					    <td>혈액으로  주요 암 검사<br>
-			         	혈액  암표지자 검사 : 대장암, 간암, 담낭 및  췌장암, 난소암 또는 전립선암</td>
-					</tr>
-					<tr>
-						<td class="tac">암유전자검사</td>
-						<td>14가지암 및 심혈관질환 예측함<br>
-						  (위, 대장, 간, 전립선, 유방, 난소, 자궁, 췌장, 두경부, 갑상선암, 백혈병, 심혈관, 약물대사)</td>
-					</tr>
-					<tr>
-						<td class="tac">남성 맞춤  검사</td>
-						<td>전립선암표지자  검사(혈액검사), 흉부CT, 상복부초음파 </td>
-					</tr>
-					<tr>
-						<td class="tac">여성 맞춤 검사 </td>
-						<td>난소암표지자  검사(혈액검사), 유방초음파, 갑상선초음파, 3D초음파</td>
-					</tr>
-				</table>
-			</div>
-			<p class="p-info">※검사항목 추가시 비용이 추가로 발생될 수 있습니다.</p>
-			
-			<h6>건강검진 유의사항</h6>
-			<ol class="list_num_h6">
-				<li>금식
-					<ul>
-						<li>저녁식사는 8시 이전에 가볍게 드시고 그 이후에는 금식하세요.<br>
-						(단, 물은 저녁 12시 이전까지 드셔도 됩니다. 기름진 음식 및 과식은 피하세요.)</li>
-						<li>술, 단배 및 지나친 피로를 피하시고 충분히 휴식하시기 바랍니다.</li>
-						<li>음주, 과식, 과격한 운동은 정확한 검사를 방해하므로 반드시 피해주시기 바랍니다.</li>
-					</ul>
-				</li>
-				<li>약물 복용 안내
-					<ul>
-						<li>내시경(위, 대장)을 예약하신 분 중 심장이나 뇌혈관 질환으로 아스피린, 쿠마딘(와파린), 플라빅스 등의 혈액응고 억제제를
-						복용하시는 경우 반드시 담당 의사와 상의 후 검사하십시오.</li>
-					</ul>
-				</li>
-				<li>여성검진자
-					<ul>
-						<li>여성분들은 생리가 끝나고 5일 이후부터 검사가 가능합니다. (소변검사, 자궁경부암검사)</li>
-						<li>가임기의 모든 여성분들은 검진예약 전 반드시 임신여부를 확인하여 주십시오.</li>
-						<li>자궁세포진(자궁경부암)검사를 받으실 여성은 24시간 내 성관계 및 질정 사용을 금해주십시오.</li>
-					</ul>
-				</li>
-				<li>기타사항
-					<ul>
-						<li>수면내시경 검사를 하시는 분은 검진 후 자가운전이 위험하므로 반드시 대중교통을 이용하시기 바랍니다.</li>
-						<li>위내시경 검사 후 최초 1시간 정도는 음식물을 먹는 것을 삼가 또는 주의하여야 합니다.</li>
-					</ul>
-				</li>
-			</ol>
-
+		<div class="prev-next-list">
+			<ul class="full">
+				<li>
+					<span>이전글</span><a href="javascript:alert('이전글이 없습니다');">이전글이 없습니다</a>		</li>
+				<li>
+					<span>다음글</span><a href=""> Fecal Continence Revisited: The Anal External S...</a>		</li>
+			</ul>
 		</div>
+		
+		
+		<!-- 게시판 버튼 시작 -->
+		<div class="btn-group">
+			<div class="inner">
+				<a href="" class="btn btn-list">목록으로</a>
+			</div>
+		</div>
+		<!-- 게시판 버튼 끝 -->
 
+	
 	</section><!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
 
 	<!-- 풋터 시작 (style.layout.css) -->

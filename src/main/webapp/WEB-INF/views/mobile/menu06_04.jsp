@@ -128,29 +128,43 @@
 		<!-- BreadCrumb 끝 -->
 		
 		<div class="sub-title">
-			<h5>검진센터소개</h5>
+			<h5>채용검진</h5>
 		</div>
 		
-		<!--
-		.full	: padding :0;
-		.inner	: padding : 0 10px;
-		
-		서브페이지 url이 http://daniel.wetheweb.net/m/?pCode=499면,
-		1. class는 pCode-499-01, pCode-499-02, pCode-499-03 ..... 순서로 시작됩니다.
-		2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
-		3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
-		4. map 사용시 usemap 또한 class명과 일치합니다.
-		
-		-->
-		<div class="pcode52901">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/529_img_01.png" alt="분야별 외과 전문의가 진료하는" usemap="pCode-529-01">
-			</div>
-		</div>
-		<div class="pcode52902">
-			<div class="full">
-				<img src="${pageContext.request.contextPath}/resources/img/m/contents/529_img_02.png" alt="" usemap="pCode-529-02">
-			</div>
+		<div class="inner">
+			<h5>채용검진</h5>
+			<p class="p-h5">채용검진은 일반 기업체에서 새로 채용한 직원을 대상으로 실시하는 신체검사입니다.</p>
+			
+			<h5>검사항목</h5>
+			<p class="p-h5">진찰, 신체계측, 혈압측정, 흉부X선 촬영, 간효소수치, 콜레스테롤, 간염항원/항체, 요당/요단백 검사</p>
+			
+			<h5>대상 및 실시 규칙</h5>
+			<ul class="list_ul_h5">
+				<li>대상 : 각 기업체에서 입사시에 요구되는 신체 검사서를 발급받기를 원하시는 분</li>
+				<li>관련법규 : 산업안전보건법 제 43조에 의거 사업주의 실시 의무 규정, 근로자의 수검 의무 규정</li>
+			</ul>
+			<h5>검진 시 유의사항</h5>
+			<ul class="list_ul_h5">
+				<li>소요시간 : 약 30분  ~ 1시간</li>
+				<li>결과처리 : 약 2~3일 소요</li>
+				<li>준비물 : 신분증 (공무원채용검진은 반명함판 사진 1장 준비)</li>
+				<li>주의사항 : 검진 당일은 공복을 유지하십시오. (물, 음료수 음용도 안됩니다)</li>
+			</ul>
+			<h5>검사 전에 확인하실 사항</h5>
+			<p class="p-h5">제출하실 기관의 채용신검에 관한 별도의 규정이 있는지 확인하신 후 반드시 검사 전에 미리 말씀해 주셔야 합니다.</p>
+			<ol class="list_num_h5">
+				<li>발급병원이 별도로 지정되어 있는지를 확인하시기 바랍니다.
+				    <ul>
+						<li>예) 국/공립 종합병원장, 군 보건의료원장 발행 등의 지정이 있는 경우를 제외하면 본원에서 발급해 가시는 것이 가능합니다.</li>
+					</ul>
+				</li>
+				<li>일정기준이 별도로 지정되어 있는지를 확인하시기 바랍니다.
+					<ul>
+						<li> 직무의 특수성이 있는 공무원 (사업장)의 신체검사에 대한 불합격 판정기준은 소속장관이 행정 안전부 장관과 협의하여
+						따로 지정할 수 있어서 일반적인 합격기준과 다를 수 있습니다.</li>
+					</ul>
+				</li>
+			</ol>
 		</div>
 
 	</section><!-- #main-container , #sub-container 닫기 [위치 : include_web_top.html ] -->
