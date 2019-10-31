@@ -223,8 +223,6 @@
 				</div>
 				<!-- 게시판 버튼 끝 -->
 			
-				<script type="text/javascript" src="/lib/js/board.js"></script>
-			
 			</div>
 		</form>
 
