@@ -135,47 +135,61 @@
 		<div class="floor-slider">
 			<div class="inner">
 				<div class="floor-pic">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
-					<img src="${pageContext.request.contextPath}/resources/img/contents/floor01.png" alt="">
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1001.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>	
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1002.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1003.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1004.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1005.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1006.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1007.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
+					<div>
+						<img src="${pageContext.request.contextPath}/resources/img/contents/floor1008.jpg" alt=""/>
+						<span class="tit">하늘정원</span>
+					</div>
 				</div>
 				<div class="floor-slider-controll">
-					<span class="tit" data-id="1">세미나실, 직원식당, 하늘정원</span>
-					<span class="tit" data-id="2">병동, VIP실, 1인실, 2인실, 4인실</span>
-					<span class="tit" data-id="3">병동, VIP실, 1인실, 2인실, 4인실</span>
-					<span class="tit" data-id="4">수술실, 내시경검사실</span>
-					<span class="tit" data-id="5">검진센터, 영상센터</span>
-					<span class="tit" data-id="6">접수/수납, 외래진료실</span>
 					<button class="btn-prev"><i class="fas fa-angle-left"></i></button>
 					<button class="btn-next"><i class="fas fa-angle-right"></i></button>
 				</div>
 				<ul class="floor-info">
 					<li class="active" data-slide="1">
 						<b>10F</b>
-						<span>세미나실, 직원식당<br>하늘정원</span>
 					</li>
 					<li data-slide="2">
 						<b>9F</b>
-						<span>병동, VIP실, 1인실,<br>2인실, 4인실</span>
 					</li>
 					<li data-slide="3">
 						<b>8F</b>
-						<span>병동, VIP실, 1인실,<br>2인실, 4인실</span>
 					</li>
 					<li data-slide="4">
 						<b>7F</b>
-						<span>수술실,<br>내시경검사실</span>
 					</li>
 					<li data-slide="5">
 						<b>6F</b>
-						<span>검진센터<br>영상센터</span>
 					</li>
 					<li data-slide="6">
 						<b>5F</b>
-						<span>접수/수납<br>외래진료실</span>
 					</li>
 				</ul>
 			</div>

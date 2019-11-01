@@ -3,7 +3,7 @@
 <header id="header" class="trn">
 	<div class="inner">
 		<a class="btn-call" href="tel:051-331-7275"><img src="${pageContext.request.contextPath}/resources/img/m/common/btn_call.png" alt="전화걸기"></a>
-		<a href="${pageContext.request.contextPath}/m" class="logo"><img src="${pageContext.request.contextPath}/resources/img/m/common/logo.png" alt="로고"></a>
+		<a href="${pageContext.request.contextPath}/" class="logo"><img src="${pageContext.request.contextPath}/resources/img/m/common/logo.png" alt="로고"></a>
 		<div id="hamburger" class="hamburger spin">
 			<div class="box">
 				<div class="bar"></div>

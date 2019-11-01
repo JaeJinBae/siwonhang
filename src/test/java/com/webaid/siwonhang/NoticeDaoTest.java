@@ -6,15 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.webaid.domain.NoticeVO;
-import com.webaid.persistence.BeforeAfterDao;
+import com.webaid.persistence.NoticeDao;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"file:src/main/webapp/WEB-INF/spring/**/*.xml"})
 public class NoticeDaoTest {
 
 	@Autowired
-	private BeforeAfterDao dao;
+	private NoticeDao dao;
 	
 	@Test
 	public void selectAll(){

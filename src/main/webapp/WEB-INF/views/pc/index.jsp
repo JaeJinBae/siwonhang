@@ -130,19 +130,19 @@
 				<ul class="special-diagnosis">
 					<li class="bg01">
 						<h5 class="tit">대장·항문외과</h5>
-						<a href="${pageContext.request.contextPath}/" class="more">자세히 보기</a>
+						<a href="${pageContext.request.contextPath}/menu03_01" class="more">자세히 보기</a>
 					</li>
 					<li class="bg02">
 						<h5 class="tit">복강경수술</h5>
-						<a href="${pageContext.request.contextPath}/" class="more">자세히 보기</a>
+						<a href="${pageContext.request.contextPath}/menu03_02" class="more">자세히 보기</a>
 					</li>
 					<li class="bg03">
 						<h5 class="tit"><b>골반저</b>질환</h5>
-						<a href="${pageContext.request.contextPath}/" class="more">자세히 보기</a>
+						<a href="${pageContext.request.contextPath}/menu03_03" class="more">자세히 보기</a>
 					</li>
 					<li class="bg04">
 						<h5 class="tit">비만외과</h5>
-						<a href="${pageContext.request.contextPath}/" class="more">자세히 보기</a>
+						<a href="${pageContext.request.contextPath}/menu03_04_01" class="more">자세히 보기</a>
 					</li>
 				</ul>
 				<div class="special-kinds">
@@ -150,17 +150,17 @@
 						<h6 class="tit">외과 질환 센터</h6>
 						<ul>
 							<li class="bg02">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu03_02">
 									<span>복강경수술</span>
 								</a>
 							</li>
 							<li class="bg03">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu04_02">
 									<span>유방·갑상선</span>
 								</a>
 							</li>
 							<li class="bg04">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu04_03">
 									<span>하지정맥류</span>
 								</a>
 							</li>
@@ -170,27 +170,27 @@
 						<h6 class="tit">내과 질환 센터</h6>
 						<ul>
 							<li class="bg05">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu05_01">
 									<span>소화기질환</span>
 								</a>
 							</li>
 							<li class="bg06">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu05_02">
 									<span>순환기 질환</span>
 								</a>
 							</li>
 							<li class="bg07">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu05_03">
 									<span>호흡기질환</span>
 								</a>
 							</li>
 							<li class="bg08">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu05_04">
 									<span>내분비질환</span>
 								</a>
 							</li>
 							<li class="bg09">
-								<a href="${pageContext.request.contextPath}/">
+								<a href="${pageContext.request.contextPath}/menu05_05">
 									<span>위·대장 내시경</span>
 								</a>
 							</li>
@@ -212,10 +212,10 @@
 					</div>
 				</li>
 				<li>
-					<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/main/health_center01.png" alt=""></a>
-					<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/main/health_center02.png" alt=""></a>
-					<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/main/health_center03.png" alt=""></a>
-					<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/main/health_center04.png" alt=""></a>
+					<a href="${pageContext.request.contextPath}/menu06_01"><img src="${pageContext.request.contextPath}/resources/img/main/health_center01.png" alt=""></a>
+					<a href="${pageContext.request.contextPath}/menu06_02"><img src="${pageContext.request.contextPath}/resources/img/main/health_center02.png" alt=""></a>
+					<a href="${pageContext.request.contextPath}/menu06_03"><img src="${pageContext.request.contextPath}/resources/img/main/health_center03.png" alt=""></a>
+					<a href="${pageContext.request.contextPath}/menu06_04"><img src="${pageContext.request.contextPath}/resources/img/main/health_center04.png" alt=""></a>
 				</li>
 			</ul>
 		</section>
@@ -233,23 +233,23 @@
 						</div>
 					</li>
 					<li class="medical-subject-list">
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu02_01">
 							<img src="${pageContext.request.contextPath}/resources/img/main/info_icon01.png" alt="">
 							<span>의료진 진료과 소개</span>
 						</a>
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu02_02">
 							<img src="${pageContext.request.contextPath}/resources/img/main/info_icon02.png" alt="">
 							<span>외래진료 안내</span>
 						</a>
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu02_03">
 							<img src="${pageContext.request.contextPath}/resources/img/main/info_icon03.png" alt="">
 							<span>입 퇴원 안내</span>
 						</a>
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu02_04">
 							<img src="${pageContext.request.contextPath}/resources/img/main/info_icon04.png" alt="">
 							<span>제증명 안내</span>
 						</a>
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu02_05">
 							<img src="${pageContext.request.contextPath}/resources/img/main/info_icon05.png" alt="">
 							<span>비급여수가 공지</span>
 						</a>
@@ -265,12 +265,12 @@
 					<li class="location">
 						<h6 class="tit">오시는길</h6>
 						<p class="cap">부산광역시 북구 금곡대로 27</p>
-						<a class="more" href="${pageContext.request.contextPath}/">자세히 보기</a>
+						<a class="more" href="${pageContext.request.contextPath}/menu01_04">자세히 보기</a>
 					</li>
 					<li class="floor-guide">
 						<h6 class="tit">층별안내</h6>
 						<p class="cap">시원항병원 층별안내</p>
-						<a class="more" href="${pageContext.request.contextPath}/">자세히 보기</a>
+						<a class="more" href="${pageContext.request.contextPath}/menu01_03">자세히 보기</a>
 					</li>
 					<li class="notice">
 						<h6 class="tit">공지사항</h6>
@@ -279,10 +279,10 @@
 							<li><a href="${pageContext.request.contextPath}/">시원항병원에 1월부터 새로운 의료진이 함께합니다.</a></li>
 							<li><a href="${pageContext.request.contextPath}/">시원항병원 홈페이지를 오픈하였습니다.</a></li>
 						</ul>
-						<a href="${pageContext.request.contextPath}/" class="more">MORE +</a>
+						<a href="${pageContext.request.contextPath}/menu07_01" class="more">MORE +</a>
 					</li>
 					<li class="newsletter">					
-						<a href="${pageContext.request.contextPath}/">
+						<a href="${pageContext.request.contextPath}/menu07_02">
 							<i class="thumb">
 								<img src="" alt="">
 								<i class="more">언론보도 +</i>
