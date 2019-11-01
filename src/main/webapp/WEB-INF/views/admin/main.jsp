@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>다니엘성형외과의원 진료과목 피부과</title>
+<title>시원항병원 관리자페이지</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Expires" content="-1">
@@ -16,15 +16,18 @@
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/style_admin.css" type="text/css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/jquery-ui.css" type="text/css">
-<link href="https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
 <script src="${pageContext.request.contextPath}/resources/admin/js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/jquery-ui-1.11.1.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.default.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.layer.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/resources/admin/js/function.calendar.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.admin.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js" type="text/javascript"></script>
+<link href="https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="https://www.google.com/uds/?file=visualization&amp;v=1&amp;packages=corechart" type="text/javascript"></script>
+<link href="https://www.google.com/uds/api/visualization/1.0/36558b280aac4fa99ed8215e60015cff/ui+ko.css" type="text/css" rel="stylesheet">
+<script src="https://www.google.com/uds/api/visualization/1.0/36558b280aac4fa99ed8215e60015cff/format+ko,default+ko,ui+ko,corechart+ko.I.js" type="text/javascript"></script>
 <script>
 function draw_browser_chart(info){
 	var res_arr = [["\ube0c\ub77c\uc6b0\uc838\ubcc4\ud1b5\uacc4","\uc811\uc18d\uc790"]];
@@ -91,17 +94,17 @@ function sttGet(type, d1, d2){
 google.load("visualization", "1", {packages:["corechart"]});
 $(function(){
 	
-	google.setOnLoadCallback(draw_browser_chart);
+	/* google.setOnLoadCallback(draw_browser_chart);
 	google.setOnLoadCallback(draw_time_chart);
-
+	*/
 	var ndate = new Date();
 	var year = ndate.getFullYear();
 	var month = ndate.getMonth()+1;
 	var date = ndate.getDate();
 	month = (month > 9) ? month+"":"0"+month;
 	date = (date > 9) ? date+"":"0"+date;
-	sttGet("time", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
-	sttGet("browser", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
+	/* sttGet("time", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
+	sttGet("browser", year+"-"+month+"-"+date, year+"-"+month+"-"+date); */
 	$("#chart1 > span").text(year+"년 "+month+"월 "+date+"일 ");
 	$("#chart2 > span").text(year+"년 "+month+"월 "+date+"일 ");
 });
@@ -204,9 +207,7 @@ $(function(){
 		</div><!-- admin_right 끝 -->
     </div><!-- container 끝 -->
 
-    <div id="admin_footer">
-        <div class="f_contents nanum_n">COPYRIGHT ⓒ <span class="txt_blue_b nanum_b">다니엘성형외과의원 진료과목 피부과</span> ALL RIGHT RESERVED</div>
-    </div>
+    <jsp:include page="include/footer.jsp"></jsp:include>
 </div><!-- wrap 끝 -->
 
 

@@ -146,7 +146,7 @@ button {font-size: 12px;}
 /** 메인 **/
 
 /** 레프트메뉴 **/
-#admin_left { position:relative; background-color:#333; width:240px; height:100%; padding-bottom:130px; min-height:100%; margin-left:-240px; } /*width:240px;*/
+#admin_left { position:relative; background-color:#333; width:240px; height:100%; padding-bottom:130px; min-height:100%;} /*width:240px;*/
 #admin_left .left_logo_area { position:relative; width:100%; height:200px; }
 #admin_left .left_logo_area .left_logo { width:240px; padding:75px 0; margin:0 auto; text-align:center;}
 #admin_left .left_menu { position:relative; width:100%; height:auto; }
