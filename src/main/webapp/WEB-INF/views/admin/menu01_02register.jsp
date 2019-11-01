@@ -82,12 +82,12 @@ $(function(){
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>게시판관리&nbsp;&gt;&nbsp;</li>
-					<li>공지사항</li>
+					<li>언론보도</li>
 				</ul>
-			</div>
+			</div>			
 			
 			<div class="main_bottom_area">
-				<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu01_01register${pageMaker.makeSearch(pageMaker.cri.page)}">
+				<form id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/admin/menu01_02register${pageMaker.makeSearch(pageMaker.cri.page)}">
 					<input type="hidden" name="no" value="0">
 					<div class="write_area">
 						<div class="write_box">
@@ -139,8 +139,15 @@ $(function(){
 									<td>
 										<textarea id="b_content" name="content"></textarea>
 										<script type="text/javascript">
-											CKEDITOR.replace('content',{filebrowserUploadUrl:"${pageContext.request.contextPath}/admin/imgUpload/notice",height:500});
+											CKEDITOR.replace('content',{filebrowserUploadUrl:"${pageContext.request.contextPath}/admin/imgUpload/news",height:500});
 										</script>
+									</td>
+								</tr>
+								<tr class="cont">
+									<td class="title">첨부파일</td>
+									<td id="attach">
+										<div><input type="file" name="upload"></div>
+										<br><strong></strong>
 									</td>
 								</tr>
 							</table>
@@ -148,11 +155,11 @@ $(function(){
 				
 						<div class="btn_area">
 							<p class="btn_left">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_01'">리스트</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_02'">리스트</button>
 							</p>
 							<p class="btn_right">
 								<input type="submit" class="btn_black" value="등록">&nbsp;
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_01register'">취소</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_02register'">취소</button>
 							</p>
 						</div><!-- btn_area end -->
 					</div><!-- write_area end -->
