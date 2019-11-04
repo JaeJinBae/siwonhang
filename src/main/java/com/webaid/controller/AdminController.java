@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -42,12 +41,15 @@ import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
 import com.webaid.domain.SearchCriteria;
+import com.webaid.domain.ThesisVO;
 import com.webaid.service.AdviceService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
 import com.webaid.service.ReviewService;
 import com.webaid.service.StatisticService;
+import com.webaid.service.ThesisService;
 import com.webaid.service.UserService;
+import com.webaid.util.FileDelete;
 
 /**
  * Handles requests for the application home page.
@@ -65,9 +67,10 @@ public class AdminController {
 	private NewsService newsService;
 	
 	@Autowired
+	private ThesisService tService;
+	
+	@Autowired
 	private ReviewService rService;
-	
-	
 	
 	@Autowired
 	private UserService uService;
@@ -212,17 +215,17 @@ public class AdminController {
 		if(btype.equals("notice")){
 			innerUploadPath = "resources/uploadNotice/";
 		}else if(btype.equals("beforeAfter")){
-			innerUploadPath = "resources/uploadBeforeAfter/";
+			innerUploadPath = "resources/uploadNews/";
 		}else if(btype.equals("realStory")){
-			innerUploadPath = "resources/uploadRealStory/";
+			innerUploadPath = "resources/uploadThesis/";
 		}else if(btype.equals("caution")){
-			innerUploadPath = "resources/uploadCaution/";
+			innerUploadPath = "resources/upload/";
 		}else if(btype.equals("review")){
-			innerUploadPath = "resources/uploadReview/";
+			innerUploadPath = "resources/upload/";
 		}else if(btype.equals("event")){
-			innerUploadPath = "resources/uploadEvent/";
+			innerUploadPath = "resources/upload/";
 		}else if(btype.equals("advice")){
-			innerUploadPath = "resources/uploadAdvice/";
+			innerUploadPath = "resources/upload/";
 		}
 		
 		String uploadPath = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
@@ -412,8 +415,57 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value = "/menu01_02update", method = RequestMethod.POST)
-	public String menu01_02updatePost(NewsVO vo, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts, Model model, HttpServletRequest req) throws Exception {
+	public String menu01_02updatePost(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
 		logger.info("menu01_01update Post");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadNews/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		//이미지 업로드 끝
+		
+		String thumbState = mtfReq.getParameter("uploadState");
+		
+		
+		NewsVO vo = new NewsVO();
+		NewsVO prevVO = newsService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setWriter(mtfReq.getParameter("writer"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setCnt(Integer.parseInt(mtfReq.getParameter("cnt")));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setUse_state(mtfReq.getParameter("use_state"));
+		
+		if(thumbState.equals("o")){
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+		}else{
+			vo.setUpload_origin(prevVO.getUpload_origin());
+			vo.setUpload_stored(prevVO.getUpload_stored());
+		}
 		
 		newsService.update(vo);
 
@@ -430,6 +482,39 @@ public class AdminController {
 		return "redirect:/admin/menu01_02update";
 	}
 	
+	@RequestMapping(value = "/menu01_02uploadImgDelete", method = RequestMethod.POST)
+	public ResponseEntity<String> menu01_02uploadImgDelete(HttpServletRequest req, @RequestBody Map<String, String> info) {
+		logger.info("menu01_02update POST");
+		ResponseEntity<String> entity = null;
+		
+		int no = Integer.parseInt(info.get("no"));
+		
+		String innerUploadPath = "resources/uploadNews/";
+		String path = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		System.out.println(path);
+		NewsVO prevVO = newsService.selectOne(no);
+		FileDelete fd = new FileDelete();
+		
+		NewsVO vo = new NewsVO();
+		vo.setNo(no);
+		
+		try {
+			
+			fd.fileDelete(path, prevVO.getUpload_stored());
+			
+			vo.setUpload_origin("");
+			vo.setUpload_stored("");
+			newsService.updateUpload(vo);
+			
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+			e.printStackTrace();
+		}
+		
+		return entity;
+	}
+	
 	@RequestMapping(value="/menu01_02delete/{no}", method=RequestMethod.GET)
 	public String menu01_02delete(@PathVariable("no") int no){
 		logger.info("news delete");
@@ -443,7 +528,16 @@ public class AdminController {
 	public String menu01_03(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu01_03 GET");
 		
+		List<ThesisVO> list = tService.listSearchAll(cri);
 		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(tService.listSearchCountAll(cri));
+		pageMaker.setFinalPage(tService.listSearchCountAll(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
 		
 		return "admin/menu01_03";
 	}
@@ -456,9 +550,11 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value = "/menu01_03register", method = RequestMethod.POST)
-	public String menu01_03registerPost(MultipartHttpServletRequest mtfReq, Model model) throws IOException {
+	public String menu01_03registerPost(ThesisVO vo) throws IOException {
 		logger.info("menu01_03register POST");
 		
+		System.out.println(vo);
+		tService.insert(vo);
 		
 		return "redirect:/admin/menu01_03";
 	}
@@ -467,35 +563,43 @@ public class AdminController {
 	public String menu01_03update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
 		logger.info("menu01_03update GET");
 		
-		
+		ThesisVO vo = tService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(tService.listSearchCountAll(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
 		
 		return "admin/menu01_03update";
 	}
 	
 	@RequestMapping(value = "/menu01_03update", method = RequestMethod.POST)
-	public String menu01_03updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+	public String menu01_03updatePOST(ThesisVO vo, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts, Model model, HttpServletRequest req) throws Exception {
 		logger.info("menu01_03update POST");
 		
-		
+		tService.update(vo);
+
+		rtts.addAttribute("no", vo.getNo());
+
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(tService.listSearchCountAll(cri));
+
+		rtts.addAttribute("page", page);
 		
 		return "redirect:/admin/menu01_03update";
-	}
-	
-	@RequestMapping(value = "/menu01_03uploadImgDelete", method = RequestMethod.POST)
-	public ResponseEntity<String> menu01_03uploadImgDelete(HttpServletRequest req, @RequestBody Map<String, String> info) {
-		logger.info("menu01_03update POST");
-		ResponseEntity<String> entity = null;
-		
-		
-		
-		return entity;
 	}
 	
 	@RequestMapping(value="/menu01_03delete/{no}", method=RequestMethod.GET)
 	public String menu01_03delete(@PathVariable("no") int no){
 		logger.info("realStory delete");
 		
-	
+		tService.delete(no);
 		
 		return "redirect:/admin/menu01_03";
 	}

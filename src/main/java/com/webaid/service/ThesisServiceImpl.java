@@ -5,49 +5,44 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.webaid.domain.NewsVO;
 import com.webaid.domain.SearchCriteria;
-import com.webaid.persistence.NewsDao;
+import com.webaid.domain.ThesisVO;
+import com.webaid.persistence.ThesisDao;
 
 @Service
-public class NewsServiceImpl implements NewsService {
+public class ThesisServiceImpl implements ThesisService {
 
 	@Autowired
-	private NewsDao dao;
-
+	private ThesisDao dao;
+	
 	@Override
-	public List<NewsVO> selectAll() {
+	public List<ThesisVO> selectAll() {
 		return dao.selectAll();
 	}
 
 	@Override
-	public NewsVO selectOne(int no) {
+	public ThesisVO selectOne(int no) {
 		return dao.selectOne(no);
 	}
 
 	@Override
-	public NewsVO selectBefore(int no) {
+	public ThesisVO selectBefore(int no) {
 		return dao.selectBefore(no);
 	}
 
 	@Override
-	public NewsVO selectAfter(int no) {
+	public ThesisVO selectAfter(int no) {
 		return dao.selectAfter(no);
 	}
 
 	@Override
-	public void insert(NewsVO vo) {
+	public void insert(ThesisVO vo) {
 		dao.insert(vo);
 	}
 
 	@Override
-	public void update(NewsVO vo) {
+	public void update(ThesisVO vo) {
 		dao.update(vo);
-	}
-
-	@Override
-	public void updateUpload(NewsVO vo) {
-		dao.updateUpload(vo);
 	}
 
 	@Override
@@ -56,7 +51,7 @@ public class NewsServiceImpl implements NewsService {
 	}
 
 	@Override
-	public void updateUseState(NewsVO vo) {
+	public void updateUseState(ThesisVO vo) {
 		dao.updateUseState(vo);
 	}
 
@@ -66,12 +61,12 @@ public class NewsServiceImpl implements NewsService {
 	}
 
 	@Override
-	public List<NewsVO> listSearch(SearchCriteria cri) throws Exception {
+	public List<ThesisVO> listSearch(SearchCriteria cri) throws Exception {
 		return dao.listSearch(cri);
 	}
 
 	@Override
-	public List<NewsVO> listSearchAll(SearchCriteria cri) throws Exception {
+	public List<ThesisVO> listSearchAll(SearchCriteria cri) throws Exception {
 		return dao.listSearchAll(cri);
 	}
 

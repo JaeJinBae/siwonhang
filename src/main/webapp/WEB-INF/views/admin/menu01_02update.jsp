@@ -7,21 +7,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>다니엘성형외과의원 진료과목 피부과</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/resources/img/favicon.ico">
-<!-- ************************************************************************************************* -->
-<!-- @ = 스타일, # = 자바스크립트 -->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/admin/style_admin.css"><!-- @1 스타일 초기화		**삭제/수정금지** -->
-<!-- ********************************************플러그인********************************************* -->
-<script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script><!-- #1 1.12.4  -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-ui-1.11.1.js"></script><!-- #jquery UI  -->
-<!-- ************************************************************************************************* -->
-<!-- jQuery UI CSS파일 -->
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
-<!-- ************************************************************************************************* -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/function.admin.js"></script><!-- # 필수 함수 -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/function.default.js"></script><!-- # 필수 함수 -->
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/function.validate.js"></script><!-- # 필수 함수 -->
+<title>시원항병원 관리자페이지</title>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/style_admin.css" type="text/css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/jquery-ui.css" type="text/css">
+
+<script src="${pageContext.request.contextPath}/resources/admin/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/js/jquery-ui-1.11.1.js" type="text/javascript"></script>
+
+<script src="${pageContext.request.contextPath}/resources/admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/js/function.default.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/js/function.layer.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/js/function.admin.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/ckeditorFull/ckeditor.js" type="text/javascript"></script>
 <link href="https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
 <script>
 $(function(){
@@ -51,6 +49,25 @@ $(function(){
 			return false;
 		}
 	})
+	
+	$(document).on("click", "#downBtn", function(e){
+		e.preventDefault();
+		var href = $(this).prop("href");
+		var f_origin = $("input[name='upload']").val();
+		var fileName = encodeURIComponent(f_origin);
+		var f_stored = $("input[name='upload_stored']").val();
+		var downName =  encodeURIComponent(f_stored);
+		
+		href += "&fileName="+fileName+"&downName="+downName;
+		location.href= href;
+	});
+	
+	$("#uploadDelBtn").click(function(){
+		var no = $("#form1 > input[name='no']").val();
+		deleteUploadImg(no, "before");
+		$(this).parent().html("<input type='file' name='upload'>");
+		$("#uploadState").val("o");
+	});
 	
 	$("#delBtn").click(function(){
 		var no = $("input[name='no']").val();
@@ -117,19 +134,6 @@ $(function(){
 									</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">공지</td>
-									<td>
-										<c:if test="${item.top_state == 'o'}">
-											<label><input type="radio" name="top_state" id="b_notice1" value="o" checked="checked"><i></i>공지</label>&nbsp;&nbsp;&nbsp;&nbsp;
-											<label><input type="radio" name="top_state" id="b_notice2" value="x"><i></i>일반</label>&nbsp;&nbsp;&nbsp;&nbsp;
-										</c:if>
-										<c:if test="${item.top_state == 'x'}">
-											<label><input type="radio" name="top_state" id="b_notice1" value="o"><i></i>공지</label>&nbsp;&nbsp;&nbsp;&nbsp;
-											<label><input type="radio" name="top_state" id="b_notice2" value="x" checked="checked"><i></i>일반</label>&nbsp;&nbsp;&nbsp;&nbsp;
-										</c:if>
-									</td>
-								</tr>
-								<tr class="cont">
 									<td class="title">작성자</td>
 									<td>
 										<input type="text" class="w_form_s" name="writer" value="${item.writer}">
@@ -165,7 +169,21 @@ $(function(){
 								<tr class="cont">
 									<td class="title">첨부파일</td>
 									<td id="attach">
-										<div><input type="file" name="upload"></div>
+										<input type="hidden" id="uploadState" name="uploadState" value="x">
+										<c:choose>
+											<c:when test="${item.upload_origin == ''}">
+												<div><input type="file" name="upload"></div>
+											</c:when>
+											<c:otherwise>
+												<div>
+													<a id="downBtn" href="${pageContext.request.contextPath}/admin/filedown?dPath=uploadNews">${item.upload_origin}</a>
+													<img id="uploadDelBtn" src="${pageContext.request.contextPath}/resources/img/admin/icon_x.png" class="vimg cursor">
+													<input type="hidden" name="upload" value="${item.upload_origin}">
+													<input type="hidden" name="upload_stored" value="${item.upload_stored}">
+												</div>
+											</c:otherwise>
+										</c:choose>
+										
 										<br><strong></strong>
 									</td>
 								</tr>

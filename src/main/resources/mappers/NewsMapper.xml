@@ -21,11 +21,15 @@
 	</select>
 	
 	<insert id="insert">
-		insert into news values(0, #{writer}, #{regdate}, #{cnt}, #{title}, #{content}, #{use_state})
+		insert into news values(0, #{writer}, #{regdate}, #{cnt}, #{title}, #{content}, #{upload_origin}, #{upload_stored}, #{use_state})
 	</insert>
 	
 	<update id="update">
-		update news set writer=#{writer}, regdate=#{regdate}, cnt=#{cnt}, title=#{title}, content=#{content}, use_state=#{use_state} where no=#{no}
+		update news set writer=#{writer}, regdate=#{regdate}, cnt=#{cnt}, title=#{title}, content=#{content}, upload_origin=#{upload_origin}, upload_stored=#{upload_stored}, use_state=#{use_state} where no=#{no}
+	</update>
+	
+	<update id="updateUpload">
+		update news set upload_origin=#{upload_origin}, upload_stored=#{upload_stored} where no=#{no}
 	</update>
 	
 	<update id="updateCnt">

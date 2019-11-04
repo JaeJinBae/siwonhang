@@ -12,6 +12,7 @@ public interface NewsDao {
 	public NewsVO selectAfter(int no);
 	public void insert(NewsVO vo);
 	public void update(NewsVO vo);
+	public void updateUpload(NewsVO vo);
 	public void updateCnt(int no);
 	public void updateUseState(NewsVO vo);
 	public void delete(int no);
