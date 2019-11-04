@@ -42,7 +42,7 @@ $(function(){
 		<dl>
 			<dt><a href="javascript:;">마케팅분석</a></dt>
 			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu05_01">트래픽분석</a></dd>
-			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu05_01">유입경로</a></dd>
+			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu05_02">유입경로</a></dd>
 		</dl>
 	</div>
 </div>
