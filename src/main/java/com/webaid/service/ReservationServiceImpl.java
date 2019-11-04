@@ -5,38 +5,38 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.webaid.domain.AdviceVO;
+import com.webaid.domain.ReservationVO;
 import com.webaid.domain.SearchCriteria;
-import com.webaid.persistence.AdviceDao;
+import com.webaid.persistence.ReservationDao;
 
 @Service
-public class AdviceServiceImpl implements AdviceService {
+public class ReservationServiceImpl implements ReservationService {
 
 	@Autowired
-	private AdviceDao dao;
+	private ReservationDao dao;
 
 	@Override
-	public AdviceVO selectOne(int no) {
+	public ReservationVO selectOne(int no) {
 		return dao.selectOne(no);
 	}
 
 	@Override
-	public List<AdviceVO> selectNonComplete() {
+	public List<ReservationVO> selectNonComplete() {
 		return dao.selectNonComplete();
 	}
 
 	@Override
-	public void insert(AdviceVO vo) {
+	public void insert(ReservationVO vo) {
 		dao.insert(vo);
 	}
 
 	@Override
-	public void update(AdviceVO vo) {
+	public void update(ReservationVO vo) {
 		dao.update(vo);
 	}
 
 	@Override
-	public void updateUpload(AdviceVO vo) {
+	public void updateUpload(ReservationVO vo) {
 		dao.updateUpload(vo);
 	}
 
@@ -46,7 +46,7 @@ public class AdviceServiceImpl implements AdviceService {
 	}
 
 	@Override
-	public List<AdviceVO> listSearch(SearchCriteria cri) {
+	public List<ReservationVO> listSearch(SearchCriteria cri) {
 		return dao.listSearch(cri);
 	}
 

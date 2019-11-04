@@ -13,7 +13,7 @@
 	</select>
 	
 	<insert id="insert">
-		insert into advice values(0, #{name}, #{phone}, #{regdate}, #{email}, #{state}, #{secret}, #{pw}, #{title}, #{content}, #{reply}, #{memo}, #{ip}, #{access_url}, #{reply_date}, #{upload_origin}, #{upload_stored}, #{quick_state})
+		insert into advice values(0, #{name}, #{phone}, #{regdate}, #{email}, #{state}, #{secret}, #{pw}, #{title}, #{content}, #{reply}, #{memo}, #{ip}, #{access_url}, #{reply_date}, #{upload_origin}, #{upload_stored})
 	</insert>
 	
 	<update id="update">
@@ -29,11 +29,7 @@
 	</delete>
 	
 	<select id="listSearch" resultType="AdviceVO">
-		select * from advice where quick_state='x' <include refid="search"></include> order by no desc, regdate desc limit #{pageStart},#{perPageNum}
-	</select>
-	
-	<select id="listSearchQuick" resultType="AdviceVO">
-		select * from advice where quick_state='o' <include refid="search"></include> order by no desc, regdate desc limit #{pageStart},#{perPageNum}
+		select * from advice where no>0 <include refid="search"></include> order by no desc, regdate desc limit #{pageStart},#{perPageNum}
 	</select>
 	
 	<sql id="search">
@@ -55,11 +51,7 @@
 	</sql>
 	
 	<select id="listSearchCount" resultType="int">
-		select count(no) from advice where quick_state='x' <include refid="search"></include>
-	</select>
-	
-	<select id="listSearchQuickCount" resultType="int">
-		select count(no) from advice where quick_state='o' <include refid="search"></include>
+		select count(no) from advice where no>0 <include refid="search"></include>
 	</select>
 	
 </mapper>

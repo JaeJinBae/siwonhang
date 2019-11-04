@@ -13,7 +13,5 @@ public interface AdviceDao {
 	public void updateUpload(AdviceVO vo);
 	public void delete(int no);
 	public List<AdviceVO> listSearch(SearchCriteria cri);
-	public List<AdviceVO> listSearchQuick(SearchCriteria cri);
 	public int listSearchCount(SearchCriteria cri);
-	public int listSearchQuickCount(SearchCriteria cri);
 }

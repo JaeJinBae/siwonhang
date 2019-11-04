@@ -1,6 +1,6 @@
 package com.webaid.domain;
 
-public class AdviceVO {
+public class ReservationVO {
 	private int no;
 	private String name;
 	private String phone;
@@ -19,7 +19,7 @@ public class AdviceVO {
 	private String upload_origin;
 	private String upload_stored;
 
-	public AdviceVO() {
+	public ReservationVO() {
 		super();
 	}
 

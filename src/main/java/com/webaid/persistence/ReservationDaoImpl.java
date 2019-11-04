@@ -6,39 +6,39 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.webaid.domain.AdviceVO;
+import com.webaid.domain.ReservationVO;
 import com.webaid.domain.SearchCriteria;
 
 @Repository
-public class AdviceDaoImpl implements AdviceDao {
+public class ReservationDaoImpl implements ReservationDao {
 
-	private static final String namespace = "com.webaid.mappers.AdviceMapper";
+	private static final String namespace = "com.webaid.mappers.ReservationMapper";
 
 	@Autowired
 	private SqlSession session;
 
 	@Override
-	public AdviceVO selectOne(int no) {
+	public ReservationVO selectOne(int no) {
 		return session.selectOne(namespace + ".selectOne", no);
 	}
 
 	@Override
-	public List<AdviceVO> selectNonComplete() {
+	public List<ReservationVO> selectNonComplete() {
 		return session.selectList(namespace + ".selectNonComplete");
 	}
 
 	@Override
-	public void insert(AdviceVO vo) {
+	public void insert(ReservationVO vo) {
 		session.insert(namespace + ".insert", vo);
 	}
 
 	@Override
-	public void update(AdviceVO vo) {
+	public void update(ReservationVO vo) {
 		session.update(namespace + ".update", vo);
 	}
 
 	@Override
-	public void updateUpload(AdviceVO vo) {
+	public void updateUpload(ReservationVO vo) {
 		session.update(namespace + ".updateUpload", vo);
 	}
 
@@ -48,7 +48,7 @@ public class AdviceDaoImpl implements AdviceDao {
 	}
 
 	@Override
-	public List<AdviceVO> listSearch(SearchCriteria cri) {
+	public List<ReservationVO> listSearch(SearchCriteria cri) {
 		return session.selectList(namespace + ".listSearch", cri);
 	}
 	

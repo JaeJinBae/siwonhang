@@ -41,6 +41,7 @@ import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
+import com.webaid.domain.ReservationVO;
 import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.ThesisVO;
@@ -49,6 +50,7 @@ import com.webaid.service.AdviceService;
 import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
+import com.webaid.service.ReservationService;
 import com.webaid.service.ReviewService;
 import com.webaid.service.StatisticService;
 import com.webaid.service.ThesisService;
@@ -84,6 +86,9 @@ public class AdminController {
 	
 	@Autowired
 	private AdviceService aService;
+	
+	@Autowired
+	private ReservationService resService;
 	
 	@Autowired
 	private StatisticService sService;
@@ -1061,5 +1066,338 @@ public class AdminController {
 		
 		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
 		return entity;
+	}
+	
+	@RequestMapping(value = "/menu03_01", method = RequestMethod.GET)
+	public String menu03_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu03_01 GET");
+
+		List<AdviceVO> list = aService.listSearch(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(aService.listSearchCount(cri));
+		pageMaker.setFinalPage(aService.listSearchCount(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu03_01";
+	}
+	
+	@RequestMapping(value = "/menu03_01register", method = RequestMethod.GET)
+	public String menu03_01register() throws Exception {
+		logger.info("menu03_01register GET");
+		
+		return "admin/menu03_01register";
+	}
+	
+	@RequestMapping(value = "/menu03_01register", method = RequestMethod.POST)
+	public String menu03_01registerPost(MultipartHttpServletRequest mtfReq, Model model) throws IOException {
+		logger.info("menu03_01register POST");
+		
+		AdviceVO vo = new AdviceVO();
+		
+		vo.setName(mtfReq.getParameter("name"));
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setEmail(mtfReq.getParameter("email"));
+		vo.setState(mtfReq.getParameter("state"));
+		vo.setSecret(mtfReq.getParameter("secret"));
+		vo.setPw(mtfReq.getParameter("pw"));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setReply(mtfReq.getParameter("reply"));
+		vo.setMemo(mtfReq.getParameter("memo"));
+		vo.setIp(mtfReq.getParameter("ip"));
+		vo.setAccess_url(mtfReq.getParameter("access_url"));
+		vo.setReply_date(mtfReq.getParameter("reply_date"));
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadAdvice/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}//이미지 업로드 끝
+		
+		aService.insert(vo);
+		return "redirect:/admin/menu03_01";
+	}
+	
+	@RequestMapping(value = "/menu03_01update", method = RequestMethod.GET)
+	public String menu03_01update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu03_01update GET");
+		
+		AdviceVO vo = aService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(aService.listSearchCount(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		return "admin/menu03_01update";
+	}
+	
+	@RequestMapping(value = "/menu03_01update", method = RequestMethod.POST)
+	public String menu03_01updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+		logger.info("menu03_01update POST");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadAdvice/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		//이미지 업로드 끝
+		
+		String uploadState = mtfReq.getParameter("uploadState");
+		
+		
+		AdviceVO vo = new AdviceVO();
+		AdviceVO prevVO = aService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setName(mtfReq.getParameter("name"));
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setEmail(mtfReq.getParameter("email"));
+		vo.setState(mtfReq.getParameter("state"));
+		vo.setSecret(mtfReq.getParameter("secret"));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setReply(mtfReq.getParameter("reply"));
+		vo.setReply_date(mtfReq.getParameter("reply_date"));
+		vo.setMemo(mtfReq.getParameter("memo"));
+		
+		if(uploadState.equals("o")){
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+		}else{
+			vo.setUpload_origin(prevVO.getUpload_origin());
+			vo.setUpload_stored(prevVO.getUpload_stored());
+		}
+		
+		aService.update(vo);
+		
+		rtts.addAttribute("no", mtfReq.getParameter("no"));
+
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(aService.listSearchCount(cri));
+
+		rtts.addAttribute("page", page);
+		return "redirect:/admin/menu03_01update";
+	}
+	
+	//==================================
+	@RequestMapping(value = "/menu03_02", method = RequestMethod.GET)
+	public String menu03_02(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu03_02 GET");
+
+		List<ReservationVO> list = resService.listSearch(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(resService.listSearchCount(cri));
+		pageMaker.setFinalPage(resService.listSearchCount(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu03_02";
+	}
+	
+	@RequestMapping(value = "/menu03_02register", method = RequestMethod.GET)
+	public String menu03_02register() throws Exception {
+		logger.info("menu03_02register GET");
+		
+		return "admin/menu03_02register";
+	}
+	
+	@RequestMapping(value = "/menu03_02register", method = RequestMethod.POST)
+	public String menu03_02registerPost(MultipartHttpServletRequest mtfReq, Model model) throws IOException {
+		logger.info("menu03_02register POST");
+		
+		ReservationVO vo = new ReservationVO();
+		
+		vo.setName(mtfReq.getParameter("name"));
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setEmail(mtfReq.getParameter("email"));
+		vo.setState(mtfReq.getParameter("state"));
+		vo.setSecret(mtfReq.getParameter("secret"));
+		vo.setPw(mtfReq.getParameter("pw"));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setReply(mtfReq.getParameter("reply"));
+		vo.setMemo(mtfReq.getParameter("memo"));
+		vo.setIp(mtfReq.getParameter("ip"));
+		vo.setAccess_url(mtfReq.getParameter("access_url"));
+		vo.setReply_date(mtfReq.getParameter("reply_date"));
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadReservation/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}//이미지 업로드 끝
+		
+		resService.insert(vo);
+		return "redirect:/admin/menu03_02";
+	}
+	
+	@RequestMapping(value = "/menu03_02update", method = RequestMethod.GET)
+	public String menu03_02update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu03_02update GET");
+		
+		ReservationVO vo = resService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(resService.listSearchCount(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		return "admin/menu03_02update";
+	}
+	
+	@RequestMapping(value = "/menu03_02update", method = RequestMethod.POST)
+	public String menu03_02updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+		logger.info("menu03_02update POST");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadReservation/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		//이미지 업로드 끝
+		
+		String uploadState = mtfReq.getParameter("uploadState");
+		
+		
+		ReservationVO vo = new ReservationVO();
+		ReservationVO prevVO = resService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setName(mtfReq.getParameter("name"));
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setEmail(mtfReq.getParameter("email"));
+		vo.setState(mtfReq.getParameter("state"));
+		vo.setSecret(mtfReq.getParameter("secret"));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setReply(mtfReq.getParameter("reply"));
+		vo.setReply_date(mtfReq.getParameter("reply_date"));
+		vo.setMemo(mtfReq.getParameter("memo"));
+		
+		if(uploadState.equals("o")){
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+		}else{
+			vo.setUpload_origin(prevVO.getUpload_origin());
+			vo.setUpload_stored(prevVO.getUpload_stored());
+		}
+		
+		resService.update(vo);
+		
+		rtts.addAttribute("no", mtfReq.getParameter("no"));
+
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(resService.listSearchCount(cri));
+
+		rtts.addAttribute("page", page);
+		return "redirect:/admin/menu03_02update";
 	}
 }
