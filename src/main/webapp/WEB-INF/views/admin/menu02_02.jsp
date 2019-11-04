@@ -19,7 +19,6 @@
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.layer.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.admin.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/resources/ckeditorFull/ckeditor.js" type="text/javascript"></script>
 <script>
 $(function(){
 	 $("#searchBtn").click(function(){
@@ -27,7 +26,47 @@ $(function(){
 		var searchType = encodeURIComponent(s);
 		var k=$("input[name='input_key']").val();
 		var keyword = encodeURIComponent(k);
-		location.href="${pageContext.request.contextPath}/admin/menu02_01${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
+		location.href="${pageContext.request.contextPath}/admin/menu02_02${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
+	});
+	
+	$("#btn_withdraw").click(function(){
+		
+		$(".sel_chkbox:checked").each(function(){
+			$.ajax({
+				url:"${pageContext.request.contextPath}/admin/menu02_02withdraw/"+$(this).val()+"/x",
+				type:"get",
+				contentType : "application/json; charset=UTF-8",
+				dataType:"text",
+				async:false,
+				success:function(json){
+					console.log(json);
+				},
+				error:function(request,status,error){
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				}
+			});
+		});
+		location.href="${pageContext.request.contextPath}/admin/menu02_02";
+	});
+	
+$("#btn_delete").click(function(){
+		
+		$(".sel_chkbox:checked").each(function(){
+			$.ajax({
+				url:"${pageContext.request.contextPath}/admin/menu02_02delete/"+$(this).val(),
+				type:"get",
+				contentType : "application/json; charset=UTF-8",
+				dataType:"text",
+				async:false,
+				success:function(json){
+					console.log(json);
+				},
+				error:function(request,status,error){
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				}
+			});
+		});
+		location.href="${pageContext.request.contextPath}/admin/menu02_02";
 	});
 });
 </script>
@@ -45,12 +84,12 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>가입회원</h1>
+				<h1>탈퇴회원</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>회원 관리&nbsp;&gt;&nbsp;</li>
-					<li>가입회원</li>
+					<li>탈퇴회원</li>
 				</ul>
 			</div>
 			
@@ -102,9 +141,9 @@ $(function(){
 										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 									        <c:forEach var="item" items="${list}">
 												<tr class="cont">
-													<td><input type="checkbox" name="" value="${item.no}"></td>
+													<td><input type="checkbox" class="sel_chkbox" name="" value="${item.no}"></td>
 													<td><i class="ico notice">${num}</i></td>
-													<td><a href="${pageContext.request.contextPath}/admin/menu02_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title">${item.id}</p></a></td>
+													<td><a href="${pageContext.request.contextPath}/admin/menu02_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title">${item.id}</p></a></td>
 													<td>${item.name}</td>
 													<td>${item.phone}</td>
 													<td>${item.email}</td>
@@ -123,11 +162,8 @@ $(function(){
 						<p class="btn_left">
 							<button type="button" class="btn_gray" onclick="">전체회원 Excel저장</button>
 							<button type="button" class="btn_gray" onclick="">Excel저장</button>
-							<button type="button" class="btn_gray" onclick="">탈퇴처리</button>
-							<button type="button" class="btn_gray" onclick="">선택삭제</button>
-						</p>
-						<p class="btn_right">
-							<button type="button" class="btn_black" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_01register'">등록</button>
+							<button type="button" class="btn_gray" id="btn_withdraw">탈퇴취소</button>
+							<button type="button" class="btn_gray" id="btn_delete">선택삭제</button>
 						</p>
 					</div>
 			

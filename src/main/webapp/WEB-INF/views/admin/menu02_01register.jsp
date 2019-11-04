@@ -132,7 +132,7 @@ $(function(){
 			</div>
 			
 			<div class="main_bottom_area">
-				<form name="member" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/admin/menu04_01register">
+				<form name="member" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/admin/menu02_01register">
 					<input type="hidden" name="regdate" id="regdate">
 					<div class="write_area">
 						<div class="write_box">
@@ -194,15 +194,6 @@ $(function(){
 									</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">주소</td>
-									<td>
-										<input type="text" class="w_form_s" id="zipcode" name="zipcode" value="" readonly="">
-										<button type="button" class="btn_black btn_small" onclick="addr_func()">우편번호찾기</button><br>
-										<input type="text" class="w_form_m marginT5" id="addr1" name="addr1" value="" readonly=""><br>
-										<input type="text" class="w_form_l marginT5" id="addr2" name="addr2" value="">
-									</td>
-								</tr>
-								<tr class="cont">
 									<td class="title">이메일</td>
 									<td>
 										<input type="hidden" name="email" id="email" value="">
@@ -238,11 +229,11 @@ $(function(){
 				
 						<div class="btn_area">
 							<p class="btn_left">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu04_01'">리스트</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_01'">리스트</button>
 							</p>
 							<p class="btn_right">
 								<input type="submit" class="btn_black" value="등록">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu04_01register'">취소</button>
+								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_01register'">취소</button>
 							</p>
 						</div>
 				
@@ -253,9 +244,7 @@ $(function(){
 		</div><!-- admin_right 끝 -->
     </div><!-- container 끝 -->
 
-    <div id="admin_footer">
-        <div class="f_contents nanum_n">COPYRIGHT ⓒ <span class="txt_blue_b nanum_b">다니엘성형외과의원 진료과목 피부과</span> ALL RIGHT RESERVED</div>
-    </div>
+    <jsp:include page="include/footer.jsp"></jsp:include>
 </div><!-- wrap 끝 -->
 
 </body>

@@ -8,7 +8,7 @@ $(function(){
 <div id="admin_left">
 	<div class="left_logo_area">
 		<div class="left_logo">
-			<a href="/admin"><img src="${pageContext.request.contextPath}/resources/admin/img/20180605_189D9987145B7FF7.png" width="159" height="50" onclick="location.href='/admin'" class="cursor"></a>
+			<a href="${pageContext.request.contextPath}/admin/main"><img src="${pageContext.request.contextPath}/resources/admin/img/20180605_189D9987145B7FF7.png" width="159" height="50" onclick="location.href='/admin'" class="cursor"></a>
 		</div>
 	</div>
 

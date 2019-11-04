@@ -11,7 +11,7 @@
 		</li>
 		<li>
 			<p>
-				<a href="/" target="_blank">
+				<a href="${pageContext.request.contextPath}/" target="_blank">
 					<img src="${pageContext.request.contextPath}/resources/admin/img/top_icon_home.png" alt="home">
 					<span class="txt_666_n">Home</span>
 				</a>
@@ -19,7 +19,7 @@
 		</li>
 		<li>
 			<p>
-				<a href="/admin/login/logout.html">
+				<a href="${pageContext.request.contextPath}/admin/logout">
 					<img src="${pageContext.request.contextPath}/resources/admin/img/top_icon_logout.png" alt="logout">
 					<span class="txt_666_n">Logout</span>
 				</a>

@@ -931,7 +931,6 @@ public class AdminController {
 		vo.setPhone(mtfReq.getParameter("phone"));
 		vo.setBirth(mtfReq.getParameter("birth"));
 		vo.setGender(mtfReq.getParameter("gender"));
-		vo.setAddr("");
 		vo.setEmail(mtfReq.getParameter("email"));
 		vo.setRegdate(mtfReq.getParameter("regdate"));
 		vo.setLogin_cnt(1);
