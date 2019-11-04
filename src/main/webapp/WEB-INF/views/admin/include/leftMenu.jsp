@@ -20,7 +20,6 @@ $(function(){
 			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu01_03">논문발표</a></dd>
 			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu01_04">수술후기</a></dd>
 			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu01_05">병원둘러보기</a></dd>
-			<dd style="display:none"><a href="${pageContext.request.contextPath}/admin/menu01_06">병원둘러보기 테스트</a></dd>
 		</dl>
 	
 		<dl>

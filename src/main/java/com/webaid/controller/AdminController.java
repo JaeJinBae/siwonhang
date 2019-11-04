@@ -37,13 +37,16 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.webaid.domain.AdviceVO;
+import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
 import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.ThesisVO;
+import com.webaid.domain.UserVO;
 import com.webaid.service.AdviceService;
+import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
 import com.webaid.service.ReviewService;
@@ -72,6 +75,9 @@ public class AdminController {
 	
 	@Autowired
 	private ReviewService rService;
+	
+	@Autowired
+	private HospitalImgService hiService;
 	
 	@Autowired
 	private UserService uService;
@@ -346,7 +352,7 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value = "/menu01_02register", method = RequestMethod.GET)
-	public String menu01_02register(NoticeVO vo) {
+	public String menu01_02register() {
 		logger.info("menu01_02register GET");
 
 		return "admin/menu01_02register";
@@ -683,5 +689,378 @@ public class AdminController {
 		rService.delete(no);
 		
 		return "redirect:/admin/menu01_04";
+	}
+	
+	@RequestMapping(value = "/menu01_05", method = RequestMethod.GET)
+	public String menu01_05(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu01_05 GET");
+		
+		List<HospitalImgVO> list = hiService.listSearchAll(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(hiService.listSearchCountAll(cri));
+		pageMaker.setFinalPage(hiService.listSearchCountAll(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu01_05";
+	}
+	
+	@RequestMapping(value = "/menu01_05register", method = RequestMethod.GET)
+	public String menu01_05register() {
+		logger.info("menu01_05register GET");
+
+		return "admin/menu01_05register";
+	}
+	
+	@RequestMapping(value = "/menu01_05register", method = RequestMethod.POST)
+	public String menu01_05registerPOST(MultipartHttpServletRequest mtfReq, Model model) {
+		logger.info("menu01_05register POST");
+		HospitalImgVO vo = new HospitalImgVO();
+		
+		vo.setNo(0);
+		vo.setFloor(mtfReq.getParameter("floor"));
+		vo.setWriter(mtfReq.getParameter("writer"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setCnt(Integer.parseInt(mtfReq.getParameter("cnt")));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setUse_state("o");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadHospitalImg/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}//이미지 업로드 끝
+		
+		hiService.insert(vo);
+		return "redirect:/admin/menu01_05";
+	}
+	
+	@RequestMapping(value = "/menu01_05update", method = RequestMethod.GET)
+	public String menu01_05update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu01_05update GET");
+		
+		HospitalImgVO vo = hiService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(hiService.listSearchCountAll(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu01_05update";
+	}
+	
+	@RequestMapping(value = "/menu01_05update", method = RequestMethod.POST)
+	public String menu01_05updatePost(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+		logger.info("menu01_05update Post");
+		
+		//이미지 업로드
+		String innerUploadPath = "resources/uploadHospitalImg/";
+		String path = (mtfReq.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		String fileName = "";
+		String storedFileName = "";
+		
+		Iterator<String> files = mtfReq.getFileNames();
+		mtfReq.getFileNames();
+		while(files.hasNext()){
+			String uploadFile = files.next();
+			
+			MultipartFile mFile = mtfReq.getFile(uploadFile);
+			fileName = mFile.getOriginalFilename();
+			if(fileName.length() == 0){
+				storedFileName = "";
+			}else{
+				storedFileName = System.currentTimeMillis()+"_"+fileName;
+			}
+			
+			try {
+				mFile.transferTo(new File(path+storedFileName));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		//이미지 업로드 끝
+		
+		String thumbState = mtfReq.getParameter("uploadState");
+		
+		
+		HospitalImgVO vo = new HospitalImgVO();
+		HospitalImgVO prevVO = hiService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setFloor(mtfReq.getParameter("floor"));
+		vo.setWriter(mtfReq.getParameter("writer"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setCnt(Integer.parseInt(mtfReq.getParameter("cnt")));
+		vo.setTitle(mtfReq.getParameter("title"));
+		vo.setContent(mtfReq.getParameter("content"));
+		vo.setUse_state(mtfReq.getParameter("use_state"));
+		
+		if(thumbState.equals("o")){
+			vo.setUpload_origin(fileName);
+			vo.setUpload_stored(storedFileName);
+		}else{
+			vo.setUpload_origin(prevVO.getUpload_origin());
+			vo.setUpload_stored(prevVO.getUpload_stored());
+		}
+		
+		hiService.update(vo);
+
+		rtts.addAttribute("no", vo.getNo());
+
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(hiService.listSearchCountAll(cri));
+
+		rtts.addAttribute("page", page);
+
+		return "redirect:/admin/menu01_05update";
+	}
+	
+	@RequestMapping(value = "/menu01_05uploadImgDelete", method = RequestMethod.POST)
+	public ResponseEntity<String> menu01_05uploadImgDelete(HttpServletRequest req, @RequestBody Map<String, String> info) {
+		logger.info("menu01_05update POST");
+		ResponseEntity<String> entity = null;
+		
+		int no = Integer.parseInt(info.get("no"));
+		
+		String innerUploadPath = "resources/uploadHospitalImg/";
+		String path = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;
+		System.out.println(path);
+		HospitalImgVO prevVO = hiService.selectOne(no);
+		FileDelete fd = new FileDelete();
+		
+		HospitalImgVO vo = new HospitalImgVO();
+		vo.setNo(no);
+		
+		try {
+			
+			fd.fileDelete(path, prevVO.getUpload_stored());
+			
+			vo.setUpload_origin("");
+			vo.setUpload_stored("");
+			hiService.updateUpload(vo);
+			
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+			e.printStackTrace();
+		}
+		
+		return entity;
+	}
+	
+	@RequestMapping(value="/menu01_05delete/{no}", method=RequestMethod.GET)
+	public String menu01_05delete(@PathVariable("no") int no){
+		logger.info("HospitalImg delete");
+		
+		hiService.delete(no);
+		
+		return "redirect:/admin/menu01_05";
+	}
+	
+	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)
+	public String menu02_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu02_01 GET");
+		
+		List<UserVO> list = uService.listSearchAll(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(uService.listSearchCountAll(cri));
+		pageMaker.setFinalPage(uService.listSearchCountAll(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu02_01";
+	}
+	
+	@RequestMapping(value = "/menu02_01register", method = RequestMethod.GET)
+	public String menu02_01register() throws Exception {
+		logger.info("menu02_01register GET");
+		
+		
+		return "admin/menu02_01register";
+	}
+	
+	@RequestMapping(value = "/menu02_01register", method = RequestMethod.POST)
+	public String menu02_01registerPost(MultipartHttpServletRequest mtfReq, Model model) throws IOException {
+		logger.info("menu02_01register POST");
+		
+		UserVO vo = new UserVO();
+		
+		vo.setNo(0);
+		vo.setId(mtfReq.getParameter("id"));
+		vo.setName(mtfReq.getParameter("name"));
+		vo.setLv(mtfReq.getParameter("lv"));
+		vo.setPw(mtfReq.getParameter("pw"));
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setBirth(mtfReq.getParameter("birth"));
+		vo.setGender(mtfReq.getParameter("gender"));
+		vo.setAddr("");
+		vo.setEmail(mtfReq.getParameter("email"));
+		vo.setRegdate(mtfReq.getParameter("regdate"));
+		vo.setLogin_cnt(1);
+		
+		uService.insert(vo);
+		return "redirect:/admin/menu02_01";
+	}
+	
+	@RequestMapping(value = "/menu02_01update", method = RequestMethod.GET)
+	public String menu02_01update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu02_01update GET");
+		
+		UserVO vo = uService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(uService.listSearchCountAll(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		return "admin/menu02_01update";
+	}
+	
+	@RequestMapping(value = "/menu02_01update", method = RequestMethod.POST)
+	public String menu02_01updatePOST(MultipartHttpServletRequest mtfReq, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts) throws Exception {
+		logger.info("menu02_01update POST");
+		
+		UserVO vo = new UserVO();
+		UserVO prevVO = uService.selectOne(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setNo(Integer.parseInt(mtfReq.getParameter("no")));
+		vo.setName(mtfReq.getParameter("name"));
+		if(mtfReq.getParameter("pw_change").equals("o")){
+			vo.setPw(mtfReq.getParameter("pw"));
+		}else{
+			vo.setPw(prevVO.getPw());
+		}
+		vo.setPhone(mtfReq.getParameter("phone"));
+		vo.setBirth(mtfReq.getParameter("birth"));
+		vo.setGender(mtfReq.getParameter("gender"));
+		vo.setEmail(mtfReq.getParameter("email"));
+		
+		uService.update(vo);
+		
+		rtts.addAttribute("no", mtfReq.getParameter("no"));
+
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(uService.listSearchCountAll(cri));
+
+		rtts.addAttribute("page", page);
+		return "redirect:/admin/menu02_01update";
+	}
+	
+	@RequestMapping(value = "/menu02_01withdraw/{no}/{withdraw}", method = RequestMethod.GET)
+	public String menu02_01withdraw(@PathVariable("no") int no, @PathVariable("withdraw") String withdraw) throws Exception {
+		logger.info("menu02_01 GET");
+		UserVO vo = new UserVO();
+		vo.setNo(no);
+		vo.setWithdraw(withdraw);
+		uService.updateWithdraw(vo);
+		
+		return "redirect:/admin/menu02_01";
+	}
+	
+	@RequestMapping(value = "/menu02_01delete/{no}", method = RequestMethod.GET)
+	public String menu02_01delete(@PathVariable("no") int no) throws Exception {
+		logger.info("menu02_01 GET");
+
+		uService.delete(no);
+		
+		return "redirect:/admin/menu02_01";
+	}
+	
+	@RequestMapping(value = "/menu02_02", method = RequestMethod.GET)
+	public String menu02_02(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu02_02 GET");
+		
+		List<UserVO> list = uService.listSearchWithdrawAll(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(uService.listSearchWithdrawCountAll(cri));
+		pageMaker.setFinalPage(uService.listSearchWithdrawCountAll(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		return "admin/menu02_02";
+	}
+	
+	@RequestMapping(value = "/menu02_02read", method = RequestMethod.GET)
+	public String menu02_02read(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu02_02read GET");
+		
+		UserVO vo = uService.selectOne(no);
+
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(uService.listSearchCountAll(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		return "admin/menu02_02read";
+	}
+	
+	@RequestMapping(value = "/menu02_02withdraw/{no}/{withdraw}", method = RequestMethod.GET)
+	public ResponseEntity<String> menu04_02withdraw(@PathVariable("no") int no, @PathVariable("withdraw") String withdraw) throws Exception {
+		logger.info("menu02_02 GET");
+		ResponseEntity<String> entity = null;
+		UserVO vo = new UserVO();
+		vo.setNo(no);
+		vo.setWithdraw(withdraw);
+		uService.updateWithdraw(vo);
+		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		return entity;
+	}
+	
+	@RequestMapping(value = "/menu02_02delete/{no}", method = RequestMethod.GET)
+	public ResponseEntity<String> menu02_02delete(@PathVariable("no") int no) throws Exception {
+		logger.info("menu02_02 GET");
+		ResponseEntity<String> entity = null;
+		
+		uService.delete(no);
+		
+		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		return entity;
 	}
 }
