@@ -120,16 +120,16 @@ $(function(){
 													</c:if>
 												</td>
 												<td>${item.no}</td>
-												<td><a href=""><p class="title">${item.title}</p></a></td>
-												<td><a href="">${item.startdate} ~ ${item.enddate}</a></td>
-												<td><a href="">레이어</a></td>
+												<td><a href="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title">${item.title}</p></a></td>
+												<td><a href="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.startdate} ~ ${item.enddate}</a></td>
+												<td><a href="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">레이어</a></td>
 												<td>
-													<a href="">
+													<a href="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">
 														<c:if test="${item.output_type == 'pc'}">PC</c:if>
 														<c:if test="${item.output_type == 'mobile'}">MOBILE</c:if>
 													</a>
 												</td>
-												<td><a href="">${item.orderno}</a></td>
+												<td><a href="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.orderno}</a></td>
 												<td>${item.regdate}</td>
 												<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor"></td>
 												<%-- <td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '38')"></td> --%>

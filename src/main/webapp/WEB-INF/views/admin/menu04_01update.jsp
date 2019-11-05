@@ -32,16 +32,6 @@ $(function(){
 		dateFormat: "yy-mm-dd"
     });
 	
-	var ndate = new Date();
-	var year = ndate.getFullYear();
-	var month = ndate.getMonth()+1;
-	var date = ndate.getDate();
-	
-	month = (month > 9) ? month+"":"0"+month;
-	date = (date > 9) ? date+"":"0"+date;
-	
-	$("#regdate").val(year+"-"+month+"-"+date);
-	
 	//예외처리
 	$("#form1").submit(function(){
 		if($("input[name='startdate']").val()==""){
@@ -64,6 +54,10 @@ $(function(){
 			$("input[name='link']").val(" ");
 		}
 	});
+	
+	$("input[name='output_type']").prop("checked", true);
+	
+	$("input[name='use_state']").prop("checked", true);
 });
 </script>
 </head>
@@ -92,11 +86,13 @@ $(function(){
 			<div class="main_bottom_area">
 				
 				<div class="write_area">
-					<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu04_01register${pageMaker.makeSearch(pageMaker.cri.page)}">
+					<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}">
 						<div class="write_box">
 							<input type="hidden" name="no" value="0">
-							<input type="hidden" id="regdate" name="regdate" value="">
-			
+							<input type="hidden" id="regdate" name="regdate" value="${item.regdate}">
+							<input type="hidden" id="outputType" value="${item.output_type}">
+							<input type="hidden" id="useState" value="${item.use_state}">
+							
 							<table class="write_table" cellpadding="0">
 								<colgroup>
 									<col width="11%">
@@ -109,27 +105,29 @@ $(function(){
 								</tr> -->
 								<tr class="cont">
 									<td class="title">출력종류</td>
-									<td><input type="radio" name="output_type" id="t_mode1" value="pc" checked="checked"><label for="t_mode1"><i></i>웹</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="output_type" id="t_mode2" value="mobile"> <label for="t_mode2"><i></i>모바일</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										<input type="radio" name="output_type" id="t_mode1" value="pc" checked="checked"><label for="t_mode1"><i></i>웹</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="output_type" id="t_mode2" value="mobile"> <label for="t_mode2"><i></i>모바일</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">출력기간</td>
 									<td>
-										<input type="text" id="startdate" class="w_form_s" name="startdate" value="" autocomplete="off"> ~
-										<input type="text" id="enddate" class="w_form_s" name="enddate" value="" autocomplete="off">
+										<input type="text" id="startdate" class="w_form_s" name="startdate" value="${item.startdate}" autocomplete="off"> ~
+										<input type="text" id="enddate" class="w_form_s" name="enddate" value="${item.enddate}" autocomplete="off">
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">출력순서</td>
 									<td>
-										<input type="text" class="w_form_s" id="p_sun" name="orderno" value="0" element-name="출력순서">
+										<input type="text" class="w_form_s" id="p_sun" name="orderno" value="${item.orderno}" element-name="출력순서">
 									</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">위치</td>
 									<td>
-										X : <input type="text" class="w_form_s" name="p_left" value="0" valid="none,number" element-name="위치">
-										Y : <input type="text" class="w_form_s" name="p_top" value="0" valid="none,number" element-name="위치">
+										X : <input type="text" class="w_form_s" name="p_left" value="${item.p_left}" valid="none,number" element-name="위치">
+										Y : <input type="text" class="w_form_s" name="p_top" value="${item.p_top}" valid="none,number" element-name="위치">
 										(미입력시 X : 0, Y : 0 으로 입력됩니다)
 									</td>
 								</tr>
@@ -155,16 +153,16 @@ $(function(){
 								</tr> -->
 								<tr class="cont">
 									<td class="title">링크</td>
-									<td><input type="text" class="w_form_l" name="link" value="" placeholder="ex) http://www.xxx.co.kr/html/?pCode=417"></td>
+									<td><input type="text" class="w_form_l" name="link" value="${item.link}" placeholder="ex) http://www.xxx.co.kr/html/?pCode=417"></td>
 								</tr>
 								<tr class="cont">
 									<td class="title">제목</td>
-									<td><input type="text" class="w_form_l" name="title" value="" valid="required" element-name="제목"></td>
+									<td><input type="text" class="w_form_l" name="title" value="${item.title}" valid="required" element-name="제목"></td>
 								</tr>
 								<tr class="cont">
 									<td class="title">내용</td>
 									<td>
-										<textarea id="contnet" name="content"></textarea>
+										<textarea id="contnet" name="content">${item.content}</textarea>
 										<script type="text/javascript">
 											CKEDITOR.replace('content',{filebrowserUploadUrl:"${pageContext.request.contextPath}/admin/imgUpload/popup",height:500});
 										</script>
@@ -181,8 +179,10 @@ $(function(){
 							</p>
 				
 							<p class="btn_right">
-								<input type="submit" class="btn_black" value="등록">
-								<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu04_01register'">취소</button>
+								<input type="submit" class="btn_black" value="수정">
+				
+								<button type="button" class="btn_red" onclick="">삭제</button>
+								<button type="button" class="btn_gray" onclick="">취소</button>
 							</p>
 						</div>
 					</form>
