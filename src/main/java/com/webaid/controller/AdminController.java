@@ -48,6 +48,7 @@ import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
+import com.webaid.domain.PopupVO;
 import com.webaid.domain.ReservationVO;
 import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
@@ -59,6 +60,7 @@ import com.webaid.service.AdviceService;
 import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
+import com.webaid.service.PopupService;
 import com.webaid.service.ReservationService;
 import com.webaid.service.ReviewService;
 import com.webaid.service.StatisticService;
@@ -98,6 +100,9 @@ public class AdminController {
 	
 	@Autowired
 	private ReservationService resService;
+	
+	@Autowired
+	private PopupService pService;
 	
 	@Autowired
 	private StatisticService sService;
@@ -1414,6 +1419,17 @@ public class AdminController {
 	public String menu04_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu04_01 GET");
 		
+		List<PopupVO> list = pService.listSearch(cri);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(pService.listSearchCount(cri));
+		pageMaker.setFinalPage(pService.listSearchCount(cri));
+		
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
 		return "admin/menu04_01";
 	}
 	
@@ -1422,6 +1438,52 @@ public class AdminController {
 		logger.info("menu04_01register GET");
 		
 		return "admin/menu04_01register";
+	}
+	
+	@RequestMapping(value = "/menu04_01register", method = RequestMethod.POST)
+	public String menu04_01registerPost(PopupVO vo) throws Exception {
+		logger.info("menu04_01register POST");
+		
+		System.out.println(vo);
+		pService.insert(vo);
+		
+		return "redirect:/admin/menu04_01";
+	}
+	
+	@RequestMapping(value = "/menu04_01update", method = RequestMethod.GET)
+	public String menu04_01update(int no, @ModelAttribute("cri") SearchCriteria cri, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu04_01update GET");
+		
+		PopupVO vo = pService.selectOne(no);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(pService.listSearchCount(cri));
+
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "admin/menu04_01update";
+	}
+	
+	@RequestMapping(value = "/menu04_01update", method = RequestMethod.POST)
+	public String menu04_01updatePost(PopupVO vo, int page, @ModelAttribute("cri") SearchCriteria cri, RedirectAttributes rtts, Model model, HttpServletRequest req) throws Exception {
+		logger.info("menu04_01update POST");
+		
+		pService.update(vo);
+		
+		rtts.addAttribute("no", vo.getNo());
+		
+		PageMaker pageMaker = new PageMaker();
+
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(page);
+		pageMaker.setTotalCount(pService.listSearchCount(cri));
+
+		rtts.addAttribute("page", page);
+		
+		return "redirect:/admin/menu04_01update";
 	}
 	
 	@RequestMapping(value = "/menu05_01", method = RequestMethod.GET)

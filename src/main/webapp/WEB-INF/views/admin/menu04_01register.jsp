@@ -61,7 +61,7 @@ $(function(){
 				<div class="write_area">
 					<div class="write_box">
 			
-						<form name="popup" id="popup" method="post" action="popup_proc.php">
+						<form id="form1" method="post"action="${pageContext.request.contextPath}/admin/menu04_01register${pageMaker.makeSearch(pageMaker.cri.page)}">
 							<input type="hidden" name="data_array" value="Y">
 							<input type="hidden" name="mode" value="insert">
 							<input type="hidden" name="seq" value="">
@@ -117,7 +117,7 @@ $(function(){
 									<td class="title">상태</td>
 									<td>
 										<input type="radio" name="p_delflag" id="p_delflag1" value="Y" checked> <label for="p_delflag1"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<input type="radio" name="p_delflag" id="p_delflag2" value="N"> <label for="p_delflag2"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;							(미입력시 사용으로 선택됩니다)
+										<input type="radio" name="p_delflag" id="p_delflag2" value="N"> <label for="p_delflag2"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									</td>
 								</tr>
 								<!-- <tr class="cont">
@@ -150,14 +150,12 @@ $(function(){
 			
 					<div class="btn_area">
 						<p class="btn_left">
-							<button type="button" class="btn_gray" onclick="popup_it('list', 'select_key=&amp;input_key=&amp;search=&amp;page=1')">리스트</button>
+							<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03'">리스트</button>
 						</p>
 			
 						<p class="btn_right">
-							<button type="button" class="btn_black" onclick="popup_it('submit')">등록</button>
-			
-							
-							<button type="button" class="btn_gray" onclick="popup_it('reset', 'select_key=&amp;input_key=&amp;search=&amp;page=1')">취소</button>
+							<input type="submit" class="btn_black" value="등록">
+							<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu01_03register'">취소</button>
 						</p>
 					</div>
 			
