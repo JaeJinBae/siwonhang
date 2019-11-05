@@ -1410,7 +1410,20 @@ public class AdminController {
 		return "redirect:/admin/menu03_02update";
 	}
 	
-	//===============================================
+	@RequestMapping(value = "/menu04_01", method = RequestMethod.GET)
+	public String menu04_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu04_01 GET");
+		
+		return "admin/menu04_01";
+	}
+	
+	@RequestMapping(value = "/menu04_01register", method = RequestMethod.GET)
+	public String menu04_01register(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu04_01register GET");
+		
+		return "admin/menu04_01register";
+	}
+	
 	@RequestMapping(value = "/menu05_01", method = RequestMethod.GET)
 	public String menu05_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu05_01 GET");

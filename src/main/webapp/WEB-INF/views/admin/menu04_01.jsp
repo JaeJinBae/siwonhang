@@ -26,7 +26,7 @@ $(function(){
 		var searchType = encodeURIComponent(s);
 		var k=$("input[name='input_key']").val();
 		var keyword = encodeURIComponent(k);
-		location.href="${pageContext.request.contextPath}/admin/menu03_02${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
+		location.href="${pageContext.request.contextPath}/admin/menu04_01${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
 	});
 	
 });
@@ -45,12 +45,12 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>상담관리</h1>
+				<h1>팝업관리</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
-					<li>상담관리&nbsp;&gt;&nbsp;</li>
-					<li>예약관리</li>
+					<li>기타관리&nbsp;&gt;&nbsp;</li>
+					<li>팝업관리</li>
 				</ul>
 			</div>
 			
@@ -76,65 +76,93 @@ $(function(){
 							</form>
 						</div>
 			
-						<form name="inquire" id="inquire" method="post" action="">
-							<table class="list_table">
+						<form name="popup" id="popup" method="post" action="popup_proc.php">
+							<input type="hidden" name="mode" value="delete">
+							<input type="hidden" name="page" value="1">
+							<input type="hidden" name="search" value="">
+							<input type="hidden" name="select_key" value="">
+							<input type="hidden" name="input_key" value="">
+			
+							<table class="list_table" cellpadding="0">
 								<colgroup>
 									<col width="4%">
-									<col width="4%">
-									<col width="7%">
-									<col width="9%">
-									<col width="8%">
-									<col width="13%">
-									<col width="9%">
+									<col width="6%">
 									<col width="5%">
+									<col width="*">
+									<col width="15%">
 									<col width="8%">
+									<col width="8%">
+									<col width="8%">
+									<col width="5%">
 								</colgroup>
 								<tr class="cont">
 									<th><input type="checkbox" id="selectall"></th>
+									<th>사용유무</th>
 									<th>번호</th>
-									<th>이름</th>
-									<th>전화번호</th>
+									<th>제목</th>
+									<th>출력기간</th>
+									<th>팝업창종류</th>
+									<th>출력종류</th>
+									<th>출력순서</th>
 									<th>등록일</th>
-									<th>처리상태</th>
-									<th>유입경로</th>
-									<th>답변일</th>
+									<th>보기</th>
 								</tr>
-								<c:choose>
-									<c:when test="${fn:length(list) ==0 }">
-										<tr><td colspan="8">등록된 게시물이 없습니다.</td></tr>
-									</c:when>
-									<c:otherwise>
-										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
-									        <c:forEach var="item" items="${list}">
-												<tr class="cont">
-													<td><input type="checkbox" name="seq_list[]" value="${item.no}"></td>
-													<td>${num}</td>
-													<td>
-														<a href="${pageContext.request.contextPath}/admin/menu03_02update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.name}</a>
-														<img src="${pageContext.request.contextPath}/resources/img/common/20160111_EED6ADF963C23563.gif" class="vimg" alt="비밀글아이콘">
-													</td>
-													<td><a href="${pageContext.request.contextPath}/admin/menu03_02update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.phone}</a></td>
-													<td>${item.regdate}</td>
-													<td><a href="${pageContext.request.contextPath}/admin/menu03_02update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.state}</a></td>
-													<td><a href="javascript:;" id="tooltip_2474" onclick="tooltip_it('2474')">보기</a></td>
-													<td>${item.reply_date}</td>
-												</tr>
-												<c:set var="num" value="${num-1}"></c:set>	
-											</c:forEach>
-									</c:otherwise>
-								</c:choose>
+			
+								<tr class="cont">
+									<td><input type="checkbox" name="seq_list[]" value="38"></td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_38" onclick="vpopup_it('delflag', '38')"></td>
+									<td>37</td>
+									<td><a href=""><p class="title">양재남원장님-모바일</p></a></td>
+									<td><a href="">2019-03-04 ~ 2019-03-31</a></td>
+									<td><a href="">레이어</a></td>
+									<td><a href="">모바일</a></td>
+									<td><a href="">3</a></td>
+									<td>2019-03-04</td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '38')"></td>
+								</tr>
+								<tr class="cont">
+									<td><input type="checkbox" name="seq_list[]" value="37"></td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_37" onclick="vpopup_it('delflag', '37')"></td>
+									<td>36</td>
+									<td><a href=""><p class="title">오종영원장님=모바일</p></a></td>
+									<td><a href="">2019-03-01 ~ 2019-03-31</a></td>
+									<td><a href="">레이어</a></td>
+									<td><a href="">모바일</a></td>
+									<td><a href="">2</a></td>
+									<td>2019-03-04</td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '37')"></td>
+								</tr>
+								<tr class="cont">
+									<td><input type="checkbox" name="seq_list[]" value="36"></td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_36" onclick="vpopup_it('delflag', '36')"></td>
+									<td>35</td>
+									<td><a href=""><p class="title">Knn닥터스 방송출연_모바일</p></a></td>
+									<td><a href="">2019-02-28 ~ 2019-03-31</a></td>
+									<td><a href="">레이어</a></td>
+									<td><a href="">모바일</a></td>
+									<td><a href="">1</a></td>
+									<td>2019-02-28</td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '36')"></td>
+								</tr>
+								<tr class="cont">
+									<td><input type="checkbox" name="seq_list[]" value="51"></td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_on.png" class="cursor" id="delflag_51" onclick="vpopup_it('delflag', '51')"></td>
+									<td>34</td>
+									<td><a href=""><p class="title">VIP 맞춤형 선택건강식mobile</p></a></td>
+									<td><a href="">2019-10-15 ~ 2019-11-10</a></td>
+									<td><a href="">레이어</a></td>
+									<td><a href="">모바일</a></td>
+									<td><a href=""></a></td>
+									<td>2019-10-15</td>
+									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '51')"></td>
+								</tr>											
 							</table>
 						</form>
 					</div>
 			
 					<div class="btn_area">
-						<p class="btn_left">
-							<button type="button" class="btn_gray" onclick="">전체 Excel저장</button>
-							<button type="button" class="btn_gray" onclick="">Excel저장</button>
-							<button type="button" class="btn_gray" onclick="">선택삭제</button>
-						</p>
 						<p class="btn_right">
-							<button type="button" class="btn_black" onclick="location.href='${pageContext.request.contextPath}/admin/menu03_02register'">등록</button>
+							<button type="button" class="btn_black" onclick="location.href='${pageContext.request.contextPath}/admin/menu04_01register'">등록</button>
 						</p>
 					</div>
 			

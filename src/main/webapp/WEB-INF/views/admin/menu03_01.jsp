@@ -111,7 +111,7 @@ $(function(){
 													<td>${num}</td>
 													<td>
 														<a href="${pageContext.request.contextPath}/admin/menu03_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.name}</a>
-														<img src="${pageContext.request.contextPath}/resources/filedata/setting/20160111_EED6ADF963C23563.gif" class="vimg" alt="비밀글아이콘">
+														<img src="${pageContext.request.contextPath}/resources/img/common/20160111_EED6ADF963C23563.gif" class="vimg" alt="비밀글아이콘">
 													</td>
 													<td><a href="${pageContext.request.contextPath}/admin/menu03_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.phone}</a></td>
 													<td>${item.regdate}</td>
