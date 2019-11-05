@@ -2,6 +2,7 @@ package com.webaid.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.webaid.domain.PopupVO;
@@ -11,6 +12,7 @@ import com.webaid.persistence.PopupDao;
 @Service
 public class PopupServiceImpl implements PopupService {
 
+	@Autowired
 	private PopupDao dao;
 	
 	@Override

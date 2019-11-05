@@ -76,20 +76,16 @@ $(function(){
 							</form>
 						</div>
 			
-						<form name="popup" id="popup" method="post" action="popup_proc.php">
-							<input type="hidden" name="mode" value="delete">
-							<input type="hidden" name="page" value="1">
-							<input type="hidden" name="search" value="">
-							<input type="hidden" name="select_key" value="">
-							<input type="hidden" name="input_key" value="">
+						<form name="popup" id="popup" method="post">
 			
 							<table class="list_table" cellpadding="0">
 								<colgroup>
+									<col width="3%">
 									<col width="4%">
 									<col width="6%">
-									<col width="5%">
 									<col width="*">
 									<col width="15%">
+									<col width="8%">
 									<col width="8%">
 									<col width="8%">
 									<col width="8%">
@@ -107,55 +103,40 @@ $(function(){
 									<th>등록일</th>
 									<th>보기</th>
 								</tr>
-			
-								<tr class="cont">
-									<td><input type="checkbox" name="seq_list[]" value="38"></td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_38" onclick="vpopup_it('delflag', '38')"></td>
-									<td>37</td>
-									<td><a href=""><p class="title">양재남원장님-모바일</p></a></td>
-									<td><a href="">2019-03-04 ~ 2019-03-31</a></td>
-									<td><a href="">레이어</a></td>
-									<td><a href="">모바일</a></td>
-									<td><a href="">3</a></td>
-									<td>2019-03-04</td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '38')"></td>
-								</tr>
-								<tr class="cont">
-									<td><input type="checkbox" name="seq_list[]" value="37"></td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_37" onclick="vpopup_it('delflag', '37')"></td>
-									<td>36</td>
-									<td><a href=""><p class="title">오종영원장님=모바일</p></a></td>
-									<td><a href="">2019-03-01 ~ 2019-03-31</a></td>
-									<td><a href="">레이어</a></td>
-									<td><a href="">모바일</a></td>
-									<td><a href="">2</a></td>
-									<td>2019-03-04</td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '37')"></td>
-								</tr>
-								<tr class="cont">
-									<td><input type="checkbox" name="seq_list[]" value="36"></td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_36" onclick="vpopup_it('delflag', '36')"></td>
-									<td>35</td>
-									<td><a href=""><p class="title">Knn닥터스 방송출연_모바일</p></a></td>
-									<td><a href="">2019-02-28 ~ 2019-03-31</a></td>
-									<td><a href="">레이어</a></td>
-									<td><a href="">모바일</a></td>
-									<td><a href="">1</a></td>
-									<td>2019-02-28</td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '36')"></td>
-								</tr>
-								<tr class="cont">
-									<td><input type="checkbox" name="seq_list[]" value="51"></td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_on.png" class="cursor" id="delflag_51" onclick="vpopup_it('delflag', '51')"></td>
-									<td>34</td>
-									<td><a href=""><p class="title">VIP 맞춤형 선택건강식mobile</p></a></td>
-									<td><a href="">2019-10-15 ~ 2019-11-10</a></td>
-									<td><a href="">레이어</a></td>
-									<td><a href="">모바일</a></td>
-									<td><a href=""></a></td>
-									<td>2019-10-15</td>
-									<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '51')"></td>
-								</tr>											
+								<c:choose>
+									<c:when test="${fn:length(list) ==0 }">
+										<tr><td colspan="10">등록된 게시물이 없습니다.</td></tr>
+									</c:when>
+									<c:otherwise>
+								        <c:forEach var="item" items="${list}">
+											<tr class="cont">
+												<td><input type="checkbox" name="seq_list[]" value="38"></td>
+												<td>
+													<c:if test="${item.use_state == 'Y'}">
+														<img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_on.png" class="cursor" id="delflag_38">
+													</c:if>
+													<c:if test="${item.use_state == 'N'}">
+														<img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor" id="delflag_38">
+													</c:if>
+												</td>
+												<td>${item.no}</td>
+												<td><a href=""><p class="title">${item.title}</p></a></td>
+												<td><a href="">${item.startdate} ~ ${item.enddate}</a></td>
+												<td><a href="">레이어</a></td>
+												<td>
+													<a href="">
+														<c:if test="${item.output_type == 'pc'}">PC</c:if>
+														<c:if test="${item.output_type == 'mobile'}">MOBILE</c:if>
+													</a>
+												</td>
+												<td><a href="">${item.orderno}</a></td>
+												<td>${item.regdate}</td>
+												<td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor"></td>
+												<%-- <td><img src="${pageContext.request.contextPath}/resources/admin/img/icon_view.jpg" class="cursor" onclick="vpopup_it('layer', '38')"></td> --%>
+											</tr>
+										</c:forEach>
+									</c:otherwise>
+								</c:choose>
 							</table>
 						</form>
 					</div>

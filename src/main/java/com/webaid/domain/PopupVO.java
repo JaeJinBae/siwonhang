@@ -10,7 +10,9 @@ public class PopupVO {
 	private int p_top;
 	private String use_state;
 	private String link;
+	private String title;
 	private String content;
+	private String regdate;
 
 	public PopupVO() {
 		super();
@@ -88,6 +90,14 @@ public class PopupVO {
 		this.link = link;
 	}
 
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	public String getContent() {
 		return content;
 	}
@@ -96,11 +106,20 @@ public class PopupVO {
 		this.content = content;
 	}
 
+	public String getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
+
 	@Override
 	public String toString() {
 		return "PopupVO [no=" + no + ", output_type=" + output_type + ", startdate=" + startdate + ", enddate="
 				+ enddate + ", orderno=" + orderno + ", p_left=" + p_left + ", p_top=" + p_top + ", use_state="
-				+ use_state + ", link=" + link + ", content=" + content + "]";
+				+ use_state + ", link=" + link + ", title=" + title + ", content=" + content + ", regdate=" + regdate
+				+ "]";
 	}
 
 }

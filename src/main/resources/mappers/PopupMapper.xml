@@ -13,11 +13,11 @@
 	</select>
 	
 	<insert id="insert">
-		insert into popup values(0, #{output_type}, #{startdate}, #{enddate}, #{orderno}, #{p_left}, #{p_top}, #{use_state}, #{link}, #{content})
+		insert into popup values(0, #{output_type}, #{startdate}, #{enddate}, #{orderno}, #{p_left}, #{p_top}, #{use_state}, #{link}, #{title}, #{content}, #{regdate})
 	</insert>
 	
 	<update id="update">
-		update popup set , output_type=#{output_type}, startdate=#{startdate}, enddate=#{enddate}, orderno=#{orderno}, p_left=#{p_left}, p_top=#{p_top}, use_state=#{use_state}, link=#{link}, content=#{content} where no=#{no}
+		update popup set output_type=#{output_type}, startdate=#{startdate}, enddate=#{enddate}, orderno=#{orderno}, p_left=#{p_left}, p_top=#{p_top}, use_state=#{use_state}, link=#{link}, title=#{title}, content=#{content} where no=#{no}
 	</update>
 	
 	<update id="updateUseState">
