@@ -88,7 +88,7 @@ $(function(){
 				<div class="write_area">
 					<form id="form1" method="post" action="${pageContext.request.contextPath}/admin/menu04_01update${pageMaker.makeSearch(pageMaker.cri.page)}">
 						<div class="write_box">
-							<input type="hidden" name="no" value="0">
+							<input type="hidden" name="no" value="${item.no}">
 							<input type="hidden" id="regdate" name="regdate" value="${item.regdate}">
 							<input type="hidden" id="outputType" value="${item.output_type}">
 							<input type="hidden" id="useState" value="${item.use_state}">
