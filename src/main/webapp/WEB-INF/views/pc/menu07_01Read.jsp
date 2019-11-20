@@ -184,19 +184,19 @@
 									<th>조회수</th>
 								</tr>
 							</thead>
-							<tr>
-								<td>634</td>
-								<td class="subject"> 시원항병원 5월 휴진 안내</td>
-								<td>2019-05-03</td>
-								<td>279</td>
-							</tr>
-							<tr>
-								<td colspan="4" class="con">
-									<div style="text-align: center;"><img alt="" src="/filedata/ckeditor/20190503_DDC52C03E48651DE.png"></div>
-									<div style="text-align: center;">시원항병원 5월6일(월) 대체 공휴일 휴진입니다.</div>
-									<div style="text-align: center;">일정 참고하시어 내원 및 예약에 불편함 없으시길 바랍니다.</div>
-								</td>
-							</tr>
+							<tbody>
+								<tr>
+									<td>${item.no}</td>
+									<td class="subject"> ${item.title}</td>
+									<td>${item.regdate}</td>
+									<td>${item.cnt}</td>
+								</tr>
+								<tr>
+									<td colspan="4" class="con">
+										${item.content}
+									</td>
+								</tr>
+							</tbody>
 						</table>
 						<!-- 공지사항 게시판 뷰 끝 -->
 					</div>
@@ -204,10 +204,26 @@
 					<div class="prev-next-list">
 						<ul class="inner">
 							<li>
-								<span>이전글</span><a href=""><b>[공지]</b> 시원항병원에 1월부터 새로운 의료진이 함께합니다.</a>
+								<span>이전글</span>
+								<c:choose>
+									<c:when test="${beforeItem.no eq null}">
+										이전글이 없습니다.
+									</c:when>
+									<c:otherwise>
+										<a href="${pageContext.request.contextPath}/menu07_01read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${beforeItem.no}">${beforeItem.title}</a>
+									</c:otherwise>
+								</c:choose>
 							</li>
 							<li>
-								<span>다음글</span><a href="javascript:alert('다음글이 없습니다');">다음글이 없습니다</a>
+								<span>다음글</span>
+								<c:choose>
+									<c:when test="${afterItem.no eq null}">
+										존재하지 않습니다.
+									</c:when>
+									<c:otherwise>
+										<a href="${pageContext.request.contextPath}/menu07_01read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${afterItem.no}">${afterItem.title}</a>
+									</c:otherwise>
+								</c:choose>
 							</li>
 						</ul>
 					</div>
@@ -216,7 +232,7 @@
 					<!-- 게시판 버튼 시작 -->
 					<div class="btn-group">
 						<div class="inner">
-							<a href="/534/?pCode=534&amp;select_key=&amp;input_key=&amp;Scod=BRD01&amp;pCode=534&amp;btap=&amp;page=1" class="btn btn-list">목록으로</a>
+							<a href="${pageContext.request.contextPath}/menu07_01${pageMaker.makeSearch(pageMaker.cri.page)}" class="btn btn-list">목록으로</a>
 						</div>
 					</div>
 					<!-- 게시판 버튼 끝 -->

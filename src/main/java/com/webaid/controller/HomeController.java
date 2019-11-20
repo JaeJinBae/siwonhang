@@ -453,6 +453,13 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/menu07_05";
 	}
 	
+	@RequestMapping(value="/menu07_05pwChk", method=RequestMethod.GET)
+	public String menu07_05pwChk(){
+		logger.info("menu07_05pwChk get");
+		
+		return "pc/menu07_05pwChk";
+	}
+	
 	@RequestMapping(value="/menu07_05read", method=RequestMethod.GET)
 	public String menu07_05readGet(){
 		logger.info("menu07_05read get");

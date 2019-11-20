@@ -76,6 +76,17 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.common.js"></script><!-- # 공통 함수 -->
 <!-- ************************************************************************************************* -->
 <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+<script>
+$(function(){
+	$(".btn-group > .inner > ul > .fr > a").click(function(e){
+		e.preventDefault();
+		var link = $(this).prop("href").split("&");
+		var k = link[3].split("=");
+		var keyword = encodeURIComponent(k[1]);
+		location.href=link[0]+"&"+link[1]+"&"+link[2]+"&keyword="+keyword+"&"+link[4];
+	});
+});
+</script>
 </head>
 <body>
 
@@ -195,45 +206,29 @@
 									</tr>
 								</thead>
 								<tr>
-									<td>51</td>
+									<td>${item.no}</td>
 									<td class="subject" data-state="비공개">
-										<p>화농성 한선염?</p>
+										<p>${item.title}</p>
 									</td>
-						
-									<td>
-										<i class="state ready">답변대기</i>
-									</td>
-									<td>
-										김익명			</td>
-									<td>
-										2019-10-25			</td>
-									<td><a href="javascript:;" onclick="inquire_it('download', '918')">124.jpg</a></td>
+									<c:if test="${item.state == '상담완료'}"><td><i class="state com">답변완료</i></td></c:if>
+									<c:if test="${item.state != '상담완료'}"><td><i class="state ready">답변대기</i></td></c:if>
+									<td>${item.name}</td>
+									<td>${item.regdate}</td>
 								</tr>
 							</table>
 							
 							<!-- 게시글 상세 내용 -->
 							<div class="board-counsel-content">
-								안녕하세요 증상 사진 첨부 드립니다. 지금은 피부과 주사 치료로 인해 사진보다 검은 멍이 들어있습니다.<br>
-								6월 말에 엉덩이 항문 주변에 겉으로는 잘 티가 안나지만 만지면 좀 단단한 종기가 생겨서 외과에 방문을 했었는데<br>
-								외과 선생님이 치루나 항문 질환은 아니고 단순 종기인 것 같다 하셔서 제거술을 받고 꿰맸습니다.<br>
-								근데 실밥을 아직 풀지 않았는데도 염증이 생기더니 그 후에도 겉의 살은 아물었는데 안에 염증이 계속 남아있었습니다ㅜㅜ<br>
-								좀 부풀어 오르면 항생제를 처방받아서 먹고, 좀 좋아지면 의사샘께서 안와도 될 것 같다 하셔서 약을 끊으면 다시 염증이 올라와서 한 2주 뒤에 병원을 방문해야하는 과정의 반복을 몇 달간 지속했었습니다..<br>
-								<br>
-								그러다 한 달 전 쯤 피부과를 가게 되었는데 피부과샘이 보시자마자 바로 화농성한선염인 것 같다 하시더라구요,<br>
-								그렇게 지금 피부과에서 염증주사 치료 + 약물 치료를 하고 있는데<br>
-								눈에 띄게 좋아진 것 같지는 않지만 더 나빠지지는 않는 것 같습니다.<br>
-								피부과 샘은 잘 안낫는다, 근데 외과적 수술을 하면 또 재발될거라고만 말씀하시는데<br>
-								언제 끝날지 모르는 통원치료를 계속 지속하기 힘들 것 같고 전처럼 약이나 주사 치료를 끊으면 또 재발이 될까봐 무섭습니다ㅜㅜ<br>
-								<br>
-								<br>
-								재발 걱정은 안하는게 맞지만 수 개월째 고생을 하고 있어서 얼른 완치를 하고 싶어요..<br>
-								그래서 피부 밑 낭을 다 들어내는 수술적 치료는 어떨지 알아보고 있습니다.<br>
-								혹시 이 병원에서 수술과 치료 해주시는지 문의 드립니다.<br>
-								<br>
-								감사합니다
+								${item.content}
 							</div>
 							<!-- // 게시글 상세 내용 -->
 							<!-- reply -->
+							<c:if test="${item.state == '상담완료'}">
+								<div class="board-counsel-reply">
+									<div class="reply-title"><i>답변</i> 온라인상담에 대한 답변입니다.</div>
+									<div class="reply-txt">${item.reply}</div>
+								</div>
+							</c:if>
 							<!-- reply end -->
 						</form>
 					</div>
@@ -243,12 +238,13 @@
 						<div class="inner">
 							<ul>
 								<li class="fl">
-									<a href="" class="btn btn-view-list">목록으로</a>
+									<a href="${pageContext.request.contextPath}/menu07_05" class="btn btn-view-list">목록으로</a>
 								</li>
 								<li class="fr">
-									<a href="" class="btn btn-del">삭제</a>&nbsp;<a href="" class="btn btn-update">수정</a>&nbsp;
+									<a href="${pageContext.request.contextPath}/menu07_05delete${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-del">삭제</a>&nbsp;
+									<a href="${pageContext.request.contextPath}/menu07_05update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-update">수정</a>
 								</li>
-							</ul>
+							</ul>		
 						</div>
 					</div><!-- 게시판 버튼 끝 -->
 
