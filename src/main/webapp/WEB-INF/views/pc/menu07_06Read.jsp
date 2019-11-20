@@ -76,6 +76,17 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.common.js"></script><!-- # 공통 함수 -->
 <!-- ************************************************************************************************* -->
 <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+<script>
+$(function(){
+	$(".btn-group > .inner > ul > .fr > a").click(function(e){
+		e.preventDefault();
+		var link = $(this).prop("href").split("&");
+		var k = link[3].split("=");
+		var keyword = encodeURIComponent(k[1]);
+		location.href=link[0]+"&"+link[1]+"&"+link[2]+"&keyword="+keyword+"&"+link[4];
+	});
+});
+</script>
 </head>
 <body>
 
@@ -183,7 +194,6 @@
 									<col style="width: 140px;">
 									<col style="width: 140px;">
 									<col style="width: 140px;">
-									<col style="width: 140px;">
 								</colgroup>
 								<thead>
 									<tr>
@@ -192,47 +202,34 @@
 										<th>답변여부</th>
 										<th>작성자</th>
 										<th>작성일</th>
-										<th>첨부파일</th>
 									</tr>
 								</thead>
 								<tr>
-									<td>48</td>
+									<td>${item.no}</td>
 									<td class="subject" data-state="비공개">
-										<p>종합 건강검진 및 위/대장내시경</p>
+										<p>${item.title}</p>
 									</td>
-						
-									<td>
-										<i class="state com">답변완료</i>
-									</td>
-									<td>김민</td>
-									<td>2019-10-07</td>
-									<td></td>
+									<c:if test="${item.state == '상담완료'}"><td><i class="state com">답변완료</i></td></c:if>
+									<c:if test="${item.state != '상담완료'}"><td><i class="state ready">답변대기</i></td></c:if>
+									<td>${item.name}</td>
+									<td>${item.regdate}</td>
 								</tr>
 							</table>
 							
 							<!-- 게시글 상세 내용 -->
 							<div class="board-counsel-content">
-								안녕하세요 올해 건강검진을 받아야하는데 기본 건강검진에 추가해서 위/대장내시경을 받고싶어서 문의드립니다.<br>
-								1. 위/대장내시경은 수면으로 진행하고 싶은데 가능한가요? 2. 대장내시경시 사전에 약을안먹고 가서 설사약을 직접 주입하는 방법이 있다고 들었는데 가능한가요? 3. 올해안에 2명 토요일에 검진 가능한 날이 있을까요? 4. 혹시 보호자 없이 검진받는건 불가능한가요?
+								${item.content}
 							</div>
 							<!-- // 게시글 상세 내용 -->
 							<!-- reply -->
 							
 							
-							<div class="board-counsel-reply">
-								<div class="reply-title">
-									<i>답변</i> 온라인상담에 대한 답변입니다.
+							<c:if test="${item.state == '상담완료'}">
+								<div class="board-counsel-reply">
+									<div class="reply-title"><i>답변</i> 온라인상담에 대한 답변입니다.</div>
+									<div class="reply-txt">${item.reply}</div>
 								</div>
-								<div class="reply-txt">
-									김민경 님 늦어진 답변에 다시 한 번 죄송합니다.<br>
-									<br>
-									1. 건강검진 및 위/대장내시경은 수면내시경으로 진행 가능하십니다.<br>
-									2. 검진 대장내시경은 설사약 또는 관장약을 주입해서 하지는 못합니다.  2~3일전 방문하셔서 세장제를 받아 복용하셔야 합니다.<br>
-									3. 2019년 11월 23일 토요일까지는 내시경 예약이 모두된 상황입니다. 이후 예약가능일은 051-771-7275 검진센터로 문의 바랍니다.<br>
-									4. 노약자 또는 임산부가 아니시라면 보호자 없이 검진 가능합니다. 다만, 수면내시경 후 수면상태가 지속되는게 개개인 마다 다르기에 보호자 동행을 추천합니다.
-								</div>
-								
-							</div><!-- reply end -->
+							</c:if><!-- reply end -->
 						</form>
 					</div>
 					
@@ -240,13 +237,13 @@
 					<div class="btn-group">
 						<div class="inner">
 							<ul>
-								<li class="fl">
-									<a href="" class="btn btn-view-list">목록으로</a>
-								</li>
-								<li class="fr">
-									<a href="javascript:inquire_it('delete', '')" class="btn btn-del">삭제</a>&nbsp;<a href="" class="btn btn-update">수정</a>&nbsp;
-								</li>
-							</ul>
+						<li class="fl">
+							<a href="${pageContext.request.contextPath}/menu07_06" class="btn btn-view-list">목록으로</a>
+						</li>
+						<li class="fr">
+							<a href="${pageContext.request.contextPath}/menu07_06update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-update">수정</a>
+						</li>
+					</ul>
 						</div>
 					</div><!-- 게시판 버튼 끝 -->
 				</div>

@@ -76,6 +76,18 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.common.js"></script><!-- # 공통 함수 -->
 <!-- ************************************************************************************************* -->
 <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+<script>
+$(function(){
+	$(document).on("click", ".prev-next-list > .inner > li > a", function(e){
+		e.preventDefault();
+		var urlArr = $(this).prop("href").split("&");
+		var k = urlArr[3].split("=");
+		var keyword = encodeURIComponent(k[1]);
+		console.log(keyword);
+		location.href=urlArr[0]+"&"+urlArr[1]+"&"+urlArr[2]+"&keyword="+keyword+"&"+urlArr[4];
+	});
+});
+</script>
 </head>
 <body>
 
@@ -185,29 +197,14 @@
 								</tr>
 							</thead>
 							<tr>
-								<td>589</td>
-								<td class="subject"> Does the Removal of Retained Staples Really Improve Postoperative Chronic Sequelae After Transanal Stapled Operations? [2014.05.DCR]</td>
-								<td>2014-05-09</td>
-								<td>3426</td>
+								<td>${item.no}</td>
+								<td class="subject"> ${item.title}</td>
+								<td>${item.regdate}</td>
+								<td>${item.cnt}</td>
 							</tr>
 							<tr>
 								<td colspan="4" class="con">
-									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
-									<h4 id="P26">MATERIALS AND METHODS</h4>
-									<p id="P27">We conducted a prospective study evaluating the data of all of the patients who underwent a stapled transanal procedure at our institution from January 2003 to December 2011. Patients who underwent the stapling procedure associated with another proctologic procedure for a concomitant anorectal disease were excluded from the study. According to our protocol, all of the patients were preoperatively evaluated with anorectal manometry and, if they were &gt;40 years of age, with colonoscopy to assess the absence of anal sphincter deficiency and endoluminal colonic disease.</p>
-									<div id="ej-clear-float"></div>
-									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
-									<h5 id="P28">Surgical Techniques</h5>
-									<p id="P29">The SH was performed according to the original technique using a PPH 01 or PPH 03 stapler (Ethicon Endosurgery, Inc., Cincinnati, OH).<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P63" target="_blank"><font size="2">10</font></a></sup> The STARR was performed with the use of 2 circular staplers implementing 3 separate one-half pursestrings (180°) per side.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P64" target="_blank"><font size="2">11</font></a></sup> The STARR was performed using the STARR-One technique, which involves the use of a high-volume circular stapler (Chex CPH34 HV, Frankenmann, Shuzhou, China) and the placement of 6 parachute stitches on the apex of the prolapse, so as to introduce a greater amount of prolapsed tissue within the housing of the stapler.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P65" target="_blank"><font size="2">12</font></a></sup> The TP was performed using a Transtar CCS-30 (Ethicon Endosurgery, Inc) stapler according to a modified technique, wherein the longitudinal opening of the prolapsed tissue was created using an electric scalpel between 2 Kocher clamps and not by application of a Transtar stapler.<sup><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#P66" target="_blank"><font size="2">13</font></a></sup></p>
-									<div id="ej-clear-float"><font size="2"></font></div>
-									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>
-									<h5 id="P30">Staple Removal</h5>
-									<p id="P31">The exposed staples were removed by plucking them out bluntly using a transanal approach with a disposable circular anal dilator or endoscopically with foreign body forceps (<a href="javascript:void(0);" target="_blank">Fig. 1</a>). In the presence of bleeding, some hemostatic stitches were placed. If not needed, we preferred not to resect the scar tissue around the staple line to avoid the risk of rectal perforation and sepsis.</p>
-									<div id="ej-article-body-img-column">
-									<div id="ej-article-body-img-cell"><a href="javascript:void(0);" target="_blank"></a></div><img border="0" alt="" align="top" src="http://www.chijil75.co.kr/data/cheditor4/1405/5ZVJDdCi4lZdhcXbPmzHKy.jpg" width="1200" height="377"><br><em><span id="ctl00_SPWebPartManager1_g_599004e9_5786_404b_8320_bb91746a6003_ctl00_slideShowUserControl_imageDescriptionForSlide">FIGURE 1. Staple ring with retained staples (arrow).</span><br></em></div>
-									<div id="ej-clear-float"></div>
-									<div id="ej-clear-float"></div>
-									<div id="ej-article-outline-top"><a href="http://journals.lww.com/dcrjournal/Fulltext/2014/05000/Does_the_Removal_of_Retained_Staples_Really.15.aspx#" target="_blank">Back to Top</a> | <a href="javascript:showOutline()" target="_blank">Article Outline</a></div>				
+									${item.content}
 								</td>
 							</tr>
 						</table>
@@ -217,16 +214,34 @@
 					<div class="prev-next-list">
 						<ul class="inner">
 							<li>
-								<span>이전글</span><a href=""> Fecal Continence Revisited: The Anal External S...</a>		</li>
+								<span>이전글</span>
+								<c:choose>
+									<c:when test="${beforeItem.no eq null}">
+										이전글이 없습니다.
+									</c:when>
+									<c:otherwise>
+										<a href="${pageContext.request.contextPath}/menu07_03read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${beforeItem.no}">${beforeItem.title}</a>
+									</c:otherwise>
+								</c:choose>
+							</li>
 							<li>
-								<span>다음글</span><a href="javascript:alert('다음글이 없습니다');">다음글이 없습니다</a>		</li>
+								<span>다음글</span>
+								<c:choose>
+									<c:when test="${afterItem.no eq null}">
+										존재하지 않습니다.
+									</c:when>
+									<c:otherwise>
+										<a href="${pageContext.request.contextPath}/menu07_03read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${afterItem.no}">${afterItem.title}</a>
+									</c:otherwise>
+								</c:choose>
+							</li>
 						</ul>
 					</div>
 					
 					<!-- 게시판 버튼 시작 -->
 					<div class="btn-group">
 						<div class="inner">
-							<a href="" class="btn btn-list">목록으로</a>
+							<a href="${pageContext.request.contextPath}/menu07_03${pageMaker.makeSearch(pageMaker.cri.page)}" class="btn btn-list">목록으로</a>
 						</div>
 					</div>
 					<!-- 게시판 버튼 끝 -->

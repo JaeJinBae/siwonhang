@@ -76,6 +76,30 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.common.js"></script><!-- # 공통 함수 -->
 <!-- ************************************************************************************************* -->
 <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
+<script>
+$(function(){
+	$("#form1").submit(function(){
+		var ndate = new Date();
+		var year = ndate.getFullYear();
+		var month = ndate.getMonth()+1;
+		var date = ndate.getDate();
+		
+		month = (month > 9) ? month+"":"0"+month;
+		date = (date > 9) ? date+"":"0"+date;
+		
+		$("#regdate").val(year+"-"+month+"-"+date);
+		
+		var phone1 = $("#phone1").val();
+		var phone2 = $("#phone2").val();
+		var phone3 = $("#phone3").val();
+		$("#phone").val(phone1+"-"+phone2+"-"+phone3);
+		
+		$("#ip").val(ip());
+		var oldURL = document.referrer;
+		$("#access_url").val(oldURL);
+	});
+});
+</script>
 </head>
 <body>
 
@@ -168,47 +192,62 @@
 					<h4 class="tit">진료예약</h4><!-- 서브 콘텐츠 타이틀 -->
 		
 					<!-- privacy -->
-					<form name="inquire" id="inquire" method="post" action="" enctype="multipart/form-data" onsubmit="return false" autocomplete="off">
-						<input type="hidden" name="fparam" value="">
-						<input type="hidden" name="distinction" value="proc">
-						<input type="hidden" name="backpage" value="/html/index.html">
-						<input type="hidden" name="file_cnt" value="1">
-						<input type="hidden" name="i_cate" value="CN02">
+					<form name="inquire" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/menu07_06register">
+						<input type="hidden" name="secret" id="secret" value="o">
+						<input type="hidden" name="regdate" id="regdate">
+						<input type="hidden" name="ip" id="ip">
+						<input type="hidden" name="access_url" id="access_url">
+						<input type="hidden" name="phone" id="phone">
+						
 						<div class="inner">
 							<table class="board-cousel-form">
 								<caption>상담 게시판 상세</caption>
 									
 									<tr>
 										<th scope="row">이름</th>
-										<td><input type="text" name="i_name" id="i_name" class="default" valid="required" element-name="이름" value="시원항병원"></td>
+										<td><input type="text" name="name" id="name" class="default" value=""></td>
+									</tr>
+									<tr>
+										<th scope="row">비밀번호</th>
+										<td><input type="password" name="pw" id="pw" class="default" autocomplete="off"></td>
 									</tr>
 									<tr>
 										<th>제목</th>
 										<td>
-											<input type="text" name="i_title" id="i_title" maxlength="200" valid="required" element-name="제목" value="">
+											<input type="text" name="title" id="title" maxlength="200" value="">
 										</td>
 									</tr>
-						
 									<tr>
 										<th>연락처</th>
 										<td>
-											<select name="i_phone1" id="i_phone1" class="small"><option value="010">010</option><option value="011">011</option><option value="016">016</option><option value="017">017</option><option value="018">018</option><option value="019">019</option></select> -
-											<input type="text" name="i_phone2" id="i_phone2" maxlength="4" valid="required,phone_tel34" element-name="연락처" value="" class="small" autocomplete="off"> -
-											<input type="text" name="i_phone3" id="i_phone3" maxlength="4" valid="required,phone_tel44" element-name="연락처" value="" class="small" autocomplete="off"><br><br>
-											* 전화번호를 남겨주시면 답변 등록 시 문자 드리겠습니다.
+											<select name="phone1" id="phone1" class="small">
+												<option value="010">010</option>
+												<option value="011">011</option>
+												<option value="016">016</option>
+												<option value="017">017</option>
+												<option value="018">018</option>
+												<option value="019">019</option>
+											</select> -
+											<input type="text" name="phone2" id="phone2" maxlength="4" value="" class="small" autocomplete="off"> -
+											<input type="text" name="phone3" id="phone3" maxlength="4" value="" class="small" autocomplete="off">
+											* 연락처를 남겨주시면 답변 후 문자메시지를 발송해드립니다.
 										</td>
 									</tr>
 									<tr>
 										<th>내용</th>
 										<td>
-											<textarea name="i_content" id="i_content" valid="required" element-name="내용"></textarea>
+											<textarea name="content" id="content"></textarea>
 										</td>
 									</tr>
 									<tr>
 										<th><label for="file_cnt">첨부파일</label></th>
 										<td>
 											<div class="form-file">
-											<div><input type="file" name="upload[]" style="width: 450px; position: absolute; clip: rect(0px, 0px, 0px, 0px); display: none;" id="jfilestyle-0" tabindex="-1"><div class="jfilestyle jfilestyle-corner  jfilestyle-theme-default"><div name="filedrag" style="position: absolute; width: 100%; height: 35px; z-index: -1;"></div><input type="text" style="width:150px" placeholder="" disabled=""> <span class="focus-jfilestyle" tabindex="0"><label for="jfilestyle-0"><span>파일첨부</span></label></span></div><br></div>					</div>
+												<div>
+													<input type="file" name="upload" style="width: 450px; position: absolute; clip: rect(0px, 0px, 0px, 0px); display: none;" id="jfilestyle-0" tabindex="-1">
+													<br>
+												</div>	
+											</div>
 											<script>
 												$('.form-file input[type="file"]').jfilestyle({
 													//placeholder: '사진첨부',
@@ -217,7 +256,6 @@
 											</script>
 										</td>
 									</tr>
-									<input type="hidden" name="i_secret" id="i_secret" value="Y">
 							</table>
 						
 							<div class="private-agree">
@@ -230,8 +268,8 @@
 									기간 동안 보존합니다. - 보존 이유 : 회원님의 동의를 통한 정보 유지 - 보존 기간 : 회원정보 삭제 요청 시까지
 								</textarea>
 								<p>
-									<input type="checkbox" id="agree" valid="required" element-name="개인정보취급방침" name="agree" value="Y" checked="">
-									<label for="agree">개인정보취급방침에 동의합니다.</label>
+									<input type="checkbox" id="agree" name="agree" value="Y" checked="checked">
+								<label for="agree">개인정보취급방침에 동의합니다.</label>
 								</p>
 							</div>
 							
@@ -240,14 +278,14 @@
 							<div class="btn-group">
 								<div class="inner">
 									<ul>
-										<li class="fl">
-											<a href="" class="btn btn-view-list">목록으로</a>
-										</li>
-										<li class="fr">
-											<button type="button" class="btn btn-submit" onclick="inquire_it('submit')">확인</button>
-											<button type="button" class="btn btn-cancel" onclick="inquire_it('reset', 'pCode=539&amp;page=1')">취소</button>
-										</li>
-									</ul>
+								<li class="fl">
+									<a href="${pageContext.request.contextPath}/menu07_06" class="btn btn-view-list">목록으로</a>
+								</li>
+								<li class="fr">
+									<input type="submit" class="btn btn-submit" style="width:100px;height:36px;line-height:36px;cursor:pointer;" value="확인">
+									<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/menu07_06register'">취소</button>
+								</li>
+							</ul>
 								</div>
 							</div><!-- 게시판 버튼 끝 -->
 						</div>
