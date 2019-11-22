@@ -240,7 +240,7 @@ $(function(){
 				<div class="btn-group-center">
 					<div class="inner">
 						<input type="submit" class="btn btn-submit" style="width:100px;height:36px;line-height:36px;cursor:pointer;" value="글쓰기">
-						<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/menu09_02'">취소</button>
+						<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/menu07_05'">취소</button>
 					</div>
 				</div>
 				<!-- 게시판 버튼 끝 -->

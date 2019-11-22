@@ -169,7 +169,6 @@ $(function(){
 				    <c:otherwise>
 				        <c:forEach var="item" items="${list}">
 							<li>
-								<%-- <a href="${pageContext.request.contextPath}/m/menu09_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"> --%>
 								<a href="${pageContext.request.contextPath}/m/menu07_05pwChk${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">
 									<b><!---->${item.title}</b>
 									<i class="name">${item.name}</i><span class="line">|</span><i class="date">${item.regdate}</i><span class="line">|</span><i class="date">비공개</i>

@@ -158,7 +158,7 @@ $(function(){
 			<h5>진료예약</h5>
 		</div>
 		
-		<form name="inquire" id="form1" method="post" action="${pageContext.request.contextPath}/m/menu09_06register" enctype="multipart/form-data">
+		<form name="inquire" id="form1" method="post" action="${pageContext.request.contextPath}/m/menu07_06register" enctype="multipart/form-data">
 			<input type="hidden" name="secret" id="secret" value="o">
 			<input type="hidden" name="regdate" id="regdate">
 			<input type="hidden" name="ip" id="ip">
@@ -240,7 +240,7 @@ $(function(){
 				<div class="btn-group-center">
 					<div class="inner">
 						<input type="submit" class="btn btn-submit" style="width:100px;height:36px;line-height:36px;cursor:pointer;" value="글쓰기">
-						<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/menu09_02'">취소</button>
+						<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/menu07_06'">취소</button>
 					</div>
 				</div>
 				<!-- 게시판 버튼 끝 -->
