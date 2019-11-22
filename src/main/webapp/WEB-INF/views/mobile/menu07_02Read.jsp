@@ -137,21 +137,13 @@
 		<div class="board-notice-view">
 			<ul class="full">
 				<li class="subject">	
-					<div class="title"> 국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</div>
+					<div class="title"> ${item.title}</div>
 					<p class="info">
-						<!--i class='name'>시</i><span class='line'>|</span--><i class="date">2019-04-24</i><span class="line">|</span><i class="hit">조회수		391</i>
+						<!--i class='name'>시</i><span class='line'>|</span--><i class="date">${item.regdate }</i><span class="line">|</span><i class="hit">조회수		${item.cnt}</i>
 					</p>
 				</li>
 				<li class="con">
-					<div>
-						<div><strong><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">[진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</span></span></strong></div>
-						
-						<div><strong><span style="font-size:16px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">국제신문 디지털콘텐츠팀 inews@kookje.co.kr 2019년4월23일 본지 24면</span></span></strong></div>
-						
-						<div>&nbsp;</div>
-						
-						<div><span style="font-size:14px;"><span style="font-family:trebuchet ms,helvetica,sans-serif;">&nbsp;<img alt="" src="/filedata/ckeditor/20190424_86B25DB2A994E2B7.png" style="margin: 10px;"></span></span></div>
-					</div>		
+					${item.content}
 				</li>
 			</ul>
 		</div>
@@ -160,9 +152,27 @@
 		<div class="prev-next-list">
 			<ul class="full">
 				<li>
-					<span>이전글</span><a href="javascript:alert('이전글이 없습니다');">이전글이 없습니다</a>		</li>
+					<span>이전글</span>
+					<c:choose>
+						<c:when test="${beforeItem.no eq null}">
+							이전글이 없습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${beforeItem.no}">${beforeItem.title}</a>
+						</c:otherwise>
+					</c:choose>
+				</li>
 				<li>
-					<span>다음글</span><a href=""> KNN 닥터스 조현언, 정일권 원장님 방송출연</a>		</li>
+					<span>다음글</span>
+					<c:choose>
+						<c:when test="${afterItem.no eq null}">
+							존재하지 않습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_02read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${afterItem.no}">${afterItem.title}</a>
+						</c:otherwise>
+					</c:choose>
+				</li>
 			</ul>
 		</div>
 		
@@ -170,7 +180,7 @@
 		<!-- 게시판 버튼 시작 -->
 		<div class="btn-group">
 			<div class="inner">
-				<a href="" class="btn btn-list">목록으로</a>
+				<a href="${pageContext.request.contextPath}/m/menu07_02${pageMaker.makeSearch(pageMaker.cri.page)}" class="btn btn-list">목록으로</a>
 			</div>
 		</div>
 		<!-- 게시판 버튼 끝 -->

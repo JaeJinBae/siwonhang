@@ -137,9 +137,9 @@
 		<div class="board-notice-view">
 			<ul class="full">
 				<li class="subject">	
-					<div class="title"> Does the Removal of Retained Staples Really Improve Postoperative Chronic Sequelae After Transanal Stapled Operations? [2014.05.DCR]</div>
+					<div class="title"> ${item.title}</div>
 					<p class="info">
-						<!--i class='name'>최</i><span class='line'>|</span--><i class="date">2014-05-09</i><span class="line">|</span><i class="hit">조회수		3430</i>
+						<!--i class='name'>최</i><span class='line'>|</span--><i class="date">${item.regdate}</i><span class="line">|</span><i class="hit">조회수		${item.cnt}</i>
 					</p>
 				</li>
 				<li class="con">
@@ -152,9 +152,27 @@
 		<div class="prev-next-list">
 			<ul class="full">
 				<li>
-					<span>이전글</span><a href="javascript:alert('이전글이 없습니다');">이전글이 없습니다</a>		</li>
+					<span>이전글</span>
+					<c:choose>
+						<c:when test="${beforeItem.no eq null}">
+							이전글이 없습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_03read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${beforeItem.no}">${beforeItem.title}</a>
+						</c:otherwise>
+					</c:choose>
+				</li>
 				<li>
-					<span>다음글</span><a href=""> Fecal Continence Revisited: The Anal External S...</a>		</li>
+					<span>다음글</span>
+					<c:choose>
+						<c:when test="${afterItem.no eq null}">
+							존재하지 않습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_03read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${afterItem.no}">${afterItem.title}</a>
+						</c:otherwise>
+					</c:choose>
+				</li>
 			</ul>
 		</div>
 		
@@ -162,7 +180,7 @@
 		<!-- 게시판 버튼 시작 -->
 		<div class="btn-group">
 			<div class="inner">
-				<a href="" class="btn btn-list">목록으로</a>
+				<a href="${pageContext.request.contextPath}/m/menu07_03${pageMaker.makeSearch(pageMaker.cri.page)}" class="btn btn-list">목록으로</a>
 			</div>
 		</div>
 		<!-- 게시판 버튼 끝 -->

@@ -137,13 +137,13 @@
 		<div class="board-notice-view">
 			<ul class="full">
 				<li class="subject">	
-					<div class="title"> 입원환자 후기입니다.</div>
+					<div class="title"> ${item.title}</div>
 					<p class="info">
-						<!--i class='name'>t</i><span class='line'>|</span--><i class="date">2019-04-10</i><span class="line">|</span><i class="hit">조회수		18</i>
+						<!--i class='name'>t</i><span class='line'>|</span--><i class="date">${item.regdate}</i><span class="line">|</span><i class="hit">조회수		${item.cnt}</i>
 					</p>
 				</li>
 				<li class="con">
-					<div><img alt="" src="/filedata/ckeditor/20190410_5FBB9C35A48D2404.jpg"></div>
+					${item.content}
 				</li>
 			</ul>
 		</div>
@@ -152,10 +152,26 @@
 		<div class="prev-next-list">
 			<ul class="full">
 				<li>
-					<span>이전글</span><a href="javascript:alert('이전글이 없습니다');">이전글이 없습니다</a>
+					<span>이전글</span>
+					<c:choose>
+						<c:when test="${beforeItem.no eq null}">
+							이전글이 없습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_04read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${beforeItem.no}">${beforeItem.title}</a>
+						</c:otherwise>
+					</c:choose>
 				</li>
 				<li>
-					<span>다음글</span><a href=""> 박정민님 치료후기입니다.</a>
+					<span>다음글</span>
+					<c:choose>
+						<c:when test="${afterItem.no eq null}">
+							존재하지 않습니다.
+						</c:when>
+						<c:otherwise>
+							<a href="${pageContext.request.contextPath}/m/menu07_04read${pageMaker.makeSearch(pageMaker.cri.page)}&no=${afterItem.no}">${afterItem.title}</a>
+						</c:otherwise>
+					</c:choose>
 				</li>
 			</ul>
 		</div>
@@ -164,7 +180,7 @@
 		<!-- 게시판 버튼 시작 -->
 		<div class="btn-group">
 			<div class="inner">
-				<a href="" class="btn btn-list">목록으로</a>
+				<a href="${pageContext.request.contextPath}/m/menu07_04${pageMaker.makeSearch(pageMaker.cri.page)}" class="btn btn-list">목록으로</a>
 			</div>
 		</div>
 		<!-- 게시판 버튼 끝 -->
