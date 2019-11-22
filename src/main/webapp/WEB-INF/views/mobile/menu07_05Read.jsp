@@ -144,18 +144,19 @@
 					<input type="hidden" name="file_cnt" value="1">
 			
 					<li>
-						<div class="title">여의사쌤 계신가요?</div>
+						<div class="title">${item.title}</div>
 						<p class="info">
-							<i class="name">두</i><span class="line">|</span><i class="date">2019-10-29</i><span class="line">|</span><i class="date">비공개</i>
-							<span class="answer"><i class="state com">답변완료</i></span>
+							<i class="name">${item.name}</i><span class="line">|</span><i class="date">${item.regdate}</i><span class="line">|</span><i class="date">비공개</i>
+							<span class="answer">
+								<c:if test="${item.state == '상담완료'}"><td><i class="state com">답변완료</i></td></c:if>
+								<c:if test="${item.state != '상담완료'}"><td><i class="state ready">답변대기</i></td></c:if>
+							</span>
 						</p>
 					</li>
 						
 					<!-- 게시글 상세 내용 -->
 					<li class="board-counsel-content">
-						항문외과 여의사쌤 계신지 궁금하고<br>
-						곤지름 진료가능한지도 궁금합니다.<br>
-						초진 예약은 안되는지도요.
+						${item.content}
 					</li>
 					<!-- // 게시글 상세 내용 -->
 				</form>
@@ -169,10 +170,7 @@
 					<i>답변</i> 온라인상담에 대한 답변입니다.
 				</div>
 				<div class="reply-txt">
-					안녕하세요! 시원항 병원입니다!<br>
-					본원은 여자 진료 의사 분은 계시지 않습니다.<br>
-					곤지름 진료 및 수술적 치료 가능하며, 초진 예약없이 바로 내원하시면 됩니다.<br>
-					감사합니다.
+					${item.reply}
 				</div>
 				
 			</div>
@@ -183,11 +181,11 @@
 			<div class="inner">
 				<ul>
 					<li class="fl">
-						<a href="" class="btn btn-view-list">목록으로</a>
+						<a href="${pageContext.request.contextPath}/m/menu07_05" class="btn btn-view-list">목록으로</a>
 					</li>
 					<li class="fr">
-						<a href="javascript:inquire_it('delete', '')" class="btn btn-del">삭제</a>&nbsp;
-						<a href="" class="btn btn-update">수정</a>&nbsp;
+						<a href="${pageContext.request.contextPath}/m/menu07_05delete${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-del">삭제</a>&nbsp;
+						<a href="${pageContext.request.contextPath}/m/menu07_05update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-update">수정</a>&nbsp;
 					</li>
 				</ul>		
 			</div>
