@@ -240,18 +240,16 @@ public class AdminController {
 		String innerUploadPath = "";
 		if(btype.equals("notice")){
 			innerUploadPath = "resources/uploadNotice/";
-		}else if(btype.equals("beforeAfter")){
+		}else if(btype.equals("news")){
 			innerUploadPath = "resources/uploadNews/";
-		}else if(btype.equals("realStory")){
+		}else if(btype.equals("thesis")){
 			innerUploadPath = "resources/uploadThesis/";
-		}else if(btype.equals("caution")){
-			innerUploadPath = "resources/uploadReview/";
 		}else if(btype.equals("review")){
+			innerUploadPath = "resources/uploadReview/";
+		}else if(btype.equals("hospitalImg")){
 			innerUploadPath = "resources/uploadHospitalImg/";
-		}else if(btype.equals("event")){
-			innerUploadPath = "resources/upload/";
 		}else if(btype.equals("advice")){
-			innerUploadPath = "resources/upload/";
+			innerUploadPath = "resources/uploadAdvice/";
 		}
 		
 		String uploadPath = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;

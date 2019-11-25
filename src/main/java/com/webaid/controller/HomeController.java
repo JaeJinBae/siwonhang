@@ -25,6 +25,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.webaid.domain.AdviceVO;
+import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
@@ -33,6 +34,7 @@ import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.ThesisVO;
 import com.webaid.service.AdviceService;
+import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
 import com.webaid.service.PopupService;
@@ -49,6 +51,9 @@ public class HomeController {
 	
 private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	@Autowired
+	private HospitalImgService hiService;
+
 	@Autowired
 	private NewsService newsService;
 	
@@ -138,8 +143,22 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	}
 	
 	@RequestMapping(value="/menu01_03", method=RequestMethod.GET)
-	public String menu01_03Get(){
+	public String menu01_03Get(Model model){
 		logger.info("menu01_03 get");
+		
+		List<HospitalImgVO> five = hiService.selectByFloor("5F");
+		List<HospitalImgVO> six = hiService.selectByFloor("6F");
+		List<HospitalImgVO> seven = hiService.selectByFloor("7F");
+		List<HospitalImgVO> eight = hiService.selectByFloor("8F");
+		List<HospitalImgVO> nine = hiService.selectByFloor("9F");
+		List<HospitalImgVO> ten = hiService.selectByFloor("10F");
+		
+		model.addAttribute("five", five);
+		model.addAttribute("six", six);
+		model.addAttribute("seven", seven);
+		model.addAttribute("eight", eight);
+		model.addAttribute("nine", nine);
+		model.addAttribute("ten", ten);
 		
 		return "pc/menu01_03";
 	}
