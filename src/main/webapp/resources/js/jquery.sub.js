@@ -28,7 +28,7 @@ $(document).ready( function() {
 	   fade: true
 	//   asNavFor: '.floor-info'
 	});
-	
+
 	//$('.floor-info').slick({
 	//	slidesToShow: 6,
 	//	slidesToScroll: 1,

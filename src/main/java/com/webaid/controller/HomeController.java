@@ -17,6 +17,7 @@ import org.springframework.mobile.device.DeviceUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -143,22 +144,29 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	}
 	
 	@RequestMapping(value="/menu01_03", method=RequestMethod.GET)
-	public String menu01_03Get(Model model){
+	public String menu01_03Get(@ModelAttribute("floor") String floor, Model model){
 		logger.info("menu01_03 get");
+		System.out.println(floor);
+		List<HospitalImgVO> list = null;
+		if(floor.equals("f10")){
+			list = hiService.selectByFloor("10F");
+		}else if(floor.equals("f9")){
+			list = hiService.selectByFloor("9F");
+		}else if(floor.equals("f8")){
+			list = hiService.selectByFloor("8F");
+		}else if(floor.equals("f7")){
+			list = hiService.selectByFloor("7F");
+		}else if(floor.equals("f6")){
+			list = hiService.selectByFloor("6F");
+		}else if(floor.equals("f5")){
+			list = hiService.selectByFloor("5F");
+		}else{
+			list = hiService.selectByFloor("10F");
+		}
 		
-		List<HospitalImgVO> five = hiService.selectByFloor("5F");
-		List<HospitalImgVO> six = hiService.selectByFloor("6F");
-		List<HospitalImgVO> seven = hiService.selectByFloor("7F");
-		List<HospitalImgVO> eight = hiService.selectByFloor("8F");
-		List<HospitalImgVO> nine = hiService.selectByFloor("9F");
-		List<HospitalImgVO> ten = hiService.selectByFloor("10F");
+		model.addAttribute("list", list);
+		model.addAttribute("floor", floor);
 		
-		model.addAttribute("five", five);
-		model.addAttribute("six", six);
-		model.addAttribute("seven", seven);
-		model.addAttribute("eight", eight);
-		model.addAttribute("nine", nine);
-		model.addAttribute("ten", ten);
 		
 		return "pc/menu01_03";
 	}
