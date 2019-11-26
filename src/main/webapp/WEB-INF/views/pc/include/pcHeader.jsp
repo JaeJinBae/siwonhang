@@ -15,7 +15,7 @@
 			<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/common/logo.png" alt="시원항병원 로고"></a>
 		</div>
 		<div class="header-login">
-							<a href="/login" class="login">로그인</a><i>|</i>
+							<a href="${pageContext.request.contextPath}/login" class="login">로그인</a><i>|</i>
 				<a href="${pageContext.request.contextPath}/join" class="join">회원가입</a>
 					</div>
 		<a href="https://blog.naver.com/jangsiwonhp" alt="_blank" class="blog"><img src="${pageContext.request.contextPath}/resources/img/common/blog.png" alt="시원항 병원 네이버 블로그 바로가기"></a>

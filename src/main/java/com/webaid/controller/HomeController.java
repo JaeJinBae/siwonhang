@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +34,9 @@ import com.webaid.domain.PageMaker;
 import com.webaid.domain.ReservationVO;
 import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
+import com.webaid.domain.StatisticVO;
 import com.webaid.domain.ThesisVO;
+import com.webaid.domain.UserVO;
 import com.webaid.service.AdviceService;
 import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
@@ -41,6 +44,7 @@ import com.webaid.service.NoticeService;
 import com.webaid.service.PopupService;
 import com.webaid.service.ReservationService;
 import com.webaid.service.ReviewService;
+import com.webaid.service.StatisticService;
 import com.webaid.service.ThesisService;
 import com.webaid.service.UserService;
 
@@ -78,7 +82,24 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	
 	@Autowired
 	private UserService uService;
+	
+	@Autowired
+	private StatisticService sService;
 
+	@RequestMapping(value = "/personal", method = RequestMethod.GET)
+	public String personal(Model model) {
+		logger.info("personal GET");
+		
+		return "pc/fPersonal";
+	}
+	
+	@RequestMapping(value = "/agree", method = RequestMethod.GET)
+	public String agree(Model model) {
+		logger.info("agree GET");
+		
+		return "pc/fAgree";
+	}
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest req, Model model) {
 		logger.info("index GET");
@@ -108,11 +129,63 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		}
 	}
 	
+	@RequestMapping(value="/statisticRegister", method=RequestMethod.POST)
+	public ResponseEntity<String> statisticRegister(@RequestBody Map<String, String> info){
+		logger.info("statistic register");
+		ResponseEntity<String> entity = null;
+		
+		StatisticVO vo = new StatisticVO();
+		vo.setDate(info.get("date"));
+		vo.setDayofweek(info.get("dayofweek"));
+		vo.setHour(Integer.parseInt(info.get("hour")));
+		vo.setMinute(Integer.parseInt(info.get("minute")));
+		vo.setBrowser(info.get("browser"));
+		vo.setOs(info.get("os"));
+		vo.setPrev_url(info.get("prev_url"));
+		
+		sService.insert(vo);
+		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		return entity;
+	}
+	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String login(){
 		logger.info("login");
 		
 		return "pc/login";
+	}
+	
+	@RequestMapping(value = "/loginIdPwChk", method = RequestMethod.POST)
+	public ResponseEntity<String> login(@RequestBody Map<String, String> info, HttpSession session) {
+		logger.info("loginIdPwChk");
+		ResponseEntity<String> entity = null;
+		
+		UserVO vo = uService.selectById(info.get("id"));
+		UserVO newVO = new UserVO();
+		if(vo == null){
+			entity = new ResponseEntity<String>("empty", HttpStatus.OK);
+		}else{
+			if(vo.getPw_change_state().equals("x")){
+				newVO.setNo(vo.getNo());
+				newVO.setPw(info.get("pw"));
+				newVO.setPw_change_state("o");
+				uService.updatePwChangeState(newVO);
+				session.setAttribute("id", vo.getId());
+				session.setAttribute("no", vo.getNo());
+				uService.updateLoginCnt(vo.getNo());
+				entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+			}else{
+				if(vo.getPw().equals(info.get("pw"))){
+					session.setAttribute("id", vo.getId());
+					session.setAttribute("no", vo.getNo());
+					uService.updateLoginCnt(vo.getNo());
+					entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+				}else{
+					entity = new ResponseEntity<String>("no", HttpStatus.OK);
+				}
+			}
+		}
+		return entity;
 	}
 	
 	@RequestMapping(value="/join", method=RequestMethod.GET)
@@ -122,11 +195,168 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/join";
 	}
 	
-	@RequestMapping(value="/findIdPw", method=RequestMethod.GET)
-	public String findIdPw(){
-		logger.info("findIdPw");
+	@RequestMapping(value = "/join", method = RequestMethod.POST)
+	public ResponseEntity<String> joinPost(@RequestBody Map<String, String> info) {
+		logger.info("join POST");
+		ResponseEntity<String> entity = null;
+		System.out.println(info);
+		try {
+			UserVO vo = new UserVO();
+			vo.setId(info.get("id"));
+			vo.setName(info.get("name"));
+			vo.setLv("일반회원");
+			vo.setPw(info.get("pw"));
+			vo.setPhone(info.get("phone"));
+			vo.setBirth("");
+			vo.setGender(info.get("gender"));
+			vo.setEmail(info.get("email"));
+			vo.setRegdate(info.get("regdate"));
+			vo.setLogin_cnt(0);
+			
+			uService.insert(vo);
+			
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			e.printStackTrace();
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+		}	
+		return entity;
+	}
+	
+	@RequestMapping(value="/id_duplicate_chk/{id}", method=RequestMethod.POST)
+	public ResponseEntity<String> id_duplicate_chk(@PathVariable("id") String id){
+		ResponseEntity<String> entity = null;
 		
-		return "pc/findIdPw";
+		UserVO vo = uService.selectById(id);
+		System.out.println(vo);
+		if(vo == null){
+			entity = new ResponseEntity<String>("empty", HttpStatus.OK);
+		}else{
+			entity = new ResponseEntity<String>("exist", HttpStatus.OK);
+		}
+		return entity;
+	}
+	
+	@RequestMapping(value="/joinEnd", method=RequestMethod.GET)
+	public String joinEnd(){
+		logger.info("joinEnd");
+		
+		return "pc/joinEnd";
+	}
+	
+	@RequestMapping(value="/findId", method=RequestMethod.GET)
+	public String findId(){
+		logger.info("findId");
+		
+		return "pc/findId";
+	}
+	
+	@RequestMapping(value="/findId", method=RequestMethod.POST)
+	public ResponseEntity<String> findId(@RequestBody Map<String, String> info){
+		ResponseEntity<String> entity = null;
+		UserVO searchVO = new UserVO();
+		searchVO.setName(info.get("name"));
+		searchVO.setEmail(info.get("email"));
+		UserVO vo = uService.selectByNameEmail(searchVO);
+		if(vo == null){
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+		}else{
+			entity = new ResponseEntity<String>(vo.getNo()+"", HttpStatus.OK);
+		}
+		return entity;
+	}
+	
+	@RequestMapping(value="/findIdEnd", method=RequestMethod.GET)
+	public String findIdEnd(int no, Model model){
+		logger.info("findIdEnd");
+		
+		UserVO vo = uService.selectOne(no);
+		model.addAttribute("item", vo);
+		
+		return "pc/findIdEnd";
+	}
+	
+	@RequestMapping(value="/findPw", method=RequestMethod.GET)
+	public String findPw(HttpServletRequest req, Model model){
+		
+		return "pc/findPw";
+	}
+	
+	@RequestMapping(value="/findPwEnd", method=RequestMethod.GET)
+	public String findPwEnd(HttpServletRequest req, Model model){
+		
+		return "pc/findPwEnd";
+	}
+	
+	@RequestMapping(value="/myInfo", method=RequestMethod.GET)
+	public String myInfo(Model model){
+		logger.info("myinfo get");
+		
+		return "pc/myInfo";
+	}
+	
+	@RequestMapping(value="/myInfo", method=RequestMethod.POST)
+	public ResponseEntity<String> myInfoPost(@RequestBody Map<String, String> info, Model model){
+		logger.info("myinfo POST");
+		ResponseEntity<String> entity = null;
+		UserVO vo = uService.selectById(info.get("id"));
+		
+		if(vo == null){
+			entity = new ResponseEntity<String>("empty", HttpStatus.OK);
+		}else{
+			if(vo.getPw().equals(info.get("pw"))){
+				entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+				
+			}else{
+				entity = new ResponseEntity<String>("no", HttpStatus.OK);
+			}
+		}
+		return entity;
+	}
+	
+	@RequestMapping(value="/myInfoEdit", method=RequestMethod.GET)
+	public String myInfoEditGet(HttpServletRequest req, Model model){
+		logger.info("myinfoEdit get");
+		HttpSession session = req.getSession(false);
+		if(session == null){
+			return "redirect:/login";
+		}else{
+			System.out.println(session.getAttribute("no"));
+			int no = Integer.parseInt(session.getAttribute("no")+"");
+			UserVO vo = uService.selectOne(no);
+			model.addAttribute("item", vo);
+		}
+		
+		return "pc/myInfoEdit";
+	}
+	
+	@RequestMapping(value="/myInfoEdit", method=RequestMethod.POST)
+	public ResponseEntity<String> myInfoEditPost(@RequestBody Map<String, String> info, Model model){
+		logger.info("myinfoEdit POST");
+		ResponseEntity<String> entity = null;
+		try {
+			UserVO vo = new UserVO();
+			vo.setNo(Integer.parseInt(info.get("no")));
+			vo.setName(info.get("name"));
+			vo.setPhone(info.get("phone"));
+			vo.setBirth("");
+			vo.setGender(info.get("gender"));
+			vo.setEmail(info.get("email"));
+			if(info.get("new_pw").length() <2){
+				UserVO prevVO = uService.selectOne(Integer.parseInt(info.get("no")));
+				vo.setPw(prevVO.getPw());
+			}else{
+				vo.setPw(info.get("new_pw"));
+			}
+			
+			uService.update(vo);
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			e.printStackTrace();
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+		}
+		
+		return entity;
 	}
 	
 	@RequestMapping(value="/menu01_01", method=RequestMethod.GET)

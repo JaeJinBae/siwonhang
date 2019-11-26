@@ -81,21 +81,49 @@ public class MobileController {
 	public String login(){
 		logger.info("login");
 		
-		return "mobile/mLogin";
+		return "mobile/login";
 	}
 	
 	@RequestMapping(value="/join", method=RequestMethod.GET)
 	public String join(){
 		logger.info("join");
 		
-		return "mobile/mJoin";
+		return "mobile/join";
 	}
 	
-	@RequestMapping(value="/findIdPw", method=RequestMethod.GET)
-	public String findIdPw(){
-		logger.info("findIdPw");
+	@RequestMapping(value="/joinEnd", method=RequestMethod.GET)
+	public String joinEnd(){
+		logger.info("joinEnd");
 		
-		return "mobile/mFindIdPw";
+		return "mobile/joinEnd";
+	}
+	
+	@RequestMapping(value="/findId", method=RequestMethod.GET)
+	public String findId(){
+		logger.info("findId");
+		
+		return "mobile/findId";
+	}
+	
+	@RequestMapping(value="/findIdEnd", method=RequestMethod.GET)
+	public String findIdend(){
+		logger.info("findIdEnd");
+		
+		return "mobile/findIdEnd";
+	}
+	
+	@RequestMapping(value="/findPw", method=RequestMethod.GET)
+	public String findPw(){
+		logger.info("findPw");
+		
+		return "mobile/findPw";
+	}
+	
+	@RequestMapping(value="/findPwEnd", method=RequestMethod.GET)
+	public String findPwEnd(){
+		logger.info("findPwEnd");
+		
+		return "mobile/findPwEnd";
 	}
 	
 	@RequestMapping(value="/menu01_01", method=RequestMethod.GET)
