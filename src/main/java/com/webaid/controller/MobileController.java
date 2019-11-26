@@ -23,6 +23,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.webaid.domain.AdviceVO;
+import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
@@ -31,6 +32,7 @@ import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
 import com.webaid.domain.ThesisVO;
 import com.webaid.service.AdviceService;
+import com.webaid.service.HospitalImgService;
 import com.webaid.service.NewsService;
 import com.webaid.service.NoticeService;
 import com.webaid.service.PopupService;
@@ -47,6 +49,9 @@ import com.webaid.service.UserService;
 public class MobileController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MobileController.class);
+	
+	@Autowired
+	private HospitalImgService hiService;
 	
 	@Autowired
 	private NewsService newsService;
@@ -108,8 +113,28 @@ public class MobileController {
 	}
 	
 	@RequestMapping(value="/menu01_03", method=RequestMethod.GET)
-	public String menu01_03Get(){
+	public String menu01_03Get(@ModelAttribute("floor") String floor, Model model){
 		logger.info("menu01_03 get");
+		
+		List<HospitalImgVO> list = null;
+		if(floor.equals("f10")){
+			list = hiService.selectByFloor("10F");
+		}else if(floor.equals("f9")){
+			list = hiService.selectByFloor("9F");
+		}else if(floor.equals("f8")){
+			list = hiService.selectByFloor("8F");
+		}else if(floor.equals("f7")){
+			list = hiService.selectByFloor("7F");
+		}else if(floor.equals("f6")){
+			list = hiService.selectByFloor("6F");
+		}else if(floor.equals("f5")){
+			list = hiService.selectByFloor("5F");
+		}else{
+			list = hiService.selectByFloor("10F");
+		}
+		
+		model.addAttribute("list", list);
+		model.addAttribute("floor", floor);
 		
 		return "mobile/menu01_03";
 	}
