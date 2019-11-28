@@ -156,13 +156,11 @@ $(function(){
 					</li>
 					<li class="gnb">
 						<button>멤버쉽</button>
-						<ul>
-						</ul>
+						<ul></ul>
 					</li>
 					<li class="gnb">
 						<button>아이디찾기</button>
-						<ul>
-						</ul>
+						<ul></ul>
 					</li>
 				</ul>
 			</div>

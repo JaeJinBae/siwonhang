@@ -275,7 +275,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return entity;
 	}
 	
-	@RequestMapping(value="/findIdEnd", method=RequestMethod.GET)
+	@RequestMapping(value="/findIdEnd", method=RequestMethod.POST)
 	public String findIdEnd(int no, Model model){
 		logger.info("findIdEnd");
 		
@@ -291,7 +291,26 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "pc/findPw";
 	}
 	
-	@RequestMapping(value="/findPwEnd", method=RequestMethod.GET)
+	@RequestMapping(value="/findPw", method=RequestMethod.POST)
+	public ResponseEntity<String> findPw(@RequestBody Map<String, String> info){
+		ResponseEntity<String> entity = null;
+		
+		UserVO searchVO = new UserVO();
+		searchVO.setId(info.get("id"));
+		searchVO.setName(info.get("name"));
+		searchVO.setEmail(info.get("email"));
+		
+		UserVO vo = uService.selectByIdNameEmail(searchVO);
+		if(vo == null){
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+		}else{
+			entity = new ResponseEntity<String>(vo.getNo()+"", HttpStatus.OK);
+			System.out.println("send mail");
+		}
+		return entity;
+	}
+	
+	@RequestMapping(value="/findPwEnd", method=RequestMethod.POST)
 	public String findPwEnd(HttpServletRequest req, Model model){
 		
 		return "pc/findPwEnd";

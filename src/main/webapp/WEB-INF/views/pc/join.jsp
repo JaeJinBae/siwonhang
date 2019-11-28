@@ -271,8 +271,7 @@ $(function(){
 				<div class="pnb-wrap">
 					<div class="pnb">
 						<h3 class="tit" data-menu="멤버쉽">멤버쉽</h3>
-						<ul>
-											</ul>
+						<ul></ul>
 					</div>
 					<div class="customer">
 						<a href="051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
