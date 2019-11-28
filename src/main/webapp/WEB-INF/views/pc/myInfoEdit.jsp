@@ -243,7 +243,8 @@ $(function(){
 								
 								<legend>개인정보입력</legend>
 								<!-- form join -->
-								<form name="member" id="member" method="post" enctype="multipart/form-data">							
+								<form name="member" id="member" method="post" enctype="multipart/form-data">
+									<input type="hidden" name="no" value="${item.no}">
 									<table class="join-insert-form">
 										<colgroup>
 											<col style="width:160px;">
@@ -252,13 +253,13 @@ $(function(){
 											<tr>
 												<th>이름<i class="star">*</i></th>
 												<td>
-													<input type="text" id="m_name" name="m_name" class="default" value="테스트" valid="required" element-name="이름" readonly="">
+													<input type="text" id="m_name" name="m_name" class="default" value="${item.name}" valid="required" element-name="이름" readonly="readonly">
 													<p class="cap">* 실명을 사용해 주세요.</p>
 												</td>
 											</tr>
 											<tr>
 												<th>아이디<i class="star">*</i></th>
-												<td>test33</td>
+												<td>${item.id}</td>
 											</tr>
 											
 											<tr>
@@ -271,25 +272,48 @@ $(function(){
 											<tr>
 												<th>휴대폰<i class="star">*</i></th>
 												<td class="select_wrap">
-													<select name="phone1" id="phone1" title="휴대전화의 국번"><option value="010" selected="">010</option><option value="011">011</option><option value="016">016</option><option value="017">017</option><option value="018">018</option><option value="019">019</option></select> -
-													<input type="text" id="phone2" name="phone2" title="휴대폰의 앞 4자리" maxlength="4" value="2837" valid="required,number" element-name="휴대전화"> -
-													<input type="text" id="phone3" name="phone3" title="휴대폰의 앞 4자리" maxlength="4" value="7425" valid="required,number" element-name="휴대전화">
+													<select name="phone1" id="phone1" title="휴대전화의 국번"><option value="010">010</option><option value="011">011</option><option value="016">016</option><option value="017">017</option><option value="018">018</option><option value="019">019</option></select> -
+													<input type="text" id="phone2" name="phone2" title="휴대폰의 앞 4자리" maxlength="4" value="" valid="required,number" element-name="휴대전화"> -
+													<input type="text" id="phone3" name="phone3" title="휴대폰의 앞 4자리" maxlength="4" value="" valid="required,number" element-name="휴대전화">
 												</td>
 											</tr>
 							
 											<tr>
 												<th>성별<i class="star">*</i></th>
 												<td>
-													<input type="radio" name="m_sex" id="m_sex1" value="M" checked="checked" valid="required" element-name="성별" disabled=""> <label for="m_sex1"><i></i>남자</label>&nbsp;&nbsp;&nbsp;<input type="radio" name="m_sex" id="m_sex2" value="F" valid="required" element-name="성별" disabled=""> <label for="m_sex2"><i></i>여자</label>&nbsp;&nbsp;&nbsp;					</td>
+													<input type="radio" name="m_sex" class="gender" id="m_sex1" value="m" valid="required" element-name="성별" disabled=""> <label for="m_sex1"><i></i>남자</label>&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="m_sex" class="gender" id="m_sex2" value="f" valid="required" element-name="성별" disabled=""> <label for="m_sex2"><i></i>여자</label>&nbsp;&nbsp;&nbsp;
+												</td>
 											</tr>
 											<tr>
 												<th>E-mail<i class="star">*</i></th>
 												<td class="select_wrap">
-													<input type="text" name="m_email1" id="m_email1" class="half" maxlength="13" value="bjj7425" valid="required" element-name="이메일"> @
+													<input type="text" name="m_email1" id="m_email1" class="half" maxlength="13" value="" valid="required" element-name="이메일"> @
 							
-													<input type="text" name="m_email2" id="m_email2" class="half" maxlength="13" title="이메일계정의 아이디" value="naver.com" valid="required" element-name="이메일">
+													<input type="text" name="m_email2" id="m_email2" class="half" maxlength="13" title="이메일계정의 아이디" value="" valid="required" element-name="이메일">
 							
-													<select name="m_emailcode" id="m_emailcode" title="이메일의 계정" class="half"><option value="" selected="">직접입력</option><option value="EM01">naver.com</option><option value="EM02">daum.net</option><option value="EM03">gmail.com</option><option value="EM04">yahoo.co.kr</option><option value="EM05">yahoo.com</option><option value="EM06">nate.com</option><option value="EM07">paran.com</option><option value="EM08">google.com</option><option value="EM09">empas.com</option><option value="EM10">hotmail.com</option><option value="EM11">msn.com</option><option value="EM12">korea.com</option><option value="EM13">dreamwiz.com</option><option value="EM14">hanafos.com</option><option value="EM15">freechal.com</option><option value="EM16">chol.com</option><option value="EM17">empal.com</option><option value="EM18">lycos.com</option><option value="EM19">netian.com</option></select>
+													<select name="m_emailcode" id="m_emailcode" title="이메일의 계정" class="half">
+														<option value="">직접입력</option>
+														<option value="naver.com">naver.com</option>
+														<option value="daum.net">daum.net</option>
+														<option value="gmail.com">gmail.com</option>
+														<option value="yahoo.co.kr">yahoo.co.kr</option>
+														<option value="yahoo.com">yahoo.com</option>
+														<option value="nate.com">nate.com</option>
+														<option value="paran.com">paran.com</option>
+														<option value="google.com">google.com</option>
+														<option value="empas.com">empas.com</option>
+														<option value="hotmail.com">hotmail.com</option>
+														<option value="msn.com">msn.com</option>
+														<option value="korea.com">korea.com</option>
+														<option value="dreamwiz.com">dreamwiz.com</option>
+														<option value="hanafos.com">hanafos.com</option>
+														<option value="freechal.com">freechal.com</option>
+														<option value="chol.com">chol.com</option>
+														<option value="empal.com">empal.com</option>
+														<option value="lycos.com">lycos.com</option>
+														<option value="netian.com">netian.com</option>
+													</select>
 													<p class="cap">* 비밀번호를 잊어버렸을 때, 임시비밀번호가 발송될 메일입니다.</p>
 												</td>
 											</tr>
@@ -304,9 +328,9 @@ $(function(){
 					<!-- 게시판 버튼 시작 -->
 					<div class="btn-group-center">
 						<div class="inner">
-							<button type="button" class="btn btn-submit" onclick="member_it('modify')">수정완료</button>
-							<button type="button" class="btn btn-cancel" onclick="location.href='/leave';">회원탈퇴</button>
-							<button type="button" class="btn btn-cancel" onclick="member_it('reset')">취소</button>
+							<button type="button" class="btn btn-submit">수정완료</button>
+							<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/withdraw/${item.no}';">회원탈퇴</button>
+							<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/';">취소</button>
 						</div>
 					</div>
 					<!-- 게시판 버튼 끝 -->
