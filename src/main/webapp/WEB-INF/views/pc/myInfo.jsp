@@ -79,7 +79,7 @@
 <script>
 function userIdPwChk(info){
 	$.ajax({
-		url:"${pageContext.request.contextPath}/loginIdPwChk",
+		url:"${pageContext.request.contextPath}/myInfo",
 		type:"POST",
 		contentType : "application/json; charset=UTF-8",
 		dataType:"text",
@@ -90,7 +90,7 @@ function userIdPwChk(info){
 				alert("일치하는 정보가 없습니다.");
 				
 			}else if(json == "ok"){
-				location.href="${pageContext.request.contextPath}/";
+				location.href="${pageContext.request.contextPath}/myInfoEdit";
 			}
 		},
 		error:function(request,status,error){
@@ -100,7 +100,7 @@ function userIdPwChk(info){
 }
 
 $(function(){
-	$("#loginBtn").click(function(){
+	$("#okBtn").click(function(){
 		var id = $("#m_id").val();
 		var pw = $("#m_pass").val();
 		var info = {"id":id, "pw":pw};
@@ -191,13 +191,13 @@ $(function(){
 								<form name="member" id="member" method="post" action="" onsubmit="return false">
 									<p>
 										<label for="m_id">아이디</label>
-										<input type="text" id="m_id" value="test33" disabled="disabled" title="아이디">
+										<input type="text" id="m_id" value="${sessionScope.id}" disabled="disabled" title="아이디">
 									</p>
 									<p>
 										<label for="m_pass">비밀번호</label>
 										<input type="password" name="m_pass" id="m_pass" title="비밀번호" valid="required" element-name="비밀번호">
 									</p>
-									<button type="button" onclick="member_it('check_pass')">확인</button>
+									<button type="button" id="okBtn">확인</button>
 								</form>
 							</li>
 						</ul>

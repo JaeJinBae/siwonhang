@@ -15,9 +15,15 @@
 			<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/common/logo.png" alt="시원항병원 로고"></a>
 		</div>
 		<div class="header-login">
-							<a href="${pageContext.request.contextPath}/login" class="login">로그인</a><i>|</i>
+			<c:if test="${empty sessionScope.id}">
+				<a href="${pageContext.request.contextPath}/login" class="login">로그인</a><i>|</i>
 				<a href="${pageContext.request.contextPath}/join" class="join">회원가입</a>
-					</div>
+			</c:if>
+			<c:if test="${!empty sessionScope.id}">
+				<a href="${pageContext.request.contextPath}/logout" class="login">로그아웃</a><i>|</i>
+				<a href="${pageContext.request.contextPath}/myInfo" class="join">마이페이지</a>
+			</c:if>
+		</div>
 		<a href="https://blog.naver.com/jangsiwonhp" alt="_blank" class="blog"><img src="${pageContext.request.contextPath}/resources/img/common/blog.png" alt="시원항 병원 네이버 블로그 바로가기"></a>
 	</div>
 	<div id="gnb">

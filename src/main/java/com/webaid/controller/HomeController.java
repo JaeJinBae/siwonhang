@@ -148,6 +148,15 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return entity;
 	}
 	
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public String logout(HttpServletRequest req){
+		HttpSession session = req.getSession(false);
+		if(session != null){
+			session.invalidate();
+		}
+		return "redirect:/";
+	}
+	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String login(){
 		logger.info("login");
