@@ -142,16 +142,18 @@
 			
 			2. 설치 대수, 설치 위치 및 촬영범위<br>
 			
-			</p><div class="scroll02" style="overflow-x: auto;">
+			</p>
+			<div class="scroll02" style="overflow-x: auto;">
 				<table class="tbl">
-				<caption>개인정보 처리의 위탁</caption>
-				<colgroup>
-					<col width="25%">
-					<col width="25%">
-					<col width="25%">
-					<col width="25%">
-				</colgroup>
-			</table><table class="tbl tac">
+					<caption>개인정보 처리의 위탁</caption>
+					<colgroup>
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+						<col width="25%">
+					</colgroup>
+				</table>
+				<table class="tbl tac">
 				
 					<thead>
 						<tr>
@@ -164,10 +166,9 @@
 						
 					  </tr>
 				
-					</thead></table><br>
-				</div>
-			
-			
+					</thead>
+				</table><br>
+			</div>
 			
 			<p class="p-h6">3. 관리책임자 및 접근권한자</p>
 			<div class="scroll02" style="overflow-x: auto;">
