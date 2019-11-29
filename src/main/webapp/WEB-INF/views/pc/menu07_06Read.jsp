@@ -241,6 +241,7 @@ $(function(){
 							<a href="${pageContext.request.contextPath}/menu07_06" class="btn btn-view-list">목록으로</a>
 						</li>
 						<li class="fr">
+							<a href="${pageContext.request.contextPath}/menu07_06delete${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-del">삭제</a>&nbsp;
 							<a href="${pageContext.request.contextPath}/menu07_06update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-update">수정</a>
 						</li>
 					</ul>

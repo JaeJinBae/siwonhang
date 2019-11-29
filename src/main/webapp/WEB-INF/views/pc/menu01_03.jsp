@@ -176,8 +176,8 @@ $(function(){
 						</ul>
 					</div>
 					<div class="customer">
-						<a href="051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
-						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
+						<a href="tel:051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
+						<a href="tel:051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
 				<div class="sub-contents">

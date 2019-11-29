@@ -28,6 +28,11 @@ public class NewsDaoImpl implements NewsDao {
 	}
 
 	@Override
+	public NewsVO selectFirst() {
+		return session.selectOne(namespace + ".selectFirst");
+	}
+
+	@Override
 	public NewsVO selectBefore(int no) {
 		return session.selectOne(namespace + ".selectBefore", no);
 	}

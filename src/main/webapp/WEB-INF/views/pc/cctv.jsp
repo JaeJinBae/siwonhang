@@ -120,7 +120,14 @@
 					<li class="gnb">
 						<button>멤버십</button>
 						<ul>
-							<li><a href="/500/?pCode=500">병원소개</a></li><li><a href="/507/?pCode=507">진료안내</a></li><li><a href="/513/?pCode=513">특성화 진료</a></li><li><a href="/556/?pCode=556">외과 질환 센터</a></li><li><a href="/524/?pCode=524">내과 질환 센터</a></li><li><a href="/529/?pCode=529">건강검진</a></li><li><a href="/534/?pCode=534">커뮤니티</a></li><li><a href="//?pCode=">멤버십</a></li>				</ul>
+							<li><a href="${pageContext.request.contextPath}/menu01_01">병원소개</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu02_01">진료안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu03_01">특성화 진료</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu04_01">외과 질환 센터</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu05_01">내과 질환 센터</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu06_01">건강검진</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu07_01">커뮤니티</a></li>
+						</ul>
 					</li>
 					<li class="gnb">
 						<button>CCTV 운영 관리 방침</button>

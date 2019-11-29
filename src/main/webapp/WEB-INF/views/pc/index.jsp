@@ -275,19 +275,26 @@
 					<li class="notice">
 						<h6 class="tit">공지사항</h6>
 						<ul class="latest-list">
-							<li><a href="${pageContext.request.contextPath}/">시원항병원 5월 휴진 안내</a></li>
-							<li><a href="${pageContext.request.contextPath}/">시원항병원에 1월부터 새로운 의료진이 함께합니다.</a></li>
-							<li><a href="${pageContext.request.contextPath}/">시원항병원 홈페이지를 오픈하였습니다.</a></li>
+							<c:choose>
+							    <c:when test="${fn:length(list) == 0}">
+						        	<li style="text-align:center;">등록된 게시물이 없습니다.</li>
+							    </c:when>
+							    <c:otherwise>
+							        <c:forEach var="item" items="${list}">
+										<li><a href="${pageContext.request.contextPath}/menu07_01read?page=1&perPageNum=10&searchType&keyword=&no=${item.no}">${item.title}</a></li>
+									</c:forEach>
+							    </c:otherwise> 
+							</c:choose>
 						</ul>
 						<a href="${pageContext.request.contextPath}/menu07_01" class="more">MORE +</a>
 					</li>
 					<li class="newsletter">					
-						<a href="${pageContext.request.contextPath}/menu07_02">
+						<a href="${pageContext.request.contextPath}/menu07_02read?page=1&perPageNum=10&searchType&keyword=&no=${topNews.no}">
 							<i class="thumb">
-								<img src="" alt="">
+								<img src="${pageContext.request.contextPath}/resources/uploadNews/${topNews.upload_stored}" alt="">
 								<i class="more">언론보도 +</i>
 							</i>
-							<span class="cap">국제신문 칼럼 |  [진료실에서] ‘변실금·변비’ 약물치료 전 대장·항문 검사부터 받아야</span>
+							<span class="cap">${topNews.title}</span>
 						</a>
 					</li>
 				</ul>

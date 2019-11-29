@@ -12,6 +12,10 @@
 		select * from notice where no=#{no}
 	</select>
 	
+	<select id="selectFive" resultType="NoticeVO">
+		select * from notice where top_state ='x' and use_state='o' order by no desc limit 5
+	</select>
+	
 	<select id="selectBefore" resultType="NoticeVO">
 		select * from notice where no=(select min(no) from notice where no<![CDATA[>]]>#{no}) and top_state='x' and use_state='o'
 	</select>

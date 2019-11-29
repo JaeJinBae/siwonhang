@@ -156,7 +156,15 @@ $(function(){
 					</li>
 					<li class="gnb">
 						<button>멤버쉽</button>
-						<ul></ul>
+						<ul>
+							<li><a href="${pageContext.request.contextPath}/menu01_01">병원소개</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu02_01">진료안내</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu03_01">특성화 진료</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu04_01">외과 질환 센터</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu05_01">내과 질환 센터</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu06_01">건강검진</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu07_01">커뮤니티</a></li>
+						</ul>
 					</li>
 					<li class="gnb">
 						<button>아이디찾기</button>
@@ -177,8 +185,8 @@ $(function(){
 						</ul>
 					</div>
 					<div class="customer">
-						<a href="051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
-						<a href="051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
+						<a href="tel:051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
+						<a href="tel:051-333-8575" title="시원항병원 대표전화번호">051) <b>333-8575</b></a>
 					</div>
 				</div>
 				<div class="sub-contents">

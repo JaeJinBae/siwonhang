@@ -28,6 +28,11 @@ public class NoticeDaoImpl implements NoticeDao {
 	}
 
 	@Override
+	public List<NoticeVO> selectFive() {
+		return session.selectList(namespace + ".selectFive");
+	}
+
+	@Override
 	public NoticeVO selectBefore(int no) {
 		return session.selectOne(namespace + ".selectBefore", no);
 	}
@@ -72,7 +77,7 @@ public class NoticeDaoImpl implements NoticeDao {
 	public List<NoticeVO> listSearch(SearchCriteria cri) throws Exception {
 		return session.selectList(namespace + ".listSearch", cri);
 	}
-	
+
 	@Override
 	public List<NoticeVO> listSearchAll(SearchCriteria cri) throws Exception {
 		return session.selectList(namespace + ".listSearchAll", cri);
@@ -85,7 +90,7 @@ public class NoticeDaoImpl implements NoticeDao {
 
 	@Override
 	public int listSearchCountAll(SearchCriteria cri) throws Exception {
-		return session.selectOne(namespace+".listSearchCountAll", cri);
-	}	
+		return session.selectOne(namespace + ".listSearchCountAll", cri);
+	}
 
 }

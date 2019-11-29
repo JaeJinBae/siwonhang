@@ -104,6 +104,12 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	public String home(HttpServletRequest req, Model model) {
 		logger.info("index GET");
 		
+		List<NoticeVO> list = nService.selectFive();
+		NewsVO newsFirst = newsService.selectFirst();
+		
+		model.addAttribute("list", list);
+		model.addAttribute("topNews", newsFirst);
+		
 		Device device=DeviceUtils.getCurrentDevice(req);
 		String deviceType="unknown";
 		

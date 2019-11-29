@@ -26,6 +26,11 @@ public class NewsServiceImpl implements NewsService {
 	}
 
 	@Override
+	public NewsVO selectFirst() {
+		return dao.selectFirst();
+	}
+
+	@Override
 	public NewsVO selectBefore(int no) {
 		return dao.selectBefore(no);
 	}

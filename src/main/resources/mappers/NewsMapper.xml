@@ -12,6 +12,10 @@
 		select * from news where no=#{no}
 	</select>
 	
+	<select id="selectFirst" resultType="NewsVO">
+		select * from news where use_state='o' order by no desc limit 1
+	</select> 
+	
 	<select id="selectBefore" resultType="NewsVO">
 		select * from news where no=(select min(no) from news where no<![CDATA[>]]>#{no}) and use_state='o'
 	</select>

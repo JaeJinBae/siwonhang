@@ -26,6 +26,11 @@ public class NoticeServiceImpl implements NoticeService {
 	}
 
 	@Override
+	public List<NoticeVO> selectFive() {
+		return dao.selectFive();
+	}
+
+	@Override
 	public NoticeVO selectBefore(int no) {
 		return dao.selectBefore(no);
 	}
@@ -69,7 +74,7 @@ public class NoticeServiceImpl implements NoticeService {
 	public List<NoticeVO> listSearch(SearchCriteria cri) throws Exception {
 		return dao.listSearch(cri);
 	}
-	
+
 	@Override
 	public List<NoticeVO> listSearchAll(SearchCriteria cri) throws Exception {
 		return dao.listSearchAll(cri);
