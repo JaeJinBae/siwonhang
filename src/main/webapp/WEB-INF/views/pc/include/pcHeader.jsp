@@ -15,6 +15,7 @@
 			<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/common/logo.png" alt="시원항병원 로고"></a>
 		</div>
 		<div class="header-login">
+			<input id="session_id" type="hidden" value="${sessionScope.id}">
 			<c:if test="${empty sessionScope.id}">
 				<a href="${pageContext.request.contextPath}/login" class="login">로그인</a><i>|</i>
 				<a href="${pageContext.request.contextPath}/join" class="join">회원가입</a>

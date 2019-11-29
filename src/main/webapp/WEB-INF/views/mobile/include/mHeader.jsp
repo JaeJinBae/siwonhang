@@ -15,6 +15,7 @@
 	</div>
 	<div id="gnb" style="top: 0px;">
 		<div class="gnb-member">
+			<input id="session_id" type="hidden" value="${sessionScope.id}">
 			<c:if test="${empty sessionScope.id}">
 				<a href="${pageContext.request.contextPath}/m/login">로그인</a><i class="line">|</i>
 				<a href="${pageContext.request.contextPath}/m/join">회원가입</a>
