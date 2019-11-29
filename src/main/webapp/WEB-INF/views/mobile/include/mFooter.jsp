@@ -11,8 +11,8 @@
 	
 	<footer id="footer">
 		<div class="inner">
-			<span><a href="">개인정보처리방침</a></span><i class="line">|</i>
-			<span><a href="">영상정보처리기기 운영관리방침</a></span><br>
+			<span><a href="${pageContext.request.contextPath}/m/personal">개인정보처리방침</a></span><i class="line">|</i>
+			<span><a href="${pageContext.request.contextPath}/m/cctv">영상정보처리기기 운영관리방침</a></span><br>
 			<span>병원명 : 시원항병원</span><i class="line">|</i>
 			<span>대표 : 조현언, 정일권</span><br>
 			<span>TEL : 051-331-7275</span><i class="line">|</i>

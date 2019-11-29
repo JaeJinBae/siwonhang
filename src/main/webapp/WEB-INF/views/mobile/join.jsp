@@ -240,15 +240,14 @@ $(function(){
 					<li class="gnb">
 						<button>멤버쉽</button>
 						<ul>
-							<li><a href="/m/500/?pCode=500">병원소개</a></li>
-							<li><a href="/m/507/?pCode=507">진료안내</a></li>
-							<li><a href="/m/513/?pCode=513">특성화 진료</a></li>
-							<li><a href="/m/556/?pCode=556">외과 질환 센터</a></li>
-							<li><a href="/m/524/?pCode=524">내과 질환 센터</a></li>
-							<li><a href="/m/529/?pCode=529">건강검진</a></li>
-							<li><a href="/m/534/?pCode=534">커뮤니티</a></li>
-							<li><a href="/m/589/?pCode=589">멤버십</a></li>
-						</ul>
+								<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu03_01">특성화 진료</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu04_01">외과 질환 센터</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu05_01">내과 질환 센터</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu06_01">건강검진</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu07_01">커뮤니티</a></li>
+							</ul>
 					</li>
 					<li class="gnb">
 						<button>회원가입</button>
@@ -320,7 +319,29 @@ $(function(){
 									<label for="m_email1">E-mail <i class="star">*</i></label>
 									<input type="text" name="m_email1" id="m_email1" class="half" maxlength="13" value="" valid="required" element-name="이메일"><i>@</i>
 									<input type="text" name="m_email2" id="m_email2" class="half" maxlength="13" title="이메일계정의 아이디" value="" valid="required" element-name="이메일">
-									<select name="m_emailcode" id="m_emailcode" element-name="이메일" class="half"><option value="" selected="">직접입력</option><option value="EM01">naver.com</option><option value="EM02">daum.net</option><option value="EM03">gmail.com</option><option value="EM04">yahoo.co.kr</option><option value="EM05">yahoo.com</option><option value="EM06">nate.com</option><option value="EM07">paran.com</option><option value="EM08">google.com</option><option value="EM09">empas.com</option><option value="EM10">hotmail.com</option><option value="EM11">msn.com</option><option value="EM12">korea.com</option><option value="EM13">dreamwiz.com</option><option value="EM14">hanafos.com</option><option value="EM15">freechal.com</option><option value="EM16">chol.com</option><option value="EM17">empal.com</option><option value="EM18">lycos.com</option><option value="EM19">netian.com</option></select>			<p class="check">*비밀번호를 분실한 경우 Email로 비밀번호를 전송합니다.</p>
+									<select name="m_emailcode" id="m_emailcode" title="이메일의 계정" class="half">
+										<option value="">직접입력</option>
+										<option value="naver.com">naver.com</option>
+										<option value="daum.net">daum.net</option>
+										<option value="gmail.com">gmail.com</option>
+										<option value="yahoo.co.kr">yahoo.co.kr</option>
+										<option value="yahoo.com">yahoo.com</option>
+										<option value="nate.com">nate.com</option>
+										<option value="paran.com">paran.com</option>
+										<option value="google.com">google.com</option>
+										<option value="empas.com">empas.com</option>
+										<option value="hotmail.com">hotmail.com</option>
+										<option value="msn.com">msn.com</option>
+										<option value="korea.com">korea.com</option>
+										<option value="dreamwiz.com">dreamwiz.com</option>
+										<option value="hanafos.com">hanafos.com</option>
+										<option value="freechal.com">freechal.com</option>
+										<option value="chol.com">chol.com</option>
+										<option value="empal.com">empal.com</option>
+										<option value="lycos.com">lycos.com</option>
+										<option value="netian.com">netian.com</option>
+									</select>
+									<p class="check">*비밀번호를 분실한 경우 Email로 비밀번호를 전송합니다.</p>
 								</li>
 							</ul>
 						</form>

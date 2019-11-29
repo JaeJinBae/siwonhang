@@ -141,7 +141,14 @@ $(function(){
 						<li class="gnb">
 							<button>멤버쉽</button>
 							<ul>
-								<li><a href="/m/500/?pCode=500">병원소개</a></li><li><a href="/m/507/?pCode=507">진료안내</a></li><li><a href="/m/513/?pCode=513">특성화 진료</a></li><li><a href="/m/556/?pCode=556">외과 질환 센터</a></li><li><a href="/m/524/?pCode=524">내과 질환 센터</a></li><li><a href="/m/529/?pCode=529">건강검진</a></li><li><a href="/m/534/?pCode=534">커뮤니티</a></li><li><a href="/m/589/?pCode=589">멤버십</a></li>				</ul>
+								<li><a href="${pageContext.request.contextPath}/m/menu01_01">병원소개</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu02_01">진료안내</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu03_01">특성화 진료</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu04_01">외과 질환 센터</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu05_01">내과 질환 센터</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu06_01">건강검진</a></li>
+								<li><a href="${pageContext.request.contextPath}/m/menu07_01">커뮤니티</a></li>
+							</ul>
 						</li>
 						<li class="gnb">
 							<button>정보수정</button>

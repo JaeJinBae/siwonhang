@@ -84,6 +84,20 @@ public class MobileController {
 	@Autowired
 	private StatisticService sService;
 	
+	@RequestMapping(value = "/personal", method = RequestMethod.GET)
+	public String personal(Model model) {
+		logger.info("personal GET");
+		
+		return "mobile/personal";
+	}
+	
+	@RequestMapping(value = "/cctv", method = RequestMethod.GET)
+	public String agree(Model model) {
+		logger.info("cctv GET");
+		
+		return "mobile/cctv";
+	}
+	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String login(){
 		logger.info("login");
