@@ -5,8 +5,8 @@
 	<div class="inner">
 		<ul class="footer-info">
 			<p>
-				<span><a href="${pageContext.request.contextPath}/">개인정보처리방침</a></span>
-				<span><a href="${pageContext.request.contextPath}/">영상정보처리기기 운영관리방침</a></span>
+				<span><a href="${pageContext.request.contextPath}/personal">개인정보처리방침</a></span>
+				<span><a href="${pageContext.request.contextPath}/cctv">영상정보처리기기 운영관리방침</a></span>
 			</p><br>
 
 			<p>
@@ -20,7 +20,7 @@
 				<span>주소 : 부산 북구 금곡대로 27 (더청명빌딩) </span>
 				<span>개인정보보호책임자 : 조현언 (chohun67@hanmail.net)</span>
 			</p>
-			<p class="copyright">Copyright @ 시원항병원 all rights reserved. Designed by <a href="http://wetheweb.net" target="_blank">TheWEB</a></p>
+			<p class="copyright">Copyright @ 시원항병원 all rights reserved.</p>
 		</ul>
 	</div>
 </footer>

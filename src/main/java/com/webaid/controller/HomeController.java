@@ -90,14 +90,14 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	public String personal(Model model) {
 		logger.info("personal GET");
 		
-		return "pc/fPersonal";
+		return "pc/personal";
 	}
 	
-	@RequestMapping(value = "/agree", method = RequestMethod.GET)
+	@RequestMapping(value = "/cctv", method = RequestMethod.GET)
 	public String agree(Model model) {
-		logger.info("agree GET");
+		logger.info("cctv GET");
 		
-		return "pc/fAgree";
+		return "pc/cctv";
 	}
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
