@@ -139,7 +139,7 @@
 							<tr>
 								<th>아이디</th>
 								<td>
-									<span class="fc_cyan">bjj7425</span>
+									<span class="fc_cyan">${item.id}</span>
 								</td>
 							</tr>
 						</table>

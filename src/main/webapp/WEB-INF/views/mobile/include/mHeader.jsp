@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <header id="header" class="trn">
 	<div class="inner">
 		<a class="btn-call" href="tel:051-331-7275"><img src="${pageContext.request.contextPath}/resources/img/m/common/btn_call.png" alt="전화걸기"></a>
@@ -12,8 +15,14 @@
 	</div>
 	<div id="gnb" style="top: 0px;">
 		<div class="gnb-member">
-			<a href="${pageContext.request.contextPath}/m/login">로그인</a><i class="line">|</i>
-			<a href="${pageContext.request.contextPath}/m/join">회원가입</a>
+			<c:if test="${empty sessionScope.id}">
+				<a href="${pageContext.request.contextPath}/m/login">로그인</a><i class="line">|</i>
+				<a href="${pageContext.request.contextPath}/m/join">회원가입</a>
+			</c:if>
+			<c:if test="${!empty sessionScope.id}">
+				<a href="${pageContext.request.contextPath}/logout">로그아웃</a><i class="line">|</i>
+				<a href="${pageContext.request.contextPath}/m/myInfo">마이페이지</a>
+			</c:if>
 		</div>
 		<div class="gnb-quick">
 			<a href="${pageContext.request.contextPath}/m/">
