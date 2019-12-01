@@ -14,7 +14,7 @@ public class PopupServiceImpl implements PopupService {
 
 	@Autowired
 	private PopupDao dao;
-	
+
 	@Override
 	public List<PopupVO> selectAll() {
 		return dao.selectAll();
@@ -25,6 +25,16 @@ public class PopupServiceImpl implements PopupService {
 		return dao.selectOne(no);
 	}
 
+	@Override
+	public List<PopupVO> selectByDatePc(String today) {
+		return dao.selectByDatePc(today);
+	}
+
+	@Override
+	public List<PopupVO> selectByDateMobile(String today) {
+		return dao.selectByDateMobile(today);
+	}
+	
 	@Override
 	public void insert(PopupVO vo) {
 		dao.insert(vo);

@@ -1,6 +1,8 @@
 package com.webaid.controller;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +33,7 @@ import com.webaid.domain.HospitalImgVO;
 import com.webaid.domain.NewsVO;
 import com.webaid.domain.NoticeVO;
 import com.webaid.domain.PageMaker;
+import com.webaid.domain.PopupVO;
 import com.webaid.domain.ReservationVO;
 import com.webaid.domain.ReviewVO;
 import com.webaid.domain.SearchCriteria;
@@ -104,9 +107,19 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 	public String home(HttpServletRequest req, Model model) {
 		logger.info("index GET");
 		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		Calendar cal = Calendar.getInstance();
+		
+		String today = sdf.format(cal.getTime());
+		
+		List<PopupVO> popupListPc = pService.selectByDatePc(today);
+		List<PopupVO> popupListMobile = pService.selectByDateMobile(today);
 		List<NoticeVO> list = nService.selectFive();
 		NewsVO newsFirst = newsService.selectFirst();
 		
+		model.addAttribute("popupListPc", popupListPc);
+		model.addAttribute("popupListMobile", popupListMobile);
 		model.addAttribute("list", list);
 		model.addAttribute("topNews", newsFirst);
 		

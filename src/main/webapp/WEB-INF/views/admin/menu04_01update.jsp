@@ -55,9 +55,11 @@ $(function(){
 		}
 	});
 	
-	$("input[name='output_type']").prop("checked", true);
+	var getOutputType = $("#outputType").val();
+	$(".output_type[value='"+getOutputType+"']").prop("checked", "checked");
 	
-	$("input[name='use_state']").prop("checked", true);
+	var getUseState = $("#useState").val();
+	$(".use_state[value='"+getUseState+"']").prop("checked", "checked");
 });
 </script>
 </head>
@@ -106,8 +108,8 @@ $(function(){
 								<tr class="cont">
 									<td class="title">출력종류</td>
 									<td>
-										<input type="radio" name="output_type" id="t_mode1" value="pc" checked="checked"><label for="t_mode1"><i></i>웹</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<input type="radio" name="output_type" id="t_mode2" value="mobile"> <label for="t_mode2"><i></i>모바일</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="output_type" class="output_type" id="t_mode1" value="pc" checked="checked"><label for="t_mode1"><i></i>웹</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="output_type" class="output_type" id="t_mode2" value="mobile"> <label for="t_mode2"><i></i>모바일</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									</td>
 								</tr>
 								<tr class="cont">
@@ -141,8 +143,8 @@ $(function(){
 								<tr class="cont">
 									<td class="title">상태</td>
 									<td>
-										<input type="radio" name="use_state" id="p_delflag1" value="Y" checked> <label for="p_delflag1"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<input type="radio" name="use_state" id="p_delflag2" value="N"> <label for="p_delflag2"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" class="use_state" name="use_state" id="p_delflag1" value="Y" checked> <label for="p_delflag1"><i></i>사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" class="use_state" name="use_state" id="p_delflag2" value="N"> <label for="p_delflag2"><i></i>미사용</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									</td>
 								</tr>
 								<!-- <tr class="cont">
