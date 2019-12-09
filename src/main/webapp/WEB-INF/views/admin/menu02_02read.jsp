@@ -128,20 +128,16 @@ $("#btn_delete").click(function(){
 									</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">주소</td>
-									<td>${item.addr}</td>
-								</tr>
-								<tr class="cont">
 									<td class="title">이메일</td>
 									<td>${item.email}</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">탈퇴일</td>
-									<td></td>
+									<td>${item.withdraw_date}</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">탈퇴사유</td>
-									<td></td>
+									<td>${item.reason}</td>
 								</tr>
 							</table>
 						</form>
@@ -153,8 +149,8 @@ $("#btn_delete").click(function(){
 						</p>
 			
 						<p class="btn_right">
-							<button type="button" class="btn_red" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_01delete/${item.no}'">삭제</button>&nbsp;
-							<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_01withdraw/${item.no}/x'">탈퇴취소</button> 
+							<button type="button" class="btn_red" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_02delete/${item.no}'">삭제</button>&nbsp;
+							<button type="button" class="btn_gray" onclick="location.href='${pageContext.request.contextPath}/admin/menu02_02withdraw/${item.no}/x'">탈퇴취소</button> 
 						</p>
 					</div>
 			

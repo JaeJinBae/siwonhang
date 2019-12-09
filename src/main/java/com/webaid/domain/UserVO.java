@@ -14,6 +14,8 @@ public class UserVO {
 	private int login_cnt;
 	private String withdraw;
 	private String pw_change_state;
+	private String reason;
+	private String withdraw_date;
 
 	public UserVO() {
 		super();
@@ -123,11 +125,28 @@ public class UserVO {
 		this.pw_change_state = pw_change_state;
 	}
 
+	public String getReason() {
+		return reason;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+
+	public String getWithdraw_date() {
+		return withdraw_date;
+	}
+
+	public void setWithdraw_date(String withdraw_date) {
+		this.withdraw_date = withdraw_date;
+	}
+
 	@Override
 	public String toString() {
 		return "UserVO [no=" + no + ", id=" + id + ", name=" + name + ", lv=" + lv + ", pw=" + pw + ", phone=" + phone
 				+ ", birth=" + birth + ", gender=" + gender + ", email=" + email + ", regdate=" + regdate
-				+ ", login_cnt=" + login_cnt + ", withdraw=" + withdraw + ", pw_change_state=" + pw_change_state + "]";
+				+ ", login_cnt=" + login_cnt + ", withdraw=" + withdraw + ", pw_change_state=" + pw_change_state
+				+ ", reason=" + reason + ", withdraw_date=" + withdraw_date + "]";
 	}
 
 }

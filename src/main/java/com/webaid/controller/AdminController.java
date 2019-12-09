@@ -1007,9 +1007,18 @@ public class AdminController {
 	@RequestMapping(value = "/menu02_01withdraw/{no}/{withdraw}", method = RequestMethod.GET)
 	public String menu02_01withdraw(@PathVariable("no") int no, @PathVariable("withdraw") String withdraw) throws Exception {
 		logger.info("menu02_01 GET");
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		Calendar cal = Calendar.getInstance();
+		
+		String today = sdf.format(cal.getTime());
+		
 		UserVO vo = new UserVO();
 		vo.setNo(no);
 		vo.setWithdraw(withdraw);
+		vo.setReason("");
+		vo.setWithdraw_date(today);
 		uService.updateWithdraw(vo);
 		
 		return "redirect:/admin/menu02_01";
@@ -1058,15 +1067,18 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value = "/menu02_02withdraw/{no}/{withdraw}", method = RequestMethod.GET)
-	public ResponseEntity<String> menu04_02withdraw(@PathVariable("no") int no, @PathVariable("withdraw") String withdraw) throws Exception {
+	public String menu04_02withdraw(@PathVariable("no") int no, @PathVariable("withdraw") String withdraw) throws Exception {
 		logger.info("menu02_02 GET");
 		ResponseEntity<String> entity = null;
 		UserVO vo = new UserVO();
 		vo.setNo(no);
 		vo.setWithdraw(withdraw);
+		vo.setReason("");
+		vo.setWithdraw_date("");
 		uService.updateWithdraw(vo);
 		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
-		return entity;
+		
+		return "redirect:/admin/menu02_02";
 	}
 	
 	@RequestMapping(value = "/menu02_02delete/{no}", method = RequestMethod.GET)
