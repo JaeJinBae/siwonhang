@@ -456,6 +456,64 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return entity;
 	}
 	
+	@RequestMapping(value="/withdraw", method=RequestMethod.GET)
+	public String withdraw(Model model){
+		logger.info("withdraw get");
+		
+		return "pc/withdraw";
+	}
+	
+	@RequestMapping(value="/withdraw", method=RequestMethod.POST)
+	public ResponseEntity<String> withdraw(@RequestBody Map<String, String> info, Model model){
+		logger.info("withdraw POST");
+		ResponseEntity<String> entity = null;
+		UserVO vo = uService.selectById(info.get("id"));
+		
+		if(vo == null){
+			entity = new ResponseEntity<String>("empty", HttpStatus.OK);
+		}else{
+			if(vo.getPw().equals(info.get("pw"))){
+				entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+				
+			}else{
+				entity = new ResponseEntity<String>("no", HttpStatus.OK);
+			}
+		}
+		return entity;
+	}
+	
+	@RequestMapping(value="/withdrawReason", method=RequestMethod.GET)
+	public String withdrawReason(Model model){
+		logger.info("withdrawReason get");
+		
+		return "pc/withdrawReason";
+	}
+	
+	@RequestMapping(value="/withdrawReason", method=RequestMethod.POST)
+	public ResponseEntity<String> withdrawReasonPOST(@RequestBody Map<String, String> info, HttpSession session, Model model){
+		logger.info("withdrawReason POST ");
+		ResponseEntity<String> entity = null;
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		Calendar cal = Calendar.getInstance();
+		
+		String today = sdf.format(cal.getTime());
+		
+		UserVO vo = new UserVO();
+		vo.setNo(Integer.parseInt(info.get("no")));
+		vo.setWithdraw("o");
+		vo.setReason(info.get("reason"));
+		vo.setWithdraw_date(today);
+		uService.updateWithdraw(vo);
+		
+		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		
+		session.invalidate();
+		
+		return entity;
+	}
+	
 	@RequestMapping(value="/menu01_01", method=RequestMethod.GET)
 	public String menu01_01Get(){
 		logger.info("menu01_01 get");

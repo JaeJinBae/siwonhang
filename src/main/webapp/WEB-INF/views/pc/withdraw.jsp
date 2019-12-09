@@ -77,21 +77,20 @@
 <!-- ************************************************************************************************* -->
 <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1em}.svg-inline--fa.fa-stack-2x{height:2em;width:2em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
 <script>
-function userUpdate(info){
+function userIdPwChk(info){
 	$.ajax({
-		url:"${pageContext.request.contextPath}/myInfoEdit",
+		url:"${pageContext.request.contextPath}/withdraw",
 		type:"POST",
 		contentType : "application/json; charset=UTF-8",
 		dataType:"text",
 		data: JSON.stringify(info),
 		async:false,
 		success:function(json){
-			if(json =="no"){
-				alert("정보수정에 실패했습니다. 관리자에게 문의하세요.");
+			if(json == "empty" || json =="no"){
+				alert("일치하는 정보가 없습니다.");
 				
 			}else if(json == "ok"){
-				alert("수정완료하였습니다.");
-				location.href="${pageContext.request.contextPath}/myInfo";
+				location.href="${pageContext.request.contextPath}/withdrawReason/";
 			}
 		},
 		error:function(request,status,error){
@@ -101,68 +100,12 @@ function userUpdate(info){
 }
 
 $(function(){
-	var phoneArr = "${item.phone}".split("-");
-	var prev_phone1 = phoneArr[0];
-	var prev_phone2 = phoneArr[1];
-	var prev_phone3 = phoneArr[2];
-	$("#phone1 > option[value='"+prev_phone1+"']").prop("selected", true);
-	$("#phone2").val(prev_phone2);
-	$("#phone3").val(prev_phone3);
-	
-	var prev_gender = "${item.gender}";
-	$(".gender[value='"+prev_gender+"']").prop("checked", "checked");
-	
-	var emailArr = "${item.email}".split("@");
-	var prev_email1 = emailArr[0];
-	var prev_email2 = emailArr[1];
-	$("#m_email1").val(prev_email1);
-	$("#m_email2").val(prev_email2);
-	$("#m_emailcode > option[value='"+prev_email2+"']").prop("selected", true);
-	
-	$(".btn-submit").click(function(){
-		var no = $("input[name='no']").val();
-		var name = $("#m_name").val();
-		var new_pw = $("#m_newpass").val();
-		var phone1 = $("#phone1").val();
-		var phone2 = $("#phone2").val();
-		var phone3 = $("#phone3").val();
-		var phone = phone1+"-"+phone2+"-"+phone3;
-		var gender = $("input[name='m_sex']:checked").val();
-		var email1 = $("#m_email1").val();
-		var email2 = $("#m_email2").val();
-		var email = email1+"@"+email2;
-
-		if(phone2 == ""){
-			alert("휴대폰 항목은 필수입니다.");
-			return false;
-		}
-		if(phone3 == ""){
-			alert("휴대폰 항목은 필수입니다.");
-			return false;
-		}
-		if(gender == ""){
-			alert("성별 항목은 필수입니다.");
-			return false;
-		}
-		if(email1 == ""){
-			alert("이메일 항목은 필수입니다.");
-			return false;
-		}
-		if(email2 == ""){
-			alert("이메일 항목은 필수입니다.");
-			return false;
-		}
+	$("#okBtn").click(function(){
+		var id = $("#m_id").val();
+		var pw = $("#m_pass").val();
+		var info = {"id":id, "pw":pw};
 		
-		var nd = new Date();
-		var y = nd.getFullYear();
-		var m = nd.getMonth()+1;
-		m = (m>9?'':'0')+m;
-		var d = nd.getDate();
-		d = (d>9?'':'0')+d;
-		var regdate = y+"-"+m+"-"+d;
-		
-		var info = {"no":no, "name":name, "new_pw":new_pw, "phone":phone, "gender":gender, "email":email};
-		userUpdate(info);
+		userIdPwChk(info);
 	});
 	
 });
@@ -191,10 +134,10 @@ $(function(){
 	
 	<!-- 콘텐츠 영역 시작 (메인일 경우 #main-container / 서브일 경우 #sub-container) -->
 	<section id="sub-container">
-	<!--  닫기 [위치 : include_web_footer.html ]  -->
-
+		<!--  닫기 [위치 : include_web_footer.html ]  -->
+		
 		<!-- 서브 비주얼영역 시작  -->
-		<div id="sub-visual" data-menu="멤버쉽" data-sec="정보수정">
+		<div id="sub-visual" data-menu="멤버쉽" data-sec="로그인">
 			<div class="inner">
 				<img src="${pageContext.request.contextPath}/resources/img/common/visual_500.png">
 			</div>
@@ -221,7 +164,7 @@ $(function(){
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>정보수정</button>
+						<button>로그인</button>
 						<ul></ul>
 					</li>
 				</ul>
@@ -229,12 +172,14 @@ $(function(){
 		</div>
 		<!-- BreadCrumb 끝 -->
 		
+		
 		<div id="contents" style="height: auto;">
 			<div class="inner">
 				<div class="pnb-wrap">
 					<div class="pnb">
 						<h3 class="tit" data-menu="멤버쉽">멤버쉽</h3>
-						<ul></ul>
+						<ul>
+						</ul>
 					</div>
 					<div class="customer">
 						<a href="tel:051-331-7275" title="시원항병원 대표전화번호">051) <b>331-7275</b></a>
@@ -242,112 +187,30 @@ $(function(){
 					</div>
 				</div>
 				<div class="sub-contents">
-					<h4 class="tit">정보수정</h4><!-- 서브 콘텐츠 타이틀 -->
+					<h4 class="tit">회원탈퇴</h4><!-- 서브 콘텐츠 타이틀 -->
 		
-					<div id="join-form">
-						<ul class="inner">
-							<li class="join-form">
-								<p><b>*</b> 표시는 필수 입력 사항입니다.</p>
-								
-								<legend>개인정보입력</legend>
-								<!-- form join -->
-								<form name="member" id="member" method="post" enctype="multipart/form-data">
-									<input type="hidden" name="no" value="${item.no}">
-									<table class="join-insert-form">
-										<colgroup>
-											<col style="width:160px;">
-											<col>
-										</colgroup>
-											<tr>
-												<th>이름<i class="star">*</i></th>
-												<td>
-													<input type="text" id="m_name" name="m_name" class="default" value="${item.name}" valid="required" element-name="이름" readonly="readonly">
-													<p class="cap">* 실명을 사용해 주세요.</p>
-												</td>
-											</tr>
-											<tr>
-												<th>아이디<i class="star">*</i></th>
-												<td>${item.id}</td>
-											</tr>
-											
-											<tr>
-												<th>새비밀번호<i class="star">*</i></th>
-												<td class="frm-cols">
-													<input type="password" id="m_newpass" name="m_newpass" class="default" maxlength="13" valid="none,id_pw" element-name="새비밀번호">
-													<p class="cap">* 영문자, 영문자+숫자를 4~13자 입력해주세요.</p>
-												</td>
-											</tr>
-											<tr>
-												<th>휴대폰<i class="star">*</i></th>
-												<td class="select_wrap">
-													<select name="phone1" id="phone1" title="휴대전화의 국번"><option value="010">010</option><option value="011">011</option><option value="016">016</option><option value="017">017</option><option value="018">018</option><option value="019">019</option></select> -
-													<input type="text" id="phone2" name="phone2" title="휴대폰의 앞 4자리" maxlength="4" value="" valid="required,number" element-name="휴대전화"> -
-													<input type="text" id="phone3" name="phone3" title="휴대폰의 앞 4자리" maxlength="4" value="" valid="required,number" element-name="휴대전화">
-												</td>
-											</tr>
+					<div id="login-form">
+						<p class="cap">
+							회원님의 개인정보보호 및 확인을 위해<br>
+								비밀번호를 다시 한번 입력해주시길 바랍니다.
+						</p>
+						<ul class="login-inner">
 							
-											<tr>
-												<th>성별<i class="star">*</i></th>
-												<td>
-													<input type="radio" name="m_sex" class="gender" id="m_sex1" value="m" valid="required" element-name="성별" disabled=""> <label for="m_sex1"><i></i>남자</label>&nbsp;&nbsp;&nbsp;
-													<input type="radio" name="m_sex" class="gender" id="m_sex2" value="f" valid="required" element-name="성별" disabled=""> <label for="m_sex2"><i></i>여자</label>&nbsp;&nbsp;&nbsp;
-												</td>
-											</tr>
-											<tr>
-												<th>E-mail<i class="star">*</i></th>
-												<td class="select_wrap">
-													<input type="text" name="m_email1" id="m_email1" class="half" maxlength="13" value="" valid="required" element-name="이메일"> @
-							
-													<input type="text" name="m_email2" id="m_email2" class="half" maxlength="13" title="이메일계정의 아이디" value="" valid="required" element-name="이메일">
-							
-													<select name="m_emailcode" id="m_emailcode" title="이메일의 계정" class="half">
-														<option value="">직접입력</option>
-														<option value="naver.com">naver.com</option>
-														<option value="daum.net">daum.net</option>
-														<option value="gmail.com">gmail.com</option>
-														<option value="yahoo.co.kr">yahoo.co.kr</option>
-														<option value="yahoo.com">yahoo.com</option>
-														<option value="nate.com">nate.com</option>
-														<option value="paran.com">paran.com</option>
-														<option value="google.com">google.com</option>
-														<option value="empas.com">empas.com</option>
-														<option value="hotmail.com">hotmail.com</option>
-														<option value="msn.com">msn.com</option>
-														<option value="korea.com">korea.com</option>
-														<option value="dreamwiz.com">dreamwiz.com</option>
-														<option value="hanafos.com">hanafos.com</option>
-														<option value="freechal.com">freechal.com</option>
-														<option value="chol.com">chol.com</option>
-														<option value="empal.com">empal.com</option>
-														<option value="lycos.com">lycos.com</option>
-														<option value="netian.com">netian.com</option>
-													</select>
-													<p class="cap">* 비밀번호를 잊어버렸을 때, 임시비밀번호가 발송될 메일입니다.</p>
-												</td>
-											</tr>
-									</table>
+							<li class="login">
+								<form name="member" id="member" method="post" action="" onsubmit="return false">
+									<p>
+										<label for="m_id">아이디</label>
+										<input type="text" id="m_id" value="${sessionScope.id}" disabled="disabled" title="아이디">
+									</p>
+									<p>
+										<label for="m_pass">비밀번호</label>
+										<input type="password" name="m_pass" id="m_pass" title="비밀번호" valid="required" element-name="비밀번호">
+									</p>
+									<button type="button" id="okBtn">확인</button>
 								</form>
-								<!-- form end -->
 							</li>
 						</ul>
 					</div>
-					
-					
-					<!-- 게시판 버튼 시작 -->
-					<div class="btn-group-center">
-						<div class="inner">
-							<button type="button" class="btn btn-submit">수정완료</button>
-							<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/withdraw';">회원탈퇴</button>
-							<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/';">취소</button>
-						</div>
-					</div>
-					<!-- 게시판 버튼 끝 -->
-					
-					<form name="form_chk" method="post">
-						<input type="hidden" name="m" value="checkplusSerivce">
-						<input type="hidden" name="EncodeData" value="">
-					</form>
-
 				</div><!-- #contents .inner .sub-contents 닫기 -->
 			</div><!-- #contents .inner 닫기 -->
 		</div><!-- #contents 닫기 -->
