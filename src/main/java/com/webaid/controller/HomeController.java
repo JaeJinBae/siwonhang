@@ -50,6 +50,7 @@ import com.webaid.service.ReviewService;
 import com.webaid.service.StatisticService;
 import com.webaid.service.ThesisService;
 import com.webaid.service.UserService;
+import com.webaid.util.SendEmail;
 
 /**
  * Handles requests for the application home page.
@@ -243,6 +244,24 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 			
 			uService.insert(vo);
 			
+			SendEmail se = new SendEmail();
+			String name = info.get("name");
+			String email = info.get("email");
+			String content = "<div style='width:750px; margin:0px auto;'><div>"
+			+ "<div style='width:700px; margin:0px auto; font-size:25px; padding:40px 0 30px 0; text-align:center; border-bottom:solid 2px #a6a6a6; margin-bottom:30px;'>시원항병원 웹사이트 <span style='color:#483865;'>회원으로 가입</span> 되었습니다.</div>"
+			+ "<div style='text-align:center; font-size:14px; margin-bottom:35px;'>"
+			+ "안녕하세요 "+info.get("name")+" 님<br><br>시원항병원 입니다.<br>시원항병원의 온라인 회원이 되신 것을 진심으로 축하 합니다.<br><br>"+info.get("regdate")+"에 "+info.get("id")+"아이디로<br>가입이 완료 되었습니다.</div>"
+			+ "<div style='text-align:center;margin-bottom:40px'>"
+			+ "<a href='http://siwonhang.com' style='display: block; margin: 0 auto; : 150px; padding: 10px 0; text-align: center; background: #00b0ff; color: #fff; text-decoration: none;' rel='noreferrer noopener' target='_blank'>"
+			+ "홈페이지 바로가기</a></div></div>"
+			+ "<div style='width:100%;height:200px;border-top:solid 1px #d5d8de; box-sizing:border-box; padding:18px 0 0 0;font-size:12px;background-image:url(http://siwonhang.com/resources/images/mail/img_footer_logo.jpg); background-repeat:no-repeat; background-position:0 0'>"
+			+ "<p style='color:#444;margin-bottom:10px; margin-top: 15px; margin-left: 175px; font-size: 13px;'>본 메일은 발신 전용으로 회신하실 경우 답변 되지 않습니다.<br>문의사항이나 기타 이용안내는 고객센터 <span style='color: #00b0ff; font-weight: 800;text-decoration: underline;'>051-331-7275</span> 를 이용해주세요</p>"
+			+ "<p style='color:#777; margin-left: 175px;'>부산 북구 금곡대로 27 (더청명빌딩)   |  대표자명 : 조현언, 정일권  |  상호명 : 시원항병원<br>TEL : 051-331-7275  Copyright 2017 시원항병원 All rights reserved</p></div></div>";
+			
+			String title = info.get("name")+"님 온라인 회원가입이 완료되었습니다.";
+			
+			se.SendMail(name, email, content, title);
+			
 			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -324,7 +343,38 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 			entity = new ResponseEntity<String>("no", HttpStatus.OK);
 		}else{
 			entity = new ResponseEntity<String>(vo.getNo()+"", HttpStatus.OK);
-			System.out.println("send mail");
+			char[] charSet = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+			int idx = 0;
+			StringBuffer sb = new StringBuffer(); 
+			for (int i = 0; i < 8; i++) { 
+				idx = (int) (charSet.length * Math.random());
+				sb.append(charSet[idx]);
+			}
+			vo.setPw(sb+"");
+			uService.update(vo);
+			
+			String title = vo.getName()+"님 문의하신 비밀번호입니다.";
+			String content = "<div style='width:750px; margin:0px auto;'><div>"
+			+"<div style='width:700px; margin:0px auto; font-size:25px; padding:40px 0 30px 0; text-align:center; border-bottom:solid 2px #a6a6a6; margin-bottom:30px;'>"
+			+"시원항병원 웹사이트 <span style='color:#00b0ff;'>임시 비밀번호</span>를 안내해 드립니다.</div>"
+			+"<div style='text-align:center; font-size:14px; margin-bottom:35px;'>안녕하세요. <span style='color:#394496;'>"+vo.getName()+"</span> 회원님<br>요청하신 시원항병원의 웹사이트의 임시 비밀번호는 아래와 같습니다.</div>"
+			+"<div style='width:416px;margin:0px auto;background-color:#f4f4f4;box-sizing:border-box;padding:15px 84px; margin-bottom:30px'>"
+			+"<table cellspacing='0' border='0' cellpadding='2'><colgroup><col width='109px'><col width='*'></colgroup>"
+			+"<tbody><tr><td>임시비밀번호</td><td><span style='font-weight:bold; color:#00b0ff;'>"+sb+"</span></td></tr></tbody></table></div>"
+			+"<div style='text-align:center;font-size:13px;margin-bottom:25px;color: #575e6d;'>"
+			+"※ 발급된 비밀번호는 임시 비밀번호이므로 로그인 후 <span style='color:#ec008c;'>반드시 새로운 비밀번호로 변경</span>하시기 바랍니다.<br>"
+			+"<span style='color:#000;'>시원항병원 사이트 &gt; 마이페이지 &gt; 회원정보 수정</span>에서 변경 가능합니다.</div>"
+			+"<div style='text-align:center;margin-bottom:40px'>"
+			+"<a href='http://siwonhang.com' style='display: block; margin: 0 auto; : 150px; padding: 10px 0; text-align: center; background: #00b0ff; color: #fff; text-decoration: none;' rel='noreferrer noopener' target='_blank'>"
+			+"홈페이지 바로가기</a></div></div>"
+			+"<div style='width:100%;height:200px;border-top:solid 1px #d5d8de; box-sizing:border-box; padding:18px 0 0 0;font-size:12px;background-image:url(http://siwonhang.com/resources/images/mail/img_footer_logo.jpg); background-repeat:no-repeat; background-position:0 0'>"
+			+"<p style='color:#444;margin-bottom:10px; margin-top: 15px; margin-left: 175px; font-size: 13px;'>"
+			+"본 메일은 발신 전용으로 회신하실 경우 답변 되지 않습니다.<br>문의사항이나 기타 이용안내는 고객센터 <span style='color: #00b0ff; font-weight: 800;text-decoration: underline;'>051-331-7275</span> 를 이용해주세요</p>"
+			+"<p style='color:#777; margin-left: 175px;'>"
+			+"부산 북구 금곡대로 27 (더청명빌딩)   |  대표자명 : 조현언, 정일권  |  상호명 : 시원항병원<br>TEL : 051-331-7275  Copyright 2018 시원항병원 All rights reserved.</p></div></div>";
+			
+			SendEmail se = new SendEmail();
+			se.SendMail(vo.getName(), vo.getEmail(), content, title);
 		}
 		return entity;
 	}
