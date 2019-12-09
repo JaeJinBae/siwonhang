@@ -1,6 +1,8 @@
 package com.webaid.controller;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -301,6 +303,21 @@ public class MobileController {
 		logger.info("findPwEnd");
 		
 		return "mobile/findPwEnd";
+	}
+	
+	
+	@RequestMapping(value="/withdraw", method=RequestMethod.GET)
+	public String withdraw(Model model){
+		logger.info("withdraw get");
+		
+		return "mobile/withdraw";
+	}
+	
+	@RequestMapping(value="/withdrawReason", method=RequestMethod.GET)
+	public String withdrawReason(Model model){
+		logger.info("withdrawReason get");
+		
+		return "mobile/withdrawReason";
 	}
 	
 	@RequestMapping(value="/menu01_01", method=RequestMethod.GET)

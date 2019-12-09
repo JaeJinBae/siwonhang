@@ -164,7 +164,7 @@ $(function(){
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>로그인</button>
+						<button>회원탈퇴</button>
 						<ul></ul>
 					</li>
 				</ul>
@@ -192,7 +192,7 @@ $(function(){
 					<div id="login-form">
 						<p class="cap">
 							회원님의 개인정보보호 및 확인을 위해<br>
-								비밀번호를 다시 한번 입력해주시길 바랍니다.
+							비밀번호를 다시 한번 입력해주시길 바랍니다.
 						</p>
 						<ul class="login-inner">
 							

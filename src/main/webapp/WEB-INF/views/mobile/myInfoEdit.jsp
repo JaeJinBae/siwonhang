@@ -296,7 +296,7 @@ $(function(){
 			<div class="btn-group-center">
 				<div class="inner">
 					<button type="button" class="btn btn-submit">수정완료</button>
-					<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/withdraw/${item.no}';">회원탈퇴</button>
+					<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/m/withdraw';">회원탈퇴</button>
 					<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/';">취소</button>
 				</div>
 			</div>
