@@ -424,7 +424,7 @@
 					</div>
 					
 					
-					<div class="doctor-view">
+					<%-- <div class="doctor-view">
 						<div class="pic">
 							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment03_doc.png" alt="박시영과장">
 						</div>
@@ -504,7 +504,7 @@
 							<li>대한내시경복강경학회 정회원</li>
 							<li>대한정맥학회 회원</li>
 						</ul>
-					</div>
+					</div> --%>
 					
 					<div class="doctor-view">
 						<div class="pic">
@@ -664,6 +664,90 @@
 							<li>대한내과학회 소화기내과 분과 전문의 취득</li>
 							<li>대한소화기내시경학회 내시경 세부 전문의 취득</li>
 							<li>한국심초음파학회 심초음파 인증의 취득</li>
+						</ul>
+					</div>
+					
+					<div class="doctor-view">
+						<div class="pic">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment006_doc.png" alt="조정환과장">
+						</div>
+						<div class="con">
+							<div class="title">
+								<p>조정환 원장</p>
+								<sup>
+									<em>주 진료분야 : </em><span>내과</span>
+								</sup>
+							</div>
+							<div class="work-con">
+								<p class="sub-title">
+									진료시간
+								</p>
+								<div class="tbl_wrap">
+			
+									<table class="tbl">
+										<caption>진료 시간 확인</caption>
+										<colgroup>
+											<col>
+											<col style="width: 12%;">
+											<col style="width: 12%;">
+											<col style="width: 12%;">
+											<col style="width: 12%;">
+											<col style="width: 12%;">
+											<col style="width: 12%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">요일</th>
+												<th scope="col">월</th>
+												<th scope="col">화</th>
+												<th scope="col">수</th>
+												<th scope="col">목</th>
+												<th scope="col">금</th>
+												<th scope="col">토</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>오전</th>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+											</tr>
+											<tr>
+												<th>오후</th>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료</td>
+												<td>진료 </td>
+												<td> </td>
+												
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pcode50702">
+						<h5>약력</h5>
+						<ul>
+							
+							<li>동아대학교 의과대학 졸업</li>
+							<li>동아대학교 의과대학원 졸업</li>
+							<li>전 수영한서병원 소화기내과 과장</li>
+							<li>전 신우원내과 부원장</li>
+							<li>전 새항운병원 소화기내과 과장</li>
+							<li>전 해동병원 소화기내과 과장</li>
+							<li>전 한국의학연구소 부산센터 내과 과장</li>
+							<li>전 성균관대 삼성창원병원 건강의학센터 임상조교수</li>
+							<li>내과 전문의</li>
+							<li>소화기내과분과 전문의</li>
+							<li>소화기내시경 전문의</li>
+							<li>대한간학회 정회원</li>
 						</ul>
 					</div>
 				</div><!-- #contents .inner .sub-contents 닫기 -->

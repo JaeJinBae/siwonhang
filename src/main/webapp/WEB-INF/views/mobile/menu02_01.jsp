@@ -343,7 +343,7 @@
 		
 		
 					<!-- 박시영 원장 시작 -->
-					<div class="doctor-info">
+					<%-- <div class="doctor-info">
 						<div class="doctor-pic">
 							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic03.jpg" alt="" style="display: none;">
 							<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic03.jpg');">
@@ -407,7 +407,7 @@
 							대한내시경복강경학회 정회원<br>
 							대한정맥학회 회원<br>
 						</p>
-					</div>
+					</div> --%>
 					<!-- 박시영 원장 끝 -->
 		
 		
@@ -545,6 +545,71 @@
 							한국심초음파학회 심초음파 인증의 취득<br>
 						</p>
 					</div>
+					
+					<div class="doctor-info">
+						<div class="doctor-pic">
+							<img src="${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic07.png" alt="" style="display: none;">
+						<div style="height: 300px; background-size: cover; background-repeat: no-repeat; background-position: center center; background-image: url('${pageContext.request.contextPath}/resources/img/m/contents/doctor_pic07.png');"></div></div>
+						<div class="doctor-name">
+							<p>
+								<b>조정환 원장</b>
+								<span><i>주 진료분야</i> : 내과</span>
+							</p>
+						</div>
+					</div>
+					<div class="doctor-timetable">
+						<b class="tit">진료시간</b>
+						<table>
+							<thead>
+								<tr>
+									<th>요일</th>
+									<th>월</th>
+									<th>화</th>
+									<th>수</th>
+									<th>목</th>
+									<th>금</th>
+									<th>토</th>
+								</tr>
+							</thead>
+							<tr>
+								<th>오전</th>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료 </td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					<div class="doctor-history">
+						<h5>약력</h5>
+						<p>
+							동아대학교 의과대학 졸업<br>
+							동아대학교 의과대학원 졸업<br>
+							전 수영한서병원 소화기내과 과장<br>
+							전 신우원내과 부원장<br>
+							전 새항운병원 소화기내과 과장<br>
+							전 해동병원 소화기내과 과장<br>
+							전 한국의학연구소 부산센터 내과 과장<br>
+							전 성균관대 삼성창원병원 건강의학센터 임상조교수<br>
+							내과 전문의<br>
+							소화기내과분과 전문의<br>
+							소화기내시경 전문의<br>
+							대한간학회 정회원<br>
+							<br>
+						</p>
+					</div>
+					
 				</div>
 			</div>
 		</div>

@@ -27,7 +27,6 @@
 		<property name="password" value="rootroot"/>
 	</bean>
 
-	
 	<!-- 로그 찍히게 하는 녀석 -->
 	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/>
