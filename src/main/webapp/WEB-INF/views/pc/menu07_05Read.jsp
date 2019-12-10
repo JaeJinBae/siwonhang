@@ -214,6 +214,7 @@ $(function(){
 									<c:if test="${item.state != '상담완료'}"><td><i class="state ready">답변대기</i></td></c:if>
 									<td>${item.name}</td>
 									<td>${item.regdate}</td>
+									<td><a href="${pageContext.request.contextPath}/resources/uploadAdvice/${item.upload_stored}">${item.upload_origin}</a></td>
 								</tr>
 							</table>
 							

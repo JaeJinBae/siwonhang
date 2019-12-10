@@ -158,7 +158,7 @@ $(function(){
 			<h5>전문의상담</h5>
 		</div>
 		
-		<form name="inquire" id="form1" method="post" action="${pageContext.request.contextPath}/m/menu07_05register" enctype="multipart/form-data">
+		<form name="inquire" id="form1" method="post" action="${pageContext.request.contextPath}/m/menu07_05write" enctype="multipart/form-data">
 			<input type="hidden" name="secret" id="secret" value="o">
 			<input type="hidden" name="regdate" id="regdate">
 			<input type="hidden" name="ip" id="ip">
@@ -209,7 +209,7 @@ $(function(){
 						<th><label for="file_cnt">첨부파일</label></th>
 						<td>
 							<div class="form-file">
-								<div><input type="file" name="upload[]" style="width:450px"><br></div>
+								<div><input type="file" name="upload[]" style=""><br></div>
 							</div>
 							<script>
 								$('.form-file input[type="file"]').jfilestyle({

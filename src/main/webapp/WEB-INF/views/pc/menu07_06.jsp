@@ -247,7 +247,7 @@ $(function(){
 					<!-- 게시판 버튼 시작 -->
 					<div class="btn-group">
 						<div class="inner">
-							<a href="${pageContext.request.contextPath}/menu07_06register" class="btn btn-submit">글쓰기</a>
+							<a href="${pageContext.request.contextPath}/menu07_06write" class="btn btn-submit">글쓰기</a>
 						</div>
 					</div>
 					<!-- 게시판 버튼 끝 -->

@@ -164,15 +164,16 @@
 		</div>
 		
 		<div class="full">
-			<div class="board-counsel-reply">
-				<div class="reply-title">
-					<i>답변</i> 온라인상담에 대한 답변입니다.
+			<c:if test="${item.state == '상담완료'}">
+				<div class="board-counsel-reply">
+					<div class="reply-title">
+						<i>답변</i> 온라인상담에 대한 답변입니다.
+					</div>
+					<div class="reply-txt">
+						${item.reply}
+					</div>
 				</div>
-				<div class="reply-txt">
-					${item.reply}
-				</div>
-				
-			</div>
+			</c:if>
 		</div>
 		
 		<!-- 게시판 버튼 시작 -->

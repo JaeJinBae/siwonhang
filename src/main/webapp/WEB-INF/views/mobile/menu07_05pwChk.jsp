@@ -101,7 +101,7 @@ $(function(){
 	
 	$(".btn-submit").click(function(){
 		var pw = $("input[name='m_pass']").val();
-		var no = "${no}";
+		var no = $("input[name='no']").val();
 		var info = {"no":no, "pw":pw};
 		pwChk(info);
 	});
@@ -170,6 +170,7 @@ $(function(){
 		
 		<form name="inquire" id="inquire" method="post" action="" onsubmit="return false">
 			<input type="hidden" name="cri" value="${pageMaker.makeSearch(pageMaker.cri.page)}&no=${no}">
+			<input type="hidden" name="no" value="${no}">
 			<div class="check-password">
 				<h3>비밀번호 입력 <svg class="svg-inline--fa fa-lock fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></svg><!-- <i class="fas fa-lock"></i> --></h3>
 				<p>게시물 작성 시 입력한<br>비밀번호를 입력해주세요.</p>

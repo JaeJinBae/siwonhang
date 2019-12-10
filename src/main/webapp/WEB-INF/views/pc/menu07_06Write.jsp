@@ -192,7 +192,7 @@ $(function(){
 					<h4 class="tit">진료예약</h4><!-- 서브 콘텐츠 타이틀 -->
 		
 					<!-- privacy -->
-					<form name="inquire" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/menu07_06register">
+					<form name="inquire" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/menu07_06write">
 						<input type="hidden" name="secret" id="secret" value="o">
 						<input type="hidden" name="regdate" id="regdate">
 						<input type="hidden" name="ip" id="ip">
@@ -229,7 +229,7 @@ $(function(){
 												<option value="019">019</option>
 											</select> -
 											<input type="text" name="phone2" id="phone2" maxlength="4" value="" class="small" autocomplete="off"> -
-											<input type="text" name="phone3" id="phone3" maxlength="4" value="" class="small" autocomplete="off">
+											<input type="text" name="phone3" id="phone3" maxlength="4" value="" class="small" autocomplete="off"><br><br>
 											* 연락처를 남겨주시면 답변 후 문자메시지를 발송해드립니다.
 										</td>
 									</tr>
@@ -283,7 +283,7 @@ $(function(){
 								</li>
 								<li class="fr">
 									<input type="submit" class="btn btn-submit" style="width:100px;height:36px;line-height:36px;cursor:pointer;" value="확인">
-									<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/menu07_06register'">취소</button>
+									<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/menu07_06write'">취소</button>
 								</li>
 							</ul>
 								</div>

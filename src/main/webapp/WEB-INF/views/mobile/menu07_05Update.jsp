@@ -216,7 +216,7 @@ $(function(){
 					<tr>
 						<th>내용</th>
 						<td>
-							<textarea name="i_content" id="i_content" valid="required" element-name="내용">${item.content}</textarea>
+							<textarea name="content" id="i_content" valid="required" element-name="내용">${item.content}</textarea>
 						</td>
 					</tr>
 					<tr>

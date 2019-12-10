@@ -1054,6 +1054,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		
 		ResponseEntity<String> entity = null;
 		AdviceVO vo = aService.selectOne(Integer.parseInt(info.get("no")));
+		
 		if(vo.getPw().equals(info.get("pw"))){
 			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
 		}else{
@@ -1099,7 +1100,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		vo.setEmail("");
 		vo.setState("상담예정");
 		vo.setSecret(mtfReq.getParameter("secret"));
-		vo.setPw(mtfReq.getParameter("pw"));
+		vo.setPw(mtfReq.getParameter("m_pass"));
 		vo.setTitle(mtfReq.getParameter("title"));
 		vo.setContent(mtfReq.getParameter("content"));
 		vo.setReply("");

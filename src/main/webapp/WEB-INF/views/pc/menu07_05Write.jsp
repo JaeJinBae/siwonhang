@@ -191,7 +191,7 @@ $(function(){
 				<div class="sub-contents">
 					<h4 class="tit">전문의상담</h4><!-- 서브 콘텐츠 타이틀 -->
 					<!-- privacy -->
-					<form name="inquire" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/menu07_05register">
+					<form name="inquire" id="form1" method="post" enctype="multipart/form-data" action="${pageContext.request.contextPath}/menu07_05write">
 						<input type="hidden" name="secret" id="secret" value="o">
 						<input type="hidden" name="regdate" id="regdate">
 						<input type="hidden" name="ip" id="ip">
@@ -206,9 +206,13 @@ $(function(){
 									<td><input type="text" name="name" id="name" class="default" value=""></td>
 								</tr>
 								<tr>
+									<th scope="row">비밀번호</th>
+									<td><input type="password" name="m_pass" id="m_pass" class="default" valid="required,max-4" element-name="비밀번호" autocomplete="off"></td>
+								</tr>
+								<tr>
 									<th>제목</th>
 									<td>
-										<input type="text" name="title" id="title" maxlength="200" value="">
+										<input type="text" name="title" id="title" maxlength="200" value="" element-name="제목">
 									</td>
 								</tr>
 								<tr>
@@ -223,7 +227,7 @@ $(function(){
 											<option value="019">019</option>
 										</select> -
 										<input type="text" name="phone2" id="phone2" maxlength="4" value="" class="small" autocomplete="off"> -
-										<input type="text" name="phone3" id="phone3" maxlength="4" value="" class="small" autocomplete="off">
+										<input type="text" name="phone3" id="phone3" maxlength="4" value="" class="small" autocomplete="off"><br><br>
 										* 연락처를 남겨주시면 답변 후 문자메시지를 발송해드립니다.
 									</td>
 								</tr>
@@ -277,7 +281,7 @@ $(function(){
 										</li>
 										<li class="fr">
 											<input type="submit" class="btn btn-submit" style="width:100px;height:36px;line-height:36px;cursor:pointer;" value="확인">
-											<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/menu07_05register'">취소</button>
+											<button type="button" class="btn btn-cancel" onclick="location.href='${pageContext.request.contextPath}/menu07_05write'">취소</button>
 										</li>
 									</ul>
 								</div>

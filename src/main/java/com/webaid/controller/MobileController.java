@@ -958,7 +958,7 @@ public class MobileController {
 		/*SmsSendUtil ssu = new SmsSendUtil();
 		ssu.sendSMS("온라인 상담", mtfReq.getParameter("name"), mtfReq.getParameter("phone"));*/
 		
-		return "redirect:/menu07_05";
+		return "redirect:/m/menu07_05";
 	}
 	
 	@RequestMapping(value="/menu07_05update", method=RequestMethod.GET)
@@ -1046,7 +1046,7 @@ public class MobileController {
 		pageMaker.setTotalCount(aService.listSearchCount(cri));
 
 		rtts.addAttribute("page", page);
-		return "redirect:/menu07_05";
+		return "redirect:/m/menu07_05";
 	}
 	
 	@RequestMapping(value="/menu07_06", method=RequestMethod.GET)
@@ -1176,7 +1176,7 @@ public class MobileController {
 		/*SmsSendUtil ssu = new SmsSendUtil();
 		ssu.sendSMS("온라인 상담", mtfReq.getParameter("name"), mtfReq.getParameter("phone"));*/
 		
-		return "redirect:/menu07_06";
+		return "redirect:/m/menu07_06";
 	}
 	
 	@RequestMapping(value="/menu07_06update", method=RequestMethod.GET)
@@ -1264,6 +1264,6 @@ public class MobileController {
 		pageMaker.setTotalCount(rsService.listSearchCount(cri));
 
 		rtts.addAttribute("page", page);
-		return "redirect:/menu07_06";
+		return "redirect:/m/menu07_06";
 	}
 }
