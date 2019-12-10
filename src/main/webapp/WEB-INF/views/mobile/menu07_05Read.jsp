@@ -184,7 +184,7 @@
 						<a href="${pageContext.request.contextPath}/m/menu07_05" class="btn btn-view-list">목록으로</a>
 					</li>
 					<li class="fr">
-						<a href="${pageContext.request.contextPath}/m/menu07_05delete${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-del">삭제</a>&nbsp;
+						<a href="${pageContext.request.contextPath}/m/menu07_05delete/${item.no}" class="btn btn-del">삭제</a>&nbsp;
 						<a href="${pageContext.request.contextPath}/m/menu07_05update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}" class="btn btn-update">수정</a>&nbsp;
 					</li>
 				</ul>		

@@ -1234,6 +1234,15 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "redirect:/menu07_05";
 	}
 	
+	@RequestMapping(value="/menu07_05delete/{no}", method=RequestMethod.GET)
+	public String menu07_05delete(@PathVariable("no") int no){
+		logger.info("menu07_05 delete");
+		
+		aService.delete(no);
+		
+		return "redirect:/menu07_05";
+	}
+	
 	@RequestMapping(value="/menu07_06", method=RequestMethod.GET)
 	public String menu07_06Get(@ModelAttribute("cri") SearchCriteria cri, Model model){
 		logger.info("menu07_06 get");
@@ -1452,4 +1461,12 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 		return "redirect:/menu07_06";
 	}
 	
+	@RequestMapping(value="/menu07_06delete/{no}", method=RequestMethod.GET)
+	public String menu07_06delete(@PathVariable("no") int no){
+		logger.info("menu07_06 delete");
+		
+		rsService.delete(no);
+		
+		return "redirect:/menu07_06";
+	}
 }
