@@ -207,8 +207,10 @@ public class AdminController {
 	public String main(Model model) {
 		logger.info("main GET");
 		List<AdviceVO> list = aService.selectNonComplete();
+		List<ReservationVO> resList = resService.selectNonComplete();
 		
 		model.addAttribute("list", list);
+		model.addAttribute("resList", resList);
 		return "admin/main";
 	}
 	
@@ -250,6 +252,10 @@ public class AdminController {
 			innerUploadPath = "resources/uploadHospitalImg/";
 		}else if(btype.equals("advice")){
 			innerUploadPath = "resources/uploadAdvice/";
+		}else if(btype.equals("popup")){
+			innerUploadPath = "resources/uploadPopup/";
+		}else if(btype.equals("reservation")){
+			innerUploadPath = "resources/uploadReservation/";
 		}
 		
 		String uploadPath = (req.getSession().getServletContext().getRealPath("/")) + innerUploadPath;

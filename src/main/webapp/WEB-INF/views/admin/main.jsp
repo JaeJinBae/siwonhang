@@ -28,6 +28,11 @@
 <script src="https://www.google.com/uds/?file=visualization&amp;v=1&amp;packages=corechart" type="text/javascript"></script>
 <link href="https://www.google.com/uds/api/visualization/1.0/36558b280aac4fa99ed8215e60015cff/ui+ko.css" type="text/css" rel="stylesheet">
 <script src="https://www.google.com/uds/api/visualization/1.0/36558b280aac4fa99ed8215e60015cff/format+ko,default+ko,ui+ko,corechart+ko.I.js" type="text/javascript"></script>
+<style>
+.b02_{
+	margin-left: 2% !important;
+}
+</style>
 <script>
 function draw_browser_chart(info){
 	var res_arr = [["\ube0c\ub77c\uc6b0\uc838\ubcc4\ud1b5\uacc4","\uc811\uc18d\uc790"]];
@@ -137,8 +142,8 @@ $(function(){
 					<div class="bdr-wrap">
 						<div class="b01 board_layout">
 							<div class="board_top">
-								<h2>온라인상담</h2>
-								<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu05_01'">더보기 &gt;</a>
+								<h2>전문의상담</h2>
+								<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu03_01'">더보기 &gt;</a>
 							</div>
 							<table class="main_board">
 								<colgroup>
@@ -162,14 +167,50 @@ $(function(){
 										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 									        <c:forEach var="item" items="${list}">
 												<tr class="cont">
-													<c:if test="${item.quick_state == 'x'}">
-														<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu05_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.name}</a></td>
-														<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu05_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.state}</a></td>
-													</c:if>
-													<c:if test="${item.quick_state == 'o'}">
-														<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu05_02update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.name}</a></td>
-														<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu05_02update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.state}</a></td>
-													</c:if>
+													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu03_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.name}</a></td>
+													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu03_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.state}</a></td>
+													<td class="b_id">${item.regdate}</td>
+													<td class="b_id">
+														<c:if test="${item.reply ==''}">미답변</c:if>
+														<c:if test="${item.reply !=''}">답변</c:if>
+													</td>
+												</tr>
+												<c:set var="num" value="${num-1}"></c:set>	
+											</c:forEach>
+									</c:otherwise>
+								</c:choose>
+							</table>
+						</div>
+						
+						<div class="b01 board_layout b02_">
+							<div class="board_top">
+								<h2>진료예약</h2>
+								<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu03_02'">더보기 &gt;</a>
+							</div>
+							<table class="main_board">
+								<colgroup>
+									<col width="18%">
+									<col width="*">
+									<col width="25%">
+									<col width="15%">
+									<col width="13%">
+								</colgroup>
+								<tr>
+									<th>이름</th>
+									<th>처리상태</th>
+									<th>등록일</th>
+									<th>답변상태</th>
+								</tr>
+								<c:choose>
+									<c:when test="${fn:length(list) ==0 }">
+										<tr><td colspan="4">미답변 게시물이 없습니다.</td></tr>
+									</c:when>
+									<c:otherwise>
+										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
+									        <c:forEach var="item" items="${resList}">
+												<tr class="cont">
+													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu03_02update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.name}</a></td>
+													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu03_02update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.state}</a></td>
 													<td class="b_id">${item.regdate}</td>
 													<td class="b_id">
 														<c:if test="${item.reply ==''}">미답변</c:if>
