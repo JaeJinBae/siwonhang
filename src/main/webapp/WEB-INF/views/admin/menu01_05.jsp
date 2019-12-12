@@ -132,7 +132,7 @@ $(function(){
 													</c:choose>
 													<td><img src="${pageContext.request.contextPath}/resources/admin/img/ck_img_none.png" class="cursor vimg" id="ismain_2036"></td>
 													<td><i class="ico notice">${num}</i></td>
-													<td><a href="${pageContext.request.contextPath}/admin/menu01_05update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title"> ${item.title}</p></a></td>
+													<td><a href="${pageContext.request.contextPath}/admin/menu01_05update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}"><p class="title"><b>[${item.floor}]</b> ${item.title}</p></a></td>
 													<td>${item.writer}</td>
 													<td>${item.regdate}</td>
 													<td></td>
