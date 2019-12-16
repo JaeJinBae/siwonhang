@@ -202,7 +202,7 @@ $(function(){
 									<th>답변상태</th>
 								</tr>
 								<c:choose>
-									<c:when test="${fn:length(list) ==0 }">
+									<c:when test="${fn:length(resList) ==0 }">
 										<tr><td colspan="4">미답변 게시물이 없습니다.</td></tr>
 									</c:when>
 									<c:otherwise>

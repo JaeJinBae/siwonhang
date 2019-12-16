@@ -17,8 +17,8 @@ public class SendEmail {
 		System.out.println("sendmail 진입");
 		
 		String host = "smtp.naver.com";
-		String user = "webaid_";
-		String password = "qowowls12!";
+		String user = "jangsiwonhp";
+		String password = "jangsiwon1234";
 		int port=465;
 		
 		Properties props = new Properties();
