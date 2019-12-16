@@ -24,7 +24,7 @@
 function id_chk(id){
 	$.ajax({
 		url:"${pageContext.request.contextPath}/id_duplicate_chk/"+id,
-		type:"get",
+		type:"POST",
 		contentType : "application/json; charset=UTF-8",
 		dataType:"text",
 		async:false,
@@ -179,13 +179,13 @@ $(function(){
 										<input type="hidden" name="phone" id="phone" value="">
 									</td>
 								</tr>
-								<tr class="cont">
+								<!-- <tr class="cont">
 									<td class="title">생년월일</td>
 									<td>
 										<input type="text" class="w_form_s" id="birth" name="birth" value=""> (YYYY-MM-DD)
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									</td>
-								</tr>
+								</tr> -->
 								<tr class="cont">
 									<td class="title">성별</td>
 									<td>

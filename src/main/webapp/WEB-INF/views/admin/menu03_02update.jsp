@@ -92,12 +92,12 @@ $(function(){
 			<jsp:include page="include/rightTop.jsp"></jsp:include><!-- 오른쪽 상단 -->
 
 			<div class="naviText_area">
-				<h1>상담관리</h1>
+				<h1>진료예약</h1>
 
 				<ul class="navi_area">
 					<li>관리자메인&nbsp;&gt;&nbsp;</li>
 					<li>상담관리&nbsp;&gt;&nbsp;</li>
-					<li>예약관리</li>
+					<li>진료예약</li>
 				</ul>
 			</div>
 			

@@ -78,7 +78,7 @@ function draw_time_chart(info){
 
 function sttGet(type, d1, d2){
 	$.ajax({
-		url:"${pageContext.request.contextPath}/admin/menu07_01InfoGet/"+type+"/"+d1+"/"+d2,
+		url:"${pageContext.request.contextPath}/admin/menu05_01InfoGet/"+type+"/"+d1+"/"+d2,
 		type:"get",
 		contentType : "application/json; charset=UTF-8",
 		dataType:"json",
@@ -108,8 +108,8 @@ $(function(){
 	var date = ndate.getDate();
 	month = (month > 9) ? month+"":"0"+month;
 	date = (date > 9) ? date+"":"0"+date;
-	/* sttGet("time", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
-	sttGet("browser", year+"-"+month+"-"+date, year+"-"+month+"-"+date); */
+	sttGet("time", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
+	sttGet("browser", year+"-"+month+"-"+date, year+"-"+month+"-"+date);
 	$("#chart1 > span").text(year+"년 "+month+"월 "+date+"일 ");
 	$("#chart2 > span").text(year+"년 "+month+"월 "+date+"일 ");
 });
@@ -231,7 +231,7 @@ $(function(){
 					<div class="log_layout">
 						<div class="log_top">
 							<h2 id="chart1"><span></span> - 브라우저별 접속 통계</h2>
-							<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu07_01'">더보기 &gt;</a>
+							<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu05_01'">더보기 &gt;</a>
 						</div>
 						<div class="log1" id="log1"></div>
 					</div>
@@ -239,7 +239,7 @@ $(function(){
 					<div class="log_layout second">
 						<div class="log_top">
 							<h2 id="chart1"><span></span> - 시간별 접속 통계</h2>
-							<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu07_01'">더보기 &gt;</a>
+							<a href="javascript:;" class="more_btn" onclick="location.href='${pageContext.request.contextPath}/admin/menu05_01'">더보기 &gt;</a>
 						</div>
 						<div class="log2" id="log2"></div>
 					</div>	
