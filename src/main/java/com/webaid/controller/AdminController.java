@@ -1524,6 +1524,15 @@ public class AdminController {
 		return "redirect:/admin/menu04_01update";
 	}
 	
+	@RequestMapping(value="/menu04_01delete/{no}", method=RequestMethod.GET)
+	public String menu04_01delete(@PathVariable("no") int no){
+		logger.info("popup delete");
+		
+		pService.delete(no);
+		
+		return "redirect:/admin/menu04_01";
+	}
+	
 	@RequestMapping(value = "/menu05_01", method = RequestMethod.GET)
 	public String menu05_01(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu05_01 GET");

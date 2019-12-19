@@ -83,7 +83,6 @@ $(function(){
 	var oldURL = document.referrer;
 	$("#access_url").val(oldURL);
 	
-	alert($("#ip").val());
 	$("#form1").submit(function(){
 		var ndate = new Date();
 		var year = ndate.getFullYear();

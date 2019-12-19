@@ -29,7 +29,7 @@
 	</insert>
 	
 	<update id="update">
-		update news set writer=#{writer}, regdate=#{regdate}, cnt=#{cnt}, title=#{title}, content=#{content}, upload_origin=#{upload_origin}, upload_stored=#{upload_stored}, use_state=#{use_state} where no=#{no}
+		update news set writer=#{writer}, regdate=#{regdate}, cnt=#{cnt}, title=#{title}, content=#{content}, use_state=#{use_state} where no=#{no}
 	</update>
 	
 	<update id="updateUpload">
