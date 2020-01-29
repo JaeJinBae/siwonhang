@@ -90,7 +90,7 @@
 	<!--  닫기 [위치 : include_web_footer.html ]  -->
 	
 		<!-- 서브 비주얼영역 시작 (이전, 다음페이지로 이동) -->
-		<div id="sub-visual" data-menu="특성화 진료" data-sec="대장·항문외과">
+		<div id="sub-visual" data-menu="특성화 진료" data-sec="복강경수술">
 			<div class="inner">
 		
 			</div>

@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>대장·항문외과</button>
+						<button>골반저 질환(변비·변실금)</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a></li>

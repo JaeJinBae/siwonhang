@@ -130,12 +130,12 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>대장·항문외과</button>
+						<button>복강경수술</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu03_01">대장·항문외과</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu03_02">복강경수술</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu03_03">골반저 질환(변비·변실금)</a></li>
-							<li><a href="${pageContext.request.contextPath}/menu03_04">비만외과</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu03_04_01">비만외과</a></li>
 						</ul>
 					</li>
 				</ul>
