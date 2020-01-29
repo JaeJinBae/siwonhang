@@ -24,7 +24,7 @@
 <!-- ************************************************************************************************* -->
 <meta property="og:type" content="website">
 <meta property="fb:app_id" content="369427140237541">
-<meta property="og:url" content="http://siwonhang.com/">
+<meta property="og:url" content="http://siwonhang.com/"> 
 <meta property="og:title" content="시원항병원">
 <meta property="og:description" content="치질, 치루, 항문질환, 위&amp;대장내시경, 종합검진, 덕천역 확장이전">
 <meta property="og:image" content="http://siwonhang.com/resources/img/landing/og_image.png">
@@ -142,7 +142,6 @@
 			</div>
 		</div>
 		<!-- BreadCrumb 끝 -->
-		
 		
 		<div id="contents" style="height: auto;">
 			<div class="inner">

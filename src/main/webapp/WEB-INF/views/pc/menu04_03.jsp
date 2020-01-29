@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>복강경수술</button>
+						<button>하지정맥류</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu04_01">복강경수술</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu04_02">유방·갑상선</a></li>
