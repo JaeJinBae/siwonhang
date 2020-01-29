@@ -130,7 +130,7 @@
 						</ul>
 					</li>
 					<li class="gnb">
-						<button>검진센터소개</button>
+						<button>종합건강검진센터</button>
 						<ul>
 							<li><a href="${pageContext.request.contextPath}/menu06_01">검진센터소개</a></li>
 							<li><a href="${pageContext.request.contextPath}/menu06_02">종합건강검진센터</a></li>
