@@ -176,12 +176,12 @@
 					2. 이미지또한 499_img_01.png, 499_img_02.png, 499_img_03.png 순서로 이미지가 없을때까지 for문을 돌립니다.
 					3. 이미지의 alt 속성은 상단에 배열에 저장하시면 순서대로 출력됩니다.
 					4. map 사용시 usemap 또한 class명과 일치합니다.
-					
+					<img src="${pageContext.request.contextPath}/resources/img/contents/euipment01_doc.png" alt="조현언대표원장">
 					-->
 
 					<div class="doctor-view">
 						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment01_doc.png" alt="조현언대표원장">
+							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment01_doc.png" alt="조현언대표원장" />
 						</div>
 						<div class="con">
 							<div class="title">
@@ -199,13 +199,13 @@
 								<table class="tbl">
 										<caption>진료 시간 확인</caption>
 										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
+											<col />
+											<col style="width: 12%;" />
+											<col style="width: 12%;" />
+											<col style="width: 12%;" />
+											<col style="width: 12%;" />
+											<col style="width: 12%;" />
+											<col style="width: 15%;" />
 										</colgroup>
 										<thead>
 											<tr>
@@ -218,31 +218,29 @@
 												<th scope="col">토</th>
 											</tr>
 										</thead>
+										<tbody>
 											<tr>
 												<th>오전</th>
+												<td style="background: #eee;"></td>
 												<td>수술</td>
-												<td>진료</td>
+												<td style="background: #eee;"></td>
 												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
+												<td style="background: #eee;"></td>
+												<td>시원항병원 진료</td>
 											</tr>
 											<tr>
 												<th>오후</th>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>  </td>
+												<td colspan="5" style="background: #eee;">장시원병원 진료</td>
+												<td></td>
 											</tr>
+										</tbody>
 									</table>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
 							<li>대장·항문외과 세부전문의</li>
 							<li>대장·항문외과 대장내시경 세부전문의</li>
@@ -259,72 +257,76 @@
 					</div>
 					
 					
-					<div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment02_doc.png" alt="정일권 대표원장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>정일권 대표원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>대장, 항문</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-								<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-											<tr>
-												<th>오전</th>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술/진료</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td> </td>
-											</tr>
-									</table>
+							<div class="doctor-view">
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment02_doc.png" alt="정일권 대표원장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>정일권 대표원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>대장, 항문</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+										<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>오전</th>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술/진료</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>수술</td>
+														<td>진료</td>
+														<td>휴진</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td> </td>
+													</tr>
+												</tbody>
+											</table>
+					
+					
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 					
 					
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
 							<li>동아대학교 의학과 졸업, 동 대학원 의학과 박사학위</li>
 							<li>동아대학교 부속병원 외과전공의 수료</li>
@@ -334,7 +336,7 @@
 							<li>대한외과학회 외과전문의  및 평생회원</li>
 							<li>대한대장항문학회 세부전문의 및 평생회원</li>
 							<li>대한비민학회및대한비만체형학회평생회원
-							</li><li>미용외과학회평생회원</li>
+							<li>미용외과학회평생회원</li>
 							<li>영남비만성형학회이사</li>
 							<li>Balyor 의과대학 및 M.D  Anderson Cancer Center 연수</li>
 							<li>일본 Takano 대장항문센터 인수</li>
@@ -343,69 +345,71 @@
 					</div>
 					
 					<div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment06_doc.png" alt="오종영원장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>오종영 원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>영상의학과</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-								<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-											<tr>
-												<th>오전</th>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>  </td>
-											</tr>
-									</table>
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment06_doc.png" alt="오종영원장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>오종영 원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>영상의학과</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+										<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>오전</th>
+														<td>진료</td>
+														<td>진료</td>
+														<td>진료</td>
+														<td>진료</td>
+														<td>진료</td>
+														<td>진료</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>진료</td>
+														<td>진료</td>
+														<td>진료</td>
+														<td>휴진</td>
+														<td>진료</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
 							<li>동아대학교 의과대학 졸업, 동 대학원 의학과 박사학위</li>
 							<li>동아대학교병원 영상의학과 전공의 수료</li>
@@ -424,71 +428,74 @@
 					</div>
 					
 					
-					<%-- <div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment03_doc.png" alt="박시영과장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>박시영 원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>대장, 항문, 복강경</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-									<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-											<tr>
-												<th>오전</th>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술/진료</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td> </td>
-											</tr>
-									</table>
+					<div class="doctor-view" style="display:none;">
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment03_doc.png" alt="박시영과장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>박시영 원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>대장, 항문, 복강경</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+											<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>오전</th>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술/진료</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td> </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 					
-					<div class="pcode50702">
-						<h5>약력</h5>
+					
+					<div class="pcode50702" style="display:none;">
+					<h5>약력</h5>
 						<ul>
 							<li>동아대학교 의학과 졸업</li>
 							<li>외과 전문의</li>
@@ -504,80 +511,84 @@
 							<li>대한내시경복강경학회 정회원</li>
 							<li>대한정맥학회 회원</li>
 						</ul>
-					</div> --%>
+					</div>
+					
 					
 					<div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment04_doc.png" alt="이호영과장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>이호영 원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>대장, 항문, 복강경</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-									<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-											<tr>
-												<th>오전</th>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>수술/진료</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>수술</td>
-												<td>진료</td>
-												<td>  </td>
-											</tr>
-									</table>
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment04_doc.png" alt="이호영과장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>이호영 원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>대장, 항문, 복강경</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+											<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>오전</th>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>수술</td>
+														<td>수술/진료</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>진료</td>
+														<td>수술</td>
+														<td>진료</td>
+														<td>휴진</td>
+														<td>진료</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-
+					
+					
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
 							<li>동아대학교 의학과 졸업</li>
 							<li>동아대학교 부속병원 외과 전공의 수료  </li>
 							<li>외과 전문의 </li>
 							<li>전 동아대학교 부속병원 임상 교수</li>
-							<li>부산대학교병원 외과 겸임교원</li><li>
-							</li><li>전 부산의료원 외과 과장</li>
+							<li>부산대학교병원 외과 겸임교원<li>
+							<li>전 부산의료원 외과 과장</li>
 							<li>전 패밀리외과의원 외과 과장</li>
 							<li>전 웅상중앙병원 외과 과장</li>
 							<li>전 새항운병원 외과 과장</li>
@@ -586,75 +597,106 @@
 							<li>2차병원 외과 복강경 수술연구회 회원</li>
 							<li>대한 외과 초음파학회 회원</li>
 							<li>대한 탈장학회 평생회원</li>
+							
+							
+							
 						</ul>
 					</div>
 					
+					
+					
 					<div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment05_doc.png" alt="양재남과장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>양재남 원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>내과</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-									<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-											<tr>
-												<th>오전</th>
-												<td>진료</td>
-												<td>내시경</td>
-												<td>진료</td>
-												<td>내시경</td>
-												<td>진료</td>
-												<td>내시경</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>내시경</td>
-												<td>진료</td>
-												<td>격주휴무</td>
-												<td>진료</td>
-												<td>내시경 </td>
-												<td> </td>
-												
-											</tr>
-									</table>
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment05_doc.png" alt="양재남과장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>양재남 원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>내과</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+											<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 14%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 16%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col"></th>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th rowspan="2">홀수달</th>
+														<th>오전</th>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>진료·내시경</td>
+														<td>휴진</td>
+														<td>내시경</td>
+														<td></td>
+													</tr>
+													<tr>
+														<th rowspan="2">짝수달</th>
+														<th>오전</th>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+													</tr>
+													<tr>
+														<th>오흐</th>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료·내시경</td>
+														<td>휴진</td>
+														<td>진료</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+					
+					
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
+							
 							<li>동국대학교 의과대학 졸업</li>
 							<li>동국대학교 일산병원 내과 전공의</li>
 							<li>동국대학교 일산병원 소화기내과 전임의</li>
@@ -664,76 +706,105 @@
 							<li>대한내과학회 소화기내과 분과 전문의 취득</li>
 							<li>대한소화기내시경학회 내시경 세부 전문의 취득</li>
 							<li>한국심초음파학회 심초음파 인증의 취득</li>
+									
+							
+							
 						</ul>
-					</div>
+					</div> 
+					
+					<!-- ====================== -->
 					
 					<div class="doctor-view">
-						<div class="pic">
-							<img src="${pageContext.request.contextPath}/resources/img/contents/euipment006_doc.png" alt="조정환과장">
-						</div>
-						<div class="con">
-							<div class="title">
-								<p>조정환 원장</p>
-								<sup>
-									<em>주 진료분야 : </em><span>내과</span>
-								</sup>
-							</div>
-							<div class="work-con">
-								<p class="sub-title">
-									진료시간
-								</p>
-								<div class="tbl_wrap">
-			
-									<table class="tbl">
-										<caption>진료 시간 확인</caption>
-										<colgroup>
-											<col>
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-											<col style="width: 12%;">
-										</colgroup>
-										<thead>
-											<tr>
-												<th scope="col">요일</th>
-												<th scope="col">월</th>
-												<th scope="col">화</th>
-												<th scope="col">수</th>
-												<th scope="col">목</th>
-												<th scope="col">금</th>
-												<th scope="col">토</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th>오전</th>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-											</tr>
-											<tr>
-												<th>오후</th>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료</td>
-												<td>진료 </td>
-												<td> </td>
-												
-											</tr>
-										</tbody>
-									</table>
+								<div class="pic">
+									<img src="${pageContext.request.contextPath}/resources/img/contents/euipment006_doc.png" alt="조정환과장" />
+								</div>
+								<div class="con">
+									<div class="title">
+										<p>조정환 원장</p>
+										<sup>
+											<em>주 진료분야 : </em><span>내과</span>
+										</sup>
+									</div>
+									<div class="work-con">
+										<p class="sub-title">
+											진료시간
+										</p>
+										<div class="tbl_wrap">
+					
+											<table class="tbl">
+												<caption>진료 시간 확인</caption>
+												<colgroup>
+													<col />
+													<col style="width: 14%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+													<col style="width: 16%;" />
+													<col style="width: 12%;" />
+													<col style="width: 12%;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col"></th>
+														<th scope="col">요일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th rowspan="2">홀수달</th>
+														<th>오전</th>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경 </td>
+														<td>진료</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>/진료</td>
+														<td>내시경</td>
+														<td>휴진</td>
+														<td>진료·내시경</td>
+														<td>진료 </td>
+														<td></td>
+													</tr>
+													<tr>
+														<th rowspan="2">짝수달</th>
+														<th>오전</th>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>내시경</td>
+													</tr>
+													<tr>
+														<th>오후</th>
+														<td>내시경</td>
+														<td>진료</td>
+														<td>휴진</td>
+														<td>진료·내시경</td>
+														<td>내시경</td>
+														<td></td>
+													</tr>
+													
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+					
+					
 					<div class="pcode50702">
-						<h5>약력</h5>
+					<h5>약력</h5>
 						<ul>
 							
 							<li>동아대학교 의과대학 졸업</li>

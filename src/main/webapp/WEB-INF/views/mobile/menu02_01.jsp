@@ -163,26 +163,22 @@
 									<th>수</th>
 									<th>목</th>
 									<th>금</th>
-									<th>토</th>
+									<th style="width:20%;">토</th>
 								</tr>
 							</thead>
 							<tr>
 								<th>오전</th>
+								<td style="background: #eee;"></td>
 								<td>수술</td>
-								<td>진료</td>
+								<td style="background: #eee;"></td>
 								<td>수술</td>
-								<td>진료</td>
-								<td>수술</td>
-								<td>진료</td>
+								<td style="background: #eee;"></td>
+								<td>시원항병원 진료</td>
 							</tr>
 							<tr>
 								<th>오후</th>
-								<td>진료</td>
-								<td>수술</td>
-								<td>진료</td>
-								<td>수술</td>
-								<td>진료</td>
-								<td>  </td>
+								<td colspan="5" style="background: #eee;">장시원병원 진료</td>
+								<td></td>
 							</tr>
 						</table>
 					</div>
@@ -501,6 +497,7 @@
 						<table>
 							<thead>
 								<tr>
+									<th></th>
 									<th>요일</th>
 									<th>월</th>
 									<th>화</th>
@@ -511,6 +508,7 @@
 								</tr>
 							</thead>
 							<tr>
+								<th rowspan="2">홀수달</th>
 								<th>오전</th>
 								<td>진료</td>
 								<td>내시경</td>
@@ -523,12 +521,30 @@
 								<th>오후</th>
 								<td>내시경</td>
 								<td>진료</td>
-								<td>격주휴무</td>
-								<td>진료</td>
+								<td>진료·내시경</td>
+								<td>휴진</td>
 								<td>내시경</td>
 								<td></td>
-							
-							</tr>		
+							</tr>
+							<tr>
+								<th rowspan="2">짝수달</th>
+								<th>오전</th>
+								<td>내시경</td>
+								<td>진료</td>
+								<td>내시경</td>
+								<td>진료</td>
+								<td>내시경</td>
+								<td>진료</td>
+							</tr>
+							<tr>
+								<th>오흐</th>
+								<td>진료</td>
+								<td>내시경</td>
+								<td>진료·내시경</td>
+								<td>휴진</td>
+								<td>진료</td>
+								<td></td>
+							</tr>
 						</table>
 					</div>
 					<div class="doctor-history">
@@ -562,6 +578,7 @@
 						<table>
 							<thead>
 								<tr>
+									<th></th>
 									<th>요일</th>
 									<th>월</th>
 									<th>화</th>
@@ -572,21 +589,41 @@
 								</tr>
 							</thead>
 							<tr>
+								<th rowspan="2">홀수달</th>
 								<th>오전</th>
+								<td>내시경</td>
 								<td>진료</td>
+								<td>내시경</td>
 								<td>진료</td>
+								<td>내시경 </td>
 								<td>진료</td>
-								<td>진료</td>
-								<td>진료</td>
-								<td>진료 </td>
 							</tr>
 							<tr>
 								<th>오후</th>
+								<td>/진료</td>
+								<td>내시경</td>
+								<td>휴진</td>
+								<td>진료·내시경</td>
+								<td>진료 </td>
+								<td></td>
+							</tr>
+							<tr>
+								<th rowspan="2">짝수달</th>
+								<th>오전</th>
 								<td>진료</td>
+								<td>내시경</td>
 								<td>진료</td>
+								<td>내시경</td>
 								<td>진료</td>
+								<td>내시경</td>
+							</tr>
+							<tr>
+								<th>오후</th>
+								<td>내시경</td>
 								<td>진료</td>
-								<td>진료</td>
+								<td>휴진</td>
+								<td>진료·내시경</td>
+								<td>내시경</td>
 								<td></td>
 							</tr>
 						</table>

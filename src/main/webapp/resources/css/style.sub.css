@@ -190,7 +190,7 @@ td >ul >li.no-bu:before	{ display: none !important; }
 .equipment-item_doc i.stamp{color:#2c3d96; font-size:17px;font-weight:600;}
 
 
-.doctor-view{height:290px; margin-bottom:20px;}
+.doctor-view{height:370px; margin-bottom:20px;}
 .doctor-view .pic, .doctor-view .con{float:left; box-sizing:border-box;}
 .doctor-view .pic{width:30%;}
 .doctor-view .con{width:70%;}
