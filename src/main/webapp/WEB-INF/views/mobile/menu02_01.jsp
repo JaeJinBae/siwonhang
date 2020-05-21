@@ -153,7 +153,7 @@
 						</div>
 					</div>
 					<div class="doctor-timetable">
-						<b class="tit">진료시간</b>
+						<b class="tit">진료시간: 화명 장시원병원(오전 10시 ~ 오후 5시)</b>
 						<table>
 							<thead>
 								<tr>
@@ -168,16 +168,20 @@
 							</thead>
 							<tr>
 								<th>오전</th>
-								<td style="background: #eee;"></td>
+								<td>진료</td>
+								<td colspan="4">시원항병원 수술 및 진료</td>
+								<!-- <td>진료</td>
 								<td>수술</td>
-								<td style="background: #eee;"></td>
-								<td>수술</td>
-								<td style="background: #eee;"></td>
+								<td>진료</td> -->
 								<td>시원항병원 진료</td>
 							</tr>
 							<tr>
 								<th>오후</th>
-								<td colspan="5" style="background: #eee;">장시원병원 진료</td>
+								<td>시원항병원 진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
+								<td>진료</td>
 								<td></td>
 							</tr>
 						</table>
@@ -241,7 +245,7 @@
 								<th>오후</th>
 								<td>수술</td>
 								<td>진료</td>
-								<td>수술</td>
+								<td>휴진</td>
 								<td>진료</td>
 								<td>수술</td>
 								<td> </td>
@@ -310,9 +314,9 @@
 								<td>진료</td>
 								<td>진료</td>
 								<td>진료</td>
+								<td>휴진</td>
 								<td>진료</td>
-								<td>진료</td>
-								<td>  </td>
+								<td></td>
 							</tr>
 						</table>
 					</div>
@@ -449,9 +453,9 @@
 								<td>진료</td>
 								<td>수술</td>
 								<td>진료</td>
-								<td>수술</td>
+								<td>휴진</td>
 								<td>진료</td>
-								<td>  </td>
+								<td></td>
 							</tr>
 						</table>
 					</div>
@@ -531,13 +535,13 @@
 								<th>오전</th>
 								<td>내시경</td>
 								<td>진료</td>
-								<td>내시경</td>
 								<td>진료</td>
+								<td>내시경</td>
 								<td>내시경</td>
 								<td>진료</td>
 							</tr>
 							<tr>
-								<th>오흐</th>
+								<th>오후</th>
 								<td>진료</td>
 								<td>내시경</td>
 								<td>진료·내시경</td>
@@ -600,7 +604,7 @@
 							</tr>
 							<tr>
 								<th>오후</th>
-								<td>/진료</td>
+								<td>진료</td>
 								<td>내시경</td>
 								<td>휴진</td>
 								<td>진료·내시경</td>
@@ -612,8 +616,8 @@
 								<th>오전</th>
 								<td>진료</td>
 								<td>내시경</td>
-								<td>진료</td>
 								<td>내시경</td>
+								<td>진료</td>
 								<td>진료</td>
 								<td>내시경</td>
 							</tr>
